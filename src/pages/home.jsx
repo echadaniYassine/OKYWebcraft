@@ -17,7 +17,6 @@ const HomePage = () => {
             <Services />
             <Portfolio />
             <Footer />
-
         </div>
     );
 }

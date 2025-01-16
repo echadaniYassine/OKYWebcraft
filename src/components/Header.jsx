@@ -40,7 +40,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <a href="#portfolio" className="nav-link" onClick={() => scrollToSection("portfolio")}>
-              Portfolio
+              Realisation
             </a>
           </li>
           <li className="nav-item">
