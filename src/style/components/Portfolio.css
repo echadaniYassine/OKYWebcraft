@@ -1,7 +1,6 @@
-/* Portfolio Section */
 .portfolio {
-  background: #f7f7f7; /* Light background color */
-  padding: 80px 20px;
+  background: #f7f7f7;
+  padding: 10px 20px;
   text-align: center;
 }
 
@@ -23,17 +22,15 @@
   margin-bottom: 50px;
 }
 
-/* Portfolio Items Container */
 .portfolio-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 50px;
 }
 
-/* Individual Portfolio Item */
 .portfolio-item {
   background: #fff;
-  padding: 20px;
+  padding: 0 20px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -41,16 +38,40 @@
   overflow: hidden;
 }
 
-.portfolio-item img {
-  width: 100%;
-  height: 200px;
+.portfolio-item-image-container {
+  position: relative;
+}
+
+.portfolio-item-image {
+  width: 230px;
+  height: 230px; /* Ensures responsive images */
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover img {
-  transform: scale(1.1); /* Zoom effect */
+.image-swap-icons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.swap-icon {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding-bottom: 6px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.swap-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .portfolio-item-title {
@@ -76,15 +97,30 @@
 }
 
 .portfolio-item-link:hover {
-  color: #ffcc00; /* Highlight color on hover */
+  color: #ffcc00;
 }
 
 .portfolio-item:hover {
-  transform: translateY(-10px); /* Lift effect */
+  transform: translateY(-10px);
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Design */
+.show-more-button {
+  font-size: 1.2rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.show-more-button:hover {
+  background-color: #005fa3;
+}
+
 @media (max-width: 768px) {
   .portfolio-title {
     font-size: 2.5rem;
@@ -104,5 +140,10 @@
 
   .portfolio-item img {
     height: 180px;
+  }
+
+  .show-more-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
   }
 }

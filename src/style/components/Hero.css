@@ -103,7 +103,8 @@ body, html {
   color: white;
   font-family: 'Arial', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}.hero-overlay-text3 {
+}
+.hero-overlay-text3 {
   position: absolute;
   top: 65%;
   left: 84%;
@@ -114,7 +115,6 @@ body, html {
   font-family: 'Arial', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-
 .hero-overlay-text-title {
   font-size: 20px;
   font-weight: bold;
@@ -131,7 +131,7 @@ body, html {
   justify-content: space-around;
   align-items: center;
   gap: 50px; /* Adjusted gap for consistent spacing */
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
   background-color: #f0f8ff;
   max-width: 1200px;
   border-radius: 15px;

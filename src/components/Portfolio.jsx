@@ -1,33 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../style/components/Portfolio.css';
 
 const Portfolio = () => {
+  const [showMore, setShowMore] = useState(false); // State for toggling visibility
+  const images = [
+    'assets/HERO.png', // Project 1
+    'assets/HERO.png', // Project 2
+    'assets/HERO.png', // Project 3
+    'assets/HERO.png', // Project 4 (hidden initially)
+    'assets/HERO.png', // Project 5 (hidden initially)
+    'assets/HERO.png', // Project 6 (hidden initially)
+  ];
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore); // Toggle "See More" functionality
+  };
+
   return (
     <section id="portfolio" className="portfolio">
       <div className="container">
-        <h2 className="portfolio-title">Our Realisation</h2>
-        <p className="portfolio-description">Explore some of our recent projects showcasing our expertise and creativity. We are passionate about delivering high-quality work for our clients.</p>
+        <h2 className="portfolio-title">Our Realisations</h2>
+        <p className="portfolio-description">
+          Explore some of our recent projects showcasing our expertise and creativity. We are passionate about delivering high-quality work for our clients.
+        </p>
+
+        {/* Render the first 3 projects */}
         <div className="portfolio-items">
-          {/* Portfolio items with images, titles, and descriptions */}
-          <div className="portfolio-item">
-            <img src="project1.jpg" alt="Project 1" className="portfolio-item-image" />
-            <h3 className="portfolio-item-title">Project 1</h3>
-            <p className="portfolio-item-description">A web application designed for seamless user experience, built using React and Node.js.</p>
-            <a href="project1-link" className="portfolio-item-link">View Project</a>
-          </div>
-          <div className="portfolio-item">
-            <img src="project2.jpg" alt="Project 2" className="portfolio-item-image" />
-            <h3 className="portfolio-item-title">Project 2</h3>
-            <p className="portfolio-item-description">An e-commerce platform developed with Shopify and custom plugins for enhanced functionality.</p>
-            <a href="project2-link" className="portfolio-item-link">View Project</a>
-          </div>
-          <div className="portfolio-item">
-            <img src="project3.jpg" alt="Project 3" className="portfolio-item-image" />
-            <h3 className="portfolio-item-title">Project 3</h3>
-            <p className="portfolio-item-description">A beautiful and interactive landing page designed for a startup business, built using HTML, CSS, and JavaScript.</p>
-            <a href="project3-link" className="portfolio-item-link">View Project</a>
-          </div>
+          {images.slice(0, 3).map((image, index) => (
+            <div key={index} className="portfolio-item">
+              <div className="portfolio-item-image-container">
+                <img src={image} alt={`Project ${index + 1}`} className="portfolio-item-image" />
+              </div>
+              <h3 className="portfolio-item-title">Project {index + 1}</h3>
+              <p className="portfolio-item-description">
+                A description of project {index + 1}. This project was built using different technologies.
+              </p>
+              <a href={`project${index + 1}-link`} className="portfolio-item-link">View Project</a>
+            </div>
+          ))}
         </div>
+
+        {/* Conditionally render additional 3 projects if showMore is true */}
+        {showMore && (
+          <div className="portfolio-items">
+            {images.slice(3).map((image, index) => (
+              <div key={index + 3} className="portfolio-item">
+                <div className="portfolio-item-image-container">
+                  <img src={image} alt={`Project ${index + 4}`} className="portfolio-item-image" />
+                </div>
+                <h3 className="portfolio-item-title">Project {index + 4}</h3>
+                <p className="portfolio-item-description">
+                  A description of project {index + 4}. This project was built using different technologies.
+                </p>
+                <a href={`project${index + 4}-link`} className="portfolio-item-link">View Project</a>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Show More / Show Less Button */}
+        <button onClick={toggleShowMore} className="show-more-button">
+          {showMore ? 'Show Less' : 'See More'}
+        </button>
       </div>
     </section>
   );
