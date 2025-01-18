@@ -1,0 +1,130 @@
+
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Spacing between feature cards */
+    width: 100%;
+    max-width: 1200px;
+    background-image: url('../../../public/assets/Us.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    padding: 0 50px 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 50px 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .feature1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .feature1:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-main {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .feature-main .feature-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 10px 0;
+  }
+  
+  .feature-main .feature-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .feature-main .feature-button {
+    color: white;
+    background-color: rgb(80, 0, 255);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .feature-main .feature-button:hover {
+    background-color: rgb(60, 0, 200);
+    transform: scale(1.05);
+  }
+  
+  .feature-card {
+    background-color: transparent;
+    padding: 20px;
+  }
+  
+  .feature-card-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: aliceblue;
+  }
+  
+  .feature-card-description {
+    font-size: 1rem;
+    color: aliceblue;
+    line-height: 1.6;
+  }
+  
+  .feature-highlight {
+    background-color: rgb(80, 0, 255);
+    color: #ffffff;
+    border-radius: 0 0 50px 50px;
+  }
+  
+  .feature-highlight .feature-card-title,
+  .feature-highlight .feature-card-description {
+    color: #ffffff;
+  }
+  
+  .feature-image {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  /* Animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

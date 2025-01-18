@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../style/components/About.css';
+import '../style/components/chooseUs.css';
 
 const ChoseUs = () => {
     const [isVisible, setIsVisible] = useState(false);

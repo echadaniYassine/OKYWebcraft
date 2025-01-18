@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import '../style/components/About.css';
+import React, { useEffect, useState } from "react";
+import "../style/components/About.css"; // Import CSS
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,66 +10,58 @@ const About = () => {
         const entry = entries[0];
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target); // Stop observing after it's visible
+          observer.unobserve(entry.target);
         }
       },
-      {
-        threshold: 0.5, // Trigger animation when 50% of the section is visible
-      }
+      { threshold: 0.5 }
     );
 
-    const section = document.getElementById('about');
+    const section = document.getElementById("about");
     observer.observe(section);
 
-    return () => {
-      observer.disconnect(); // Clean up observer
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section
-      id="about"
-      className={`about ${isVisible ? 'visible' : ''}`}
-    >
-      <div className="container">
-        <div className="about-header">
-          <h2 className="about-title">About OKY</h2>
-          <p className="about-intro">
-            Your trusted partner for innovative and impactful digital solutions.
+    <section id="about" className={`about ${isVisible ? "visible" : ""}`}>
+      <div className="containerAbout">
+        {/* Left: Text Content */}
+        <div className="about-text">
+          <h3 className="about-intro">INTRODUCTION ABOUT US</h3>
+          <h1 className="about-title">Optimize Social Efforts For Greater Impact.</h1>
+          <p className="about-description">
+            Omnis quis sunt quasi aliquet senectus tenetur dolor! Omnis! Corrupti,
+            est arcu, felis, molestiae impedit vel felis eget.
           </p>
-        </div>
-        <div className="about-content">
-          {/* Left: Text Content */}
-          <div className="about-text">
-            <h3 className="about-subtitle">Who We Are</h3>
-            <p className="about-description">
-              At <span className="highlight">OKY Agency</span>, we specialize in providing top-notch web development and design services.
-              Our team is dedicated to delivering <span className="highlight">innovative solutions</span> tailored to your needs.
-            </p>
-            <h3 className="about-subtitle">What We Do</h3>
-            <ul className="about-services">
-              <li>Custom Web Development</li>
-              <li>Responsive UI/UX Design</li>
-              <li>Full-Stack Applications</li>
-              <li>Optimized E-Commerce Platforms</li>
-              <li>Continuous Maintenance and Support</li>
-            </ul>
-            <p className="about-vision">
-              We aim to empower businesses with cutting-edge technology to achieve their goals efficiently and effectively.
-            </p>
+          <div className="about-highlights">
+            <div className="highlight-card">
+              <span className="checkmark">✔</span>
+              <div>
+                <h4 className="highlight-title">Target Oriented Work</h4>
+                <p className="highlight-description">
+                  Laboriosam tempus eu imperdiet pedes.
+                </p>
+              </div>
+            </div>
+            <div className="highlight-card">
+              <span className="checkmark">✔</span>
+              <div>
+                <h4 className="highlight-title">Project Success Guarantee</h4>
+                <p className="highlight-description">
+                  Laboriosam tempus eu imperdiet pedes.
+                </p>
+              </div>
+            </div>
           </div>
-          {/* Right: Image Content */}
-          <div className="about-image">
-            <img src="https://via.placeholder.com/400" alt="OKY Agency Team" />
-            <figcaption className="image-caption">
-              A glimpse of our creative team at OKY Agency
-            </figcaption>
-          </div>
+          <button className="about-btn">MORE ABOUT US</button>
         </div>
-        <div className="about-footer">
-          <p className="about-mission">
-            Our mission is to transform ideas into reality through technical excellence and a client-centric approach.
-          </p>
+        {/* Right: Image Content */}
+        <div className="about-image">
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="About Us"
+            className="about-img"
+          />
         </div>
       </div>
     </section>
