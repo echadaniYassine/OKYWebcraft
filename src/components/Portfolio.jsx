@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../style/components/Portfolio.css';
 
 const Portfolio = () => {
   const [showMore, setShowMore] = useState(false); // State for toggling visibility
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Create a reference to the section for IntersectionObserver
+  const portfolioRef = useRef(null);
+
   const images = [
     'assets/HERO.png', // Project 1
     'assets/HERO.png', // Project 2
@@ -16,8 +21,35 @@ const Portfolio = () => {
     setShowMore(!showMore); // Toggle "See More" functionality
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target); // Stop observing after it is visible
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (portfolioRef.current) {
+      observer.observe(portfolioRef.current);
+    }
+
+    return () => {
+      if (portfolioRef.current) {
+        observer.disconnect(); // Clean up observer
+      }
+    };
+  }, []);
+
   return (
-    <section id="portfolio" className="portfolio">
+    <section
+      id="portfolio"
+      ref={portfolioRef} // Attach the reference here
+      className={`portfolio ${isVisible ? 'visible' : ''}`}
+    >
       <div className="container">
         <h2 className="portfolio-title">Our Realisations</h2>
         <p className="portfolio-description">
@@ -35,7 +67,9 @@ const Portfolio = () => {
               <p className="portfolio-item-description">
                 A description of project {index + 1}. This project was built using different technologies.
               </p>
-              <a href={`project${index + 1}-link`} className="portfolio-item-link">View Project</a>
+              <a href={`project${index + 1}-link`} className="portfolio-item-link">
+                View Project
+              </a>
             </div>
           ))}
         </div>
@@ -52,7 +86,9 @@ const Portfolio = () => {
                 <p className="portfolio-item-description">
                   A description of project {index + 4}. This project was built using different technologies.
                 </p>
-                <a href={`project${index + 4}-link`} className="portfolio-item-link">View Project</a>
+                <a href={`project${index + 4}-link`} className="portfolio-item-link">
+                  View Project
+                </a>
               </div>
             ))}
           </div>

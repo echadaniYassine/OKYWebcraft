@@ -18,7 +18,7 @@ const ChoseUs = () => {
             }
         );
 
-        const section = document.getElementById('about');
+        const section = document.getElementById('chooseUs');
         observer.observe(section);
 
         return () => {
@@ -28,7 +28,7 @@ const ChoseUs = () => {
 
     return (
         <section
-            id="about" className={`about ${isVisible ? 'visible' : ''}`}>
+            id="chooseUs" className={`about ${isVisible ? 'visible' : ''}`}>
             <div class="why-choose-us">
                 <div class="features">
                     <div class="feature1 feature-main">
