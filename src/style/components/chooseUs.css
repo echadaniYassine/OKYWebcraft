@@ -47,12 +47,16 @@
   .feature-main {
     background-color: transparent;
     color: #ffffff;
+    text-align: start;
+
   }
   
   .feature-main .feature-title {
     font-size: 2.5rem;
     font-weight: 900;
     margin: 10px 0;
+    text-align: start;
+
   }
   
   .feature-main .feature-subtitle {
@@ -60,11 +64,12 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-right: 50px;
   }
   
   .feature-main .feature-button {
     color: white;
-    background-color: rgb(80, 0, 255);
+    background-color: #77a1aa;
     padding: 15px 30px;
     border-radius: 50px;
     border: none;
@@ -73,6 +78,7 @@
     cursor: pointer;
     text-decoration: underline;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 70px;
   }
   
   .feature-main .feature-button:hover {
@@ -86,26 +92,41 @@
   }
   
   .feature-card-title {
-    font-size: 1.5rem;
-    margin: 15px 0;
+    font-size: 1.49rem;
+    margin: 15px 35px 0 0;
     color: aliceblue;
+  }
+  .feature-card-title3 {
+    font-size: 1.49rem;
+    color: aliceblue;
+    margin-top: 15px;
   }
   
   .feature-card-description {
     font-size: 1rem;
     color: aliceblue;
     line-height: 1.6;
+    text-align: start;
+  }
+  .feature-card-description3 {
+    margin-top: -7px;
+    font-size: 1rem;
+    color: aliceblue;
+    line-height: 1.6;
+    text-align: start;
   }
   
   .feature-highlight {
-    background-color: rgb(80, 0, 255);
+    background-color: #77a1aa;
     color: #ffffff;
     border-radius: 0 0 50px 50px;
+
   }
   
   .feature-highlight .feature-card-title,
   .feature-highlight .feature-card-description {
     color: #ffffff;
+    text-align: start;
   }
   
   .feature-image {

@@ -6,9 +6,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 20px;
   position: relative;  /* Make sure the header is part of the normal document flow */
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
+.imageLogo {
+  transition: opacity 0.3s ease;
+  height: auto;
+  width: 130px;
+  margin: 17px 0 0 40px;
+}
+
 /* Add this to your existing CSS */
 .header-container.fixed {
   position: fixed;
@@ -17,12 +28,26 @@
   right: 0;
   border-radius: 50px;
   max-width: 1000px;
+  height: 0;
   margin: 15px auto;
   background-color: white; /* Change this to your desired background color */
   z-index: 1000; /* Ensure it stays above other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 
+/* Hide the logo when header is fixed */
+.header-container.fixed .logo-container {
+  display: none;
+}
+
+.logo-container {
+  position: absolute; /* Keeps logo on the left */
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Navigation Styles */
 .navigation {
   width: 100%;
   display: flex;
@@ -55,73 +80,26 @@
   color: #f39c12;
 }
 
-/* Cart Icon Styles */
-.nav-item {
-  position: relative;
-}
-
-.cart-icon {
-  font-size: 24px;
-  color: #333;
-}
-
-.cart-notification {
-  position: absolute;
-  top: -5px;
-  right: -8px;
-  background-color: #FF3B30; /* Red background */
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  font-size: 12px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cart-notification::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 12px;
-  height: 12px;
-  background-color: #FF3B30;
-  border-radius: 50%;
-  z-index: -1;
-  transform: scale(1);
-}
-
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   .header-container {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-list {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .nav-item {
-      width: 100%;
-      text-align: left;
-      padding: 10px 0;
-      border-top: 1px solid #444;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    border-top: 1px solid #444;
   }
 
   .nav-item:first-child {
-      border-top: none;
-  }
-}
-
-/* Add transition effects when scrolling */
-@media (max-width: 768px) {
-  .header-container {
-      transition: all 0.3s ease;
+    border-top: none;
   }
 }

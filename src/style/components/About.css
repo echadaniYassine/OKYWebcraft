@@ -26,7 +26,7 @@
 
 .about-intro {
   font-size: 1rem;
-  color: #4b00ff;
+  color: #77a1aa;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -61,7 +61,7 @@
   border-radius: 50px;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
-  border-right: #4b00ff 3px solid;
+  border-right: #77a1aa 3px solid;
 
 }
 
@@ -76,7 +76,7 @@
   text-align: center;
   color: aliceblue;
   margin-left: 20px;
-  background-color: #4b00ff;
+  background-color: #77a1aa;
   border-radius: 50%;
   margin-right: 10px;
   border-right: black 5px solid;
@@ -98,7 +98,7 @@
 .about-btn {
   display: inline-block;
   padding: 17px 25px;
-  background-color: #4b00ff;
+  background-color: #77a1aa;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -109,7 +109,7 @@
 }
 
 .about-btn:hover {
-  background-color: #3800c4;
+  background-color: rgb(68, 138, 114);
   transform: scale(1.05);
 }
 
@@ -121,6 +121,5 @@
 .about-img {
   width: 100%;
   max-width: 500px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px 20px 0;
 }

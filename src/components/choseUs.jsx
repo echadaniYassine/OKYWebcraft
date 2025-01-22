@@ -29,38 +29,36 @@ const ChoseUs = () => {
     return (
         <section
             id="chooseUs" className={`about ${isVisible ? 'visible' : ''}`}>
-            <div class="why-choose-us">
-                <div class="features">
-                    <div class="feature1 feature-main">
-                        <p class="feature-subtitle">Why choose us</p>
-                        <h1 class="feature-title">Why Choose Us?</h1>
-                        <button class="feature-button">More Benefits</button>
+            <div className="why-choose-us">
+                <div className="features">
+                    <div className="feature1 feature-main">
+                        <p className="feature-subtitle">Why choose us?</p>
+                        <h1 className="feature-title">Our Goals & <br/>Benefits</h1>
+                        <button className="feature-button">Explore More</button>
                     </div>
-                    <div class="feature feature-card">
-                        <img src="path" alt="Digital Marketing" class="feature-image" />
-                        <h3 class="feature-card-title">Digital Marketing</h3>
-                        <p class="feature-card-description">
-                            Leverage cutting-edge strategies to maximize your online presence and drive customer engagement.
+                    <div className="feature feature-card">
+                        <img src="assets/Benefits1.png" alt="Tailored Solutions" className="feature-image" />
+                        <h3 className="feature-card-title">Tailored Solutions</h3>
+                        <p className="feature-card-description">
+                            We provide customized strategies that align perfectly with your business objectives, ensuring maximum impact.
                         </p>
                     </div>
-                    <div class="feature feature-highlight">
-                        <img src="path" alt="SEO Management" class="feature-image" />
-                        <h3 class="feature-card-title">SEO Management</h3>
-                        <p class="feature-card-description">
-                            Optimize your website for search engines and improve your rankings to attract more organic traffic.
+                    <div className="feature feature-highlight">
+                        <img src="assets/Benefits2.png" alt="Reliable Expertise" className="feature-image" />
+                        <h3 className="feature-card-title">Reliable Expertise</h3>
+                        <p className="feature-card-description">
+                            Backed by years of experience, our team delivers consistent, high-quality results that you can count on.
                         </p>
                     </div>
-                    <div class="feature feature-card">
-                        <img src="path" alt="Content Creation" class="feature-image" />
-                        <h3 class="feature-card-title">Content Creation</h3>
-                        <p class="feature-card-description">
-                            Develop compelling and creative content tailored to your audience to build brand trust and loyalty.
+                    <div className="feature feature-card">
+                        <img src="assets/Benefits3.png" alt="Innovative Strategies" className="feature-image" />
+                        <h3 className="feature-card-title3">Innovative Strategies</h3>
+                        <p className="feature-card-description3">
+                            We embrace innovation to provide cutting-edge solutions that keep you ahead of the competition.
                         </p>
                     </div>
                 </div>
             </div>
-
-
         </section>
     );
 };

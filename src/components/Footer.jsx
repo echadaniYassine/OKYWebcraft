@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../style/components/Footer.css';
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaEnvelope,
   FaPhone,
@@ -128,6 +127,10 @@ const Footer = () => {
         </div>
 
       </div>
+      <hr className=''/>
+      <div className="footer__copyright">
+        ...
+        </div>
     </footer>
   );
 };

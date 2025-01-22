@@ -58,7 +58,7 @@ const About = () => {
         {/* Right: Image Content */}
         <div className="about-image">
           <img
-            src="https://via.placeholder.com/500x300"
+            src="assets/about.png"
             alt="About Us"
             className="about-img"
           />

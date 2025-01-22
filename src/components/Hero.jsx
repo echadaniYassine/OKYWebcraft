@@ -1,6 +1,5 @@
 import React from 'react';
 import '../style/components/Hero.css';
-import { FaRegClipboard, FaUsers, FaTrophy, FaUserTie, FaClock } from 'react-icons/fa';
 
 const Hero = () => {
   return (<>
@@ -26,29 +25,19 @@ const Hero = () => {
     </section>
     <div className="hero-stats">
       <div className="hero-stat">
-        <FaRegClipboard className="hero-stat-icon" />
+        <img src='assets/choseUs1.png' className="hero-stat-icon" />
         <h1 className="hero-stat-title">120+</h1>
         <p className="hero-stat-paragraph">Projects Delivered</p>
       </div>
       <div className="hero-stat">
-        <FaUsers className="hero-stat-icon" />
-        <h1 className="hero-stat-title">50+</h1>
-        <p className="hero-stat-paragraph">Happy Clients</p>
-      </div>
-      <div className="hero-stat">
-        <FaTrophy className="hero-stat-icon" />
+        <img src='assets/choseUs3.png' className="hero-stat-icon" />
         <h1 className="hero-stat-title">99%</h1>
         <p className="hero-stat-paragraph">Satisfaction Rate</p>
       </div>
       <div className="hero-stat">
-        <FaUserTie className="hero-stat-icon" />
+        <img src='assets/chose 2.png' className="hero-stat-icon" />
         <h1 className="hero-stat-title">15+</h1>
         <p className="hero-stat-paragraph">Team Members</p>
-      </div>
-      <div className="hero-stat">
-        <FaClock className="hero-stat-icon" />
-        <h1 className="hero-stat-title">10</h1>
-        <p className="hero-stat-paragraph">Years of Experience</p>
       </div>
     </div>
   </>

@@ -1,7 +1,15 @@
+/* General Section Styling */
 .portfolio {
-  background: #f7f7f7;
-  padding: 10px 20px;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  padding: 60px 20px;
   text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.portfolio.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .container {
@@ -9,141 +17,99 @@
   margin: 0 auto;
 }
 
+/* Title and Description */
 .portfolio-title {
-  font-size: 3rem;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  color: #343a40;
+  margin-bottom: 10px;
 }
-
 .portfolio-description {
   font-size: 1.2rem;
-  color: #777;
+  color: #6c757d;
   margin-bottom: 50px;
 }
 
+/* Portfolio Items Grid */
 .portfolio-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
+/* Individual Portfolio Item */
 .portfolio-item {
-  background: #fff;
-  padding: 0 20px 20px;
+  padding: 20px;
+  background: linear-gradient(to top, #f8f9fa, #77a1aa);
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
-
-.portfolio-item-image-container {
-  position: relative;
-}
-
-.portfolio-item-image {
-  width: 230px;
-  height: 230px; /* Ensures responsive images */
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.image-swap-icons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.swap-icon {
-  background-color: #007acc;
-  color: white;
-  border: none;
-  font-size: 1.5rem;
-  padding-bottom: 6px;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-}
-
-.swap-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.portfolio-item-title {
-  font-size: 1.8rem;
-  color: #333;
-  margin-top: 20px;
-  transition: color 0.3s ease;
-}
-
-.portfolio-item-description {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-  margin: 15px 0;
-}
-
-.portfolio-item-link {
-  font-size: 1.1rem;
-  color: #007acc;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.portfolio-item-link:hover {
-  color: #ffcc00;
-}
-
 .portfolio-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Portfolio Item Image */
+.portfolio-item-image-container {
+  overflow: hidden;
+}
+.portfolio-item-image {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.portfolio-item:hover .portfolio-item-image {
+  transform: scale(1.1);
+}
+
+/* Portfolio Item Text */
+.portfolio-item-title {
+  font-size: 1.5rem;
+  color: #495057;
+  margin: 20px 0 10px;
+}
+.portfolio-item-description {
+  font-size: 1rem;
+  color: #6c757d;
+  padding: 0 20px;
+}
+.portfolio-item-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #77a1aa;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.portfolio-item-link:hover {
+  background: rgb(68, 138, 114);
+}
+
+/* Show More Button */
 .show-more-button {
-  font-size: 1.2rem;
-  background-color: #007acc;
-  color: white;
-  border: none;
+  font-size: 1rem;
+  color: #fff;
+  background: rgb(68, 138, 114);
   padding: 12px 25px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;
+  transition: background 0.3s ease;
 }
-
 .show-more-button:hover {
-  background-color: #005fa3;
+  background: #77a1aa;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .portfolio-title {
     font-size: 2.5rem;
   }
-
   .portfolio-description {
     font-size: 1rem;
-  }
-
-  .portfolio-item-title {
-    font-size: 1.6rem;
-  }
-
-  .portfolio-item-description {
-    font-size: 0.9rem;
-  }
-
-  .portfolio-item img {
-    height: 180px;
-  }
-
-  .show-more-button {
-    font-size: 1.1rem;
-    padding: 10px 20px;
   }
 }

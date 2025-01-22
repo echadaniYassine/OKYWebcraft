@@ -1,6 +1,6 @@
 /* Footer Section */
 .footer {
-  background: linear-gradient(45deg, #1a1a1a, #333);
+  background: #1f3034;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -52,7 +52,7 @@
   padding: 12px 20px;
   font-size: 1rem;
   border-radius: 5px;
-  background-color: rgb(152, 152, 255);
+  background-color: #77a1aa;
   color: #333;
   border: none;
   cursor: pointer;
@@ -60,12 +60,12 @@
 }
 
 .footer__short-subscription__button:hover {
-  background-color: #ff9900;
+  background-color: rgb(68, 138, 114);
 }
 
 .footer__social-links {
   list-style: none;
-  padding-left: 10px;
+  padding-left: 20px;
   margin: 0;
   display: flex;
   justify-content: start;
@@ -78,12 +78,12 @@
 
 .footer__social-links a {
   font-size: 1.8rem;
-  color: #fff;
+  color: #77a1aa;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer__social-links a:hover {
-  color: #ffcc00;
+  color: rgb(68, 138, 114);
   transform: scale(1.2);
 }
 /* second section*/
@@ -91,7 +91,7 @@
 .footer__title_ {
   font-size: 1.6rem;
   margin-bottom: 50px;
-  color: white; /* Highlight color for section titles */
+  color: #77a1aa; /* Highlight color for section titles */
   text-align: start;
   margin-left: 50px;
 }
@@ -113,7 +113,7 @@
 
 .footer__links__icon {
   font-size: 1.2rem;
-  color: rgb(152, 152, 255);
+  color: #77a1aa;
   flex-shrink: 0;
 }
 
@@ -125,13 +125,13 @@
 }
 
 .footer__links__link:hover {
-  color: #ffcc00;
+  color: rgb(68, 138, 114);
 }
 /* Third Section: Contact Info and Map */
 .footer__title_3{
   font-size: 1.6rem;
   margin-bottom: 50px;
-  color: white; /* Highlight color for section titles */
+  color: #77a1aa; /* Highlight color for section titles */
   text-align: start;
 
 }
@@ -154,7 +154,7 @@
 
 .footer__contact-icon {
   font-size: 1.4rem;
-  color: rgb(152, 152, 255);
+  color: #77a1aa;
   flex-shrink: 0;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .footer__contact-link:hover {
-  color: #ffcc00;
+  color: rgb(68, 138, 114);
 }
 
 .footer__map {

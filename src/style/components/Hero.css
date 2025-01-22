@@ -8,7 +8,6 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white; 
   width: 100%; 
   padding: 0 20px;
 }
@@ -39,7 +38,7 @@ body, html {
 .hero-subtitle {
   font-size: 2.5rem;
   font-weight: 600;
-  color: rgb(75, 0, 255); 
+  color: #77a1aa; 
   margin-bottom: 15px;
   white-space: nowrap; 
   overflow: hidden; 
@@ -56,7 +55,7 @@ body, html {
 .hero-btn {
   display: inline-block;
   padding: 15px 30px;
-  background-color: rgb(75, 0, 255);
+  background-color: #77a1aa;
   color: white;
   text-decoration: none;
   border-radius: 50px;
@@ -66,7 +65,7 @@ body, html {
 }
 
 .hero-btn:hover {
-  background-color: #005fa3; 
+  background-color: rgb(68, 138, 114); 
 }
 
 .hero-image {
@@ -76,64 +75,23 @@ body, html {
 }
 
 .hero-image img {
-  width: 780px;
-  height: 780px;
+  width: 800px;
+  height: auto;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 /* Overlay Text for Hero Image */
-.hero-overlay-text1 {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.hero-overlay-text2 {
-  position: absolute;
-  top: 25%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.hero-overlay-text3 {
-  position: absolute;
-  top: 65%;
-  left: 84%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.hero-overlay-text-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  background-color: aliceblue;
-  color: black;
-  padding: 15px 40px;
-  border-radius: 50px;
-}
+
 
 /* Stats Section */
 .hero-stats {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 50px; /* Adjusted gap for consistent spacing */
   margin: 0 auto 50px;
   background-color: #f0f8ff;
-  max-width: 1200px;
+  max-width: 1000px;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -152,9 +110,8 @@ body, html {
 }
 
 .hero-stat-icon {
-  font-size: 3rem;
-  color: #007bff;
-  margin-bottom: 10px;
+  width: 100px;
+  color: #77a1aa;
 }
 
 .hero-stat-title {
