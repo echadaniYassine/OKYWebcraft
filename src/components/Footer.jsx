@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../style/components/Footer.css';
+import { Link } from 'react-router-dom';
 import {
   FaFacebookF,
   FaInstagram,
@@ -83,19 +84,19 @@ const Footer = () => {
           <ul className="footer__links">
             <li className="footer__links__item">
               <FaShieldAlt className="footer__links__icon" />
-              <a href="#" className="footer__links__link">Privacy Policy</a>
+              <Link to="/Privacy_Policy" className="footer__links__link">Privacy Policy</Link>
             </li>
             <li className="footer__links__item">
               <FaGavel className="footer__links__icon" />
-              <a href="#" className="footer__links__link">Terms of Service</a>
+              <Link to="/Terms_of_Service" className="footer__links__link">Terms of Service</Link>
             </li>
             <li className="footer__links__item">
               <FaBriefcase className="footer__links__icon" />
-              <a href="#" className="footer__links__link">Careers</a>
+              <Link to="/Careers" className="footer__links__link">Careers</Link>
             </li>
             <li className="footer__links__item">
               <FaInfoCircle className="footer__links__icon" />
-              <a href="#" className="footer__links__link">About Us</a>
+              <Link to="/about_us" className="footer__links__link">About Us</Link>
             </li>
           </ul>
         </div>
@@ -105,25 +106,17 @@ const Footer = () => {
           <ul className="footer__contact-list">
             <li className="footer__contact-item">
               <FaPhone className="footer__contact-icon" />
-              <span>+123 456 7890</span>
+              <span>+212 1 71 92 31 03</span>
             </li>
             <li className="footer__contact-item">
               <FaEnvelope className="footer__contact-icon" />
-              <a href="mailto:contact@okyagency.com" className="footer__contact-link">contact@okyagency.com</a>
+              <a href="mailto:contact@okyagency.com" className="footer__contact-link">okywebcraft@gmail.com</a>
             </li>
             <li className="footer__contact-item">
               <FaMapMarkerAlt className="footer__contact-icon" />
               <span>123 OKY Street, City, Country</span>
             </li>
           </ul>
-          <div className="footer__map">
-            <iframe
-              title="Short Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.843544374667!2d-122.08424968467992!3d37.42199977982414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c7c2b1234f%3A0x87654321abcd!2s123%20OKY%20Street%2C%20City%2C%20Country!5e0!3m2!1sen!2s!4v1636472566710!5m2!1sen!2s"
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
         </div>
 
       </div>

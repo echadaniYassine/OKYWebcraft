@@ -26,7 +26,7 @@ const Hero = () => {
     <div className="hero-stats">
       <div className="hero-stat">
         <img src='assets/choseUs1.png' className="hero-stat-icon" />
-        <h1 className="hero-stat-title">120+</h1>
+        <h1 className="hero-stat-title">34+</h1>
         <p className="hero-stat-paragraph">Projects Delivered</p>
       </div>
       <div className="hero-stat">
@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
       <div className="hero-stat">
         <img src='assets/chose 2.png' className="hero-stat-icon" />
-        <h1 className="hero-stat-title">15+</h1>
+        <h1 className="hero-stat-title">6+</h1>
         <p className="hero-stat-paragraph">Team Members</p>
       </div>
     </div>

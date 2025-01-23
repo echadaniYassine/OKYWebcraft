@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../style/components/About.css"; // Import CSS
 
-const About = () => {
+const About_US = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,6 +22,10 @@ const About = () => {
 
     return () => observer.disconnect();
   }, []);
+   useEffect(() => {
+      // Scroll to top when the component is loaded
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <section id="about" className={`about ${isVisible ? "visible" : ""}`}>
@@ -70,4 +74,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About_US;

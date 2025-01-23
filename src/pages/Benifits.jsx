@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../style/components/chooseUs.css';
 import { Link } from 'react-router-dom';
-const ChoseUs = () => {
+const Benefits = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -64,4 +64,4 @@ const ChoseUs = () => {
     );
 };
 
-export default ChoseUs;
+export default Benefits;

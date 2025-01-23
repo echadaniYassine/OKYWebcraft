@@ -1,22 +1,43 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../style/components/Portfolio.css';
+import {FaAngleDown, FaAngleUp} from 'react-icons/fa';
 
 const Portfolio = () => {
-  const [showMore, setShowMore] = useState(false);
+  const [showAll, setShowAll] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const portfolioRef = useRef(null);
 
-  const images = [
-    'assets/HERO.png',
-    'assets/HERO.png',
-    'assets/HERO.png',
-    'assets/HERO.png',
-    'assets/HERO.png',
-    'assets/HERO.png',
+  const projects = [
+    {
+      image: 'assets/HERO.png',
+      title: 'Web Development',
+      description: 'A comprehensive web application built with modern technologies.',
+      link: '/category_web',
+    },
+    {
+      image: 'assets/HERO.png',
+      title: 'Graphic Design',
+      description: 'Creative designs for branding and marketing materials.',
+      link: '/category_graphic_design',
+    },
+    {
+      image: 'assets/HERO.png',
+      title: 'Production Video',
+      description: 'High-quality video production for corporate and promotional use.',
+      link: '/category_production_video',
+    }, {
+      image: 'assets/HERO.png',
+      title: 'Mobile App Design',
+      description: 'Intuitive mobile app design focused on user experience and engagement.',
+      link: '/category_graphic_design',
+    },
+    // Add more projects as needed
   ];
 
-  const toggleShowMore = () => setShowMore(!showMore);
-
+  const handleToggle = () => {
+    setShowAll(!showAll);
+  };
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -44,25 +65,32 @@ const Portfolio = () => {
         </p>
 
         <div className="portfolio-items">
-          {images.slice(0, showMore ? images.length : 3).map((image, index) => (
-            <div key={index} className="portfolio-item">
+          {projects.slice(0, showAll ? projects.length : 3).map((project, index) => (
+            <Link to={project.link} key={index} className="portfolio-item">
               <div className="portfolio-item-image-container">
-                <img src={image} alt={`Project ${index + 1}`} className="portfolio-item-image" />
+                <img src={project.image} alt={`Project ${index + 1}`} className="portfolio-item-image" />
               </div>
-              <h3 className="portfolio-item-title">Project {index + 1}</h3>
+              <h3 className="portfolio-item-title">{project.title}</h3>
               <p className="portfolio-item-description">
-                A description of project {index + 1}. Built with modern technologies.
+                {project.description}
               </p>
-              <a href={`#`} className="portfolio-item-link">
-                View Project
-              </a>
-            </div>
+            </Link>
           ))}
         </div>
 
-        <button onClick={toggleShowMore} className="show-more-button">
-          {showMore ? 'Show Less' : 'See More'}
-        </button>
+        <div className="view-all">
+          <button className="show-more-button" onClick={handleToggle}>
+            {showAll ? (
+              <>
+                Show Less <FaAngleUp /> {/* Icon for "Show Less" */}
+              </>
+            ) : (
+              <>
+                See All Realisation <FaAngleDown /> {/* Icon for "View All Services" */}
+              </>
+            )}
+          </button>
+        </div>
       </div>
     </section>
   );

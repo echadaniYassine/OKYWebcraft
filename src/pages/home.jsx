@@ -10,13 +10,11 @@ import ChoseUs from '../components/choseUs';
 const HomePage = () => {
     return (
         <div className="home-page">
-            <Header />
             <Hero />
             <About />
             <ChoseUs />
             <Services />
             <Portfolio />
-            <Footer />
         </div>
     );
 }

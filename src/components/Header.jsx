@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/components/Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false); // State to manage fixed header
@@ -27,9 +28,9 @@ const Header = () => {
         <nav className="navigation">
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#home" className="nav-link" onClick={() => scrollToSection("home")}>
+              <Link to="/" className="nav-link" onClick={() => scrollToSection("home")}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a href="#about" className="nav-link" onClick={() => scrollToSection("about")}>
