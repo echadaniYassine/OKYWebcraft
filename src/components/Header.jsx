@@ -17,16 +17,10 @@ const Header = () => {
     setIsFixed(window.scrollY > 50);
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <>
-      <header className={`header-container ${isFixed ? "fixed" : ""}`}>
+      <header className="header-container">
         <div className={`logo-container ${isFixed ? "hide-logo" : ""}`}>
           <img src="assets/logo.png" className="imageLogo" />
         </div>
@@ -43,13 +37,13 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#portfolio" className="nav-link" onClick={() => scrollToSection("portfolio")}>
-                Realisation
+              <a href="#services" className="nav-link" onClick={() => scrollToSection("services")}>
+                Services
               </a>
             </li>
             <li className="nav-item">
-              <a href="#services" className="nav-link" onClick={() => scrollToSection("services")}>
-                Services
+              <a href="#portfolio" className="nav-link" onClick={() => scrollToSection("portfolio")}>
+                Realisation
               </a>
             </li>
           </ul>

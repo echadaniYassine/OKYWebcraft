@@ -1,6 +1,6 @@
 /* Footer Section */
 .footer {
-  background: #1f3034;
+  background: linear-gradient(to right, #2f3c3f, #1f3034);
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -27,9 +27,11 @@
 
 .footer__logo {
   margin-bottom: 20px;
+
 }
 
 .footer__logo__image {
+  margin-right: 120px;
   max-width: 200px;
 }
 
@@ -49,7 +51,7 @@
 }
 
 .footer__short-subscription__button {
-  padding: 12px 20px;
+  padding: 12px 5px;
   font-size: 1rem;
   border-radius: 5px;
   background-color: #77a1aa;
@@ -65,8 +67,7 @@
 
 .footer__social-links {
   list-style: none;
-  padding-left: 20px;
-  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: start;
   gap: 20px;
@@ -182,6 +183,20 @@
   border-radius: 10px;
 }
 
+.footer__copyright {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #ddd; /* Dark gray text */
+  border-top: 1px solid #ddd;
+  border-radius: 100px;
+}
+
+.footer__copyright p {
+  margin: 0;
+  padding: 0;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

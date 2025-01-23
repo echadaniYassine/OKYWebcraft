@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="footer__section">
           <div className="footer__logo">
             <img
-              src="assets/HERO.png"
+              src="assets/logo.png"
               alt="OKY Agency Logo"
               className="footer__logo__image"
             />
@@ -127,10 +127,9 @@ const Footer = () => {
         </div>
 
       </div>
-      <hr className=''/>
       <div className="footer__copyright">
-        ...
-        </div>
+      <p>© 2025 OKY WebCraft. All rights reserved.</p>
+    </div>
     </footer>
   );
 };
