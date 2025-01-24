@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../../style/components/Careers.css'; // Import CSS for styling
+import '../../style/pages/Careers.css'; // Import CSS for styling
 
 const jobListings = [
   {

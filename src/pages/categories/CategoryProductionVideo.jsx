@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/components/CategoryProductionVideo.css'; // Import your CSS for styling
+import '../../style/pages/CategoryProductionVideo.css'; // Import your CSS for styling
 
 const projects = [
   {

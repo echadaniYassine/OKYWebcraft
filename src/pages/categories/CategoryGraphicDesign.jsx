@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../style/components/CategoryGraphicDesign.css'; // Import your CSS for styling
+import '../../style/pages/CategoryGraphicDesign.css'; // Import your CSS for styling
 
 const projects = [
   {

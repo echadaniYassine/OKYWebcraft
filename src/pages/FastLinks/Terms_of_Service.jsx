@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../../style/components/TermsOfService .css'; // Import CSS for styling
+import '../../style/pages/TermsOfService .css'; // Import CSS for styling
 
 const TermsOfService = () => {
   useEffect(() => {

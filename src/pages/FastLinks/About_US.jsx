@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../style/components/About.css"; // Import CSS
+import "../../style/components/About.css"; // Import CSS
 
 const About_US = () => {
   const [isVisible, setIsVisible] = useState(false);

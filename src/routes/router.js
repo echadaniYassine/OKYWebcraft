@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../pages/home";
 import Header from '../components/Header';
-import About_US from "../pages/About_US";
+import About_US from "../pages/FastLinks/About_US";
 import Benefits from "../pages/Benifits";
 import CategoryWeb from "../pages/categories/WebCategory";
 import CategoryGraphicDesign from "../pages/categories/CategoryGraphicDesign";

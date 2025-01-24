@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import '../../style/components/CategoryWeb.css';
+import '../../style/pages/CategoryWeb.css';
 const projects = [
   {
     id: 1,

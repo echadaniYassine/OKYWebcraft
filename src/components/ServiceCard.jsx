@@ -53,12 +53,12 @@ const Services = () => {
     },
     {
       id: 3,
-      icon: <FaVideo />,
-      img: "/assets/service_3.png",
-      title: "Video Editing & Production",
+      icon: <FaShoppingCart />,
+      img: "/assets/service_2.png",
+      title: "E-Commerce Stores",
       description:
-        "Create stunning videos that captivate your audience and bring your brand to life.",
-      link: "/services/video-editing",
+        "Empower your online store with secure, scalable, and user-friendly e-commerce platforms that drive sales.",
+      link: "/services/ecommerce",
     },
     {
       id: 4,
@@ -87,24 +87,7 @@ const Services = () => {
         "Ensure seamless scalability and high availability with our reliable cloud hosting and management solutions.",
       link: "/services/cloud-hosting",
     },
-    {
-      id: 7,
-      icon: <FaShoppingCart />,
-      img: "/assets/service_2.png",
-      title: "E-Commerce Solutions",
-      description:
-        "Empower your online store with secure, scalable, and user-friendly e-commerce platforms that drive sales.",
-      link: "/services/ecommerce",
-    },
-    {
-      id: 8,
-      icon: <FaServer />,
-      img: "/assets/service_1.png",
-      title: "Headless CMS Development",
-      description:
-        "Leverage headless CMS to deliver flexible, API-driven, and performance-optimized content management solutions.",
-      link: "/services/headless-cms",
-    },
+
   ];
 
 
@@ -119,8 +102,9 @@ const Services = () => {
       <div className="container">
         <h2 className="services-title">Providing Best Services</h2>
         <p className="services-description">
-          Dolorum tempor quis dictum tempore, curabitur commoding sec inventore aute maecenas commodo, nibh.
+          Discover innovative solutions tailored to meet your business needs and drive growth effectively.
         </p>
+
         <div className="service-cards">
           {visibleServices.map((service, index) => (
             <div
