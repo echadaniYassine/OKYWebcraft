@@ -21,6 +21,8 @@
 
 .navbar.navbar-brand {
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .subcategory {
@@ -28,11 +30,12 @@
 }
 
 .subcategory-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  text-align: start;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: #283738;
+  border-bottom: #283738 solid 1px;
 }
 
 
@@ -40,12 +43,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-  justify-content: center;
+  justify-content: start;
 }
 
 .project-card {
   position: relative;
-  width: 350px;
+  width: 300px;
   height: 300px;
   overflow: hidden;
   border-radius: 16px;
@@ -54,7 +57,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: scale(0.9);
-  padding: 30px;
+  padding: 20px 30px;
 }
 
 .project-card.fade-in {

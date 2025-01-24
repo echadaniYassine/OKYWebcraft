@@ -8,7 +8,7 @@ const projects = [
     title: 'Web Application 1',
     images: ['assets/HERO.png', 'assets/project1-2.png', 'assets/project1-3.png'],
     demoLink: '/project/1',
-    description: 'A fully responsive web application showcasing modern design and functionality.',
+    description: 'A fully responsive web application showcasing modern design.',
   },
   {
     id: 2,

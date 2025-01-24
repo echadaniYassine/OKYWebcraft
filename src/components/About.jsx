@@ -31,9 +31,10 @@ const About = () => {
           <h3 className="about-intro">INTRODUCTION ABOUT US</h3>
           <h1 className="about-title">Optimize Social Efforts For Greater Impact.</h1>
           <p className="about-description">
-            Omnis quis sunt quasi aliquet senectus tenetur dolor! Omnis! Corrupti,
-            est arcu, felis, molestiae impedit vel felis eget.
+            We help optimize your social efforts for impactful and meaningful results.
           </p>
+
+
           <div className="about-highlights">
             <div className="highlight-card">
               <span className="checkmark">✔</span>

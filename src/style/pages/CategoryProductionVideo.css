@@ -44,7 +44,7 @@
 
 .category-production__project-card {
   position: relative;
-  width: 350px;
+  width: 300px;
   height: 300px;
   overflow: hidden;
   border-radius: 16px;
@@ -53,7 +53,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 1;
   transform: scale(0.9);
-  padding: 30px;
+  padding: 20px 30px;
 }
 
 .category-production__video-container {

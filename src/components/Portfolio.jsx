@@ -17,8 +17,14 @@ const Portfolio = () => {
     },
     {
       image: 'assets/HERO.png',
-      title: 'Graphic Design',
+      title: 'UI / UX Design',
       description: 'Creative designs for branding and marketing materials.',
+      link: '/category_graphic_design',
+    },
+    {
+      image: 'assets/HERO.png',
+      title: 'Mobile App Development',
+      description: 'Intuitive mobile app design focused on user experience and engagement.',
       link: '/category_graphic_design',
     },
     {
@@ -26,11 +32,6 @@ const Portfolio = () => {
       title: 'Production Video',
       description: 'High-quality video production for corporate and promotional use.',
       link: '/category_production_video',
-    }, {
-      image: 'assets/HERO.png',
-      title: 'Mobile App Design',
-      description: 'Intuitive mobile app design focused on user experience and engagement.',
-      link: '/category_graphic_design',
     },
     // Add more projects as needed
   ];
