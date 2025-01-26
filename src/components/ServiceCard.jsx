@@ -54,7 +54,7 @@ const Services = () => {
     {
       id: 3,
       icon: <FaShoppingCart />,
-      img: "/assets/service_2.png",
+      img: "/assets/service_3.png",
       title: "E-Commerce Stores",
       description:
         "Empower your online store with secure, scalable, and user-friendly e-commerce platforms that drive sales.",

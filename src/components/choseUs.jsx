@@ -38,21 +38,21 @@ const ChoseUs = () => {
                         </Link>
                     </div>
                     <div className="feature feature-card">
-                        <img src="assets/Benefits1.png" alt="Tailored Solutions" className="feature-image" />
+                        <img src="assets/benefits1.png" alt="Tailored Solutions" className="feature-image" />
                         <h3 className="feature-card-title">Tailored Solutions</h3>
                         <p className="feature-card-description">
                             We provide customized strategies that align perfectly with your business objectives, ensuring maximum impact.
                         </p>
                     </div>
                     <div className="feature feature-highlight">
-                        <img src="assets/Benefits2.png" alt="Reliable Expertise" className="feature-image" />
+                        <img src="assets/benefits2.png" alt="Reliable Expertise" className="feature-image" />
                         <h3 className="feature-card-title">Reliable Expertise</h3>
                         <p className="feature-card-description">
                             Backed by years of experience, our team delivers consistent, high-quality results that you can count on.
                         </p>
                     </div>
                     <div className="feature feature-card">
-                        <img src="assets/Benefits3.png" alt="Innovative Strategies" className="feature-image" />
+                        <img src="assets/benefits3.png" alt="Innovative Strategies" className="feature-image" />
                         <h3 className="feature-card-title3">Innovative Strategies</h3>
                         <p className="feature-card-description3">
                             We embrace innovation to provide cutting-edge solutions that keep you ahead of the competition.
