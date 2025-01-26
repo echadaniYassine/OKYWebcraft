@@ -114,7 +114,7 @@ const Footer = () => {
             </li>
             <li className="footer__contact-item">
               <FaMapMarkerAlt className="footer__contact-icon" />
-              <span>123 OKY Street, City, Country</span>
+              <span>Rabat, Morocco</span>
             </li>
           </ul>
         </div>

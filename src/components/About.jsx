@@ -33,8 +33,6 @@ const About = () => {
           <p className="about-description">
             We help optimize your social efforts for impactful and meaningful results.
           </p>
-
-
           <div className="about-highlights">
             <div className="highlight-card">
               <span className="checkmark">✔</span>

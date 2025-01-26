@@ -10,19 +10,19 @@ const Portfolio = () => {
 
   const projects = [
     {
-      image: 'assets/HERO.png',
+      image: 'assets/Realisation1.png',
       title: 'Web Development',
       description: 'A comprehensive web application built with modern technologies.',
       link: '/category_web',
     },
     {
-      image: 'assets/HERO.png',
+      image: 'assets/Realisation2.png',
       title: 'UI / UX Design',
       description: 'Creative designs for branding and marketing materials.',
       link: '/category_graphic_design',
     },
     {
-      image: 'assets/HERO.png',
+      image: 'assets/Realisation3.png',
       title: 'Mobile App Development',
       description: 'Intuitive mobile app design focused on user experience and engagement.',
       link: '/category_graphic_design',

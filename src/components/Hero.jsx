@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="hero-text fade-in-right">
           <h1 className="hero-title">Let`s Work<br />Together to Create<br />Wonders with OKY</h1>
           <h3 className="hero-subtitle typing-animation">Innovative Digital Solutions</h3>
-          <p className="hero-paragraph">At OKY Agency, we create professional and optimized digital solutions tailored to your needs. From modern websites to full-stack applications, our team delivers exceptional results that drive success. </p>
+          <p className="hero-paragraph">At OKY WebCraft, we create professional and optimized digital solutions tailored to your needs. From modern websites to full-stack applications, our team delivers exceptional results that drive success. </p>
           <a href="#services" className="btn hero-btn">Explore Services</a>
 
         </div>
