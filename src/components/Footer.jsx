@@ -84,11 +84,11 @@ const Footer = () => {
           <ul className="footer__links">
             <li className="footer__links__item">
               <FaShieldAlt className="footer__links__icon" />
-              <Link to="/Privacy_Policy" className="footer__links__link">Privacy Policy</Link>
+              <Link to="/privacy-policy" className="footer__links__link">Privacy Policy</Link>
             </li>
             <li className="footer__links__item">
               <FaGavel className="footer__links__icon" />
-              <Link to="/Terms_of_Service" className="footer__links__link">Terms of Service</Link>
+              <Link to="/terms-of-service" className="footer__links__link">Terms of Service</Link>
             </li>
             <li className="footer__links__item">
               <FaBriefcase className="footer__links__icon" />
@@ -96,7 +96,7 @@ const Footer = () => {
             </li>
             <li className="footer__links__item">
               <FaInfoCircle className="footer__links__icon" />
-              <Link to="/about_us" className="footer__links__link">About Us</Link>
+              <Link to="/about-us" className="footer__links__link">About Us</Link>
             </li>
           </ul>
         </div>
@@ -106,7 +106,7 @@ const Footer = () => {
           <ul className="footer__contact-list">
             <li className="footer__contact-item">
               <FaPhone className="footer__contact-icon" />
-              <span>+212 1 71 92 31 03</span>
+              <span>+212 717-923103</span>
             </li>
             <li className="footer__contact-item">
               <FaEnvelope className="footer__contact-icon" />

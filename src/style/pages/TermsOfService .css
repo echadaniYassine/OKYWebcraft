@@ -1,48 +1,83 @@
 .terms-of-service {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.terms-of-service h1 {
+  font-size: 2.2em;
+  background: linear-gradient(90deg, #77a1aa, #2f3c3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.terms-of-service p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1;
+  transition: color 0.3s ease-in-out;
+}
+
+.terms-of-service p:hover {
+  color: #222;
+}
+
+.terms-of-service section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.terms-of-service section:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-of-service h2 {
+  font-size: 1.2em;
+  color: #2f3c3f;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.terms-of-service h2:hover {
+  color: #77a1aa;
+}
+
+.terms-of-service a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.terms-of-service a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .terms-of-service {
+    padding: 15px;
   }
-  
+
   .terms-of-service h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.8em;
   }
-  
-  .terms-of-service p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .terms-of-service section {
-    margin-bottom: 20px;
-  }
-  
+
   .terms-of-service h2 {
-    font-size: 1.5em;
-    color: #0073e6;
-    margin-bottom: 10px;
+    font-size: 1.4em;
   }
-  
-  .terms-of-service a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-  
-  .terms-of-service a:hover {
-    text-decoration: underline;
-  }
-  
-  .terms-of-service ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  .terms-of-service li {
-    margin-bottom: 10px;
-  }
-  
+}

@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../style/components/Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false); // State to manage fixed header
+  const [isNavOpen, setIsNavOpen] = useState(false); // State to manage mobile nav toggle
 
   // Scroll to a section with smooth scroll
   const scrollToSection = (sectionId) => {
@@ -18,14 +19,27 @@ const Header = () => {
     setIsFixed(window.scrollY > 50);
   };
 
+  // Toggle mobile navigation
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
   return (
     <>
       <header className="header-container">
         <div className={`logo-container ${isFixed ? "hide-logo" : ""}`}>
-          <img src="assets/logo.png" className="imageLogo" />
+          <img src="assets/logo.png" className="imageLogo" alt="OKY Logo" />
         </div>
-        <nav className="navigation">
+        
+        {/* Hamburger Menu */}
+        <div className="hamburger" onClick={toggleNav}>
+          <div className={`bar ${isNavOpen ? "active" : ""}`} />
+          <div className={`bar ${isNavOpen ? "active" : ""}`} />
+          <div className={`bar ${isNavOpen ? "active" : ""}`} />
+        </div>
+        
+        {/* Navigation */}
+        <nav className={`navigation ${isNavOpen ? "nav-open" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item">
               <Link to="/" className="nav-link" onClick={() => scrollToSection("home")}>

@@ -151,3 +151,119 @@
     }
   }
   
+  /* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .why-choose-us {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .features {
+    flex-direction: column;  /* Stack the feature cards vertically */
+    justify-content: center;
+    padding: 20px;
+    background-size: contain;  /* Adjust background image for smaller screens */
+    background-position: top center;
+    border-radius: 20px;  /* Less radius for mobile */
+  }
+
+  .feature {
+    width: 100%;  /* Make feature cards take up full width */
+    margin-bottom: 20px;  
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature1 {
+    padding: 15px;
+  }
+
+  .feature1:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .feature-main {
+    text-align: start;
+    padding: 20px;
+  }
+
+  .feature-main .feature-title {
+    font-size: 1.8rem; 
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .feature-main .feature-subtitle {
+    font-size: 1rem; 
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 130px;
+    width: 100%;
+  }
+
+  .feature-main .feature-button {
+    padding: 10px 40px;
+    font-size: 1rem;
+    margin: 20px;
+    margin-bottom: 0;
+    background-color: #77a1aa;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .feature-main .feature-button:hover {
+    background-color: rgb(60, 0, 200);
+    transform: scale(1.05);
+  }
+
+  .feature-card-title {
+    width: 80%;
+    font-size: 1.4rem;
+    margin-right: 35px;
+  }
+
+  .feature-card-description {
+    font-size: 0.9rem;  /* Adjust description font size */
+    width: 80%;
+    margin-right: 25px;
+  }
+
+  .feature-highlight {
+    position: relative;
+    left: -31px;
+    background-color: #77a1aa;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 330px;
+  }
+
+  .feature-highlight .feature-card-title,
+  .feature-highlight .feature-card-description {
+    color: #ffffff;
+  }
+
+  .feature-image {
+    max-width: 80px;  /* Reduce image size */
+    margin-bottom: 10px;
+    margin-right: 25px;
+  }
+
+  .feature-card-title3 {
+    width: 80%;
+    font-size: 1.4rem;
+    margin-right: 35px;
+
+  }
+
+  .feature-card-description3 {
+    font-size:  0.9rem;
+    margin-top: -5px;
+    width: 80%;
+    margin-right: 25px;
+
+  }
+}

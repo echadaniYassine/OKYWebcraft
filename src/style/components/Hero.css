@@ -83,8 +83,6 @@ body, html {
   margin-bottom: 80px;
 }
 
-/* Overlay Text for Hero Image */
-
 
 /* Stats Section */
 .hero-stats {
@@ -150,82 +148,108 @@ body, html {
   animation: typing 3s steps(20) 1s forwards infinite; /* Adjust timing as necessary */
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-stats {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .hero-stat {
-    flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
-  }
-
-  @media (max-width: 480px) {
-    .hero-stat {
-      flex: 1 1 100%; /* Full width for each item on very small screens */
-    }
-  }
-}
-
-
-/* Fade-in animations */
-@keyframes fade-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(-100vw); 
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0); 
-  }
-}
-
-@keyframes fade-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(100vw); 
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0); 
-  }
-}
-
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
+  /* Hero Container */
   .hero-container {
+    margin-top: 30px;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
+    margin: 20px auto;
   }
 
+  /* Hero Text */
   .hero-text {
-    text-align: center;
+    text-align: start;
     margin-right: 0;
   }
 
+  /* Hero Title */
   .hero-title {
-    font-size: 2.5rem;
-  }
+    font-size: 1.8rem;
+    line-height: 1.2;
+    }
 
+  /* Hero Subtitle */
   .hero-subtitle {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #77a1aa;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
+  /* Hero Paragraph */
+  .hero-paragraph {
+    color: grey;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    max-width: 90%;
+    font-weight: 400;
+    font-size: small;
+  }
+
+  /* Hero Button */
   .hero-btn {
-    padding: 12px 25px;
-    font-size: 1.1rem;
+    padding: 6px 15px;
+    font-size: 0.8rem;
+    background-color: #77a1aa;
+    border-radius: 50px;
+    margin: 10px 100px;
+    border-bottom: 4px #2f3c3f solid;
+  }
+
+  .hero-btn:hover {
+    background-color: rgb(68, 138, 114);
+  }
+
+  /* Hero Image */
+  .hero-image img {
+    display: none;
+  }
+
+  /* Hero Stats Section */
+  .hero-stats {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f0f8ff;
+    max-width: 75%;
+    margin-top: 40px;
   }
 
   .hero-stat {
-    margin-bottom: 20px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+    border-bottom: #2f3c3f 2px solid;
+
   }
 
-  .hero-image img {
-    max-width: 90%;
-    height: auto;
+  .hero-stat-icon {
+    width: 50px;
+    margin-bottom: 8px;
+  }
+
+  .hero-stat-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .hero-stat-paragraph {
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  /* Typing Animation */
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 3px solid black; /* Cursor effect */
+    animation: typing 2.5s steps(20) 1s forwards; /* Adjusted timing for better mobile experience */
   }
 }

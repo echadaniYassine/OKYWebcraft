@@ -1,85 +1,156 @@
-import React, { useEffect } from 'react';
-import '../../style/pages/Careers.css'; // Import CSS for styling
+import React, { useEffect, useState } from 'react';
+import '../../style/pages/Careers.css';
 
-const jobListings = [
+const teamMembers  = [
   {
     id: 1,
-    title: 'Frontend Developer',
+    name: 'Echadani Yassine',
+    role: 'Full Stack Developer',
     location: 'Remote',
-    type: 'Full-Time',
-    description: 'We are looking for a talented Frontend Developer to join our team and work on exciting projects using ReactJS.',
-    requirements: [
-      'Proficiency in HTML, CSS, and JavaScript',
-      'Experience with ReactJS and Redux',
-      'Knowledge of responsive design principles',
-    ],
-    applyLink: '/apply/frontend-developer', // Replace with your application link
+    description: 'Yassine is an experienced developer who works on both front-end and back-end technologies. He has a passion for clean code and efficient systems.',
+    image: '/images/john.jpg', // Replace with actual image of John
   },
   {
     id: 2,
-    title: 'Backend Developer',
-    location: 'New York, USA',
-    type: 'Full-Time',
-    description: 'Join our backend development team to build scalable and secure APIs using Node.js and MongoDB.',
-    requirements: [
-      'Proficiency in Node.js and Express.js',
-      'Experience with MongoDB and SQL databases',
-      'Understanding of RESTful APIs and GraphQL',
-    ],
-    applyLink: '/apply/backend-developer',
+    name: 'Loukili Oumaima',
+    role: 'Backend Developer',
+    location: 'Remote',
+    description: 'Oumaima specializes in building scalable and secure APIs using Node.js, Express, and MongoDB.',
+    image: '/images/jane.jpg',
   },
   {
     id: 3,
-    title: 'UI/UX Designer',
-    location: 'On-Site, San Francisco',
-    type: 'Part-Time',
-    description: 'We are looking for a creative UI/UX Designer to enhance user experiences and design stunning interfaces.',
-    requirements: [
-      'Proficiency in design tools like Figma or Adobe XD',
-      'Strong understanding of user-centered design principles',
-      'Portfolio showcasing previous design projects',
-    ],
-    applyLink: '/apply/ui-ux-designer',
+    name: 'Fouganni Khadija',
+    role: 'UI/UX Designer',
+    location: 'Remote',
+    description: 'Khadija is a creative designer who enhances user experiences and creates beautiful, user-friendly interfaces using Photoshop.',
+    image: '/images/alice.jpg', 
   },
 ];
 
+
 const Careers = () => {
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
   useEffect(() => {
-    // Scroll to top when the component is loaded
     window.scrollTo(0, 0);
   }, []);
+
+  const handleApplyClick = () => {
+    setIsFormVisible(true);
+  };
 
   return (
     <div className="careers">
       <header className="careers__header">
-        <h1 className="careers__title">Join Our Team</h1>
+        <h1 className="careers__title">Meet Our Team</h1>
         <p className="careers__subtitle">
-          At [Your Company Name], we believe in building a team of passionate, talented, and innovative individuals. Explore our job openings and find your next career opportunity!
+          At OKY WebCraft, we are a passionate team of developers, designers, and innovators, each with unique skills that contribute to our collective success.
         </p>
       </header>
+
       <section className="careers__listings">
-        {jobListings.map((job) => (
-          <JobCard key={job.id} job={job} />
+        {teamMembers.map((member) => (
+          <TeamMemberCard key={member.id} member={member} />
         ))}
       </section>
+
+      <div className="careers__apply">
+        <button className="careers__apply-button" onClick={handleApplyClick}>
+          Apply Now
+        </button>
+      </div>
+
+      {isFormVisible && <ApplyForm onClose={() => setIsFormVisible(false)} />}
     </div>
   );
 };
 
-const JobCard = ({ job }) => {
+const TeamMemberCard = ({ member }) => {
   return (
     <div className="careers__job-card">
-      <h2 className="careers__job-title">{job.title}</h2>
-      <p className="careers__job-location"><strong>Location:</strong> {job.location}</p>
-      <p className="careers__job-type"><strong>Type:</strong> {job.type}</p>
-      <p className="careers__job-description">{job.description}</p>
-      <h3 className="careers__job-requirements-title">Requirements:</h3>
-      <ul className="careers__job-requirements">
-        {job.requirements.map((requirement, index) => (
-          <li key={index}>{requirement}</li>
-        ))}
-      </ul>
-      <a href={job.applyLink} className="careers__apply-link">Apply Now</a>
+      <img src={member.image} alt={member.name} className="careers__job-image" />
+      <div className="careers__job-content">
+        <h2 className="careers__job-title">{member.name}</h2>
+        <p className="careers__job-role"><strong>Role:</strong> {member.role}</p>
+        <p className="careers__job-location"><strong>Location:</strong> {member.location}</p>
+        <p className="careers__job-description">{member.description}</p>
+      </div>
+    </div>
+  );
+};
+
+const ApplyForm = ({ onClose }) => {
+  const [file, setFile] = useState(null);
+  const [error, setError] = useState('');
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+  });
+
+  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      const fileSizeMB = selectedFile.size / (1024 * 1024);
+      const validFormats = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+
+      if (!validFormats.includes(selectedFile.type)) {
+        setError('Only PDF and DOCX files are allowed.');
+        setFile(null);
+      } else if (fileSizeMB > 10) {
+        setError('File size must be at least 10MB.');
+        setFile(null);
+      } else {
+        setError('');
+        setFile(selectedFile);
+      }
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!file) {
+      setError('Please upload a valid file.');
+      return;
+    }
+
+    // Simulating email submission (Normally, this would be handled by a backend API)
+    const emailData = {
+      to: 'yassinechadani113@gmail.com',
+      subject: `Job Application from ${formData.fullName}`,
+      body: `Name: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}`,
+      attachment: file.name,
+    };
+
+    console.log('Sending email with:', emailData);
+
+    alert('Application sent successfully!');
+    onClose();
+  };
+
+  return (
+    <div className="apply-form-overlay">
+      <div className="apply-form">
+        <h2>Apply Now</h2>
+        <form onSubmit={handleSubmit}>
+          <input type="text" name="fullName" placeholder="Full Name" required onChange={handleInputChange} />
+          <input type="email" name="email" placeholder="Email" required onChange={handleInputChange} />
+          <input type="tel" name="phone" placeholder="Phone Number" required onChange={handleInputChange} />
+
+          <input type="file" accept=".pdf,.docx" required onChange={handleFileChange} />
+          {file && <p>Selected file: {file.name}</p>}
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+
+          <button type="submit">Submit Application</button>
+        </form>
+        <button className="apply-form-close" onClick={onClose}>Close</button>
+      </div>
     </div>
   );
 };

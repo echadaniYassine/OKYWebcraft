@@ -17,14 +17,14 @@ const AppRouter = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about_us" element={<About_US />} />
+                <Route path="/about-us" element={<About_US />} />
                 <Route path="/Benefits" element={<Benefits />} />
-                <Route path="/category_web" element={<CategoryWeb />} />
-                <Route path="/category_graphic_design" element={<CategoryGraphicDesign />} />
-                <Route path="/category_production_video" element={<CategoryProductionVideo />} />
+                <Route path="/category-web" element={<CategoryWeb />} />
+                <Route path="/category-graphic-design" element={<CategoryGraphicDesign />} />
+                <Route path="/category-production-video" element={<CategoryProductionVideo />} />
                 <Route path="/Careers" element={<Careers />} />
-                <Route path="/Terms_of_Service" element={<TermsOfService />} />
-                <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-of-service" element={<TermsOfService />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
             </Routes>
             <Footer/>

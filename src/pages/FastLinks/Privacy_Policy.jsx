@@ -4,7 +4,6 @@ import '../../style/pages/PrivacyPolicy.css'; // Import CSS for styling
 
 const PrivacyPolicy = () => {
   useEffect(() => {
-      // Scroll to top when the component is loaded
       window.scrollTo(0, 0);
     }, []);
   return (
@@ -15,7 +14,7 @@ const PrivacyPolicy = () => {
       <section className="privacy-policy__section">
         <h2 className="privacy-policy__section-title">Introduction</h2>
         <p className="privacy-policy__text">
-          Welcome to [Your Company Name]! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share your information when you use our services.
+          Welcome to OKY WebCraft! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share your information when you use our services.
         </p>
       </section>
       <section className="privacy-policy__section">
@@ -65,7 +64,7 @@ const PrivacyPolicy = () => {
       </section>
       <footer className="privacy-policy__footer">
         <p className="privacy-policy__text">
-          If you have any questions about this Privacy Policy, please contact us at [your email or contact information].
+        If you have any questions about this Privacy Policy, please contact us at our email below ↓
         </p>
       </footer>
     </div>
