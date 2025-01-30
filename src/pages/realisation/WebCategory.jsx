@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import '../../style/pages/CategoryWeb.css';
@@ -27,6 +27,10 @@ const projects = [
 ];
 
 const CategoryWeb = () => {
+  useEffect(() => {
+    // Scroll to top when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
   return (
       <div className="category-web">
         {/* Navbar */}

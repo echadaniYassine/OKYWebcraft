@@ -187,27 +187,84 @@
 
 .apply-form-close:hover {
   background: darkred;
+
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .careers {
     padding: 20px;
+    margin: 20px 10px 10px 10px;
+    text-align: center;
+    background: none;
   }
 
   .careers__title {
     font-size: 2rem;
+    color: #2f3c3f;
+    text-align: start;
+
   }
 
   .careers__subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #2f3c3f;
+    text-align: start;
   }
 
   .careers__listings {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
 
+  .careers__job-card {
+    padding: 1.2rem;
+    text-align: start;
+  }
+
+  .careers__job-title {
+    font-size: 1.2rem;
+  }
+
+  .careers__job-location,
+  .careers__job-type,
+  .careers__job-description {
+    font-size: 0.9rem;
+  }
+
+  .careers__apply {
+    margin-top: 1.5rem;
+  }
+
+  .careers__apply-button {
+    font-size: 1rem;
+    width: 90%;
+    padding: 0.8rem;
+  }
+
+  /* Modal form */
   .apply-form {
     width: 95%;
+    padding: 1.5rem;
+  }
+
+  .apply-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .apply-form input {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .apply-form button {
+    font-size: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+  }
+
+  .apply-form-close {
+    font-size: 1rem;
+    padding: 0.6rem;
+    width: 100%;
   }
 }

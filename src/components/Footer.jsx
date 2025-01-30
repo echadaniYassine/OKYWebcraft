@@ -60,7 +60,7 @@ const Footer = () => {
               { href: "https://facebook.com", icon: <FaFacebookF />, label: "Facebook" },
               { href: "https://instagram.com", icon: <FaInstagram />, label: "Instagram" },
               { href: "https://linkedin.com", icon: <FaLinkedinIn />, label: "LinkedIn" },
-              { href: "https://wa.me/1234567890", icon: <FaWhatsapp />, label: "WhatsApp" },
+              { href: "https://wa.me/+212717923103", icon: <FaWhatsapp />, label: "WhatsApp" },
             ].map((link, index) => (
               <li key={index}>
                 <a

@@ -128,3 +128,71 @@
   margin: 0 1rem 1rem;
 }
 
+@media (max-width: 768px) {
+  .graphic-design-container {
+    padding: 1rem;
+    margin: 2rem 1rem 1rem 1rem;
+
+  }
+
+  .graphic-design-navbar {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  .graphic-design-subcategory {
+    margin: 2rem 0;
+
+  }
+
+  .subcategory-title {
+    font-size: 1.2rem;
+    text-align: start;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .graphic-design-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .graphic-design-card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .graphic-design-carousel {
+    height: 180px; /* Ajustement des images */
+  }
+
+  .graphic-design-carousel-image {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .graphic-design-overlay {
+    opacity: 1; /* Toujours visible sur mobile */
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .graphic-design-demo-icon {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .graphic-design-title {
+    font-size: 1rem;
+    margin: 1rem 3px;
+  }
+
+  .graphic-design-description {
+    font-size: 0.9rem;
+    text-align: start;
+    margin: 1rem 3px;
+  }
+}

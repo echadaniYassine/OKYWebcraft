@@ -70,11 +70,14 @@
 
 @media (max-width: 768px) {
   .terms-of-service {
-    padding: 15px;
+    margin-top: 20px;
+    background: #ffffff;
+
   }
 
   .terms-of-service h1 {
     font-size: 1.8em;
+    text-align: start;
   }
 
   .terms-of-service h2 {

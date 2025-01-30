@@ -243,13 +243,4 @@ body, html {
     color: #555;
   }
 
-  /* Typing Animation */
-  .typing-animation {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    border-right: 3px solid black; /* Cursor effect */
-    animation: typing 2.5s steps(20) 1s forwards; /* Adjusted timing for better mobile experience */
-  }
 }

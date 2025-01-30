@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../../style/pages/CategoryGraphicDesign.css'; // Import your CSS for styling
 
@@ -23,7 +23,12 @@ const projects = [
   },
 ];
 
+
 const CategoryGraphicDesign = () => {
+  useEffect(() => {
+    // Scroll to top when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="graphic-design-container">
       {/* Navigation Bar */}

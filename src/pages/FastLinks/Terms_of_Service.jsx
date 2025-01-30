@@ -53,7 +53,9 @@ const TermsOfService = () => {
 
       <section>
         <h2>9. Contact Us</h2>
-        <p>If you have any questions about these terms, please contact us at [contact@yourapp.com].</p>
+        <p>
+          If you have any questions about these terms, please contact us at <a href="mailto:okywebcraft@gmail.com">okywebcraft@gmail.com</a>.
+        </p>
       </section>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import '../../style/pages/CategoryProductionVideo.css'; // Import your CSS for styling
 
 const projects = [
@@ -23,6 +23,11 @@ const projects = [
 ];
 
 const CategoryProductionVideo = () => {
+  useEffect(() => {
+    // Scroll to top when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="category-production">
       <nav className="category-production__navbar">

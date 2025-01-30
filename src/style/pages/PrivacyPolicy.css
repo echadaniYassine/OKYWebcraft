@@ -97,3 +97,11 @@
 .privacy-policy__footer:hover {
   color: #555;
 }
+@media (max-width: 768px) {
+  .privacy-policy {
+    margin-top: 20px;
+    background: #ffffff;
+  }
+
+  
+}
