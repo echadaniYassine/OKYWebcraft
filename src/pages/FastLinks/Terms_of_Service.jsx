@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import '../../style/pages/TermsOfService .css'; // Import CSS for styling
+import '../../style/pages/FastLinksStyle/TermsOfService .css'; // Import CSS for styling
 
 const TermsOfService = () => {
   useEffect(() => {
-    // Scroll to top when the component is loaded
     window.scrollTo(0, 0);
   }, []);
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../style/pages/Careers.css';
+import '../../style/pages/FastLinksStyle/Careers.css';
 
 const teamMembers  = [
   {

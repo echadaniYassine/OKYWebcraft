@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import '../../style/pages/CategoryWeb.css';
+import '../../style/pages/RealisationStyle/CategoryWeb.css';
 const projects = [
   {
     id: 1,

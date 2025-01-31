@@ -1,6 +1,6 @@
 //privacy policy.jsx
 import React, { useEffect } from 'react';
-import '../../style/pages/PrivacyPolicy.css'; // Import CSS for styling
+import '../../style/pages/FastLinksStyle/PrivacyPolicy.css'; // Import CSS for styling
 
 const PrivacyPolicy = () => {
   useEffect(() => {

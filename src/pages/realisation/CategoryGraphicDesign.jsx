@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
-import '../../style/pages/CategoryGraphicDesign.css'; // Import your CSS for styling
+import '../../style/pages/RealisationStyle/CategoryGraphicDesign.css'; // Import your CSS for styling
 
 const projects = [
   {
