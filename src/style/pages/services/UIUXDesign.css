@@ -1,0 +1,132 @@
+/* General Styling */
+.uiux-section {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(96, 146, 152, 0.8), rgba(40, 55, 56, 1));
+    opacity: 0.5;
+    z-index: 0;
+  }
+  
+  .content-container {
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #77a1aa;
+  }
+  
+  .section-description {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #d1d5db;
+  }
+  
+  /* Design Tools Grid */
+  .technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin-top: 40px;
+    justify-items: center;
+  }
+  
+  .technology-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .technology-card:hover {
+    background-color: rgba(126, 87, 194, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .tech-icon {
+    font-size: 3rem;
+  }
+  
+  .tech-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* UI/UX Tool Colors */
+  .tech-figma { color: #f24e1e; }
+  .tech-adobe { color: #ff2d20; }
+  .tech-sketch { color: #ffb74d; }
+  .tech-illustrator { color: #ff9800; }
+  .tech-photoshop { color: #2a77f4; }
+  
+  /* Benefits Section */
+  .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .benefit-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 500px;
+  }
+  
+  .benefit-card:hover {
+    background-color: rgba(126, 87, 194, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .benefit-icon {
+    font-size: 2.5rem;
+  }
+  
+  .benefit-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .benefit-description {
+    font-size: 1rem;
+    color: #d1d5db;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #5e35b1;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #7e57c2;
+    box-shadow: 0px 5px 15px rgba(126, 87, 194, 0.5);
+  }
+  

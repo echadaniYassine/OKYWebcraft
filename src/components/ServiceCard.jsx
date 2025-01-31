@@ -41,7 +41,7 @@ const Services = () => {
       title: "Web & Mobile Development",
       description:
         "We build responsive websites and high-performance mobile applications tailored to your business needs.",
-      link: "/services-web-mobile-development", // Link to the service page
+      link: "/services-web-&-mobile-development", // Link to the service page
     },
     {
       id: 2,

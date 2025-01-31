@@ -1,5 +1,5 @@
 .services {
-  padding: 60px 20px;
+  padding: 60px 50px;
   text-align: center;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
@@ -172,65 +172,69 @@
 }
 
 @media (max-width: 768px) {
-  .service-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Display two cards per row */
-    gap: 20px; /* Adjust the gap between the cards */
-  }
-
   .service-card {
-    width: auto; /* Allow the card to adapt to grid layout */
+    width: 100%;
     flex-direction: column;
-    margin-bottom: 20px; /* Ensure some space between the cards */
-  }
-  .service-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background: #ffffff;
-    border-right: none;
+    align-items: center;
+    text-align: start;
+    padding: 20px;
   }
 
   .service-icon-container {
-    margin-bottom: 15px;
-    font-size: 4rem; /* Adjust the icon size for mobile */
+    text-align: start;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .service-image {
+    max-width: 150px;
+    order: -1;
+    /* Moves the image to the top */
   }
 
   .service-text {
-    text-align: start; /* Center the text on mobile */
+    text-align: start;
   }
 
   .service-text h3 {
     font-size: 1rem;
+    margin-top: 10px;
   }
 
   .service-text p {
-    font-size: 0.85rem; /* Adjust the font size of the description */
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .service-card:hover {
+    border-bottom: 5px solid #1f3034;
+    /* Hover effect changed to bottom */
+    border-right: none;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+    text-align: start;
+  }
+
+  .services-description {
+    text-align: start;
+    font-size: 1rem;
   }
 
   .view-all-btn {
-    padding: 10px 40px;
-    font-size: 1rem;
-    margin: 20px auto;
-    margin-bottom: 0;
+    display: inline-block;
     background-color: #77a1aa;
-    border-radius: 50px;
+    color: white;
     text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-align: center;
-  }
-  .services-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    text-align: start;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    color: #283738;
-  }
-  
-  .services-description {
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    border-bottom: 4px #2f3c3f solid;
+    padding: 8px 20px;
     font-size: 0.9rem;
-    color: #7f8c8d;
-    margin-bottom: 40px;
-    text-align: start;
+    margin: 20px auto;
+    width: 200px;
   }
+
+
 }

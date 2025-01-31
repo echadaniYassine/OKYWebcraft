@@ -5,6 +5,7 @@
     margin-bottom: 50px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
   }
   
   .features {
@@ -155,7 +156,7 @@
 @media (max-width: 768px) {
   .why-choose-us {
     margin-bottom: 30px;
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
   .features {

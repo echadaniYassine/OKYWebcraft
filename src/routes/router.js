@@ -12,6 +12,12 @@ import Careers from "../pages/FastLinks/Careers";
 import TermsOfService from "../pages/FastLinks/Terms_of_Service";
 import PrivacyPolicy from "../pages/FastLinks/Privacy_Policy";
 import EcommerceServices from "../pages/services/EcommerceServices"; // Double-check the path here
+import WebMobileDevelopment from "../pages/services/WebMobileDevelopment ";
+import SocialMediaManagement from "../pages/services/SocialMediaManagement";
+import CloudServices from "../pages/services/CloudServices ";
+import DigitalAdvertising from "../pages/services/DigitalAdvertising";
+import UIUXDesign from "../pages/services/UIUXDesign";
+//import UIUXDesign from "../pages/services/UIUXDesign";
 
 const AppRouter = () => {
   return (
@@ -28,6 +34,16 @@ const AppRouter = () => {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/services-ecommerce" element={<EcommerceServices />} />
+        <Route path="/services-web-&-mobile-development" element={<WebMobileDevelopment />} />
+        <Route path="/services-social-media-management" element={<SocialMediaManagement />} />
+        <Route path="/services-cloud-hosting" element={<CloudServices />} />
+        <Route path="/services-digital-advertising" element={<DigitalAdvertising />} />
+        <Route path="/services-ui-ux-design" element={<UIUXDesign />} />
+
+
+
+
+
       </Routes>
       <Footer />
     </Router>

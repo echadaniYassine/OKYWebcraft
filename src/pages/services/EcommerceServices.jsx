@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import '../../style/pages/services/Services.css';
 import { FaWordpress, FaShopify } from 'react-icons/fa';  // Import the icons
 
 export default function EcommerceServices() {
+   useEffect(() => {
+            // Scroll to top when the component is loaded
+            window.scrollTo(0, 0);
+          }, []); 
   return (
     <div className="ecommerce-services">
       <header className="ecommerce-services__header">

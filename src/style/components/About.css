@@ -1,6 +1,6 @@
 .about {
   background-color: #fff;
-  padding: 50px 20px;
+  padding: 50px 50px;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   opacity: 0;
   transform: translateY(50px);
@@ -12,7 +12,7 @@
 }
 
 .containerAbout {
-  max-width: 1250px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@
 
 .about-image {
   flex: 1;
-  text-align: center;
+  text-align: end;
 }
 
 .about-img {
@@ -126,68 +126,64 @@
   max-width: 500px;
   border-radius: 20px 20px 20px 0;
 }
-/* Mobile Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .about{
-    margin-top: 1rem;
+  .about {
+    padding: 20px;
+    margin-top: 20px;
   }
+
   .containerAbout {
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
+    text-align: start;
     gap: 30px;
   }
 
   .about-text {
-    text-align: start; 
+    text-align: start;
   }
 
   .about-title {
-    font-size: 1.8rem;  /* Adjust font size for mobile */
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
   }
 
   .about-description {
-    font-size: small;
-    margin-bottom: 35px;
-    font-style: normal;  /* Remove italic style for better readability on mobile */
+    font-size: 0.9rem;
+    max-width: 100%;
   }
 
   .about-highlights {
-    flex-direction: column;  /* Stack the highlight cards vertically */
     align-items: center;
     gap: 15px;
-    margin-bottom: 20px;
   }
 
   .highlight-card {
-    width: 100%;  /* Make cards occupy more space */
-    justify-content: center;  /* Align items centrally */
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
   }
 
   .highlight-title {
-    font-size: 1rem;  /* Adjust title size */
+    font-size: 1.1rem;
   }
 
   .highlight-description {
-    font-size: 0.89rem;  /* Adjust description font size */
+    font-size: 0.9rem;
   }
 
   .about-btn {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-    background-color: #77a1aa;
-    border-radius: 50px;
-    margin: 25px 100px;
-    border-bottom: 4px #2f3c3f solid;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 10px 90px;
   }
 
   .about-image {
     display: none;
-  }
-
-  .about-img {
-    width: 80%;  /* Reduce image size for smaller screens */
-    max-width: 400px;  /* Limit max width for a better fit */
-    border-radius: 10px;  /* Add rounded corners for mobile */
   }
 }

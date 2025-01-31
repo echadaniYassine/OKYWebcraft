@@ -1,6 +1,6 @@
 /* Root container */
 .ecommerce-services {
-  padding: 40px;
+  padding: 30px 50px;
   background-color: #f7f7f7;
   font-family: 'Arial', sans-serif;
 }
@@ -158,4 +158,110 @@
 .ecommerce-services__cta-button:hover {
   background-color: #609298;
   transform: scale(1.05);
+}
+/* Responsive Styles */
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .ecommerce-services {
+    padding: 20px;
+    margin-top:20px ;
+  }
+
+  .ecommerce-services__title {
+    font-size: 2rem;
+  }
+
+  .ecommerce-services__subtitle {
+    font-size: 1rem;
+    margin-top: 10px;
+    max-width: 90%;
+  }
+
+  .ecommerce-services__content {
+    grid-template-columns: 1fr; /* Stacks platform sections vertically */
+    gap: 20px;
+  }
+
+  .ecommerce-services__platform {
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .ecommerce-services__platform-title {
+    font-size: 1.6rem;
+  }
+
+  .ecommerce-services__platform-description {
+    font-size: 1rem;
+  }
+
+  .ecommerce-services__platform-benefits li {
+    font-size: 0.9rem;
+  }
+
+  .ecommerce-services__process-title {
+    font-size: 2rem;
+  }
+
+  .ecommerce-services__process-description {
+    font-size: 1.1rem;
+  }
+
+  .ecommerce-services__cta h3 {
+    font-size: 1.8rem;
+  }
+
+  .ecommerce-services__cta p {
+    font-size: 1rem;
+  }
+
+  .ecommerce-services__cta-button {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .ecommerce-services__title {
+    font-size: 1.6rem;
+  }
+
+  .ecommerce-services__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .ecommerce-services__platform-title {
+    font-size: 1.4rem;
+  }
+
+  .ecommerce-services__platform-description {
+    font-size: 0.9rem;
+  }
+
+  .ecommerce-services__platform-benefits li {
+    font-size: 0.8rem;
+  }
+
+  .ecommerce-services__process-title {
+    font-size: 1.8rem;
+  }
+
+  .ecommerce-services__process-description {
+    font-size: 1rem;
+  }
+
+  .ecommerce-services__cta h3 {
+    font-size: 1.6rem;
+  }
+
+  .ecommerce-services__cta p {
+    font-size: 0.9rem;
+  }
+
+  .ecommerce-services__cta-button {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
 }
