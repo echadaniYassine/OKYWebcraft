@@ -5,23 +5,26 @@ import '../../style/pages/CategoryWeb.css';
 const projects = [
   {
     id: 1,
+    subcategory: "application",
     title: 'Web Application 1',
-    images: ['assets/HERO.png', 'assets/project1-2.png', 'assets/project1-3.png'],
+    image: 'assets/HERO.png',
     demoLink: '/project/1',
     description: 'A fully responsive web application showcasing modern design.',
   },
   {
     id: 2,
-    title: 'Web Application 2',
-    images: ['assets/project2-1.png', 'assets/project2-2.png', 'assets/project2-3.png'],
-    demoLink: '/project/2',
+    subcategory: "application",
+    title: 'Trendify Store',
+    image: 'assets/app2.png',
+    demoLink: 'https://trendify-frontend-nine.vercel.app/login',
     description: 'This application is built with robust features for optimal performance.',
   },
   {
     id: 3,
-    title: 'Landing Page 1',
-    images: ['assets/landing1-1.png', 'assets/landing1-2.png', 'assets/landing1-3.png'],
-    demoLink: '/project/3',
+    subcategory: "landing",
+    title: 'Asian presentetion',
+    image: 'assets/landing1.png',
+    demoLink: 'https://asian-taste-one.vercel.app/',
     description: 'A sleek and engaging landing page designed to captivate your audience.',
   },
 ];
@@ -31,6 +34,9 @@ const CategoryWeb = () => {
     // Scroll to top when the component is loaded
     window.scrollTo(0, 0);
   }, []);
+  const filterSubcategory = "application"; // Change this to filter different subcategories
+  const filterSubcategorylanding = "landing"; // Change this to filter different subcategories
+
   return (
       <div className="category-web">
         {/* Navbar */}
@@ -42,22 +48,22 @@ const CategoryWeb = () => {
         <section className="subcategory">
           <h2 className="subcategory-title">Web Applications</h2>
           <div className="project-cards">
-            {projects
-              .filter((project) => project.title.includes('Web Application'))
-              .map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
+          {projects
+            .filter((project) => project.subcategory === filterSubcategory)
+            .map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </section>
 
         <section className="subcategory">
           <h2 className="subcategory-title">Landing Pages</h2>
           <div className="project-cards">
-            {projects
-              .filter((project) => project.title.includes('Landing Page'))
-              .map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
+          {projects
+            .filter((project) => project.subcategory === filterSubcategorylanding)
+            .map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </section>
       </div>
@@ -73,18 +79,7 @@ const ProjectCard = ({ project }) => {
     <div ref={ref} className={`project-card ${inView ? 'fade-in' : ''}`}>
       {/* Carousel */}
       <div className="carousel">
-        {project.images && project.images.length > 0 ? (
-          project.images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Image ${index + 1} of ${project.title}`}
-              className="carousel-image"
-            />
-          ))
-        ) : (
-          <div className="no-image">No Images Available</div>
-        )}
+        <img src={project.image} alt={project.title} className="carousel-image"/>
         <div className="overlay">
           <Link to={project.demoLink} className="live-demo-icon">
             🔗 Live Demo

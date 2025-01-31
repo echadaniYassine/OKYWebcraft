@@ -1,0 +1,161 @@
+/* Root container */
+.ecommerce-services {
+  padding: 40px;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.ecommerce-services__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ecommerce-services__title {
+  font-size: 2.8rem;
+  color: #283738;
+  font-weight: bold;
+}
+
+.ecommerce-services__subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Content grid */
+.ecommerce-services__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Platform section */
+.ecommerce-services__platform {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ecommerce-services__platform:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ecommerce-services__platform-title {
+  font-size: 2rem;
+  color: #283738;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ecommerce-services__platform-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.ecommerce-services__platform-benefits {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.ecommerce-services__platform-benefits li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ecommerce-services__platform-benefits li::before {
+  content: '✔️';
+  color: #77a1aa;
+  margin-right: 10px;
+}
+
+/* Process Section */
+.ecommerce-services__process {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ecommerce-services__process-title {
+  font-size: 2.5rem;
+  color: #283738;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ecommerce-services__process-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ecommerce-services__process-steps {
+  margin-top: 30px;
+}
+
+.ecommerce-services__process-step {
+  margin-bottom: 20px;
+}
+
+.ecommerce-services__process-step h3 {
+  font-size: 1.8rem;
+  color: #77a1aa;
+}
+
+.ecommerce-services__process-step p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Call-to-action Section */
+.ecommerce-services__cta {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #283738;
+  padding: 30px;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.ecommerce-services__cta h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.ecommerce-services__cta p {
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  margin-top: 10px;
+}
+
+.ecommerce-services__cta-button {
+  background-color: #77a1aa;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.ecommerce-services__cta-button:hover {
+  background-color: #609298;
+  transform: scale(1.05);
+}

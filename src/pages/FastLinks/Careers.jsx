@@ -13,9 +13,9 @@ const teamMembers  = [
   {
     id: 2,
     name: 'Loukili Oumaima',
-    role: 'Backend Developer',
+    role: 'Frontend Developer',
     location: 'Remote',
-    description: 'Oumaima specializes in building scalable and secure APIs using Node.js, Express, and MongoDB.',
+    description: 'Oumaima Proficient in creating high-quality user interfaces using HTML5, CSS3, and modern JavaScript frameworks like React and Angular.',
     image: '/images/jane.jpg',
   },
   {

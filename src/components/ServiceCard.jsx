@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FaBullhorn, FaLaptopCode, FaShareAlt, FaVideo, FaPaintBrush, FaCloud, FaShoppingCart, FaServer, FaAngleDown, FaAngleUp, FaAngleRight } from 'react-icons/fa';
+import { FaBullhorn, FaLaptopCode, FaShareAlt, FaPaintBrush, FaCloud, FaShoppingCart, FaServer, FaAngleDown, FaAngleUp, FaAngleRight } from 'react-icons/fa';
 import '../style/components/ServiceCard.css';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
@@ -40,7 +41,7 @@ const Services = () => {
       title: "Web & Mobile Development",
       description:
         "We build responsive websites and high-performance mobile applications tailored to your business needs.",
-      link: "/services/web-mobile-development", // Link to the service page
+      link: "/services-web-mobile-development", // Link to the service page
     },
     {
       id: 2,
@@ -49,7 +50,7 @@ const Services = () => {
       title: "Social Media Management",
       description:
         "Boost your online presence with our expert strategies for managing and growing your social media channels.",
-      link: "/services/social-media-management",
+      link: "/services-social-media-management",
     },
     {
       id: 3,
@@ -58,8 +59,9 @@ const Services = () => {
       title: "E-Commerce Stores",
       description:
         "Empower your online store with secure, scalable, and user-friendly e-commerce platforms that drive sales.",
-      link: "/services/ecommerce",
-    },
+      link: "/services-ecommerce", 
+    }
+    ,
     {
       id: 4,
       icon: <FaPaintBrush />,
@@ -67,7 +69,7 @@ const Services = () => {
       title: "UI / UX Design",
       description:
         "Deliver visually compelling designs that resonate with your target audience and reinforce your brand identity.",
-      link: "/services/ui-ux-design",
+      link: "/services-ui-ux-design",
     },
     {
       id: 5,
@@ -76,7 +78,7 @@ const Services = () => {
       title: "Digital Advertising",
       description:
         "Reach the right audience with targeted campaigns across multiple platforms to maximize your ROI.",
-      link: "/services/digital-advertising",
+      link: "/services-digital-advertising",
     },
     {
       id: 6,
@@ -85,7 +87,7 @@ const Services = () => {
       title: "Cloud Services & Hosting",
       description:
         "Ensure seamless scalability and high availability with our reliable cloud hosting and management solutions.",
-      link: "/services/cloud-hosting",
+      link: "/services-cloud-hosting",
     },
 
   ];
@@ -119,9 +121,9 @@ const Services = () => {
               <div className="service-text">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <a href={service.link} className="explore-more">
-                  Explore More <FaAngleRight /> {/* Icon for the link */}
-                </a>
+                <Link to={service.link} className="explore-more">
+                  Explore More <FaAngleRight />
+                </Link>
               </div>
             </div>
           ))}

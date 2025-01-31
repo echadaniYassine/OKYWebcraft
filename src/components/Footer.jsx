@@ -57,9 +57,9 @@ const Footer = () => {
           </form>
           <ul className="footer__social-links">
             {[
-              { href: "https://facebook.com", icon: <FaFacebookF />, label: "Facebook" },
-              { href: "https://instagram.com", icon: <FaInstagram />, label: "Instagram" },
-              { href: "https://linkedin.com", icon: <FaLinkedinIn />, label: "LinkedIn" },
+              { href: "https://www.facebook.com/profile.php?id=61572773007779#", icon: <FaFacebookF />, label: "Facebook" },
+              { href: "https://www.instagram.com/oky_webcraft/", icon: <FaInstagram />, label: "Instagram" },
+              { href: "https://www.linkedin.com/company/106179526", icon: <FaLinkedinIn />, label: "LinkedIn" },
               { href: "https://wa.me/+212717923103", icon: <FaWhatsapp />, label: "WhatsApp" },
             ].map((link, index) => (
               <li key={index}>
