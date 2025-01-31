@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 0 50px;
-  background-color: transparent; /* Optional, adjust as needed */
+  background-color: transparent;
+  /* Optional, adjust as needed */
 }
 
 .hero-container {
@@ -14,7 +15,8 @@
   justify-content: space-between;
   max-width: 1300px;
   gap: 40px;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto;
+  /* Center the container */
   width: 100%;
 }
 
@@ -85,7 +87,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
   background-color: #f0f8ff;
   max-width: 950px;
   border-radius: 15px;
@@ -101,7 +103,8 @@
 
 .hero-stat {
   text-align: center;
-  flex: 1; /* Ensure all items share equal width */
+  flex: 1;
+  /* Ensure all items share equal width */
   padding: 10px;
 }
 
@@ -127,9 +130,11 @@
   0% {
     width: 0;
   }
+
   50% {
     width: 100%;
   }
+
   100% {
     width: 100%;
     border-right: 2px solid transparent;
@@ -141,25 +146,27 @@
   overflow: hidden;
   white-space: nowrap;
   width: 0;
-  border-right: 3px solid black; /* Cursor effect */
-  animation: typing 3s steps(20) 1s forwards infinite; /* Adjust timing as necessary */
+  border-right: 3px solid black;
+  /* Cursor effect */
+  animation: typing 3s steps(20) 1s forwards infinite;
+  /* Adjust timing as necessary */
 }
 
 /* Fix for Mobile Screens */
 @media (max-width: 768px) {
   .hero {
-    padding: 0; 
+    padding: 0;
     margin-top: 20px;
-    width: 100%;
+    width: 97%;
   }
 
   .hero-container {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 0 5px; 
-    max-width: 100%; 
+    padding: 0 5px;
+    max-width: 100%;
   }
 
   .hero-text {
@@ -195,11 +202,13 @@
 
   /* Stats Section */
   .hero-stats {
-    flex-direction: column; /* Stack stats vertically */
+    flex-direction: column;
+    /* Stack stats vertically */
     align-items: center;
     width: 100%;
-    max-width: 78%; /* Prevents overflow */
-    padding: 15px; 
+    max-width: 78%;
+    /* Prevents overflow */
+    padding: 15px;
     gap: 20px;
   }
 
@@ -219,5 +228,9 @@
 
   .hero-stat-paragraph {
     font-size: 1rem;
+  }
+
+  .typing-animation {
+    width: 1%;
   }
 }

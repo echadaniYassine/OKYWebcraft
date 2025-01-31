@@ -38,12 +38,14 @@
 .technologies-grid-unique {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  margin-top: 40px;
   justify-items: center;
+  max-width: 1720px;
+  margin: 40px auto;
 }
 
 .technology-card-unique {
   background-color: #222;
+  width: 70%;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -127,43 +129,74 @@
 }
 
 .cta-button-unique:hover {
-  background-color: #4285F4;
+  background-color: #7e57c2;
   box-shadow: 0px 5px 15px rgba(66, 133, 244, 0.5);
 }
 
-/* Media Queries for 768px */
 @media (max-width: 768px) {
-  /* General Styling */
   .cloud-section-unique {
     padding: 20px;
-    margin: 20px 10px 10px 10px;
+    margin-top: 30px;
+  }
+
+  .section-title-unique {
+    font-size: 2rem;
+  }
+
+  .section-description-unique {
+    font-size: 1rem;
   }
 
   .technologies-grid-unique {
-    /* Adjustments for mobile view */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 2 columns for better spacing */
     gap: 15px;
   }
 
   .technology-card-unique {
     padding: 15px;
+    width: 80%;
+    background-color: #283738;     
   }
 
+  .tech-icon-unique {
+    font-size: 2.5rem;
+  }
+
+  .tech-name-unique {
+    font-size: 0.95rem;
+  }
+
+  /* Adjusting the Benefits Section */
   .benefits-container-unique {
     flex-direction: column;
+    align-items: center;
     gap: 15px;
   }
 
   .benefit-card-unique {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding: 15px;
+    max-width: 100%;
   }
 
+  .benefit-icon-unique {
+    font-size: 2rem;
+  }
+
+  .benefit-title-unique {
+    font-size: 1.1rem;
+  }
+
+  .benefit-description-unique {
+    font-size: 0.95rem;
+  }
+
+  /* CTA Button */
   .cta-button-unique {
-    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
     font-size: 1rem;
-    border-radius: 25px;
+    padding: 10px;
   }
 }
-

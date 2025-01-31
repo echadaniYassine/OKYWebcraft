@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import "../../style/pages/services/UIUXDesign.css";
 
 export default function UIUXDesign() {
-   useEffect(() => {
-                // Scroll to top when the component is loaded
-                window.scrollTo(0, 0);
-              }, []); 
+  useEffect(() => {
+    // Scroll to top when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="uiux-section">
       <div className="background-overlay"></div>
@@ -30,7 +30,7 @@ export default function UIUXDesign() {
 
         {/* Design Tools - Fixed Photoshop icon */}
         <div className="technologies-grid">
-          {[ 
+          {[
             { name: "Figma", icon: <MdDesignServices />, class: "tech-figma" },
             { name: "Adobe XD", icon: <SiAdobexd />, class: "tech-adobe" },
             { name: "Sketch", icon: <SiSketch />, class: "tech-sketch" },

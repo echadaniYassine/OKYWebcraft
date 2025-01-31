@@ -58,7 +58,6 @@ const About_US = () => {
               </div>
             </div>
           </div>
-          <Link to={"/About_US"}><button className="about-btn">MORE ABOUT US</button></Link>
         </div>
 
         {/* Right: Image Content */}
