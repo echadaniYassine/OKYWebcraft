@@ -12,7 +12,7 @@ const TermsOfService = () => {
 
       <section>
         <h2>1. Introduction</h2>
-        <p>Welcome to [Your App Name]. By using our services, you agree to the following terms and conditions.</p>
+        <p>Welcome to OKY WebCraft. By using our services, you agree to the following terms and conditions.</p>
       </section>
 
       <section>
