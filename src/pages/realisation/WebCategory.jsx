@@ -90,7 +90,7 @@ const ProjectCard = ({ project }) => {
       <div className="carousel">
         <img src={project.image} alt={project.title} className="carousel-image" />
         <div className="overlay">
-          <Link to={project.demoLink} className="live-demo-icon" target="blank">
+          <Link to={project.demoLink} className="live-demo-icon" target="_blank">
             🔗 Live Demo
           </Link>
         </div>

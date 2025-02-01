@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../style/components/Footer.css';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -17,7 +20,7 @@ import {
 } from 'react-icons/fa';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -26,8 +29,15 @@ const Footer = () => {
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (email) {
-      alert(`Subscribed with: ${email}`);
-      setEmail('');
+      toast.success("Subscribed successfully!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+      });
+      setEmail("");
     }
   };
 
@@ -50,11 +60,13 @@ const Footer = () => {
               onChange={handleEmailChange}
               placeholder="Your email"
               className="footer__short-subscription__input"
+              required
             />
             <button type="submit" className="footer__short-subscription__button">
               Subscribe
             </button>
           </form>
+          <ToastContainer />
           <ul className="footer__social-links">
             {[
               { href: "https://www.facebook.com/profile.php?id=61572773007779#", icon: <FaFacebookF />, label: "Facebook" },
@@ -121,8 +133,8 @@ const Footer = () => {
 
       </div>
       <div className="footer__copyright">
-      <p>© 2025 OKY WebCraft. All rights reserved.</p>
-    </div>
+        <p>© 2025 OKY WebCraft. All rights reserved.</p>
+      </div>
     </footer>
   );
 };
