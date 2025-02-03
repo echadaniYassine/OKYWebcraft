@@ -6,7 +6,7 @@ import About_US from "./pages/FastLinks/About_US";
 import Benefits from "./pages/Benifits";
 import CategoryWeb from "./pages/realisation/WebCategory";
 import CategoryGraphicDesign from "./pages/realisation/CategoryGraphicDesign";
-import CategoryProductionVideo from "./pages/realisation/CategoryProductionVideo";
+import CategoryAppMobill from "./pages/realisation/CategoryAppMobill";
 import Footer from "./components/Footer";
 import Careers from "./pages/FastLinks/Careers";
 import TermsOfService from "./pages/FastLinks/Terms_of_Service";
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/Benefits" element={<Benefits />} />
         <Route path="/category-web" element={<CategoryWeb />} />
         <Route path="/category-graphic-design" element={<CategoryGraphicDesign />} />
-        <Route path="/category-production-video" element={<CategoryProductionVideo />} />
+        <Route path="/category-app-mobile" element={<CategoryAppMobill />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

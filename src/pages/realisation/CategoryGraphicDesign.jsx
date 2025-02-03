@@ -2,33 +2,78 @@ import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../../style/pages/RealisationStyle/CategoryGraphicDesign.css'; // Import your CSS for styling
 
+// Corrected Projects Data Structure
 const projects = [
   {
     id: 1,
+    category: "logoDesign",
     title: 'Logo Design 1',
-    images: ['assets/logo1-1.png', 'assets/logo1-2.png', 'assets/logo1-3.png'],
+    images: ['assets/logo1.jpg'],
     description: 'Creative and unique logo design to enhance your brand identity.',
   },
   {
     id: 2,
-    title: 'Poster Design 1',
-    images: ['assets/poster1-1.png', 'assets/poster1-2.png', 'assets/poster1-3.png'],
-    description: 'High-quality posters tailored to your needs.',
+    category: "logoDesign",
+    title: 'Logo Design 2',
+    images: ['assets/logo2.jpg'],
+    description: 'Creative and unique logo design to enhance your brand identity.',
   },
   {
     id: 3,
+    category: "logoDesign",
+    title: 'Logo Design 3',
+    images: ['assets/logo3.jpg'],
+    description: 'Creative and unique logo design to enhance your brand identity.',
+  },
+  {
+    id: 4,
+    category: "posterDesign",
+    title: 'Poster Design 1',
+    images: ['assets/poster1.jpg'],
+    description: 'High-quality posters tailored to your needs.',
+  },
+  {
+    id: 5,
+    category: "posterDesign",
+    title: 'Poster Design 2',
+    images: ['assets/poster2.jpg'],
+    description: 'High-quality posters tailored to your needs.',
+  },
+  {
+    id: 6,
+    category: "posterDesign",
+    title: 'Poster Design 3',
+    images: ['assets/poster3.jpg'],
+    description: 'High-quality posters tailored to your needs.',
+  },
+  {
+    id: 7,
+    category: "brandIdentity",
     title: 'Brand Identity 1',
-    images: ['assets/brand1-1.png', 'assets/brand1-2.png', 'assets/brand1-3.png'],
+    images: ['assets/brand1.jpg'],
     description: 'Comprehensive brand identity solutions for your business.',
   },
+  {
+    id: 8,
+    category: "brandIdentity",
+    title: 'Brand Identity 2',
+    images: ['assets/brand2.jpg'],
+    description: 'Comprehensive brand identity solutions for your business.',
+  },
+  {
+    id: 9,
+    category: "brandIdentity",
+    title: 'Brand Identity 3',
+    images: ['assets/brand3.jpg'],
+    description: 'Comprehensive brand identity solutions for your business.',
+  }
 ];
-
 
 const CategoryGraphicDesign = () => {
   useEffect(() => {
-    // Scroll to top when the component is loaded
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="graphic-design-container">
       {/* Navigation Bar */}
@@ -41,7 +86,7 @@ const CategoryGraphicDesign = () => {
         <h2 className="subcategory-title">Logo Designs</h2>
         <div className="graphic-design-cards">
           {projects
-            .filter((project) => project.title.includes('Logo Design'))
+            .filter((project) => project.category === 'logoDesign')
             .map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
@@ -52,7 +97,7 @@ const CategoryGraphicDesign = () => {
         <h2 className="subcategory-title">Poster Designs</h2>
         <div className="graphic-design-cards">
           {projects
-            .filter((project) => project.title.includes('Poster Design'))
+            .filter((project) => project.category === 'posterDesign')
             .map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
@@ -63,7 +108,7 @@ const CategoryGraphicDesign = () => {
         <h2 className="subcategory-title">Brand Identity</h2>
         <div className="graphic-design-cards">
           {projects
-            .filter((project) => project.title.includes('Brand Identity'))
+            .filter((project) => project.category === 'brandIdentity')
             .map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

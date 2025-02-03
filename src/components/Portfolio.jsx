@@ -25,7 +25,7 @@ const Portfolio = () => {
       image: 'assets/Realisation3.png',
       title: 'Mobile App Development',
       description: 'Intuitive mobile app design focused on user experience and engagement.',
-      link: '/category-graphic-design',
+      link: '/category-app-mobile',
     }
     // Add more projects as needed
   ];

@@ -71,11 +71,11 @@
 .graphic-design-carousel {
   position: relative;
   width: 100%;
-  height: 200px;
   overflow: hidden;
 }
 
 .graphic-design-carousel-image {
+  border-radius: 12px;
   width: 100%;
   height: 100%;
   object-fit: cover;
