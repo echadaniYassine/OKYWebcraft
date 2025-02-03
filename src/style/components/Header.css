@@ -225,7 +225,7 @@
   }
 
   .numPhone {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
   }
 
@@ -253,12 +253,12 @@
   .imageLogoMobill {
     border-bottom: aliceblue 2px solid;
     display: block;
-    width: 130px;
+    width: 100px;
     display: block;
     cursor: pointer;
     position: absolute;
-    left: 33px;
-    top: 460px;
+    left: 42px;
+    top: 480px;
     transition: transform 0.3s ease;
   }
 }

@@ -39,7 +39,7 @@ const About = () => {
               <div>
                 <h4 className="highlight-title">Target Oriented Work</h4>
                 <p className="highlight-description">
-                  Laboriosam tempus eu imperdiet pedes.
+                  Focused on achieving clear goals efficiently.
                 </p>
               </div>
             </div>
@@ -48,8 +48,7 @@ const About = () => {
               <div>
                 <h4 className="highlight-title">Project Success Guarantee</h4>
                 <p className="highlight-description">
-                  Laboriosam tempus eu imperdiet pedes.
-                </p>
+                  Ensuring quality results and meeting your goals.                </p>
               </div>
             </div>
           </div>
