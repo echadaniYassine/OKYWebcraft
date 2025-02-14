@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Import the hook for translations
 import '../../style/pages/FastLinksStyle/Careers.css';
 
 const teamMembers  = [
@@ -28,9 +29,9 @@ const teamMembers  = [
   },
 ];
 
-
 const Careers = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
+  const { t } = useTranslation(); // Initialize the translation function
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,9 +44,9 @@ const Careers = () => {
   return (
     <div className="careers">
       <header className="careers__header">
-        <h1 className="careers__title">Meet Our Team</h1>
+        <h1 className="careers__title">{t('careers.title')}</h1>
         <p className="careers__subtitle">
-          At OKY WebCraft, we are a passionate team of developers, designers, and innovators, each with unique skills that contribute to our collective success.
+          {t('careers.subtitle')}
         </p>
       </header>
 
@@ -57,7 +58,7 @@ const Careers = () => {
 
       <div className="careers__apply">
         <button className="careers__apply-button" onClick={handleApplyClick}>
-          Apply Now
+          {t('careers.applyNow')}
         </button>
       </div>
 
@@ -67,13 +68,15 @@ const Careers = () => {
 };
 
 const TeamMemberCard = ({ member }) => {
+  const { t } = useTranslation(); // Initialize the translation function
+
   return (
     <div className="careers__job-card">
       <img src={member.image} alt={member.name} className="careers__job-image" />
       <div className="careers__job-content">
         <h2 className="careers__job-title">{member.name}</h2>
-        <p className="careers__job-role"><strong>Role:</strong> {member.role}</p>
-        <p className="careers__job-location"><strong>Location:</strong> {member.location}</p>
+        <p className="careers__job-role"><strong>{t('careers.role')}:</strong> {member.role}</p>
+        <p className="careers__job-location"><strong>{t('careers.location')}:</strong> {member.location}</p>
         <p className="careers__job-description">{member.description}</p>
       </div>
     </div>
@@ -81,6 +84,7 @@ const TeamMemberCard = ({ member }) => {
 };
 
 const ApplyForm = ({ onClose }) => {
+  const { t } = useTranslation(); // Initialize the translation function
   const [file, setFile] = useState(null);
   const [error, setError] = useState('');
   const [formData, setFormData] = useState({
@@ -96,10 +100,10 @@ const ApplyForm = ({ onClose }) => {
       const validFormats = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
 
       if (!validFormats.includes(selectedFile.type)) {
-        setError('Only PDF and DOCX files are allowed.');
+        setError(t('careers.fileError'));
         setFile(null);
       } else if (fileSizeMB > 10) {
-        setError('File size must be at least 10MB.');
+        setError(t('careers.fileSizeError'));
         setFile(null);
       } else {
         setError('');
@@ -116,11 +120,11 @@ const ApplyForm = ({ onClose }) => {
     e.preventDefault();
 
     if (!file) {
-      setError('Please upload a valid file.');
+      setError(t('careers.uploadFile'));
       return;
     }
 
-    // Simulating email submission (Normally, this would be handled by a backend API)
+    // Simulating email submission
     const emailData = {
       to: 'yassinechadani113@gmail.com',
       subject: `Job Application from ${formData.fullName}`,
@@ -130,26 +134,26 @@ const ApplyForm = ({ onClose }) => {
 
     console.log('Sending email with:', emailData);
 
-    alert('Application sent successfully!');
+    alert(t('careers.applicationSuccess'));
     onClose();
   };
 
   return (
     <div className="apply-form-overlay">
       <div className="apply-form">
-        <h2>Apply Now</h2>
+        <h2>{t('careers.applyFormTitle')}</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" name="fullName" placeholder="Full Name" required onChange={handleInputChange} />
-          <input type="email" name="email" placeholder="Email" required onChange={handleInputChange} />
-          <input type="tel" name="phone" placeholder="Phone Number" required onChange={handleInputChange} />
+          <input type="text" name="fullName" placeholder={t('careers.fullName')} required onChange={handleInputChange} />
+          <input type="email" name="email" placeholder={t('careers.email')} required onChange={handleInputChange} />
+          <input type="tel" name="phone" placeholder={t('careers.phone')} required onChange={handleInputChange} />
 
           <input type="file" accept=".pdf,.docx" required onChange={handleFileChange} />
-          {file && <p>Selected file: {file.name}</p>}
+          {file && <p>{t('careers.selectedFile')}: {file.name}</p>}
           {error && <p style={{ color: 'red' }}>{error}</p>}
 
-          <button type="submit">Submit Application</button>
+          <button type="submit">{t('careers.submitApplication')}</button>
         </form>
-        <button className="apply-form-close" onClick={onClose}>Close</button>
+        <button className="apply-form-close" onClick={onClose}>{t('careers.close')}</button>
       </div>
     </div>
   );

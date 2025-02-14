@@ -1,7 +1,7 @@
 /* General Styling */
 .digital-ad-section {
   position: relative;
-  background-color: black;
+  background-color: white;
   color: white;
   padding: 30px 50px;
   text-align: center;
@@ -11,7 +11,7 @@
 .background-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(96, 146, 152, 0.8), rgba(40, 55, 56, 1));
+  background: linear-gradient(135deg, white, rgb(172, 172, 172));
   opacity: 0.5;
   z-index: 0;
 }
@@ -25,13 +25,13 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #77a1aa;
+  color: rgb(196, 0, 220);
 }
 
 .section-description {
   margin-top: 15px;
   font-size: 1.1rem;
-  color: #d1d5db;
+  color: black;
 }
 
 /* Advertising Platforms Grid */
@@ -44,7 +44,7 @@
 }
 
 .technology-card {
-  background-color: #222;
+  background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
   width: 70%;
   padding: 20px;
   border-radius: 10px;
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #161616;
+  background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;

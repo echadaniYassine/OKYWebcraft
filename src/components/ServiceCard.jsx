@@ -1,12 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FaBullhorn, FaLaptopCode, FaShareAlt, FaPaintBrush, FaCloud, FaShoppingCart, FaServer, FaAngleDown, FaAngleUp, FaAngleRight } from 'react-icons/fa';
-import '../style/components/ServiceCard.css';
+import { FaBullhorn, FaLaptopCode, FaShareAlt, FaPaintBrush, FaCloud, FaShoppingCart, FaAngleDown, FaAngleUp, FaAngleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../style/components/ServiceCard.css';
 
 const Services = () => {
+  const { t, i18n } = useTranslation();
   const [showAll, setShowAll] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
+  // Change language function
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   useEffect(() => {
     const currentSection = sectionRef.current;
@@ -38,60 +45,51 @@ const Services = () => {
       id: 1,
       icon: <FaLaptopCode />,
       img: "/assets/service_1.png",
-      title: "Web & Mobile Development",
-      description:
-        "We build responsive websites and high-performance mobile applications tailored to your business needs.",
-      link: "/services-web-&-mobile-development", // Link to the service page
+      title: t('services.web_mobile_development.title'),
+      description: t('services.web_mobile_development.description'),
+      link: "/services-web-&-mobile-development",
     },
     {
       id: 2,
       icon: <FaShareAlt />,
       img: "/assets/service_2.png",
-      title: "Social Media Management",
-      description:
-        "Boost your online presence with our expert strategies for managing and growing your social media channels.",
+      title: t('services.social_media_management.title'),
+      description: t('services.social_media_management.description'),
       link: "/services-social-media-management",
     },
     {
       id: 3,
       icon: <FaShoppingCart />,
       img: "/assets/service_3.png",
-      title: "E-Commerce Stores",
-      description:
-        "Empower your online store with secure, scalable, and user-friendly e-commerce platforms that drive sales.",
+      title: t('services.ecommerce_stores.title'),
+      description: t('services.ecommerce_stores.description'),
       link: "/services-ecommerce", 
-    }
-    ,
+    },
     {
       id: 4,
       icon: <FaPaintBrush />,
       img: "/assets/service_4.png",
-      title: "UI / UX Design",
-      description:
-        "Deliver visually compelling designs that resonate with your target audience and reinforce your brand identity.",
+      title: t('services.ui_ux_design.title'),
+      description: t('services.ui_ux_design.description'),
       link: "/services-ui-ux-design",
     },
     {
       id: 5,
       icon: <FaBullhorn />,
       img: "/assets/service_5.png",
-      title: "Digital Advertising",
-      description:
-        "Reach the right audience with targeted campaigns across multiple platforms to maximize your ROI.",
+      title: t('services.digital_advertising.title'),
+      description: t('services.digital_advertising.description'),
       link: "/services-digital-advertising",
     },
     {
       id: 6,
       icon: <FaCloud />,
       img: "/assets/service_6.png",
-      title: "Cloud Services & Hosting",
-      description:
-        "Ensure seamless scalability and high availability with our reliable cloud hosting and management solutions.",
+      title: t('services.cloud_services_hosting.title'),
+      description: t('services.cloud_services_hosting.description'),
       link: "/services-cloud-hosting",
     },
-
   ];
-
 
   const visibleServices = showAll ? services : services.slice(0, 4);
 
@@ -102,9 +100,9 @@ const Services = () => {
       className={`services ${isVisible ? 'visible' : ''}`}
     >
       <div className="container">
-        <h2 className="services-title">Providing Best Services</h2>
+        <h2 className="services-title">{t('services.title')}</h2>
         <p className="services-description">
-          Discover innovative solutions tailored to meet your business needs and drive growth effectively.
+          {t('services.description')}
         </p>
 
         <div className="service-cards">
@@ -122,23 +120,22 @@ const Services = () => {
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
                 <Link to={service.link} className="explore-more">
-                  Explore More <FaAngleRight />
+                  {t('services.explore_more')} <FaAngleRight />
                 </Link>
               </div>
             </div>
           ))}
         </div>
 
-
         <div className="view-all">
           <button className="view-all-btn" onClick={handleToggle}>
             {showAll ? (
               <>
-                Show Less <FaAngleUp /> {/* Icon for "Show Less" */}
+                {t('services.show_less')} <FaAngleUp />
               </>
             ) : (
               <>
-                View All Services <FaAngleDown /> {/* Icon for "View All Services" */}
+                {t('services.view_all_services')} <FaAngleDown />
               </>
             )}
           </button>

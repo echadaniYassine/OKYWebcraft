@@ -2,7 +2,7 @@
 .careers {
   font-family: Arial, sans-serif;
   padding: 30px;
-  background: linear-gradient(135deg, #77a1aa, #2f3c3f);
+  background: linear-gradient(135deg, rgb(196, 0, 220), #2f3c3f);
   border-radius: 12px;
   max-width: 1200px;
   margin: 20px auto;
@@ -139,26 +139,29 @@
 .apply-form h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #2f3c3f;
+  color: rgb(196, 0, 220);
 }
 
 .apply-form input {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(196, 0, 220);
   border-radius: 6px;
   font-size: 1rem;
+  color: rgb(196, 0, 220);
 }
 
 .apply-form input[type="file"] {
   border: none;
   padding: 5px;
   cursor: pointer;
+  color: rgb(196, 0, 220);
+
 }
 
 .apply-form button {
-  background: #2f3c3f;
+  background: linear-gradient(90deg, rgb(196, 0, 220), #2f3c3f);
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;

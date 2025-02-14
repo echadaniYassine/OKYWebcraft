@@ -1,13 +1,17 @@
 import React, { useEffect } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaTiktok, FaChartLine, FaUsers, FaClipboardList } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next"; // Import i18n translation hook
 import "../../style/pages/services/SocialMediaManagement.css"; // Import CSS file
 
 const SocialMediaManagement = () => {
+  const { t } = useTranslation(); // Initialize translation
+
   useEffect(() => {
-              // Scroll to top when the component is loaded
-              window.scrollTo(0, 0);
-            }, []); 
+    // Scroll to top when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="social-media-section">
       {/* Background Overlay */}
@@ -20,21 +24,22 @@ const SocialMediaManagement = () => {
           transition={{ duration: 0.5 }}
           className="section-title"
         >
-          Social Media Management
+          {t("social_media_management.title")}
         </motion.h2>
 
-        <p className="section-description">
-          Boost your brand’s online presence with <strong>OKY Agency</strong>. We handle your <strong>social media strategy, content, and engagement</strong> to ensure maximum reach and impact.
-        </p>
+        <p
+          className="section-description"
+          dangerouslySetInnerHTML={{ __html: t("social_media_management.description") }}
+        />
 
         {/* Social Media Platforms */}
         <div className="technologies-grid">
           {[
-            { name: "Facebook", icon: <FaFacebook />, class: "tech-facebook" },
-            { name: "Instagram", icon: <FaInstagram />, class: "tech-instagram" },
-            { name: "Twitter", icon: <FaTwitter />, class: "tech-twitter" },
-            { name: "LinkedIn", icon: <FaLinkedin />, class: "tech-linkedin" },
-            { name: "TikTok", icon: <FaTiktok />, class: "tech-tiktok" },
+            { name: t("social_media_management.platforms.facebook"), icon: <FaFacebook />, class: "tech-facebook" },
+            { name: t("social_media_management.platforms.instagram"), icon: <FaInstagram />, class: "tech-instagram" },
+            { name: t("social_media_management.platforms.twitter"), icon: <FaTwitter />, class: "tech-twitter" },
+            { name: t("social_media_management.platforms.linkedin"), icon: <FaLinkedin />, class: "tech-linkedin" },
+            { name: t("social_media_management.platforms.tiktok"), icon: <FaTiktok />, class: "tech-tiktok" },
           ].map((platform, index) => (
             <motion.div 
               key={index}
@@ -49,44 +54,31 @@ const SocialMediaManagement = () => {
 
         {/* Key Benefits */}
         <div className="benefits-container">
-          <motion.div whileHover={{ scale: 1.05 }} className="benefit-card">
-            <FaClipboardList className="benefit-icon" />
-            <div>
-              <h3 className="benefit-title">Content Strategy</h3>
-              <p className="benefit-description">
-                We create <strong>engaging content</strong> tailored to your audience, ensuring consistency and brand alignment.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.05 }} className="benefit-card">
-            <FaChartLine className="benefit-icon" />
-            <div>
-              <h3 className="benefit-title">Analytics & Reporting</h3>
-              <p className="benefit-description">
-                Track your <strong>social media performance</strong> with detailed insights to refine your strategy.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.05 }} className="benefit-card">
-            <FaUsers className="benefit-icon" />
-            <div>
-              <h3 className="benefit-title">Community Engagement</h3>
-              <p className="benefit-description">
-                Build <strong>strong connections</strong> with your audience through active interactions and timely responses.
-              </p>
-            </div>
-          </motion.div>
+          {[
+            { icon: <FaClipboardList />, title: t("social_media_management.benefits.content_strategy.title"), description: t("social_media_management.benefits.content_strategy.description") },
+            { icon: <FaChartLine />, title: t("social_media_management.benefits.analytics_reporting.title"), description: t("social_media_management.benefits.analytics_reporting.description") },
+            { icon: <FaUsers />, title: t("social_media_management.benefits.community_engagement.title"), description: t("social_media_management.benefits.community_engagement.description") }
+          ].map((benefit, index) => (
+            <motion.div whileHover={{ scale: 1.05 }} key={index} className="benefit-card">
+              {benefit.icon && <div className="benefit-icon">{benefit.icon}</div>}
+              <div>
+                <h3 className="benefit-title">{benefit.title}</h3>
+                <p 
+                  className="benefit-description"
+                  dangerouslySetInnerHTML={{ __html: benefit.description }} 
+                />
+              </div>
+            </motion.div>
+          ))}
         </div>
 
         {/* CTA Button */}
-        <motion.a 
+        <motion.a
           href="/contact"
           whileHover={{ scale: 1.1 }}
           className="cta-button"
         >
-          Boost Your Social Media
+          {t("social_media_management.cta_button")}
         </motion.a>
       </div>
     </section>

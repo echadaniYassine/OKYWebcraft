@@ -11,13 +11,18 @@
 
 /* Navbar styles */
 .graphic-design-navbar {
-  background: linear-gradient(90deg, #7f8c8d, #34495e);
+  background: linear-gradient(90deg, rgb(196, 0, 220), #1A237E); /* Vibrant Teal and Dark Blue */
   color: white;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.graphic-design-navbar:hover {
+  background: linear-gradient(90deg, rgb(196, 0, 220), #162F69); /* Slightly darker on hover */
 }
 
 .graphic-design-navbar-brand {
@@ -36,8 +41,8 @@
   margin-bottom: 5rem;
   text-align: start;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  color: #283738;
-  border-bottom: #283738 solid 1px;
+  color: #1A237E; /* Dark Blue */
+  border-bottom: #1A237E solid 1px;
 }
 
 /* Card container styles */
@@ -48,91 +53,11 @@
   justify-content: start;
 }
 
-/* Project card styles */
-.graphic-design-card {
-  position: relative;
-  width: 300px;
-  height: auto;
-  overflow: hidden;
-  border-radius: 16px;
-  background: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 1;
-  padding: 20px 30px;
-}
-
-.graphic-design-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Carousel styles */
-.graphic-design-carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.graphic-design-carousel-image {
-  border-radius: 12px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.graphic-design-card:hover .graphic-design-carousel-image {
-  transform: scale(1.1);
-}
-
-/* Overlay styles */
-.graphic-design-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.graphic-design-card:hover .graphic-design-overlay {
-  opacity: 1;
-}
-
-.graphic-design-demo-icon {
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Text styles */
-.graphic-design-title {
-  text-align: start;
-  margin: 1rem 13px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #77a1aa;
-}
-
-.graphic-design-description {
-  text-align: start;
-  font-size: 1rem;
-  color: #7f8c8d;
-  margin: 0 1rem 1rem;
-}
 
 @media (max-width: 768px) {
   .graphic-design-container {
     padding: 1rem;
     margin: 2rem 1rem 1rem 1rem;
-
   }
 
   .graphic-design-navbar {
@@ -143,7 +68,6 @@
 
   .graphic-design-subcategory {
     margin: 2rem 0;
-
   }
 
   .subcategory-title {
@@ -159,40 +83,4 @@
     gap: 2rem;
   }
 
-  .graphic-design-card {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-    text-align: center;
-  }
-
-  .graphic-design-carousel {
-    height: 180px; /* Ajustement des images */
-  }
-
-  .graphic-design-carousel-image {
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .graphic-design-overlay {
-    opacity: 1; /* Toujours visible sur mobile */
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  .graphic-design-demo-icon {
-    font-size: 1.2rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .graphic-design-title {
-    font-size: 1rem;
-    margin: 1rem 3px;
-  }
-
-  .graphic-design-description {
-    font-size: 0.9rem;
-    text-align: start;
-    margin: 1rem 3px;
-  }
 }

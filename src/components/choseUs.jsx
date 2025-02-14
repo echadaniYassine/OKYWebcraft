@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 import '../style/components/chooseUs.css';
 import { Link } from 'react-router-dom';
+
 const ChoseUs = () => {
+    const { t } = useTranslation(); // Initialize translation hook
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -27,35 +30,35 @@ const ChoseUs = () => {
     }, []);
 
     return (
-        <section
-            id="chooseUs" className={`about ${isVisible ? 'visible' : ''}`}>
+        <section id="chooseUs" className={`about ${isVisible ? 'visible' : ''}`}>
             <div className="why-choose-us">
                 <div className="features">
                     <div className="feature1 feature-main">
-                        <p className="feature-subtitle">Why choose us?</p>
-                        <h1 className="feature-title">Our Goals & <br />Benefits</h1>
-                        <Link to="/Benefits"><button className="feature-button">Explore More</button>
+                        <p className="feature-subtitle">{t('chooseUs.why_choose_us')}</p>
+                        <h1 className="feature-title">{t('chooseUs.goals_benefits')}</h1>
+                        <Link to="/Benefits">
+                            <button className="feature-button">{t('chooseUs.explore_more')}</button>
                         </Link>
                     </div>
                     <div className="feature feature-card">
                         <img src="assets/benefits1.png" alt="Tailored Solutions" className="feature-image" />
-                        <h3 className="feature-card-title">Tailored Solutions</h3>
+                        <h3 className="feature-card-title">{t('chooseUs.tailored_solutions')}</h3>
                         <p className="feature-card-description">
-                            We provide customized strategies that align perfectly with your business objectives, ensuring maximum impact.
+                            {t('chooseUs.tailored_description')}
                         </p>
                     </div>
                     <div className="feature feature-highlight">
                         <img src="assets/benefits2.png" alt="Reliable Expertise" className="feature-image" />
-                        <h3 className="feature-card-title">Reliable Expertise</h3>
+                        <h3 className="feature-card-title">{t('chooseUs.reliable_expertise')}</h3>
                         <p className="feature-card-description">
-                            Backed by years of experience, our team delivers consistent, high-quality results that you can count on.
+                            {t('chooseUs.reliable_description')}
                         </p>
                     </div>
                     <div className="feature feature-card">
                         <img src="assets/benefits3.png" alt="Innovative Strategies" className="feature-image" />
-                        <h3 className="feature-card-title3">Innovative Strategies</h3>
-                        <p className="feature-card-description3">
-                            We embrace innovation to provide cutting-edge solutions that keep you ahead of the competition.
+                        <h3 className="feature-card-title">{t('chooseUs.innovative_strategies')}</h3>
+                        <p className="feature-card-description">
+                            {t('chooseUs.innovative_description')}
                         </p>
                     </div>
                 </div>

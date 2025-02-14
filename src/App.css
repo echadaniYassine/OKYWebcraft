@@ -1,3 +1,30 @@
-.App {
-  margin: 0 auto;
+/* App.css */
+:root {
+  --background-light: #ffffff;
+  --background-dark: #181818;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.dark-mode-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }

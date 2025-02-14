@@ -1,7 +1,9 @@
+/* Light Mode (Default) */
 .about {
-  background-color: #fff;
+  background-color: #fff; /* White */
+  color: black; /* Text color for light mode */
   padding: 50px 50px;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, background-color 0.5s, color 0.5s;
   opacity: 0;
   transform: translateY(50px);
 }
@@ -26,7 +28,7 @@
 
 .about-intro {
   font-size: 1rem;
-  color: #77a1aa;
+  color: black; /* Slate Gray */
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -34,7 +36,7 @@
 .about-title {
   font-size: 3rem;
   font-weight: bold;
-  color: #222;
+  color: rgb(196, 0, 220); /* Vibrant Teal */
   margin-bottom: 20px;
 }
 
@@ -57,12 +59,11 @@
   align-items: center;
   gap: 15px;
   padding: 2px;
-  background: #f9f9f9;
+  background: #F1F1F1; /* Light Gray */
   border-radius: 50px;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
-  border-right: #77a1aa 3px solid;
-
+  border-right: rgb(196, 0, 220) 3px solid; /* Slate Gray */
 }
 
 .highlight-card:hover {
@@ -76,7 +77,7 @@
   text-align: center;
   color: aliceblue;
   margin-left: 20px;
-  background-color: #77a1aa;
+  background-color: rgb(196, 0, 220);
   border-radius: 50%;
   margin-right: 10px;
   border-right: black 5px solid;
@@ -92,12 +93,12 @@
   font-size: 1.1rem;
   color: #666;
   margin-top: -15px;
-
 }
+
 .about-btn {
   display: inline-block;
   padding: 20px 25px;
-  background-color: #77a1aa;
+  background-color: rgb(196, 0, 220); /* Vibrant Teal */
   color: #fff;
   border-radius: 50px;
   font-size: 1rem;
@@ -106,13 +107,13 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 4px #2f3c3f solid;
+  border-bottom: 4px #2f3c3f solid; /* Slate Gray */
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 15px;
 }
 
 .about-btn:hover {
-  background-color: #2f3c3f;
+  background-color: blueviolet; /* Slate Gray */
   transform: scale(1.05);
 }
 
@@ -126,6 +127,52 @@
   max-width: 500px;
   border-radius: 20px 20px 20px 0;
 }
+
+/* Dark Mode */
+body.dark-mode .about {
+  background-color: transparent; /* Dark Slate */
+  color: white; /* Light text for dark mode */
+}
+
+body.dark-mode .about-intro {
+  color: #ddd; /* Light Gray */
+}
+
+body.dark-mode .about-title {
+  color: rgb(196, 0, 220); /* Teal */
+}
+
+body.dark-mode .about-description {
+  color: #ccc;
+}
+
+body.dark-mode .highlight-card {
+  background-color: #34495e; /* Dark Gray */
+  border-right: rgb(196, 0, 220) 3px solid; /* Teal border */
+}
+
+body.dark-mode .highlight-title {
+  color: white;
+}
+
+body.dark-mode .highlight-description {
+  color: #ddd;
+}
+
+body.dark-mode .about-btn {
+  background-color: rgb(196, 0, 220); /* Teal */
+  border-bottom: 4px solid #2C3E50; /* Dark Slate */
+}
+
+body.dark-mode .about-btn:hover {
+  background-color: blueviolet; /* Lighter Teal */
+}
+
+/* Dark Mode for Images */
+body.dark-mode .about-img {
+  filter: brightness(0.7); /* Darken image for dark mode */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about {

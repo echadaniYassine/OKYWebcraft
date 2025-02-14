@@ -1,59 +1,63 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../../style/pages/FastLinksStyle/TermsOfService .css'; // Import CSS for styling
 
 const TermsOfService = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="terms-of-service">
-      <h1>Terms of Service</h1>
-      <p>Last updated: January 23, 2025</p>
+      <h1>{t('terms_of_service.terms_of_service_title')}</h1>
+      <p>{t('terms_of_service.last_updated')}</p>
 
       <section>
-        <h2>1. Introduction</h2>
-        <p>Welcome to OKY WebCraft. By using our services, you agree to the following terms and conditions.</p>
+        <h2>{t('terms_of_service.intro_title')}</h2>
+        <p>{t('terms_of_service.intro_text')}</p>
       </section>
 
       <section>
-        <h2>2. Use of Service</h2>
-        <p>You agree to use our services only for lawful purposes. You must not use our services in any way that violates any applicable laws or regulations.</p>
+        <h2>{t('terms_of_service.use_title')}</h2>
+        <p>{t('terms_of_service.use_text')}</p>
       </section>
 
       <section>
-        <h2>3. Account Responsibility</h2>
-        <p>You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.</p>
+        <h2>{t('terms_of_service.account_title')}</h2>
+        <p>{t('terms_of_service.account_text')}</p>
       </section>
 
       <section>
-        <h2>4. Content Ownership</h2>
-        <p>All content provided by you remains your property. However, by using our services, you grant us a license to use, display, and distribute your content within the platform.</p>
+        <h2>{t('terms_of_service.content_title')}</h2>
+        <p>{t('terms_of_service.content_text')}</p>
       </section>
 
       <section>
-        <h2>5. Termination</h2>
-        <p>We may suspend or terminate your access to the service at any time if you violate these terms or engage in inappropriate conduct.</p>
+        <h2>{t('terms_of_service.termination_title')}</h2>
+        <p>{t('terms_of_service.termination_text')}</p>
       </section>
 
       <section>
-        <h2>6. Limitation of Liability</h2>
-        <p>We are not liable for any direct, indirect, incidental, or consequential damages arising from the use of our services.</p>
+        <h2>{t('terms_of_service.limitation_title')}</h2>
+        <p>{t('terms_of_service.limitation_text')}</p>
       </section>
 
       <section>
-        <h2>7. Privacy Policy</h2>
-        <p>Your use of the service is also governed by our <a href="/privacy-policy">Privacy Policy</a>.</p>
+        <h2>{t('terms_of_service.privacy_title')}</h2>
+        <p>{t('terms_of_service.privacy_text')} <a href="/privacy-policy">Privacy Policy</a></p>
       </section>
 
       <section>
-        <h2>8. Changes to Terms</h2>
-        <p>We may update these terms from time to time. Any changes will be posted on this page with an updated date.</p>
+        <h2>{t('terms_of_service.changes_title')}</h2>
+        <p>{t('terms_of_service.changes_text')}</p>
       </section>
 
       <section>
-        <h2>9. Contact Us</h2>
+        <h2>{t('terms_of_service.contact_title')}</h2>
         <p>
-          If you have any questions about these terms, please contact us at <a href="mailto:okywebcraft@gmail.com">okywebcraft@gmail.com</a>.
+          {t('terms_of_service.contact_text')} <a href="mailto:okywebcraft@gmail.com">okywebcraft@gmail.com</a>.
         </p>
       </section>
     </div>
@@ -61,4 +65,3 @@ const TermsOfService = () => {
 };
 
 export default TermsOfService;
-

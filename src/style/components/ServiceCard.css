@@ -1,12 +1,23 @@
+/* Original Styles */
 .services {
   padding: 60px 50px;
   text-align: center;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  background-color: #fff; /* Light Gray */
   border-radius: 10px;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   opacity: 0;
   transform: translateY(50px);
+  position: relative;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 2%;
+  left: 10%; /* Adjust to center the border or set to desired percentage */
+  width: 80%; /* Border width as a percentage of the container's width */
+  height: 1px;
+  background-color: rgb(196, 0, 220); /* Border color */
 }
 
 .services.visible {
@@ -19,12 +30,13 @@
   margin-bottom: 1.5rem;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  color: #283738;
+  color: rgb(196, 0, 220);
 }
 
 .services-description {
   font-size: 1.1rem;
-  color: #7f8c8d;
+  color: #6B6B6B;
+  /* Darker gray for a softer contrast */
   margin-bottom: 40px;
 }
 
@@ -35,38 +47,34 @@
   justify-content: center;
 }
 
-
 .icon-right {
   flex-direction: row-reverse;
-  border-bottom: #1f3034 solid 3px;
+  border-bottom: #283738 solid 3px;
+  /* Slate Gray */
 }
-
 
 .icon-left {
   flex-direction: row;
-  border-bottom: #1f3034 solid 3px;
+  border-bottom: #283738 solid 3px;
 }
 
 .service-card {
   display: flex;
   align-items: center;
-  background: #ecf0f1;
+  background-image: url(/public/assets/services.png);
+  /* White */
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 44%;
   margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   position: relative;
   overflow: hidden;
-  /* Prevent overflow from hover effects */
+  transition: box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
-  border-right: 5px solid #1f3034;
 }
 
 .service-card::before {
@@ -76,24 +84,25 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-  opacity: 0;
+  background: linear-gradient(to left, rgb(196, 0, 220), black);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease;
   z-index: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .service-card:hover::before {
-  opacity: 0.1;
-  /* Adds a subtle overlay effect */
+  transform: scaleX(1);
+  /* Fill from left to right */
 }
 
 .service-icon-container {
   font-size: 5rem;
-  color: #77a1aa;
+  color: #008080;
+  /* Teal for icons */
   margin: 0 20px;
   transition: transform 0.3s ease, color 0.3s ease;
   z-index: 1;
-  /* Ensure icon is above the overlay */
 }
 
 .service-image {
@@ -106,56 +115,72 @@
 .service-text {
   text-align: left;
   z-index: 1;
-  /* Ensure text is above the overlay */
 }
 
 .service-text h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #34495e;
+  color: #283738;
+  /* Slate Gray for subtitles */
   transition: color 0.3s ease;
 }
 
 .service-card:hover .service-text h3 {
-  color: #1f3034;
+  color: aliceblue;
+  /* Darker teal for subtitle on hover */
 }
 
 .service-text p {
   font-size: 0.95rem;
-  color: #7f8c8d;
+  color: #8E8E8E;
+  /* Soft Gray for description */
   transition: color 0.3s ease;
 }
 
 .service-card:hover .service-text p {
-  color: #34495e;
+  color: #FFFFFF;
+  /* White for description on hover */
 }
 
 .explore-more {
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: #1f3034;
-  text-decoration: none;
+  color: rgb(196, 0, 220);
+  /* Teal for primary action text */
   font-weight: bold;
   margin-top: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  /* Ensure the text has correct positioning */
 }
 
 .service-card:hover .explore-more {
-  color: #77a1aa;
+  color: aliceblue;
+  /* White for action text on hover */
   transform: translateX(5px);
 }
 
 .explore-more svg {
   margin-left: 5px;
-  /* Space between text and icon */
+  margin-top: 3px;
+  transition: transform 0.3s ease;
+  /* Added transition for the icon */
+}
+
+.service-card:hover .explore-more svg {
+  transform: translateX(5px);
+  /* Make the icon move in sync with the text */
 }
 
 .view-all-btn {
   padding: 12px 35px;
-  background-color: #77a1aa;
-  color: #fff;
+  background-color: rgb(196, 0, 220);
+  /* Teal for button background */
+  color: #FFFFFF;
+  /* White for button text */
   font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   border: none;
   cursor: pointer;
@@ -163,13 +188,74 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  /* Space between text and icon */
   margin: 10px auto;
 }
 
 .view-all-btn:hover {
-  background-color: #1f3034;
+  background-color: blueviolet;
+  /* Darker teal for hover effect */
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: transparent;
+  color: #e0e0e0;
+}
+
+body.dark-mode .services {
+  background-color: transparent; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .services::before {
+  background-color: #e0e0e0; /* Lighter border */
+}
+
+body.dark-mode .services-title {
+  color: rgb(196, 0, 220); /* Keep the title color */
+}
+
+body.dark-mode .services-description {
+  color: #d3d3d3; /* Light gray for description */
+}
+
+body.dark-mode .service-card {
+  background-color: #3a3a3a; /* Darker background for cards */
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .service-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .service-card::before {
+  background: linear-gradient(to left, rgb(196, 0, 220), black);
+}
+
+body.dark-mode .service-icon-container {
+  color: #00bcd4; /* Lighter Teal for icons */
+}
+
+body.dark-mode .service-text h3 {
+  color: #c3c7c9; /* Lighter color for titles */
+}
+
+body.dark-mode .service-text p {
+  color: #b6c1c7; /* Lighter gray for description */
+}
+
+body.dark-mode .explore-more {
+  color: rgb(196, 0, 220); /* Keep primary action color */
+}
+
+body.dark-mode .view-all-btn {
+  background-color: rgb(196, 0, 220); /* Keep the button color */
+}
+
+body.dark-mode .view-all-btn:hover {
+  background-color: #7b1fa2; /* Darker shade for hover */
+}
+
 
 @media (max-width: 768px) {
   .service-card {
@@ -189,7 +275,6 @@
   .service-image {
     max-width: 150px;
     order: -1;
-    /* Moves the image to the top */
   }
 
   .service-text {
@@ -207,8 +292,8 @@
   }
 
   .service-card:hover {
-    border-bottom: 5px solid #1f3034;
-    /* Hover effect changed to bottom */
+    border-bottom: 5px solid #283738;
+    /* Slate Gray */
     border-right: none;
   }
 
@@ -224,17 +309,17 @@
 
   .view-all-btn {
     display: inline-block;
-    background-color: #77a1aa;
+    background-color: #008080;
+    /* Teal for button background */
     color: white;
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s ease;
-    border-bottom: 4px #2f3c3f solid;
+    border-bottom: 4px #283738 solid;
     padding: 8px 20px;
     font-size: 0.9rem;
     margin: 20px auto;
     width: 200px;
   }
-
-
 }
+

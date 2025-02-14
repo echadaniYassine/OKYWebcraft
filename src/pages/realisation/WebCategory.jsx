@@ -1,104 +1,43 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
-import '../../style/pages/RealisationStyle/CategoryWeb.css';
+import { useTranslation } from "react-i18next"; // Import i18n translation hook
+import ProjectCard from "../../components/ProjectCard"; // Common ProjectCard component
+import "../../style/pages/RealisationStyle/CategoryWeb.css";
+
 const projects = [
-  {
-    id: 1,
-    subcategory: "application",
-    title: 'Web Application 1',
-    image: 'assets/HERO.png',
-    demoLink: '/project/1',
-    description: 'A fully responsive web application showcasing modern design.',
-  },
-  {
-    id: 2,
-    subcategory: "application",
-    title: 'Trendify Store',
-    image: 'assets/app2.png',
-    demoLink: 'https://trendify-frontend-nine.vercel.app/',
-    description: 'This application is built with robust features for optimal performance.',
-  },
-  {
-    id: 3,
-    subcategory: "landing",
-    title: 'Asian presentetion',
-    image: 'assets/landing1.png',
-    demoLink: 'https://asian-taste-one.vercel.app/',
-    description: 'A sleek and engaging landing page designed to captivate your audience.',
-  },
-  ,
-  {
-    id: 4,
-    subcategory: "landing",
-    title: 'smartpath',
-    image: 'assets/smartPath.png',
-    demoLink: 'https://smartpath2.netlify.app/',
-    description: 'A sleek and engaging landing page designed to captivate your audience.',
-  }
+  { id: 1, subcategory: "application", titleKey: "project_title_1", image: "assets/HERO.png", demoLink: "/project/1" },
+  { id: 2, subcategory: "application", titleKey: "project_title_2", image: "assets/app2.png", demoLink: "https://trendify-frontend-nine.vercel.app/" },
+  { id: 3, subcategory: "landing", titleKey: "project_title_3", image: "assets/landing1.png", demoLink: "https://asian-taste-one.vercel.app/" },
+  { id: 4, subcategory: "landing", titleKey: "project_title_4", image: "assets/smartPath.png", demoLink: "https://smartpath2.netlify.app/" }
 ];
 
 const CategoryWeb = () => {
+  const { t } = useTranslation(); // Initialize translation
 
-  const filterSubcategory = "application";
-  const filterSubcategorylanding = "landing";
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div className="category-web">
-      {/* Navbar */}
       <nav className="navbar">
-        <div className="navbar-brand">Web Development</div>
+        <div className="navbar-brand">{t('category_web.navbar')}</div>
       </nav>
 
-      {/* Subcategory Sections */}
-      <section className="subcategory">
-        <h2 className="subcategory-title">Web Applications</h2>
-        <div className="project-cards">
-          {projects
-            .filter((project) => project.subcategory === filterSubcategory)
-            .map((project) => (
-              <ProjectCard key={project.id} project={project} />
+      {["application", "landing"].map((subcategory) => (
+        <section key={subcategory} className="subcategory">
+          <h2 className="subcategory-title">{t(`category_web.${subcategory}`)}</h2>
+          <div className="project-cards">
+            {projects.filter(project => project.subcategory === subcategory).map((project) => (
+              <ProjectCard 
+                key={project.id} 
+                project={{
+                  title: t(`category_web.${project.titleKey}`),
+                  image: project.image,
+                  demoLink: project.demoLink
+                }} 
+              />
             ))}
-        </div>
-      </section>
-
-      <section className="subcategory">
-        <h2 className="subcategory-title">Landing Pages</h2>
-        <div className="project-cards">
-          {projects
-            .filter((project) => project.subcategory === filterSubcategorylanding)
-            .map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-        </div>
-      </section>
-    </div>
-
-
-  );
-};
-
-const ProjectCard = ({ project }) => {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
-
-  return (
-    <div ref={ref} className={`project-card ${inView ? 'fade-in' : ''}`}>
-      <div className="carousel">
-        <img src={project.image} alt={project.title} className="carousel-image" />
-        <div className="overlay">
-          <Link to={project.demoLink} className="live-demo-icon" target="_blank">
-            🔗 Live Demo
-          </Link>
-        </div>
-      </div>
-
-      {/* Title and Description */}
-      <h3 className="project-title0">{project.title}</h3>
-      {project.description && <p className="project-description">{project.description}</p>}
+          </div>
+        </section>
+      ))}
     </div>
   );
 };

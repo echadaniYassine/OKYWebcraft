@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(to right, #2f3c3f, #1f3034);
+  background: linear-gradient(to right,  rgb(196, 0, 220), Black); /* Deep Blue to Dark Gray */
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -20,12 +20,10 @@
   flex: 1;
   min-width: 300px;
   margin-top: 30px;
-
 }
 
 .footer__logo {
   margin-bottom: 20px;
-
 }
 
 .footer__logo__image {
@@ -49,18 +47,18 @@
 }
 
 .footer__short-subscription__button {
-  padding: 12px 5px;
+  padding: 12px 10px;
   font-size: 1rem;
   border-radius: 5px;
-  background-color: #77a1aa;
-  color: #333;
+  background-color: black; 
+  color: aliceblue;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .footer__short-subscription__button:hover {
-  background-color: rgb(68, 138, 114);
+  background-color: #FF6F20; /* Sunset Orange */
 }
 
 .footer__social-links {
@@ -77,20 +75,20 @@
 
 .footer__social-links a {
   font-size: 1.8rem;
-  color: #77a1aa;
+  color: aliceblue; 
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer__social-links a:hover {
-  color: rgb(68, 138, 114);
+  color: blue; /* Sunset Orange */
   transform: scale(1.2);
 }
-/* second section*/
 
+/* second section */
 .footer__title_ {
   font-size: 1.6rem;
   margin-bottom: 50px;
-  color: #77a1aa; /* Highlight color for section titles */
+  color: aliceblue; /* Soft Coral for section titles */
   text-align: start;
   margin-left: 50px;
 }
@@ -112,28 +110,30 @@
 
 .footer__links__icon {
   font-size: 1.2rem;
-  color: #77a1aa;
+  color: white; 
   flex-shrink: 0;
 }
 
 .footer__links__link {
-  color: #fff;
+  color: #E0E0E0; /* Light Gray */
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .footer__links__link:hover {
-  color: rgb(68, 138, 114);
+  color: aliceblue; 
+  border-bottom: 1px solid aliceblue;
 }
+
 /* Third Section: Contact Info and Map */
-.footer__title_3{
+.footer__title_3 {
   font-size: 1.6rem;
   margin-bottom: 50px;
-  color: #77a1aa; /* Highlight color for section titles */
+  color: aliceblue; /* Soft Coral for section titles */
   text-align: start;
-
 }
+
 .footer__contact-list {
   list-style: none;
   padding: 0;
@@ -148,38 +148,25 @@
   align-items: center;
   gap: 20px;
   font-size: 1rem;
-  color: #fff;
+  color: #E0E0E0; /* Light Gray */
 }
 
 .footer__contact-icon {
   font-size: 1.4rem;
-  color: #77a1aa;
+  color: white; 
   flex-shrink: 0;
 }
 
 .footer__contact-link {
-  color: #fff;
+  color: #E0E0E0; /* Light Gray */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer__contact-link:hover {
-  color: rgb(68, 138, 114);
+  color: aliceblue; /* Sunset Orange */
 }
 
-.footer__map {
-  margin-top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.footer__map iframe {
-  width: 100%;
-  height: 150px;
-  border: none;
-  border-radius: 10px;
-}
 
 .footer__copyright {
   margin: 20px auto;
@@ -189,10 +176,10 @@
   color: #ddd; /* Dark gray text */
   border-top: 1px solid #ddd;
   border-radius: 100px;
+  margin-bottom: -20px;
 }
 
 .footer__copyright p {
-  margin: 0;
   padding: 0;
 }
 

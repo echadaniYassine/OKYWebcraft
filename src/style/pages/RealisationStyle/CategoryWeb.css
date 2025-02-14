@@ -10,7 +10,8 @@
 }
 
 .navbar {
-  background: linear-gradient(90deg, #7f8c8d, #34495e);
+  background: linear-gradient(90deg, rgb(196, 0, 220), #1A237E);
+  /* Vibrant Teal to Dark Blue gradient */
   color: white;
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -34,8 +35,9 @@
   margin-bottom: 5rem;
   text-align: start;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  color: #283738;
-  border-bottom: #283738 solid 1px;
+  color: #1A237E;
+  /* Dark Blue */
+  border-bottom: #1A237E solid 1px;
 }
 
 
@@ -44,118 +46,6 @@
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: start;
-}
-
-.project-card {
-  position: relative;
-  width: 300px;
-  height: 350px;
-  overflow: hidden;
-  border-radius: 16px;
-  background: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: scale(0.9);
-  padding: 20px 30px;
-}
-
-.project-card.fade-in {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 70%;
-  overflow: hidden;
-}
-
-.carousel-image {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.carousel:hover .carousel-image {
-  transform: scale(1.1);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .overlay {
-  opacity: 1;
-}
-
-.live-demo-icon {
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background: #34495e;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.live-demo-icon:hover {
-  background: #2c3e50;
-}
-
-.project-title0 {
-  text-align: start;
-  margin: 1rem 13px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #77a1aa;
-}
-
-.project-description {
-  text-align: start;
-  font-size: 1rem;
-  color: #7f8c8d;
-  margin: 0 1rem 1rem;
-
-}
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(194, 188, 188, 0.5);
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: #7f8c8d; /* Blue for active dot */
-}
-
-.dot:hover {
-  background-color: #0056b3; /* Darker blue on hover */
 }
 
 
@@ -187,43 +77,5 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-  }
-
-  .project-card {
-    width: 90%;
-    height: auto;
-    padding: 20px;
-    text-align: start;
-  }
-
-  .carousel {
-    height: 200px;
-  }
-
-  .carousel-image {
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .overlay {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  .live-demo-icon {
-    font-size: 1.2rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .project-title0 {
-    font-size: 1rem;
-    margin: 1rem 3px;
-  }
-
-  .project-description {
-    font-size: 0.9rem;
-    text-align: start;
-    margin: 1rem 3px;
-
   }
 }

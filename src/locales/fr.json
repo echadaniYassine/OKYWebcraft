@@ -1,0 +1,347 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "realization": "Réalisation",
+        "careers": "Carrières",
+        "terms-of-service": "Conditions d'utilisation",
+        "privacy-policy": "Politique de confidentialité"
+    },
+    "hero": {
+        "hero_title": "Travaillons Ensemble pour Créer des Merveilles avec OKY",
+        "hero_subtitle": "Solutions Numériques Innovantes",
+        "hero_paragraph": "Chez OKY WebCraft, nous créons des solutions numériques professionnelles et optimisées adaptées à vos besoins. Des sites web modernes aux applications full-stack, notre équipe livre des résultats exceptionnels qui favorisent le succès.",
+        "explore_services": "Explorer les Services",
+        "projects_delivered": "Projets Livrés",
+        "satisfaction_rate": "Taux de Satisfaction",
+        "team_members": "Membres de l'Équipe"
+    },
+    "about": {
+        "about_intro": "INTRODUCTION À PROPOS DE NOUS",
+        "about_title": "Optimisez les Efforts Sociaux Pour un Impact Plus Grand.",
+        "about_description": "Nous vous aidons à optimiser vos efforts sociaux pour des résultats percutants et significatifs.",
+        "target_oriented_work": "Travail Orienté Objectifs",
+        "target_description": "Axé sur l'atteinte d'objectifs clairs et efficaces.",
+        "project_success": "Garantie de Succès du Projet",
+        "project_description": "Assurer des résultats de qualité et atteindre vos objectifs.",
+        "more_about_us": "PLUS SUR NOUS"
+    },
+    "chooseUs": {
+        "why_choose_us": "Pourquoi nous choisir ?",
+        "goals_benefits": "Nos Objectifs & Avantages",
+        "explore_more": "Explorer Plus",
+        "tailored_solutions": "Solutions Personnalisées",
+        "tailored_description": "Nous proposons des stratégies personnalisées parfaitement adaptées à vos objectifs commerciaux, garantissant un impact maximal.",
+        "reliable_expertise": "Expertise Fiable",
+        "reliable_description": "Fort de plusieurs années d'expérience, notre équipe livre des résultats cohérents et de haute qualité sur lesquels vous pouvez compter.",
+        "innovative_strategies": "Stratégies Innovantes",
+        "innovative_description": "Nous adoptons l'innovation pour fournir des solutions de pointe qui vous placent en tête de la concurrence."
+    },
+    "services": {
+        "title": "Fournir les Meilleurs Services",
+        "description": "Découvrez des solutions innovantes adaptées à vos besoins commerciaux et pour favoriser une croissance efficace.",
+        "view_all_services": "Voir Tous les Services",
+        "show_less": "Voir Moins",
+        "web_mobile_development": {
+            "title": "Développement Web & Mobile",
+            "description": "Nous créons des sites web réactifs et des applications mobiles performantes adaptées aux besoins de votre entreprise.",
+            "explore_more": "Explorer Plus"
+        },
+        "social_media_management": {
+            "title": "Gestion des Médias Sociaux",
+            "description": "Boostez votre présence en ligne avec nos stratégies d'experts pour gérer et développer vos canaux de médias sociaux.",
+            "explore_more": "Explorer Plus"
+        },
+        "ecommerce_stores": {
+            "title": "Magasins E-Commerce",
+            "description": "Offrez à votre boutique en ligne des plateformes e-commerce sécurisées, évolutives et faciles à utiliser pour stimuler les ventes.",
+            "explore_more": "Explorer Plus"
+        },
+        "ui_ux_design": {
+            "title": "Conception UI / UX",
+            "description": "Créez des designs visuellement attractifs qui résonnent avec votre public cible et renforcent l'identité de votre marque.",
+            "explore_more": "Explorer Plus"
+        },
+        "digital_advertising": {
+            "title": "Publicité Digitale",
+            "description": "Atteignez le bon public avec des campagnes ciblées sur plusieurs plateformes pour maximiser votre ROI.",
+            "explore_more": "Explorer Plus"
+        },
+        "cloud_services_hosting": {
+            "title": "Services Cloud & Hébergement",
+            "description": "Assurez une évolutivité et une haute disponibilité fluides avec nos solutions d'hébergement et de gestion cloud fiables.",
+            "explore_more": "Explorer Plus"
+        }
+    },
+    "portfolio": {
+        "title": "Nos Réalisations",
+        "description": "Découvrez certains de nos projets récents mettant en valeur notre expertise et notre créativité.",
+        "see_all_realisations": "Voir Toutes les Réalisations",
+        "show_less": "Voir Moins",
+        "web_development": {
+            "title": "Développement Web",
+            "description": "Une application web complète construite avec des technologies modernes."
+        },
+        "ui_ux_design": {
+            "title": "Conception UI / UX",
+            "description": "Des designs créatifs pour la création de marques et de supports marketing."
+        },
+        "mobile_app_development": {
+            "title": "Développement d'Applications Mobiles",
+            "description": "Conception d'applications mobiles intuitives axées sur l'expérience utilisateur et l'engagement."
+        }
+    },
+    "footer": {
+        "subscribe": "S'abonner",
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_service": "Conditions d'utilisation",
+        "careers": "Carrières",
+        "about_us": "À propos de nous",
+        "where_we_are": "Où nous trouver",
+        "contact_phone": "+212 717-923103",
+        "contact_email": "okywebcraft@gmail.com",
+        "contact_address": "Rabat, Maroc",
+        "social_links": {
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "linkedin": "LinkedIn",
+            "whatsapp": "WhatsApp"
+        },
+        "copyright": "© 2025 OKY WebCraft. Tous droits réservés."
+    },
+    "page-titles": {
+        "home": "Accueil",
+        "about-us": "À propos",
+        "benefits": "Avantages",
+        "category-web": "Catégorie Web",
+        "category-graphic-design": "Catégorie Design Graphique",
+        "category-app-mobile": "Catégorie Application Mobile",
+        "careers": "Carrières",
+        "terms-of-service": "Conditions d'utilisation",
+        "privacy-policy": "Politique de confidentialité",
+        "services-ecommerce": "Services E-commerce",
+        "services-web-mobile-development": "Développement Web et Mobile",
+        "services-social-media-management": "Gestion des Médias Sociaux",
+        "services-cloud-hosting": "Services d'Hébergement Cloud",
+        "services-digital-advertising": "Services de Publicité Numérique",
+        "services-ui-ux-design": "Services UI/UX Design"
+    },
+    "careers": {
+        "title": "Rencontrez notre équipe",
+        "subtitle": "Chez OKY WebCraft, nous sommes une équipe passionnée de développeurs, designers et innovateurs, chacun avec des compétences uniques qui contribuent à notre succès collectif.",
+        "applyNow": "Postuler maintenant",
+        "role": "Rôle",
+        "location": "Lieu",
+        "description": "Description",
+        "fileError": "Seuls les fichiers PDF et DOCX sont autorisés.",
+        "fileSizeError": "La taille du fichier ne doit pas dépasser 10 Mo.",
+        "uploadFile": "Veuillez télécharger un fichier valide.",
+        "applyFormTitle": "Postuler maintenant",
+        "fullName": "Nom complet",
+        "email": "E-mail",
+        "phone": "Numéro de téléphone",
+        "submitApplication": "Soumettre la candidature",
+        "close": "Fermer",
+        "applicationSuccess": "Candidature envoyée avec succès!"
+    },
+    "privacy_policy": {
+        "privacy_policy_title": "Politique de confidentialité",
+        "intro_title": "Introduction",
+        "intro_text": "Bienvenue chez OKY WebCraft ! Nous attachons une grande importance à votre vie privée et nous nous engageons à protéger vos informations personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons et partageons vos informations lorsque vous utilisez nos services.",
+        "information_title": "Informations que nous collectons",
+        "information_text": "Nous pouvons collecter les types d'informations suivants :",
+        "information_list": [
+            "Informations personnelles (par exemple, nom, adresse e-mail, numéro de téléphone)",
+            "Données d'utilisation (par exemple, pages que vous visitez, temps passé sur le site)",
+            "Informations sur l'appareil (par exemple, type de navigateur, adresse IP)"
+        ],
+        "use_title": "Comment nous utilisons vos informations",
+        "use_text": "Les informations que nous collectons sont utilisées pour :",
+        "use_list": [
+            "Fournir et améliorer nos services",
+            "Communiquer avec vous",
+            "Assurer la sécurité et prévenir la fraude"
+        ],
+        "sharing_title": "Partage de vos informations",
+        "sharing_text": "Nous ne vendons pas vos informations personnelles. Nous pouvons partager vos informations avec des tiers uniquement dans les cas suivants :",
+        "sharing_list": [
+            "Avec votre consentement",
+            "Pour respecter les obligations légales",
+            "Pour protéger nos droits et notre sécurité"
+        ],
+        "rights_title": "Vos droits",
+        "rights_text": "Vous avez le droit d'accéder, de mettre à jour ou de supprimer vos informations personnelles. Si vous avez des questions ou des préoccupations, veuillez nous contacter à [votre e-mail ou vos coordonnées].",
+        "changes_title": "Modifications de cette politique",
+        "changes_text": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Veuillez consulter régulièrement les mises à jour.",
+        "footer_text": "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter par e-mail ci-dessous ↓"
+    },
+    "terms_of_service": {
+        "terms_of_service_title": "Conditions d'utilisation",
+        "last_updated": "Dernière mise à jour : 23 janvier 2025",
+        "intro_title": "1. Introduction",
+        "intro_text": "Bienvenue sur OKY WebCraft. En utilisant nos services, vous acceptez les termes et conditions suivants.",
+        "use_title": "2. Utilisation du service",
+        "use_text": "Vous acceptez d'utiliser nos services uniquement à des fins légales. Vous ne devez pas utiliser nos services d'une manière qui viole les lois ou règlements applicables.",
+        "account_title": "3. Responsabilité du compte",
+        "account_text": "Vous êtes responsable de la confidentialité de vos informations de compte et de toutes les activités qui se produisent sous votre compte.",
+        "content_title": "4. Propriété du contenu",
+        "content_text": "Tout le contenu fourni par vous reste votre propriété. Cependant, en utilisant nos services, vous nous accordez une licence pour utiliser, afficher et distribuer votre contenu au sein de la plateforme.",
+        "termination_title": "5. Résiliation",
+        "termination_text": "Nous pouvons suspendre ou résilier votre accès au service à tout moment si vous violez ces termes ou adoptez un comportement inapproprié.",
+        "limitation_title": "6. Limitation de responsabilité",
+        "limitation_text": "Nous ne sommes pas responsables des dommages directs, indirects, accessoires ou consécutifs résultant de l'utilisation de nos services.",
+        "privacy_title": "7. Politique de confidentialité",
+        "privacy_text": "L'utilisation de notre service est également régie par notre Politique de confidentialité.",
+        "changes_title": "8. Modifications des conditions",
+        "changes_text": "Nous pouvons mettre à jour ces conditions de temps en temps. Toute modification sera publiée sur cette page avec une date de mise à jour.",
+        "contact_title": "9. Contactez-nous",
+        "contact_text": "Si vous avez des questions concernant ces conditions, veuillez nous contacter à okywebcraft@gmail.com."
+    },
+    "category_application": {
+        "navbar": "Applications Mobiles",
+        "applications": "Applications",
+        "project_title_1": "Application Mobile 1",
+        "project_title_2": "Application Mobile 2",
+        "project_title_3": "Application Mobile 3",
+        "demo_link_1": "Démo de l'App 1",
+        "demo_link_2": "Démo de l'App 2",
+        "demo_link_3": "Démo de l'App 3"
+    },
+    "category_graphic_design": {
+        "navbar": "Conception Graphique"
+    },
+    "category_web": {
+        "navbar": "Développement Web",
+        "application": "Applications Web",
+        "landing": "Pages de Destination",
+        "project_title_1": "Application Web 1",
+        "project_title_2": "Trendify Store",
+        "project_title_3": "Présentation Asiatique",
+        "project_title_4": "SmartPath"
+    },
+    "cloud_services": {
+        "title": "Services Cloud & Hébergement",
+        "description": "Optimisez votre infrastructure avec <strong>OKY Agency</strong>. Nous fournissons des <strong>services d'hébergement cloud</strong> fiables assurant <strong>scalabilité, sécurité et haute performance</strong>.",
+        "scalable_hosting_title": "Hébergement Scalable",
+        "scalable_hosting_description": "Assurez une <strong>haute disponibilité</strong> avec des solutions cloud qui <strong>s'adaptent à la demande</strong>.",
+        "robust_security_title": "Sécurité Robuste",
+        "robust_security_description": "Mesures de sécurité avancées pour <strong>la protection des données, le chiffrement et la mitigation DDoS</strong>.",
+        "performance_optimization_title": "Optimisation des Performances",
+        "performance_optimization_description": "Utilisez des <strong>CDN, mise en cache et centres de données mondiaux</strong> pour des <strong>performances ultra-rapides</strong>.",
+        "cta_button": "Déployer avec OKY"
+    },
+    "digital_advertising": {
+        "title": "Publicité Digitale",
+        "description": "Maximisez votre portée avec <strong>OKY Agency</strong>. Nous créons des <strong>campagnes publicitaires numériques</strong> à fort taux de conversion, adaptées à votre public, garantissant un <strong>ROI maximum</strong> et une croissance de votre entreprise.",
+        "cta_button": "Lancez Votre Campagne",
+        "targeted_campaigns_title": "Campagnes Ciblées",
+        "targeted_campaigns_description": "Nous livrons des <strong>publicités hautement ciblées</strong> au bon public, augmentant l'engagement et les conversions.",
+        "data_driven_strategies_title": "Stratégies Basées sur les Données",
+        "data_driven_strategies_description": "Grâce à <strong>l'analyse et à l'IA</strong>, nous optimisons continuellement les campagnes pour de meilleures performances.",
+        "maximized_roi_title": "ROI Maximisé",
+        "maximized_roi_description": "Obtenez le <strong>meilleur retour sur investissement</strong> en réduisant le gaspillage publicitaire et en augmentant les conversions."
+    },
+    "ecommerce_services": {
+        "title": "Nos Services E-Commerce",
+        "description": "Chez <strong>OKY Agency</strong>, nous nous spécialisons dans la création de solutions e-commerce dynamiques, sécurisées et évolutives en utilisant les meilleures plateformes comme <strong>WordPress</strong> et <strong>Shopify</strong>.",
+        "cta_button": "Contactez-nous",
+        "wordpress_ecommerce_title": "Solutions E-Commerce WordPress",
+        "wordpress_ecommerce_description": "Nous utilisons WordPress avec WooCommerce pour créer des boutiques en ligne polyvalentes et conviviales. Que vous lanciez une nouvelle entreprise ou que vous amélioriez votre site e-commerce actuel, nous nous assurons que votre plateforme soit optimisée pour la performance et l'évolutivité.",
+        "shopify_ecommerce_title": "Solutions E-Commerce Shopify",
+        "shopify_ecommerce_description": "Shopify est l'une des principales plateformes e-commerce, et nous sommes des experts dans la création de boutiques en ligne fluides qui offrent une expérience d'achat supérieure. Nos solutions Shopify sont conçues pour aider les entreprises à se développer et à évoluer efficacement.",
+        "process_title": "Comment OKY Agency Améliore Votre Projet E-Commerce",
+        "process_description": "Notre agence est dédiée à la création d'expériences e-commerce de pointe pour nos clients. Nous combinons le développement expert avec les technologies modernes pour donner vie à votre vision.",
+        "discovery_consultation_title": "1. Découverte & Consultation",
+        "discovery_consultation_description": "Nous commençons par comprendre votre entreprise, votre marché cible et vos objectifs. Notre équipe travaille en étroite collaboration avec vous pour définir la portée de votre projet, vos préférences et les fonctionnalités nécessaires.",
+        "platform_selection_customization_title": "2. Sélection & Personnalisation de la Plateforme",
+        "platform_selection_customization_description": "En fonction de vos besoins, nous vous recommandons la meilleure plateforme, soit WordPress/WooCommerce, soit Shopify. Nous personnalisons ensuite la plateforme pour qu'elle corresponde à votre marque et à vos exigences fonctionnelles.",
+        "development_implementation_title": "3. Développement & Mise en œuvre",
+        "development_implementation_description": "Nos développeurs experts intègrent les fonctionnalités nécessaires, conçoivent des thèmes personnalisés et mettent en œuvre toutes les fonctionnalités requises. Nous nous assurons également que votre site soit totalement optimisé pour la vitesse et la sécurité.",
+        "testing_launch_title": "4. Tests & Lancement",
+        "testing_launch_description": "Avant le lancement, nous effectuons des tests approfondis pour nous assurer que tout fonctionne parfaitement sur tous les appareils et navigateurs. Après approbation, nous lançons officiellement votre boutique en ligne.",
+        "ongoing_support_optimization_title": "5. Support Continu & Optimisation",
+        "ongoing_support_optimization_description": "Après le lancement, nous fournissons un support continu pour garantir le bon fonctionnement de votre boutique. Nous vous aidons avec les mises à jour, les améliorations des fonctionnalités et l'optimisation SEO pour maximiser les performances."
+    },
+    "social_media_management": {
+        "title": "Gestion des Réseaux Sociaux",
+        "description": "Boostez la présence en ligne de votre marque avec <strong>OKY Agency</strong>. Nous gérons votre <strong>stratégie sur les réseaux sociaux, le contenu et l'engagement</strong> pour garantir une portée et un impact maximum.",
+        "cta_button": "Boostez votre Réseaux Sociaux",
+        "platforms": {
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn",
+            "tiktok": "TikTok"
+        },
+        "benefits": {
+            "content_strategy": {
+                "title": "Stratégie de Contenu",
+                "description": "Nous créons un <strong>contenu engageant</strong> adapté à votre audience, assurant la cohérence et l'alignement de votre marque."
+            },
+            "analytics_reporting": {
+                "title": "Analytique & Reporting",
+                "description": "Suivez la <strong>performance de vos réseaux sociaux</strong> avec des insights détaillés pour affiner votre stratégie."
+            },
+            "community_engagement": {
+                "title": "Engagement Communautaire",
+                "description": "Créez des <strong>liens solides</strong> avec votre audience à travers des interactions actives et des réponses rapides."
+            }
+        }
+    },
+    "uiux_design": {
+        "title": "Design UI/UX",
+        "description": "Créez des interfaces époustouflantes et conviviales avec <strong>OKY Agency</strong>. Nous nous concentrons sur <strong>l'expérience utilisateur, la navigation intuitive et l'esthétique moderne</strong> pour améliorer votre présence digitale.",
+        "cta_button": "Améliorez votre UI/UX",
+        "tools": {
+            "figma": "Figma",
+            "adobe_xd": "Adobe XD",
+            "sketch": "Sketch",
+            "illustrator": "Illustrator",
+            "photoshop": "Photoshop"
+        },
+        "benefits": {
+            "user_centered_design": {
+                "title": "Design Centré Utilisateur",
+                "description": "Nous concevons en gardant l'<strong>expérience utilisateur</strong> à l'esprit, assurant l'accessibilité et des interactions fluides."
+            },
+            "prototyping_wireframing": {
+                "title": "Prototypage & Wireframing",
+                "description": "Obtenez un <strong>plan visuel</strong> de votre application avant le démarrage du développement."
+            },
+            "usability_testing": {
+                "title": "Tests d'Utilisabilité",
+                "description": "Améliorez les interactions utilisateur avec des <strong>retours réels et un design itératif</strong>."
+            }
+        }
+    },
+    "web_mobile_development": {
+        "title": "Développement Web & Mobile",
+        "description": "Élevez votre présence numérique avec <strong>OKY Agency</strong>. Nous créons des applications <strong>web & mobile</strong> haute performance en utilisant les dernières technologies, garantissant <strong>scalabilité, sécurité et une expérience utilisateur fluide</strong>.",
+        "cta_button": "Commencez votre projet",
+        "technologies": {
+            "react": "React",
+            "node_js": "Node.js",
+            "express": "Express",
+            "mongodb": "MongoDB",
+            "laravel": "Laravel",
+            "tailwindcss": "TailwindCSS",
+            "react_native": "React Native",
+            "flutter": "Flutter"
+        },
+        "benefits": {
+            "custom_web_solutions": {
+                "title": "Solutions Web Personnalisées",
+                "description": "Des <strong>sites web d'entreprise</strong> aux <strong>plateformes SaaS</strong>, nous construisons des solutions sur mesure qui <strong>évoluent avec votre entreprise</strong>."
+            },
+            "mobile_first_development": {
+                "title": "Développement Mobile-First",
+                "description": "Nous créons des applications mobiles <strong>légères, rapides et intuitives</strong> avec <strong>React Native & Flutter</strong> pour des expériences <strong>iOS et Android</strong> fluides."
+            },
+            "powerful_backend_systems": {
+                "title": "Systèmes Backend Puissants",
+                "description": "En tirant parti de <strong>Node.js, Express, Laravel et MongoDB</strong>, nous concevons des backends <strong>scalables et sécurisés</strong> pour gérer des opérations complexes."
+            }
+        }
+    }
+}

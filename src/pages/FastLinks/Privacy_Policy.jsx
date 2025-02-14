@@ -1,71 +1,60 @@
-//privacy policy.jsx
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../../style/pages/FastLinksStyle/PrivacyPolicy.css'; // Import CSS for styling
 
 const PrivacyPolicy = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="privacy-policy">
       <header className="privacy-policy__header">
-        <h1 className="privacy-policy__title">Privacy Policy</h1>
+        <h1 className="privacy-policy__title">{t('privacy_policy.privacy_policy_title')}</h1>
       </header>
       <section className="privacy-policy__section">
-        <h2 className="privacy-policy__section-title">Introduction</h2>
-        <p className="privacy-policy__text">
-          Welcome to OKY WebCraft! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share your information when you use our services.
-        </p>
+        <h2 className="privacy-policy__section-title">{t('privacy_policy.intro_title')}</h2>
+        <p className="privacy-policy__text">{t('privacy_policy.intro_text')}</p>
       </section>
       <section className="privacy-policy__section">
-        <h2 className="privacy-policy__section-title">Information We Collect</h2>
-        <p className="privacy-policy__text">
-          We may collect the following types of information:
-        </p>
+        <h2 className="privacy-policy__section-title">{t('privacy_policy.information_title')}</h2>
+        <p className="privacy-policy__text">{t('privacy_policy.information_text')}</p>
         <ul className="privacy-policy__list">
-          <li>Personal Information (e.g., name, email address, phone number)</li>
-          <li>Usage Data (e.g., pages you visit, time spent on the site)</li>
-          <li>Device Information (e.g., browser type, IP address)</li>
+          {t('privacy_policy.information_list', { returnObjects: true }).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </section>
       <section className="privacy-policy__section">
-        <h2 className="privacy-policy__section-title">How We Use Your Information</h2>
-        <p className="privacy-policy__text">
-          The information we collect is used for:
-        </p>
+        <h2 className="privacy-policy__section-title">{t('privacy_policy.use_title')}</h2>
+        <p className="privacy-policy__text">{t('privacy_policy.use_text')}</p>
         <ul className="privacy-policy__list">
-          <li>Providing and improving our services</li>
-          <li>Communicating with you</li>
-          <li>Ensuring security and preventing fraud</li>
+          {t('privacy_policy.use_list', { returnObjects: true }).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </section>
       <section className="privacy-policy__section">
-        <h2 className="privacy-policy__section-title">Sharing Your Information</h2>
-        <p className="privacy-policy__text">
-          We do not sell your personal information. We may share your information with third parties only in the following cases:
-        </p>
+        <h2 className="privacy-policy__section-title">{t('privacy_policy.sharing_title')}</h2>
+        <p className="privacy-policy__text">{t('privacy_policy.sharing_text')}</p>
         <ul className="privacy-policy__list">
-          <li>With your consent</li>
-          <li>To comply with legal obligations</li>
-          <li>To protect our rights and safety</li>
+          {t('privacy_policy.sharing_list', { returnObjects: true }).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </section>
       <section className="privacy-policy__section">
-        <h2 className="privacy-policy__section-title">Your Rights</h2>
-        <p className="privacy-policy__text">
-          You have the right to access, update, or delete your personal information. If you have any questions or concerns, please contact us at [your email or contact information].
-        </p>
+        <h2 className="privacy-policy__section-title">{t('privacy_policy.rights_title')}</h2>
+        <p className="privacy-policy__text">{t('privacy_policy.rights_text')}</p>
       </section>
       <section className="privacy-policy__section">
-        <h2 className="privacy-policy__section-title">Changes to This Policy</h2>
-        <p className="privacy-policy__text">
-          We may update this Privacy Policy from time to time. Please check back periodically for updates.
-        </p>
+        <h2 className="privacy-policy__section-title">{t('privacy_policy.changes_title')}</h2>
+        <p className="privacy-policy__text">{t('privacy_policy.changes_text')}</p>
       </section>
       <footer className="privacy-policy__footer">
-        <p className="privacy-policy__text">
-        If you have any questions about this Privacy Policy, please contact us at our email below ↓
-        </p>
+        <p className="privacy-policy__text">{t('privacy_policy.footer_text')}</p>
       </footer>
     </div>
   );

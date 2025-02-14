@@ -1,38 +1,41 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 import '../style/components/Portfolio.css';
-import {FaAngleDown, FaAngleUp} from 'react-icons/fa';
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';  // Importing useTranslation
 
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const portfolioRef = useRef(null);
 
+  const { t } = useTranslation();  // Using the translation function
+
   const projects = [
     {
       image: 'assets/Realisation1.png',
-      title: 'Web Development',
-      description: 'A comprehensive web application built with modern technologies.',
+      title: t('portfolio.web_development.title'),
+      description: t('portfolio.web_development.description'),
       link: '/category-web',
     },
     {
       image: 'assets/Realisation2.png',
-      title: 'UI / UX Design',
-      description: 'Creative designs for branding and marketing materials.',
+      title: t('portfolio.ui_ux_design.title'),
+      description: t('portfolio.ui_ux_design.description'),
       link: '/category-graphic-design',
     },
     {
       image: 'assets/Realisation3.png',
-      title: 'Mobile App Development',
-      description: 'Intuitive mobile app design focused on user experience and engagement.',
+      title: t('portfolio.mobile_app_development.title'),
+      description: t('portfolio.mobile_app_development.description'),
       link: '/category-app-mobile',
     }
-    // Add more projects as needed
   ];
 
   const handleToggle = () => {
     setShowAll(!showAll);
   };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -54,9 +57,9 @@ const Portfolio = () => {
       className={`portfolio ${isVisible ? 'visible' : ''}`}
     >
       <div className="container">
-        <h2 className="portfolio-title">Our Realisations</h2>
+        <h2 className="portfolio-title">{t('portfolio.title')}</h2>
         <p className="portfolio-description">
-          Explore some of our recent projects showcasing our expertise and creativity.
+          {t('portfolio.description')}
         </p>
 
         <div className="portfolio-items">
@@ -77,11 +80,11 @@ const Portfolio = () => {
           <button className="show-more-button" onClick={handleToggle}>
             {showAll ? (
               <>
-                Show Less <FaAngleUp /> {/* Icon for "Show Less" */}
+                {t('portfolio.show_less')} <FaAngleUp />
               </>
             ) : (
               <>
-                See All Realisation <FaAngleDown /> {/* Icon for "View All Services" */}
+                {t('portfolio.see_all_realisations')} <FaAngleDown />
               </>
             )}
           </button>

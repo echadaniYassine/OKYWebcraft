@@ -5,7 +5,6 @@
   justify-content: center;
   padding: 0 50px;
   background-color: transparent;
-  /* Optional, adjust as needed */
 }
 
 .hero-container {
@@ -17,6 +16,7 @@
   gap: 40px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .hero-text {
@@ -24,26 +24,27 @@
   text-align: left;
   animation: fade-in-right 2s ease-out;
   margin-right: 20px;
+  background-image: url(/public/assets/herotxt.png);
 }
 
 .hero-title {
   font-size: 3rem;
   font-weight: 700;
-  color: black;
+  color: rgb(196, 0, 220); 
   margin-bottom: 0;
 }
 
 .hero-subtitle {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #77a1aa;
+  color: black; /* Dark Blue */
   margin-bottom: 0;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .hero-paragraph {
-  color: grey;
+  color: #2C3E50; /* Slate Gray */
   line-height: 1.6;
   margin-bottom: 20px;
   max-width: 500px;
@@ -53,18 +54,18 @@
 .hero-btn {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #77a1aa;
+  background-color: rgb(196, 0, 220); 
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-size: large;
   transition: background-color 0.3s ease;
   margin-top: 20px;
-  border-bottom: 4px #2f3c3f solid;
+  border-bottom: 4px #2f3c3f solid; /* Slate Gray */
 }
 
 .hero-btn:hover {
-  background-color: rgb(68, 138, 114);
+  background-color: blueviolet;
 }
 
 .hero-image {
@@ -78,7 +79,6 @@
   max-width: 800px;
   height: 500px;
   border-radius: 10px;
-  margin-bottom: 80px;
 }
 
 /* Stats Section */
@@ -87,7 +87,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 auto 20px;
-  background-color: #f0f8ff;
+  background-color: #f0f8ff; 
   max-width: 950px;
   border-radius: 15px;
   padding: 20px;
@@ -103,25 +103,23 @@
 .hero-stat {
   text-align: center;
   flex: 1;
-  /* Ensure all items share equal width */
   padding: 10px;
 }
 
 .hero-stat-icon {
   width: 100px;
-  color: #77a1aa;
 }
 
 .hero-stat-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
+  color: black; 
   margin-bottom: 5px;
 }
 
 .hero-stat-paragraph {
   font-size: 1rem;
-  color: #555;
+  color: #2C3E50; /* Slate Gray */
 }
 
 /* Typing Animation */
@@ -145,10 +143,105 @@
   overflow: hidden;
   white-space: nowrap;
   width: 0;
-  border-right: 3px solid black;
+  border-right: 3px solid #2d00f8; /* Dark Blue */
   animation: typing 3s steps(20) 1s forwards infinite;
 }
 
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  font-size: 50px;
+  color: rgb(196, 0, 220);
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.whatsapp-icon:hover {
+  color: #1ebe57;
+  transform: scale(1.1);
+}
+
+/* Tooltip Message */
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 70px; /* Adjust position above the icon */
+  right: 0;
+  background-color: #25d366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(5px);
+}
+
+/* Show tooltip on hover */
+.whatsapp-container:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .hero {
+  background-color: transparent;
+}
+body.dark-mode .hero-text{
+  background-image: none;
+}
+
+body.dark-mode .hero-title {
+  color: #ffffff;
+}
+
+body.dark-mode .hero-subtitle {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .hero-paragraph {
+  color: #b0b0b0;
+}
+
+body.dark-mode .hero-btn {
+  border-bottom: 4px #353030 solid;
+}
+
+body.dark-mode .hero-btn:hover {
+  background-color: #5a5a5a;
+}
+
+body.dark-mode .hero-stats {
+  background-image: url(/public/assets/statesBG.png);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .hero-stat-title {
+  color: #ffffff;
+}
+
+body.dark-mode .hero-stat-paragraph {
+  color: #b0b0b0;
+}
+
+body.dark-mode .whatsapp-icon {
+  color: #50fa7b;
+}
+
+body.dark-mode .whatsapp-container:hover .whatsapp-tooltip {
+  background-color: #4CAF50;
+}
 /* Fix for Mobile Screens */
 @media (max-width: 768px) {
   .hero {
@@ -176,21 +269,25 @@
 
   .hero-title {
     font-size: 1.8rem;
+    color: #008080; /* Teal */
   }
 
   .hero-subtitle {
     font-size: 1.5rem;
+    color: #2d00f8; /* Dark Blue */
   }
 
   .hero-paragraph {
     font-size: 0.9rem;
     max-width: 100%;
+    color: #2C3E50; /* Slate Gray */
   }
 
   .hero-btn {
     padding: 8px 20px;
     font-size: 0.9rem;
     margin: 20px 93px;
+    background-color: #008080; /* Teal */
   }
 
   .hero-image {
@@ -200,11 +297,9 @@
   /* Stats Section */
   .hero-stats {
     flex-direction: column;
-    /* Stack stats vertically */
     align-items: center;
     width: 100%;
     max-width: 78%;
-    /* Prevents overflow */
     padding: 15px;
     gap: 20px;
   }
@@ -217,14 +312,17 @@
 
   .hero-stat-icon {
     width: 80px;
+    color: #008080; /* Teal */
   }
 
   .hero-stat-title {
     font-size: 1.8rem;
+    color: #2d00f8; /* Dark Blue */
   }
 
   .hero-stat-paragraph {
     font-size: 1rem;
+    color: #2C3E50; /* Slate Gray */
   }
 
   .typing-animation {

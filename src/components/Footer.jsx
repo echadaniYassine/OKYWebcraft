@@ -3,6 +3,7 @@ import '../style/components/Footer.css';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from 'react-i18next';  // Importing useTranslation
 
 import {
   FaFacebookF,
@@ -16,11 +17,11 @@ import {
   FaBriefcase,
   FaWhatsapp,
   FaLinkedinIn
-
 } from 'react-icons/fa';
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const { t } = useTranslation(); // Use the translation function
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -29,7 +30,7 @@ const Footer = () => {
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (email) {
-      toast.success("Subscribed successfully!", {
+      toast.success(t("footer.subscribe") + " " + t("footer.success_message"), {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: false,
@@ -48,7 +49,7 @@ const Footer = () => {
         <div className="footer__section">
           <div className="footer__logo">
             <img
-              src="assets/logo.png"
+              src="assets/logo-footer.png"
               alt="OKY Agency Logo"
               className="footer__logo__image"
             />
@@ -58,21 +59,21 @@ const Footer = () => {
               type="email"
               value={email}
               onChange={handleEmailChange}
-              placeholder="Your email"
+              placeholder={t('footer.subscribe')}
               className="footer__short-subscription__input"
               required
             />
             <button type="submit" className="footer__short-subscription__button">
-              Subscribe
+              {t('footer.subscribe')}
             </button>
           </form>
           <ToastContainer />
           <ul className="footer__social-links">
             {[
-              { href: "https://www.facebook.com/profile.php?id=61572773007779#", icon: <FaFacebookF />, label: "Facebook" },
-              { href: "https://www.instagram.com/oky_webcraft/", icon: <FaInstagram />, label: "Instagram" },
-              { href: "https://www.linkedin.com/company/106179526", icon: <FaLinkedinIn />, label: "LinkedIn" },
-              { href: "https://wa.me/+212717923103", icon: <FaWhatsapp />, label: "WhatsApp" },
+              { href: "https://www.facebook.com/profile.php?id=61572773007779#", icon: <FaFacebookF />, label: t("footer.social_links.facebook") },
+              { href: "https://www.instagram.com/oky_webcraft/", icon: <FaInstagram />, label: t("footer.social_links.instagram") },
+              { href: "https://www.linkedin.com/company/106179526", icon: <FaLinkedinIn />, label: t("footer.social_links.linkedin") },
+              { href: "https://wa.me/+212717923103", icon: <FaWhatsapp />, label: t("footer.social_links.whatsapp") },
             ].map((link, index) => (
               <li key={index}>
                 <a
@@ -87,53 +88,53 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-
         </div>
 
         {/* Second Section */}
         <div className="footer__section">
-          <h1 className="footer__title_">Fast Links</h1>
+          <h1 className="footer__title_">{t('footer.fast_links')}</h1>
           <ul className="footer__links">
             <li className="footer__links__item">
               <FaShieldAlt className="footer__links__icon" />
-              <Link to="/privacy-policy" className="footer__links__link">Privacy Policy</Link>
+              <Link to="/privacy-policy" className="footer__links__link">{t('footer.privacy_policy')}</Link>
             </li>
             <li className="footer__links__item">
               <FaGavel className="footer__links__icon" />
-              <Link to="/terms-of-service" className="footer__links__link">Terms of Service</Link>
+              <Link to="/terms-of-service" className="footer__links__link">{t('footer.terms_of_service')}</Link>
             </li>
             <li className="footer__links__item">
               <FaBriefcase className="footer__links__icon" />
-              <Link to="/Careers" className="footer__links__link">Careers</Link>
+              <Link to="/Careers" className="footer__links__link">{t('footer.careers')}</Link>
             </li>
             <li className="footer__links__item">
               <FaInfoCircle className="footer__links__icon" />
-              <Link to="/about-us" className="footer__links__link">About Us</Link>
+              <Link to="/about-us" className="footer__links__link">{t('footer.about_us')}</Link>
             </li>
           </ul>
         </div>
+
         {/* Third Section */}
         <div className="footer__section">
-          <h1 className="footer__title_3">Where We Are</h1>
+          <h1 className="footer__title_3">{t('footer.where_we_are')}</h1>
           <ul className="footer__contact-list">
             <li className="footer__contact-item">
               <FaPhone className="footer__contact-icon" />
-              <span>+212 717-923103</span>
+              <span>{t('footer.contact_phone')}</span>
             </li>
             <li className="footer__contact-item">
               <FaEnvelope className="footer__contact-icon" />
-              <a href="mailto:contact@okyagency.com" className="footer__contact-link">okywebcraft@gmail.com</a>
+              <a href="mailto:contact@okyagency.com" className="footer__contact-link">{t('footer.contact_email')}</a>
             </li>
             <li className="footer__contact-item">
               <FaMapMarkerAlt className="footer__contact-icon" />
-              <span>Rabat, Morocco</span>
+              <span>{t('footer.contact_address')}</span>
             </li>
           </ul>
         </div>
 
       </div>
       <div className="footer__copyright">
-        <p>© 2025 OKY WebCraft. All rights reserved.</p>
+        <p>{t('footer.copyright')}</p>
       </div>
     </footer>
   );

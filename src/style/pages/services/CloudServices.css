@@ -1,7 +1,7 @@
 /* General Styling */
 .cloud-section-unique {
   position: relative;
-  background-color: black;
+  background-color: white;
   color: white;
   padding: 30px 50px;
   text-align: center;
@@ -10,8 +10,8 @@
 
 .background-overlay-unique {
   position: absolute;
+  background: linear-gradient(135deg, white, rgb(172, 172, 172));
   inset: 0;
-  background: linear-gradient(to bottom, rgba(96, 146, 152, 0.8), rgba(40, 55, 56, 1));
   opacity: 0.5;
   z-index: 0;
 }
@@ -25,13 +25,13 @@
 .section-title-unique {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #77a1aa;
+  color: rgb(196, 0, 220);
 }
 
 .section-description-unique {
   margin-top: 15px;
   font-size: 1.1rem;
-  color: #d1d5db;
+  color: black;
 }
 
 /* Cloud Platforms Grid */
@@ -44,7 +44,7 @@
 }
 
 .technology-card-unique {
-  background-color: #222;
+  background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
   width: 70%;
   padding: 20px;
   border-radius: 10px;
@@ -68,12 +68,29 @@
 }
 
 /* Cloud Platform Colors */
-.tech-aws-unique { color: #FF9900; }
-.tech-gcloud-unique { color: #4285F4; }
-.tech-azure-unique { color: #0078D4; }
-.tech-digitalocean-unique { color: #0080FF; }
-.tech-vercel-unique { color: #fff; }
-.tech-netlify-unique { color: #00C7B7; }
+.tech-aws-unique {
+  color: #FF9900;
+}
+
+.tech-gcloud-unique {
+  color: #4285F4;
+}
+
+.tech-azure-unique {
+  color: #0078D4;
+}
+
+.tech-digitalocean-unique {
+  color: #0080FF;
+}
+
+.tech-vercel-unique {
+  color: #fff;
+}
+
+.tech-netlify-unique {
+  color: #00C7B7;
+}
 
 /* Benefits Section */
 .benefits-container-unique {
@@ -88,7 +105,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #161616;
+  background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -148,14 +165,15 @@
   }
 
   .technologies-grid-unique {
-    grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 2 columns for better spacing */
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    /* 2 columns for better spacing */
     gap: 15px;
   }
 
   .technology-card-unique {
     padding: 15px;
     width: 80%;
-    background-color: #283738;     
+    background-color: #283738;
   }
 
   .tech-icon-unique {

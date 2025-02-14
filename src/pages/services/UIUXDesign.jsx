@@ -1,15 +1,19 @@
 import React, { useEffect } from "react";
 import { MdDesignServices, MdCheckCircle } from "react-icons/md";
-import { SiAdobexd, SiSketch, SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si"; // Added correct Photoshop icon
+import { SiAdobexd, SiSketch, SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si"; // Fixed Photoshop icon
 import { FaUsers, FaLaptopCode } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next"; // Import i18n translation hook
 import "../../style/pages/services/UIUXDesign.css";
 
 export default function UIUXDesign() {
+  const { t } = useTranslation(); // Initialize translation
+
   useEffect(() => {
     // Scroll to top when the component is loaded
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <section className="uiux-section">
       <div className="background-overlay"></div>
@@ -21,21 +25,22 @@ export default function UIUXDesign() {
           transition={{ duration: 0.5 }}
           className="section-title"
         >
-          UI/UX Design
+          {t("uiux_design.title")}
         </motion.h2>
 
-        <p className="section-description">
-          Create stunning, user-friendly interfaces with <strong>OKY Agency</strong>. We focus on <strong>user experience, intuitive navigation, and modern aesthetics</strong> to elevate your digital presence.
-        </p>
+        <p 
+          className="section-description"
+          dangerouslySetInnerHTML={{ __html: t("uiux_design.description") }} 
+        />
 
-        {/* Design Tools - Fixed Photoshop icon */}
+        {/* Design Tools */}
         <div className="technologies-grid">
           {[
-            { name: "Figma", icon: <MdDesignServices />, class: "tech-figma" },
-            { name: "Adobe XD", icon: <SiAdobexd />, class: "tech-adobe" },
-            { name: "Sketch", icon: <SiSketch />, class: "tech-sketch" },
-            { name: "Illustrator", icon: <SiAdobeillustrator />, class: "tech-illustrator" },
-            { name: "Photoshop", icon: <SiAdobephotoshop />, class: "tech-photoshop" }
+            { name: t("uiux_design.tools.figma"), icon: <MdDesignServices />, class: "tech-figma" },
+            { name: t("uiux_design.tools.adobe_xd"), icon: <SiAdobexd />, class: "tech-adobe" },
+            { name: t("uiux_design.tools.sketch"), icon: <SiSketch />, class: "tech-sketch" },
+            { name: t("uiux_design.tools.illustrator"), icon: <SiAdobeillustrator />, class: "tech-illustrator" },
+            { name: t("uiux_design.tools.photoshop"), icon: <SiAdobephotoshop />, class: "tech-photoshop" }
           ].map((tool, index) => (
             <motion.div
               key={index}
@@ -50,35 +55,22 @@ export default function UIUXDesign() {
 
         {/* Key Benefits */}
         <div className="benefits-container">
-          <motion.div whileHover={{ scale: 1.05 }} className="benefit-card">
-            <FaUsers className="benefit-icon" />
-            <div>
-              <h3 className="benefit-title">User-Centered Design</h3>
-              <p className="benefit-description">
-                We design with <strong>user experience in mind</strong>, ensuring accessibility and seamless interactions.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.05 }} className="benefit-card">
-            <FaLaptopCode className="benefit-icon" />
-            <div>
-              <h3 className="benefit-title">Prototyping & Wireframing</h3>
-              <p className="benefit-description">
-                Get a <strong>visual blueprint</strong> of your application before development starts.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.05 }} className="benefit-card">
-            <MdCheckCircle className="benefit-icon" />
-            <div>
-              <h3 className="benefit-title">Usability Testing</h3>
-              <p className="benefit-description">
-                Improve user interactions with <strong>real feedback and iterative design</strong>.
-              </p>
-            </div>
-          </motion.div>
+          {[
+            { icon: <FaUsers />, title: t("uiux_design.benefits.user_centered_design.title"), description: t("uiux_design.benefits.user_centered_design.description") },
+            { icon: <FaLaptopCode />, title: t("uiux_design.benefits.prototyping_wireframing.title"), description: t("uiux_design.benefits.prototyping_wireframing.description") },
+            { icon: <MdCheckCircle />, title: t("uiux_design.benefits.usability_testing.title"), description: t("uiux_design.benefits.usability_testing.description") }
+          ].map((benefit, index) => (
+            <motion.div whileHover={{ scale: 1.05 }} key={index} className="benefit-card">
+              {benefit.icon && <div className="benefit-icon">{benefit.icon}</div>}
+              <div>
+                <h3 className="benefit-title">{benefit.title}</h3>
+                <p 
+                  className="benefit-description"
+                  dangerouslySetInnerHTML={{ __html: benefit.description }} 
+                />
+              </div>
+            </motion.div>
+          ))}
         </div>
 
         {/* CTA Button */}
@@ -87,7 +79,7 @@ export default function UIUXDesign() {
           whileHover={{ scale: 1.1 }}
           className="cta-button"
         >
-          Improve Your UI/UX
+          {t("uiux_design.cta_button")}
         </motion.a>
       </div>
     </section>

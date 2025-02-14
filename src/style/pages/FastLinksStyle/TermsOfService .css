@@ -12,12 +12,9 @@
 
 .terms-of-service h1 {
   font-size: 2.2em;
-  background: linear-gradient(90deg, #77a1aa, #2f3c3f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(196, 0, 220);
   font-weight: bold;
   text-align: center;
-  transition: color 0.3s ease-in-out;
 }
 
 .terms-of-service p {
@@ -47,7 +44,7 @@
 
 .terms-of-service h2 {
   font-size: 1.2em;
-  color: #2f3c3f;
+  color: rgb(196, 0, 220);
   margin-bottom: 10px;
   transition: color 0.3s ease-in-out;
 }
@@ -57,7 +54,7 @@
 }
 
 .terms-of-service a {
-  color: #0073e6;
+  color: rgb(196, 0, 220);
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease-in-out;

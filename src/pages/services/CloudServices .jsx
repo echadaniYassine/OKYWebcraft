@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { FaAws, FaGoogle, FaMicrosoft, FaDigitalOcean, FaServer, FaShieldAlt, FaRocket } from "react-icons/fa";
 import { SiVercel, SiNetlify } from "react-icons/si";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next"; // Import i18n translation hook
 import "../../style/pages/services/CloudServices.css"; // Import CSS file
 
-export default function CloudServices () {
-    useEffect(() => {
-        // Scroll to top when the component is loaded
-        window.scrollTo(0, 0);
-      }, []); 
+export default function CloudServices() {
+  const { t } = useTranslation(); // Initialize translation
+
+  useEffect(() => {
+    // Scroll to top when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="cloud-section-unique">
       {/* Background Overlay */}
@@ -21,12 +25,14 @@ export default function CloudServices () {
           transition={{ duration: 0.5 }}
           className="section-title-unique"
         >
-          Cloud Services & Hosting
+          {t('cloud_services.title')}
         </motion.h2>
 
-        <p className="section-description-unique">
-          Optimize your infrastructure with <strong>OKY Agency</strong>. We provide reliable <strong>cloud hosting & services</strong> ensuring <strong>scalability, security, and high performance</strong>.
-        </p>
+        {/* Description with HTML Rendering */}
+        <p 
+          className="section-description-unique"
+          dangerouslySetInnerHTML={{ __html: t('cloud_services.description') }} 
+        />
 
         {/* Cloud Platforms */}
         <div className="technologies-grid-unique">
@@ -49,35 +55,38 @@ export default function CloudServices () {
           ))}
         </div>
 
-        {/* Key Benefits */}
+        {/* Key Benefits with HTML Rendering */}
         <div className="benefits-container-unique">
           <motion.div whileHover={{ scale: 1.05 }} className="benefit-card-unique">
             <FaServer className="benefit-icon-unique" />
             <div>
-              <h3 className="benefit-title-unique">Scalable Hosting</h3>
-              <p className="benefit-description-unique">
-                Ensure <strong>high availability</strong> with cloud-based solutions that <strong>scale with demand</strong>.
-              </p>
+              <h3 className="benefit-title-unique">{t('cloud_services.scalable_hosting_title')}</h3>
+              <p 
+                className="benefit-description-unique"
+                dangerouslySetInnerHTML={{ __html: t('cloud_services.scalable_hosting_description') }} 
+              />
             </div>
           </motion.div>
 
           <motion.div whileHover={{ scale: 1.05 }} className="benefit-card-unique">
             <FaShieldAlt className="benefit-icon-unique" />
             <div>
-              <h3 className="benefit-title-unique">Robust Security</h3>
-              <p className="benefit-description-unique">
-                Advanced security measures for <strong>data protection, encryption, and DDoS mitigation</strong>.
-              </p>
+              <h3 className="benefit-title-unique">{t('cloud_services.robust_security_title')}</h3>
+              <p 
+                className="benefit-description-unique"
+                dangerouslySetInnerHTML={{ __html: t('cloud_services.robust_security_description') }} 
+              />
             </div>
           </motion.div>
 
           <motion.div whileHover={{ scale: 1.05 }} className="benefit-card-unique">
             <FaRocket className="benefit-icon-unique" />
             <div>
-              <h3 className="benefit-title-unique">Performance Optimization</h3>
-              <p className="benefit-description-unique">
-                Utilize <strong>CDNs, caching, and global data centers</strong> for <strong>blazing-fast performance</strong>.
-              </p>
+              <h3 className="benefit-title-unique">{t('cloud_services.performance_optimization_title')}</h3>
+              <p 
+                className="benefit-description-unique"
+                dangerouslySetInnerHTML={{ __html: t('cloud_services.performance_optimization_description') }} 
+              />
             </div>
           </motion.div>
         </div>
@@ -88,9 +97,9 @@ export default function CloudServices () {
           whileHover={{ scale: 1.1 }}
           className="cta-button-unique"
         >
-          Deploy with OKY
+          {t('cloud_services.cta_button')}
         </motion.a>
       </div>
     </section>
   );
-};
+}
