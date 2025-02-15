@@ -10,7 +10,8 @@ const Header = () => {
   const navRef = useRef(null); // Reference for the navigation menu
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark" ? true : false; // Default to light if no theme is found
-  }); const [languageDropdown, setLanguageDropdown] = useState(false);
+  });
+  const [languageDropdown, setLanguageDropdown] = useState(false);
   const { t } = useTranslation();
 
   // Language change function
