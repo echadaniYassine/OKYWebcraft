@@ -164,7 +164,9 @@
 }
 
 .footer__contact-link:hover {
-  color: aliceblue; /* Sunset Orange */
+  color: aliceblue; 
+  border-bottom: 1px solid aliceblue;
+
 }
 
 
