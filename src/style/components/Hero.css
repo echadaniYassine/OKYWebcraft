@@ -327,11 +327,11 @@ body.dark-mode .whatsapp-container:hover .whatsapp-tooltip {
   }
 
   .whatsapp-container {
-    bottom: 10px;
-    right: 5px;
+    bottom: 15px;
+    right: 15px;
   }
   .whatsapp-icon {
-    font-size: 30px;
+    font-size: 40px;
     
   }
 

@@ -324,7 +324,7 @@ body.dark-mode .language-btn:hover {
     gap: 15px;
     list-style: none;
     position: relative;
-    top: 285px;
+    top:370px;
     left: -20px;
   }
 
@@ -336,7 +336,6 @@ body.dark-mode .language-btn:hover {
 
   .social-icons a:hover {
     color: #008080;
-    /* Teal - Primary Color */
   }
 
   .imageLogoMobill {
