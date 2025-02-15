@@ -51,8 +51,9 @@ const Header = () => {
 
   // Apply theme on load
   useEffect(() => {
-    document.body.classList.toggle("dark-mode", darkMode);
-  }, [darkMode]);
+    const theme = localStorage.getItem("theme") || "light"; // Default to light mode
+    document.body.classList.toggle("dark-mode", theme === "dark");
+  }, []);
 
   return (
     <header className="header-container">
