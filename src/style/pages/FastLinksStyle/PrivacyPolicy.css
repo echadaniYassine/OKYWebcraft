@@ -19,7 +19,7 @@
 .privacy-policy__title {
   font-size: 2.2rem;
   font-weight: bold;
-  color:  rgb(196, 0, 220);
+  color: rgb(196, 0, 220);
   transition: color 0.3s ease-in-out;
 }
 
@@ -95,11 +95,101 @@
 .privacy-policy__footer:hover {
   color: #555;
 }
+
+/* Dark Mode Styles for Privacy Policy */
+body.dark-mode .privacy-policy {
+  background: linear-gradient(135deg, #333, #444);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+body.dark-mode .privacy-policy__title {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .privacy-policy__section {
+  background: rgba(255, 255, 255, 0.2);
+  color: #e0e0e0;
+}
+
+body.dark-mode .privacy-policy__section:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .privacy-policy__section-title {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .privacy-policy__section-title:hover {
+  color: #77a1aa;
+}
+
+body.dark-mode .privacy-policy__text {
+  color: #ddd;
+}
+
+body.dark-mode .privacy-policy__text:hover {
+  color: #fff;
+}
+
+body.dark-mode .privacy-policy__list li::before {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .privacy-policy__list li:hover {
+  transform: translateX(5px);
+  color: #e0e0e0;
+}
+
+body.dark-mode .privacy-policy__footer {
+  color: #bbb;
+}
+
+body.dark-mode .privacy-policy__footer:hover {
+  color: #ddd;
+}
+
+/* Dark Mode Footer Hover */
+body.dark-mode .privacy-policy__footer:hover {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .privacy-policy {
     margin-top: 20px;
     background: #ffffff;
   }
 
-  
+  body.dark-mode .privacy-policy {
+    background: #333;
+    color: #e0e0e0;
+  }
+
+  body.dark-mode .privacy-policy__title {
+    color: rgb(196, 0, 220);
+  }
+
+  body.dark-mode .privacy-policy__section {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  body.dark-mode .privacy-policy__section-title {
+    color: rgb(196, 0, 220);
+  }
+
+  body.dark-mode .privacy-policy__text {
+    color: #ddd;
+  }
+
+  body.dark-mode .privacy-policy__list li::before {
+    color: rgb(196, 0, 220);
+  }
+
+  body.dark-mode .privacy-policy__footer {
+    color: #bbb;
+  }
+
+
+
 }

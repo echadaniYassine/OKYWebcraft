@@ -6,6 +6,7 @@
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   opacity: 0;
   transform: translateY(50px);
+
 }
 
 .portfolio.visible {
@@ -13,9 +14,11 @@
   transform: translateY(0);
 }
 
-.container {
+.container-portfolio {
   max-width: 1300px;
   margin: 0 auto;
+  border-top: #dcdcdc 1px solid;
+
 }
 
 /* Title and Description */
@@ -25,12 +28,13 @@
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: rgb(196, 0, 220); /* Teal for primary title color */
+
 }
 
 .portfolio-description {
   font-size: 1.2rem;
   color: #495057; /* Slate Gray for softer contrast */
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /* Portfolio Items Grid */
@@ -136,7 +140,6 @@
 
 .dark-mode .portfolio-item {
   background: linear-gradient(to top, #333, #444, #555); /* Darker gradient */
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .portfolio-item:hover {
@@ -145,8 +148,11 @@
 }
 
 .dark-mode .portfolio-item-title {
-  color: rgb(196, 0, 220); /* Light Teal for titles */
+  background: linear-gradient(to right,  white, aliceblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .dark-mode .portfolio-item-description {
   color: #dcdcdc;
@@ -154,11 +160,11 @@
 
 .dark-mode .show-more-button {
   background: rgb(196, 0, 220);
-  border-bottom: 4px #f5f5f5 solid;
+  border-bottom: 2px #f5f5f5 solid;
 }
 
 .dark-mode .show-more-button:hover {
-  background: #ff80ab; /* Light pink for dark mode */
+  background: #ff00c8; /* Light pink for dark mode */
 }
 
 .dark-mode .portfolio-item-image {
@@ -172,14 +178,14 @@
 
   .portfolio-title {
     font-size: 1.8rem;
-    text-align: start;
-    color: #008080; /* Teal for primary title on mobile */
+    text-align: center;
+    color: rgb(196, 0, 220); /* Teal for primary title on mobile */
   }
 
   .portfolio-description {
     font-size: 0.95rem;
     padding: 0 10px;
-    text-align: start;
+    text-align: center;
     color: #495057; /* Slate Gray */
   }
 
@@ -211,18 +217,18 @@
     font-size: 1rem;
     margin: 15px 13px 8px;
     text-align: start;
-    color: #283738; /* Slate Gray */
+    color: aliceblue; /* Slate Gray */
   }
 
   .portfolio-item-description {
     font-size: 0.9rem;
     text-align: start;
-    color: #6c757d; /* Soft Gray */
+    color: aliceblue; /* Soft Gray */
   }
 
   /* Attractive button for mobile */
   .show-more-button {
-    background: #008080; /* Teal */
+    background: rgb(196, 0, 220); /* Teal */
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -234,8 +240,10 @@
     margin: 20px auto;
     width: 200px;
   }
-
+  
   .show-more-button:hover {
     transform: scale(1.05);
+    background: #ff00c8;
+
   }
 }

@@ -15,70 +15,70 @@ export default function EcommerceServices() {
     <div className="ecommerce-services">
       <header className="ecommerce-services__header">
         <h1 className="ecommerce-services__title">{t('ecommerce_services.title')}</h1>
-        <p 
+        <p
           className="ecommerce-services__subtitle"
-          dangerouslySetInnerHTML={{ __html: t('ecommerce_services.description') }} 
+          dangerouslySetInnerHTML={{ __html: t('ecommerce_services.description') }}
         />
       </header>
 
       <section className="ecommerce-services__content">
         <div className="ecommerce-services__platform">
           <h2 className="ecommerce-services__platform-title">
-            <FaWordpress color="rgb(196, 0, 220)" /> {t('ecommerce_services.wordpress_ecommerce_title')}
+            <FaWordpress className="iconStore" /> {t('ecommerce_services.wordpress_ecommerce_title')}
           </h2>
-          <p 
+          <p
             className="ecommerce-services__platform-description"
-            dangerouslySetInnerHTML={{ __html: t('ecommerce_services.wordpress_ecommerce_description') }} 
+            dangerouslySetInnerHTML={{ __html: t('ecommerce_services.wordpress_ecommerce_description') }}
           />
         </div>
 
         <div className="ecommerce-services__platform">
           <h2 className="ecommerce-services__platform-title">
-            <FaShopify color="rgb(196, 0, 220)" /> {t('ecommerce_services.shopify_ecommerce_title')}
+            <FaShopify className="iconStore" /> {t('ecommerce_services.shopify_ecommerce_title')}
           </h2>
-          <p 
+          <p
             className="ecommerce-services__platform-description"
-            dangerouslySetInnerHTML={{ __html: t('ecommerce_services.shopify_ecommerce_description') }} 
+            dangerouslySetInnerHTML={{ __html: t('ecommerce_services.shopify_ecommerce_description') }}
           />
         </div>
       </section>
 
       <section className="ecommerce-services__process">
         <h2 className="ecommerce-services__process-title">{t('ecommerce_services.process_title')}</h2>
-        <p 
+        <p
           className="ecommerce-services__process-description"
-          dangerouslySetInnerHTML={{ __html: t('ecommerce_services.process_description') }} 
+          dangerouslySetInnerHTML={{ __html: t('ecommerce_services.process_description') }}
         />
 
         <div className="ecommerce-services__process-steps">
           <div className="ecommerce-services__process-step">
             <h3>{t('ecommerce_services.discovery_consultation_title')}</h3>
-            <p 
-              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.discovery_consultation_description') }} 
+            <p
+              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.discovery_consultation_description') }}
             />
           </div>
           <div className="ecommerce-services__process-step">
             <h3>{t('ecommerce_services.platform_selection_customization_title')}</h3>
-            <p 
-              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.platform_selection_customization_description') }} 
+            <p
+              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.platform_selection_customization_description') }}
             />
           </div>
           <div className="ecommerce-services__process-step">
             <h3>{t('ecommerce_services.development_implementation_title')}</h3>
-            <p 
-              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.development_implementation_description') }} 
+            <p
+              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.development_implementation_description') }}
             />
           </div>
           <div className="ecommerce-services__process-step">
             <h3>{t('ecommerce_services.testing_launch_title')}</h3>
-            <p 
-              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.testing_launch_description') }} 
+            <p
+              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.testing_launch_description') }}
             />
           </div>
           <div className="ecommerce-services__process-step">
             <h3>{t('ecommerce_services.ongoing_support_optimization_title')}</h3>
-            <p 
-              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.ongoing_support_optimization_description') }} 
+            <p
+              dangerouslySetInnerHTML={{ __html: t('ecommerce_services.ongoing_support_optimization_description') }}
             />
           </div>
         </div>
@@ -86,9 +86,12 @@ export default function EcommerceServices() {
 
       <div className="ecommerce-services__cta">
         <h3>{t('ecommerce_services.cta_button')}</h3>
-        <button className="ecommerce-services__cta-button">
-          {t('ecommerce_services.cta_button')}
-        </button>
+        <a href="https://wa.me/+212717923103"
+        >
+          <button className="ecommerce-services__cta-button">
+            {t('ecommerce_services.cta_button')}
+          </button>
+        </a>
       </div>
     </div>
   );

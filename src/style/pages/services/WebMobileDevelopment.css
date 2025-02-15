@@ -8,12 +8,22 @@
     overflow: hidden;
 }
 
+body.dark-mode .web-mobile-development-section {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
 .web-mobile-development-background-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, white, rgb(172, 172, 172));
     opacity: 0.5;
     z-index: 0;
+}
+
+body.dark-mode .web-mobile-development-background-overlay {
+    background: linear-gradient(135deg, #121212, rgb(40, 55, 56));
+    opacity: 0.7;
 }
 
 .web-mobile-development-content-container {
@@ -28,10 +38,18 @@
     color: rgb(196, 0, 220);
 }
 
+body.dark-mode .web-mobile-development-section-title {
+    color: rgb(196, 0, 220);
+}
+
 .web-mobile-development-section-description {
     margin-top: 15px;
     font-size: 1.1rem;
     color: black;
+}
+
+body.dark-mode .web-mobile-development-section-description {
+    color: #e0e0e0;
 }
 
 /* Technologies Grid */
@@ -53,9 +71,17 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+body.dark-mode .web-mobile-development-technology-card {
+    background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
+}
+
 .web-mobile-development-technology-card:hover {
     background-color: rgba(119, 161, 170, 0.2);
     transform: translateY(-5px);
+}
+
+body.dark-mode .web-mobile-development-technology-card:hover {
+    background-color: rgba(119, 161, 170, 0.4);
 }
 
 .web-mobile-development-tech-icon {
@@ -68,8 +94,16 @@
     font-weight: bold;
 }
 
+body.dark-mode .web-mobile-development-tech-name {
+    color: #e0e0e0;
+}
+
 /* Color Variations */
 .web-mobile-development-tech-react {
+    color: #61dafb;
+}
+
+body.dark-mode .web-mobile-development-tech-react {
     color: #61dafb;
 }
 
@@ -77,7 +111,15 @@
     color: #68a063;
 }
 
+body.dark-mode .web-mobile-development-tech-node {
+    color: #68a063;
+}
+
 .web-mobile-development-tech-express {
+    color: #aaa;
+}
+
+body.dark-mode .web-mobile-development-tech-express {
     color: #aaa;
 }
 
@@ -85,7 +127,15 @@
     color: #4db33d;
 }
 
+body.dark-mode .web-mobile-development-tech-mongodb {
+    color: #4db33d;
+}
+
 .web-mobile-development-tech-laravel {
+    color: #ff2d20;
+}
+
+body.dark-mode .web-mobile-development-tech-laravel {
     color: #ff2d20;
 }
 
@@ -93,14 +143,24 @@
     color: #38bdf8;
 }
 
+body.dark-mode .web-mobile-development-tech-tailwind {
+    color: #38bdf8;
+}
+
 .web-mobile-development-tech-react-native {
     color: #149eca;
-    /* React Native blue */
+}
+
+body.dark-mode .web-mobile-development-tech-react-native {
+    color: #149eca;
 }
 
 .web-mobile-development-tech-flutter {
     color: #02569b;
-    /* Flutter blue */
+}
+
+body.dark-mode .web-mobile-development-tech-flutter {
+    color: #02569b;
 }
 
 /* Benefits Section */
@@ -123,9 +183,17 @@
     max-width: 500px;
 }
 
+body.dark-mode .web-mobile-development-benefit-card {
+    background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
+}
+
 .web-mobile-development-benefit-card:hover {
     background-color: rgba(119, 161, 170, 0.2);
     transform: translateY(-5px);
+}
+
+body.dark-mode .web-mobile-development-benefit-card:hover {
+    background-color: rgba(119, 161, 170, 0.4);
 }
 
 .web-mobile-development-benefit-icon {
@@ -137,8 +205,16 @@
     font-weight: bold;
 }
 
+body.dark-mode .web-mobile-development-benefit-title {
+    color: #e0e0e0;
+}
+
 .web-mobile-development-benefit-description {
     font-size: 1rem;
+    color: #a3b8bb;
+}
+
+body.dark-mode .web-mobile-development-benefit-description {
     color: #a3b8bb;
 }
 
@@ -156,7 +232,16 @@
     transition: all 0.3s ease;
 }
 
+body.dark-mode .web-mobile-development-cta-button {
+    background-color: #5e35b1;
+}
+
 .web-mobile-development-cta-button:hover {
+    background-color: #7e57c2;
+    box-shadow: 0px 5px 15px rgba(119, 161, 170, 0.5);
+}
+
+body.dark-mode .web-mobile-development-cta-button:hover {
     background-color: #7e57c2;
     box-shadow: 0px 5px 15px rgba(119, 161, 170, 0.5);
 }
@@ -178,10 +263,18 @@
         font-size: 2rem;
     }
 
+    body.dark-mode .web-mobile-development-section-title {
+        color: #e0e0e0;
+    }
+
     .web-mobile-development-section-description {
         font-size: 1rem;
         max-width: 100%;
         margin-top: 15px;
+    }
+
+    body.dark-mode .web-mobile-development-section-description {
+        color: #e0e0e0;
     }
 
     /* Technologies Grid */
@@ -196,6 +289,10 @@
         background-color: #283738;
     }
 
+    body.dark-mode .web-mobile-development-technology-card {
+        background-color: #283738;
+    }
+
     .web-mobile-development-tech-icon {
         font-size: 2.5rem;
     }
@@ -204,10 +301,17 @@
         font-size: 0.9rem;
     }
 
+    body.dark-mode .web-mobile-development-tech-name {
+        color: #e0e0e0;
+    }
 
     /* CTA Button */
     .web-mobile-development-cta-button {
         font-size: 1rem;
         padding: 10px 20px;
+    }
+
+    body.dark-mode .web-mobile-development-cta-button {
+        background-color: #5e35b1;
     }
 }

@@ -123,18 +123,18 @@ body.dark-mode {
 }
 
 body.dark-mode .why-choose-us {
-  background-color: #333; /* Dark background */
+  background-color: transparent; /* Dark background */
   color: #e0e0e0; /* Light text */
 }
 
 body.dark-mode .features {
-  background-image: url('../../../public/assets/Us.png'); /* Adjust image for dark mode */
+  background-image: url('../../../public/assets/choseUs-dark.png'); /* Adjust image for dark mode */
   background-size: cover;
   background-position: center;
 }
 
 body.dark-mode .feature {
-  background-color: #444; /* Darker background */
+  background-color: transparent; /* Darker background */
   color: #e0e0e0; /* Light text */
 }
 
@@ -147,12 +147,12 @@ body.dark-mode .feature-main .feature-subtitle {
 }
 
 body.dark-mode .feature-main .feature-button {
-  background-color: #00bcd4; /* Light Teal for buttons */
-  color: black; /* Text color */
+  background-color: rgb(196, 0, 220); /* Light Teal for buttons */
+  color: aliceblue; /* Text color */
 }
 
 body.dark-mode .feature-main .feature-button:hover {
-  background-color: rgb(196, 0, 220); /* Teal for hover effect */
+  background-color: #ff00c8; /* Teal for hover effect */
 }
 
 body.dark-mode .feature-card-description {
@@ -173,20 +173,13 @@ body.dark-mode .feature-image {
 }
 
 body.dark-mode .feature-card {
-  background-color: #555; /* Darker card background */
+  background-color: transparent; /* Darker card background */
 }
 
 body.dark-mode .feature-card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-body.dark-mode .feature-main .feature-button {
-  background-color: #00bcd4;
-}
-
-body.dark-mode .feature-main .feature-button:hover {
-  background-color: #008b8b;
-}
 
 body.dark-mode .feature-card-title {
   color: aliceblue;
@@ -201,7 +194,7 @@ body.dark-mode .feature-main .feature-subtitle {
 
 @media (max-width: 768px) {
   .why-choose-us {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .features {

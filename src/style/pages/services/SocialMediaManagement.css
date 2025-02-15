@@ -215,3 +215,42 @@
     padding: 10px;
   }
 }
+/* Dark Mode Styles */
+body.dark-mode .social-media-section {
+  background-color: #181818;
+  color: #e0e0e0;
+}
+
+body.dark-mode .background-overlay {
+  background: linear-gradient(135deg, #181818, rgb(172, 172, 172));
+  opacity: 0.7;
+}
+
+body.dark-mode .section-title {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .section-description {
+  color: #e0e0e0;
+}
+body.dark-mode .technologies-grid {
+  background-color: transparent;
+}
+
+body.dark-mode .technology-card {
+  background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
+}
+
+body.dark-mode .benefit-card {
+  background: linear-gradient(to bottom, rgb(196, 0, 220), rgba(40, 55, 56, 1));
+}
+
+body.dark-mode .cta-button {
+  background-color: #7e57c2;
+  color: #ffffff;
+}
+
+body.dark-mode .cta-button:hover {
+  background-color: #5e35b1;
+  box-shadow: 0px 5px 15px rgba(96, 146, 152, 0.5);
+}

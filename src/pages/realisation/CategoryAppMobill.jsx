@@ -5,23 +5,23 @@ import "../../style/pages/RealisationStyle/CategoryApplication.css";
 
 // Example projects data with translation keys
 const projects = [
-  { 
-    id: 1, 
-    titleKey: "project_title_1", 
-    image: "assets/app2.png", 
-    demoLinkKey: "demo_link_1" 
+  {
+    id: 1,
+    titleKey: "project_title_1",
+    image: "assets/app2.png",
+    demoLinkKey: "demo_link_1"
   },
-  { 
-    id: 2, 
-    titleKey: "project_title_2", 
-    image: "assets/app2.png", 
-    demoLinkKey: "demo_link_2" 
+  {
+    id: 2,
+    titleKey: "project_title_2",
+    image: "assets/app2.png",
+    demoLinkKey: "demo_link_2"
   },
-  { 
-    id: 3, 
-    titleKey: "project_title_3", 
-    image: "assets/app2.png", 
-    demoLinkKey: "demo_link_3" 
+  {
+    id: 3,
+    titleKey: "project_title_3",
+    image: "assets/app2.png",
+    demoLinkKey: "demo_link_3"
   }
 ];
 
@@ -39,16 +39,7 @@ const CategoryAppMobile = () => {
       <section className="category-application__subcategory">
         <h2 className="category-application__subcategory-title">{t('category_application.applications')}</h2>
         <div className="category-application__project-cards">
-          {projects.map(project => (
-            <ProjectCard 
-              key={project.id} 
-              project={{
-                title: t(`category_application.${project.titleKey}`),
-                demoLink: t(`category_application.${project.demoLinkKey}`),
-                image: project.image
-              }} 
-            />
-          ))}
+          <h1 className="not-found-title">404 Not Found</h1>
         </div>
       </section>
     </div>

@@ -24,7 +24,11 @@
   opacity: 1;
   transform: translateY(0);
 }
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 
+}
 .services-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -229,7 +233,7 @@ body.dark-mode .service-card:hover {
 }
 
 body.dark-mode .service-card::before {
-  background: linear-gradient(to left, rgb(196, 0, 220), black);
+  background: linear-gradient(to left, #ff00c8, black);
 }
 
 body.dark-mode .service-icon-container {
@@ -250,10 +254,12 @@ body.dark-mode .explore-more {
 
 body.dark-mode .view-all-btn {
   background-color: rgb(196, 0, 220); /* Keep the button color */
+  border-bottom: 2px #f5f5f5 solid;
+
 }
 
 body.dark-mode .view-all-btn:hover {
-  background-color: #7b1fa2; /* Darker shade for hover */
+  background-color: #ff00c8; /* Darker shade for hover */
 }
 
 
@@ -270,6 +276,9 @@ body.dark-mode .view-all-btn:hover {
     text-align: start;
     font-size: 3rem;
     margin-bottom: 10px;
+  }
+  .services-title {
+    font-size: 1.5rem;
   }
 
   .service-image {
@@ -298,7 +307,7 @@ body.dark-mode .view-all-btn:hover {
   }
 
   .services-title {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     text-align: start;
   }
 
@@ -309,7 +318,7 @@ body.dark-mode .view-all-btn:hover {
 
   .view-all-btn {
     display: inline-block;
-    background-color: #008080;
+    background: rgb(196, 0, 220); /* Teal */
     /* Teal for button background */
     color: white;
     text-decoration: none;
@@ -320,6 +329,10 @@ body.dark-mode .view-all-btn:hover {
     font-size: 0.9rem;
     margin: 20px auto;
     width: 200px;
+  }
+  .view-all-btn:hover {
+    transform: scale(1.05);
+    background: #ff00c8;
   }
 }
 

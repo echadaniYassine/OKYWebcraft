@@ -193,6 +193,74 @@
 
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .careers {
+  background: linear-gradient(135deg, rgb(196, 0, 220), #2f3c3f);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+}
+
+body.dark-mode .careers__title {
+  color: #fff;
+}
+
+body.dark-mode .careers__subtitle {
+  color: #ccc;
+}
+
+body.dark-mode .careers__job-card {
+  background: #333;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .careers__job-title {
+  color: #fff;
+}
+
+body.dark-mode .careers__job-location,
+body.dark-mode .careers__job-type {
+  color: #aaa;
+}
+
+body.dark-mode .careers__job-description {
+  color: #ddd;
+}
+
+body.dark-mode .careers__job-requirements li {
+  color: #ccc;
+}
+
+body.dark-mode .careers__apply-button {
+  background: linear-gradient(90deg, #2f3c3f, #77a1aa);
+}
+
+body.dark-mode .apply-form {
+  background: #2c2c2c;
+  color: #fff;
+}
+
+body.dark-mode .apply-form input {
+  background: #444;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .apply-form button {
+  background: linear-gradient(90deg, #2f3c3f, #77a1aa);
+}
+
+body.dark-mode .apply-form-close {
+  background: #d32f2f;
+  color: white;
+}
+
+body.dark-mode .apply-form-close:hover {
+  background: darkred;
+}
 @media (max-width: 768px) {
   .careers {
     padding: 20px;
@@ -269,5 +337,44 @@
     font-size: 1rem;
     padding: 0.6rem;
     width: 100%;
+  }
+  body.dark-mode .careers {
+    background: none;
+  }
+
+  body.dark-mode .careers__title {
+    color: #fff;
+  }
+
+  body.dark-mode .careers__subtitle {
+    color: #ccc;
+  }
+
+  body.dark-mode .careers__job-card {
+    background: #444;
+  }
+
+  body.dark-mode .careers__job-title {
+    color: #fff;
+  }
+
+  body.dark-mode .careers__job-location,
+  body.dark-mode .careers__job-type,
+  body.dark-mode .careers__job-description {
+    color: #ddd;
+  }
+
+  body.dark-mode .apply-form {
+    background: #333;
+  }
+
+  body.dark-mode .apply-form input {
+    background: #444;
+    color: #fff;
+    border: 1px solid #555;
+  }
+
+  body.dark-mode .apply-form button {
+    background: linear-gradient(90deg, #2f3c3f, #77a1aa);
   }
 }

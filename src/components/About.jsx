@@ -60,7 +60,7 @@ const About = () => {
 
         {/* Right: Image Content */}
         <div className="about-image">
-          <img src="assets/about1.png" alt="About Us" className="about-img" />
+          <img src="assets/about5.png" alt="About Us" className="about-img" />
         </div>
       </div>
     </section>

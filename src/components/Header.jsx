@@ -58,7 +58,11 @@ const Header = () => {
     <header className="header-container">
       <div className={`logo-container ${isNavOpen ? "hide-logo" : ""}`}>
         <a href="/">
-          <img src="assets/logo.jpg" className="imageLogo" alt="OKY Logo" />
+          <img
+            src={darkMode ? "assets/dark-logo.png" : "assets/logo.jpg"}
+            className="imageLogo"
+            alt="OKY Logo"
+          />
         </a>
       </div>
 
@@ -72,30 +76,30 @@ const Header = () => {
       {/* Navigation */}
       <nav ref={navRef} className={`navigation ${isNavOpen ? "nav-open" : ""}`} onClick={(e) => e.stopPropagation()}>
         <ul className="nav-list">
-        <li className="nav-item">
-          <Link to="/" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            {t('nav.home')}
-          </Link>
-        </li>
-        <li className="nav-item">
-          <a href="#about" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            {t('nav.about')}
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#services" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            {t('nav.services')}
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#portfolio" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            {t('nav.realization')}
-          </a>
-        </li>
+          <li className="nav-item">
+            <Link to="/" className="nav-link" onClick={() => setIsNavOpen(false)}>
+              {t('nav.home')}
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a href="#about" className="nav-link" onClick={() => setIsNavOpen(false)}>
+              {t('nav.about')}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#services" className="nav-link" onClick={() => setIsNavOpen(false)}>
+              {t('nav.services')}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#portfolio" className="nav-link" onClick={() => setIsNavOpen(false)}>
+              {t('nav.realization')}
+            </a>
+          </li>
 
           {/* Social Media Links */}
           <ul className="header-links">
-            {[ 
+            {[
               { href: "https://www.facebook.com/profile.php?id=61572773007779#", icon: <FaFacebookF />, label: "Facebook" },
               { href: "https://www.instagram.com/oky_webcraft/", icon: <FaInstagram />, label: "Instagram" },
               { href: "https://www.linkedin.com/company/106179526", icon: <FaLinkedinIn />, label: "LinkedIn" },
@@ -109,7 +113,7 @@ const Header = () => {
             ))}
           </ul>
         </ul>
-      </nav> 
+      </nav>
 
       <div className="toggle-container">
         {/* Dark Mode Toggle */}

@@ -36,10 +36,8 @@
   text-align: start;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: #1A237E;
-  /* Dark Blue */
   border-bottom: #1A237E solid 1px;
 }
-
 
 .project-cards {
   display: flex;
@@ -48,6 +46,51 @@
   justify-content: start;
 }
 
+/* Dark Mode Styles for Category Web */
+body.dark-mode .category-web {
+  background: transparent;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, rgb(196, 0, 220), #0D47A1);
+  /* Vibrant Teal to Dark Blue */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .navbar.navbar-brand {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body.dark-mode .subcategory {
+  margin: 3rem 0;
+  background: #1E1E1E;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+body.dark-mode .subcategory-title {
+  font-size: 1.3rem;
+  color: #BB86FC;
+  text-align: start;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+  border-bottom: #BB86FC solid 1px;
+}
+
+body.dark-mode .project-cards {
+  background: #1D1D1D;
+  border-radius: 10px;
+}
+
+body.dark-mode .project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: start;
+}
 
 @media (max-width: 768px) {
   .category-web {

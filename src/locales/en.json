@@ -129,7 +129,6 @@
         "applyNow": "Apply Now",
         "role": "Role",
         "location": "Location",
-        "description": "Description",
         "fileError": "Only PDF and DOCX files are allowed.",
         "fileSizeError": "File size must be at least 10MB.",
         "uploadFile": "Please upload a valid file.",
@@ -139,7 +138,9 @@
         "phone": "Phone Number",
         "submitApplication": "Submit Application",
         "close": "Close",
-        "applicationSuccess": "Application sent successfully!"
+        "applicationSuccess": "Application sent successfully!",
+        "description": "Yassine is an experienced developer who works on both front-end and back-end technologies. He has a passion for clean code and efficient systems."
+
     },
     "privacy_policy": {
         "privacy_policy_title": "Privacy Policy",

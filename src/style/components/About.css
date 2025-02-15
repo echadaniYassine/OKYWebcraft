@@ -147,7 +147,7 @@ body.dark-mode .about-description {
 }
 
 body.dark-mode .highlight-card {
-  background-color: #34495e; /* Dark Gray */
+  background-color: #2c3033; /* Dark Gray */
   border-right: rgb(196, 0, 220) 3px solid; /* Teal border */
 }
 
@@ -161,11 +161,11 @@ body.dark-mode .highlight-description {
 
 body.dark-mode .about-btn {
   background-color: rgb(196, 0, 220); /* Teal */
-  border-bottom: 4px solid #2C3E50; /* Dark Slate */
+  border-bottom: 2px #f5f5f5 solid;
 }
 
 body.dark-mode .about-btn:hover {
-  background-color: blueviolet; /* Lighter Teal */
+  background-color: #ff00c8; /* Lighter Teal */
 }
 
 /* Dark Mode for Images */

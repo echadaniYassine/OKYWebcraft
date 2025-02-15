@@ -56,7 +56,7 @@ const Portfolio = () => {
       ref={portfolioRef}
       className={`portfolio ${isVisible ? 'visible' : ''}`}
     >
-      <div className="container">
+      <div className="container-portfolio">
         <h2 className="portfolio-title">{t('portfolio.title')}</h2>
         <p className="portfolio-description">
           {t('portfolio.description')}

@@ -159,7 +159,87 @@ background: linear-gradient(135deg, rgb(247, 183, 255),white);  border-radius: 1
   background-color: #609298;
   transform: scale(1.05);
 }
-/* Responsive Styles */
+.iconStore{
+  color: rgb(196, 0, 220);
+}
+body.dark-mode .iconStore{
+  color: rgb(255, 0, 140);
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Root container */
+body.dark-mode .ecommerce-services {
+  background-color: #181818;
+}
+
+/* Header */
+body.dark-mode .ecommerce-services__title {
+  color: #ffffff;
+}
+
+body.dark-mode .ecommerce-services__subtitle {
+  color: #bbb;
+}
+
+/* Content grid */
+body.dark-mode .ecommerce-services__platform {
+  background: linear-gradient(135deg, rgb(196,0,220), #1f1f1f);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .ecommerce-services__platform-title {
+  color: #ffffff;
+}
+
+body.dark-mode .ecommerce-services__platform-description,
+body.dark-mode .ecommerce-services__platform-benefits li {
+  color: #ddd;
+}
+
+body.dark-mode .ecommerce-services__cta {
+  background-color: rgb(49, 7, 61);
+}
+
+body.dark-mode .ecommerce-services__cta h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .ecommerce-services__cta p {
+  color: #aaa;
+}
+
+body.dark-mode .ecommerce-services__cta-button {
+  background-color: #456e78;
+  color: #ffffff;
+}
+
+body.dark-mode .ecommerce-services__cta-button:hover {
+  background-color: #345a63;
+}
+
+/* Process Section */
+body.dark-mode .ecommerce-services__process {
+  background-color: #242424;
+}
+
+body.dark-mode .ecommerce-services__process-title,
+body.dark-mode .ecommerce-services__process-description {
+  color: #fff;
+}
+
+body.dark-mode .ecommerce-services__process-step h3 {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .ecommerce-services__process-step p {
+  color: #ddd;
+}
 
 /* For tablets and smaller devices (max-width: 768px) */
 @media (max-width: 768px) {
@@ -222,46 +302,3 @@ background: linear-gradient(135deg, rgb(247, 183, 255),white);  border-radius: 1
   }
 }
 
-/* For mobile devices (max-width: 480px) */
-@media (max-width: 480px) {
-  .ecommerce-services__title {
-    font-size: 1.6rem;
-  }
-
-  .ecommerce-services__subtitle {
-    font-size: 0.9rem;
-  }
-
-  .ecommerce-services__platform-title {
-    font-size: 1.4rem;
-  }
-
-  .ecommerce-services__platform-description {
-    font-size: 0.9rem;
-  }
-
-  .ecommerce-services__platform-benefits li {
-    font-size: 0.8rem;
-  }
-
-  .ecommerce-services__process-title {
-    font-size: 1.8rem;
-  }
-
-  .ecommerce-services__process-description {
-    font-size: 1rem;
-  }
-
-  .ecommerce-services__cta h3 {
-    font-size: 1.6rem;
-  }
-
-  .ecommerce-services__cta p {
-    font-size: 0.9rem;
-  }
-
-  .ecommerce-services__cta-button {
-    font-size: 1rem;
-    padding: 8px 20px;
-  }
-}

@@ -23,7 +23,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: -30px;
 }
 
 .footer__logo__image {
@@ -58,7 +58,7 @@
 }
 
 .footer__short-subscription__button:hover {
-  background-color: #FF6F20; /* Sunset Orange */
+  background-color: #ff00c8; /* Sunset Orange */
 }
 
 .footer__social-links {
@@ -80,7 +80,7 @@
 }
 
 .footer__social-links a:hover {
-  color: blue; /* Sunset Orange */
+  color: #ff00c8; /* Sunset Orange */
   transform: scale(1.2);
 }
 

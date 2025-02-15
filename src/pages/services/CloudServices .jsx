@@ -93,7 +93,7 @@ export default function CloudServices() {
 
         {/* CTA Button */}
         <motion.a 
-          href="/contact"
+          href="https://wa.me/+212717923103"
           whileHover={{ scale: 1.1 }}
           className="cta-button-unique"
         >

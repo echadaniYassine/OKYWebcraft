@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
           <div className="hero-image-container">
             <div className="hero-image fade-in-left">
-              <img src="assets/HERO1.png" alt="Digital Solutions" />
+              <img src="assets/hero5.png" alt="Digital Solutions" />
             </div>
           </div>
         </div>

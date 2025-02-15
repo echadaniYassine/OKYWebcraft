@@ -64,6 +64,53 @@
   text-decoration: underline;
   color: red;
 }
+/* Dark Mode Styles for Terms of Service */
+body.dark-mode .terms-of-service {
+  background: linear-gradient(135deg, #333, #444);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+body.dark-mode .terms-of-service h1 {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .terms-of-service p {
+  color: #ddd;
+}
+
+body.dark-mode .terms-of-service p:hover {
+  color: #fff;
+}
+
+body.dark-mode .terms-of-service section {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ddd;
+}
+
+body.dark-mode .terms-of-service section:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .terms-of-service h2 {
+  color: rgb(196, 0, 220);
+}
+
+body.dark-mode .terms-of-service h2:hover {
+  color: #77a1aa;
+}
+
+body.dark-mode .terms-of-service a {
+  color: rgb(196, 0, 220);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body.dark-mode .terms-of-service a:hover {
+  text-decoration: underline;
+  color: red;
+}
 
 @media (max-width: 768px) {
   .terms-of-service {
@@ -78,6 +125,19 @@
   }
 
   .terms-of-service h2 {
+    font-size: 1.4em;
+  }
+  body.dark-mode .terms-of-service {
+    background: #333;
+    color: #e0e0e0;
+  }
+
+  body.dark-mode .terms-of-service h1 {
+    font-size: 1.8em;
+    text-align: start;
+  }
+
+  body.dark-mode .terms-of-service h2 {
     font-size: 1.4em;
   }
 }

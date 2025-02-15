@@ -75,7 +75,7 @@
 /* Text Styles */
 .project-title {
   text-align: center;
-  margin: 2rem 0;
+  margin: 1.2rem 0;
   font-size: 1.2rem;
   font-weight: bold;
   color: rgb(196, 0, 220); /* Teal */
@@ -100,4 +100,36 @@
     font-size: 1rem;
     margin: 1rem 3px;
   }
+}
+/* Dark Mode Styles */
+body.dark-mode .project-card {
+  background-color: #1f1f1f; /* Dark background for the card */
+  color: #e0e0e0; /* Light text color for contrast */
+}
+
+body.dark-mode .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.15); /* Lighter hover shadow */
+}
+
+body.dark-mode .project-carousel-image {
+  filter: brightness(0.7); /* Dim image for better contrast in dark mode */
+}
+
+body.dark-mode .project-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for visibility */
+}
+
+body.dark-mode .project-demo-icon {
+  color: #ffffff; /* White icon for better visibility */
+}
+
+body.dark-mode .project-title {
+  color: aliceblue; /* Keeping the teal color for consistency */
+}
+
+/* Carousel Image Dark Mode */
+body.dark-mode .project-card:hover .project-carousel-image {
+  transform: scale(1.1);
+  filter: brightness(0.8); /* Lighter hover effect for dark mode */
 }

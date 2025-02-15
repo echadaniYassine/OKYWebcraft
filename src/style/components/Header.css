@@ -22,7 +22,7 @@ body.dark-mode .nav-link {
 }
 
 body.dark-mode .nav-link:hover {
-  color: rgb(196, 0, 220); /* Hover color for dark mode */
+  color: #ff00c8; /* Hover color for dark mode */
 }
 
 body.dark-mode .dark-mode-btn,
@@ -32,24 +32,23 @@ body.dark-mode .language-btn {
 
 body.dark-mode .dark-mode-btn:hover,
 body.dark-mode .language-btn:hover {
-  color: rgb(196, 0, 220); /* Hover color for buttons in dark mode */
+  color: #ff00c8; /* Hover color for buttons in dark mode */
 }
 
 /* Logo */
 .logo-container {
   display: flex;
   align-items: center;
+  
 }
 
 .imageLogo {
   transition: opacity 0.3s ease;
-  height: auto;
-  width: 130px;
+  width: 120px;
 }
 
 /* Navigation Styles */
 .navigation {
-  margin-top: 10px;
   flex: 1;
   display: flex;
   justify-content: center;
