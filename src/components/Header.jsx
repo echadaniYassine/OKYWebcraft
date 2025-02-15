@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import "../style/components/Header.css";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { useTranslation } from 'react-i18next'; 
 
 const Header = () => {
-  const { i18n } = useTranslation(); // Using i18next
-  const [isNavOpen, setIsNavOpen] = useState(false); // Mobile menu state
-  const navRef = useRef(null); // Reference for the navigation menu
+  const { i18n } = useTranslation();
+  const [isNavOpen, setIsNavOpen] = useState(false); 
+  const navRef = useRef(null); 
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark" ? true : false; // Default to light if no theme is found
+    return localStorage.getItem("theme") === "dark" ? true : false; 
   });
   const [languageDropdown, setLanguageDropdown] = useState(false);
   const { t } = useTranslation();
@@ -53,8 +53,11 @@ const Header = () => {
 
   // Apply theme on load
   useEffect(() => {
-    const theme = localStorage.getItem("theme") || "light"; // Default to light mode
-    document.body.classList.toggle("dark-mode", theme === "dark");
+    const userPreferredTheme = localStorage.getItem("theme") ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+
+    document.body.classList.toggle("dark-mode", userPreferredTheme === "dark");
+    setDarkMode(userPreferredTheme === "dark"); // Set the darkMode state based on the user's preference
   }, []);
 
   return (
