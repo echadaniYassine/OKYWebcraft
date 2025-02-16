@@ -336,3 +336,91 @@ body.dark-mode .view-all-btn:hover {
   }
 }
 
+html[dir='rtl'] .services-title,
+html[dir='rtl'] .services-description,
+html[dir='rtl'] .service-text {
+  text-align: right;
+}
+
+html[dir='rtl'] .service-card {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .service-icon-container {
+  margin-left: 20px;
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  html[dir='rtl'] .service-card {
+    width: 100%;
+    flex-direction: column-reverse; /* Row-reverse for RTL */
+    align-items: center;
+    text-align: end; /* Align text to the end (right) */
+    padding: 20px;
+  }
+
+  html[dir='rtl'] .service-icon-container {
+    text-align: end; /* Align icons to the end (right) */
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  html[dir='rtl'] .services-title {
+    font-size: 1.5rem;
+    text-align: end; /* Align title to the end (right) */
+  }
+
+  html[dir='rtl'] .service-image {
+    max-width: 150px;
+    order: -1;
+  }
+
+  html[dir='rtl'] .service-text {
+    text-align: start; /* Align text to the right for RTL */
+  }
+
+  html[dir='rtl'] .service-text h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  html[dir='rtl'] .service-text p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  html[dir='rtl'] .service-card:hover {
+    border-bottom: 5px solid #283738; /* Slate Gray */
+    border-left: none; /* Ensure there's no border on the left for RTL */
+  }
+
+  html[dir='rtl'] .services-title {
+    font-size: 1.65rem;
+    text-align: end; /* Align title to the right */
+  }
+
+  html[dir='rtl'] .services-description {
+    text-align: end; /* Align description to the right */
+    font-size: 1rem;
+  }
+
+  html[dir='rtl'] .view-all-btn {
+    display: inline-block;
+    background: rgb(196, 0, 220); /* Teal */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    border-bottom: 4px #283738 solid;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    margin: 20px auto;
+    width: 200px;
+  }
+
+  html[dir='rtl'] .view-all-btn:hover {
+    transform: scale(1.05);
+    background: #ff00c8;
+  }
+}
+

@@ -180,6 +180,7 @@ body.dark-mode .language-btn:hover {
   display: none;
 }
 
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-container {
@@ -364,4 +365,32 @@ body.dark-mode .language-btn:hover {
     font-size: 13px;
     padding: 5px 8px;
   }
+}
+@media (max-width: 768px) {
+  html[dir='rtl'] {
+    direction: rtl;
+  }
+  html[dir='rtl'] .hero-stat-paragraph {
+    font-size: 1rem;
+    color: #2C3E50;
+  }
+  html[dir='rtl'] .dark-mode-btn,
+  html[dir='rtl'] .language-btn {
+    padding: 6px 10px;
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+    right: -160px;
+  }
+
+  html[dir='rtl'] .language-dropdown {
+    min-width: 100px;
+    padding: 6px;
+  }
+
+  html[dir='rtl'] .language-dropdown button {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
 }

@@ -234,3 +234,43 @@ body.dark-mode .about-img {
     display: none;
   }
 }
+
+html[dir='rtl'] .containerAbout {
+  flex-direction: reverse; /* Flipping the layout */
+}
+
+html[dir='rtl'] .about-text {
+  text-align: right; /* Align text to the right */
+}
+
+html[dir='rtl'] .about-title {
+  text-align: right; /* Align title to the right */
+}
+
+html[dir='rtl'] .about-description {
+  text-align: right; /* Align description to the right */
+}
+
+html[dir='rtl'] .highlight-card {
+  flex-direction: row-reverse; /* Flip the flex direction for RTL */
+}
+
+html[dir='rtl'] .highlight-title {
+  text-align: right; /* Align highlight titles to the right */
+}
+
+html[dir='rtl'] .highlight-description {
+  text-align: right; /* Align highlight descriptions to the right */
+}
+
+html[dir='rtl'] .about-btn {
+  width: 200px;
+}
+
+html[dir='rtl'] .about-image {
+  text-align: left; /* Align the image to the left */
+}
+
+html[dir='rtl'] .about-img {
+  border-radius: 20px 0 20px 20px; /* Adjust image border-radius for RTL */
+}

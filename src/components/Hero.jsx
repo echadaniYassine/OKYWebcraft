@@ -1,15 +1,9 @@
 import React from 'react';
 import '../style/components/Hero.css';
 import { useTranslation } from 'react-i18next';
-import { FaWhatsapp } from 'react-icons/fa';
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
-
-  // Change language function
-  const handleLanguageChange = (lang) => {
-    i18n.changeLanguage(lang);
-  };
 
   return (
     <>
@@ -46,13 +40,7 @@ const Hero = () => {
           <p className="hero-stat-paragraph">{t('hero.team_members')}</p>
         </div>
       </div>
-      <div className="whatsapp-container">
-        <a href="https://wa.me/+212717923103" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="whatsapp-icon" />
-          <span className="whatsapp-tooltip">Chat with us!</span>
 
-        </a>
-      </div>
     </>
   );
 };

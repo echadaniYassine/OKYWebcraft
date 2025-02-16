@@ -10,7 +10,6 @@ import {
   FaPhone, FaEnvelope, FaMapMarkerAlt, FaShieldAlt, 
   FaGavel, FaBriefcase, FaInfoCircle 
 } from 'react-icons/fa';
-import { color } from 'framer-motion';
 
 const Footer = () => {
   const { t } = useTranslation();

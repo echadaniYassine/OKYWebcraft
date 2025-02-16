@@ -11,7 +11,6 @@
 
 .category-application__navbar {
   background: linear-gradient(90deg, rgb(196, 0, 220), #1A237E);
-  /* Vibrant Teal to Dark Blue gradient */
   color: white;
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -48,7 +47,6 @@ body.dark-mode .category-application {
 
 body.dark-mode .category-application__navbar {
   background: linear-gradient(90deg, rgb(196, 0, 220), #0D47A1);
-  /* Vibrant Teal to Dark Blue gradient */
   color: white;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
@@ -71,11 +69,11 @@ body.dark-mode .category-application__subcategory {
   border-radius: 8px;
 }
 .not-found-title {
-  font-size: 3rem; /* Large font size */
-  font-weight: bold; /* Bold text */
-  color: #ff4c4c; /* Red color for emphasis */
-  text-align: center; /* Center align the text */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  font-size: 3rem;
+  font-weight: bold; 
+  color: #ff4c4c;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
 

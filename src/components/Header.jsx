@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../style/components/Header.css";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { i18n } = useTranslation();
@@ -17,7 +17,18 @@ const Header = () => {
   // Language change function
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang); // Change language using i18next
-    setLanguageDropdown(false); // Hide dropdown after selecting
+    
+    // Change the direction of text based on the language
+    if (lang === "ar") {
+      document.documentElement.setAttribute("dir", "rtl");
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+    }
+    
+    // Close the language dropdown after selection
+    setLanguageDropdown(false);
+    // Store language preference in localStorage
+    localStorage.setItem("lang", lang);
   };
 
   const toggleNav = (event) => {
@@ -51,14 +62,34 @@ const Header = () => {
     });
   };
 
-  // Apply theme on load
   useEffect(() => {
-    const userPreferredTheme = localStorage.getItem("theme") ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
-
-    document.body.classList.toggle("dark-mode", userPreferredTheme === "dark");
-    setDarkMode(userPreferredTheme === "dark"); // Set the darkMode state based on the user's preference
+    // Retrieve saved theme and language preferences
+    const savedTheme = localStorage.getItem("theme");
+    const savedLang = localStorage.getItem("lang");
+  
+    // Detect system preferences
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const systemLang = navigator.language.slice(0, 2);
+    const supportedLangs = ["en", "fr", "ar"];
+  
+    // Determine the final values
+    const theme = savedTheme || (prefersDarkMode ? "dark" : "light");
+    const lang = savedLang || (supportedLangs.includes(systemLang) ? systemLang : "en");
+  
+    // Apply theme
+    document.body.classList.toggle("dark-mode", theme === "dark");
+    setDarkMode(theme === "dark");
+  
+    // Apply language settings
+    i18n.changeLanguage(lang);
+    document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+  
+    // Store language in localStorage if not already saved
+    if (!savedLang) {
+      localStorage.setItem("lang", lang);
+    }
   }, []);
+  
 
   return (
     <header className="header-container">
@@ -105,7 +136,7 @@ const Header = () => {
 
           {/* Social Media Links */}
           <ul className="header-links">
-            {[
+            {[ 
               { href: "https://www.facebook.com/profile.php?id=61572773007779#", icon: <FaFacebookF />, label: "Facebook" },
               { href: "https://www.instagram.com/oky_webcraft/", icon: <FaInstagram />, label: "Instagram" },
               { href: "https://www.linkedin.com/company/106179526", icon: <FaLinkedinIn />, label: "LinkedIn" },
@@ -139,6 +170,7 @@ const Header = () => {
           <div className={`language-dropdown ${languageDropdown ? "active" : ""}`}>
             <button onClick={() => changeLanguage("en")}>English</button>
             <button onClick={() => changeLanguage("fr")}>Français</button>
+            <button onClick={() => changeLanguage("ar")}>العربية</button>
           </div>
         </li>
       </div>

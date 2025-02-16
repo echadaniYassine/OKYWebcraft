@@ -47,15 +47,18 @@
 .feature-main {
   background-color: transparent;
   color: black;
-  text-align: start; /* Align title and description to the start */
+  text-align: start;
+  /* Align title and description to the start */
 }
 
 .feature-main .feature-title {
   font-size: 2.5rem;
   font-weight: 900;
   margin: 10px 0;
-  text-align: start; /* Align title to start */
-  color: black; /* Dark Blue */
+  text-align: start;
+  /* Align title to start */
+  color: black;
+  /* Dark Blue */
 }
 
 .feature-main .feature-subtitle {
@@ -64,13 +67,16 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-right: 50px;
-  color: #77a1aa; /* Slate Gray */
-  text-align: start; /* Align subtitle to start */
+  color: #77a1aa;
+  /* Slate Gray */
+  text-align: start;
+  /* Align subtitle to start */
 }
 
 .feature-main .feature-button {
   color: white;
-  background-color: black; /* Vibrant Teal */
+  background-color: black;
+  /* Vibrant Teal */
   padding: 15px 30px;
   border-radius: 50px;
   border: none;
@@ -97,11 +103,13 @@
   font-size: 1rem;
   color: black;
   line-height: 1.6;
-  text-align: center; /* Align card description to start */
+  text-align: center;
+  /* Align card description to start */
 }
 
 .feature-highlight {
-  background-color: rgb(196, 0, 220); /* Sunset Orange */
+  background-color: rgb(196, 0, 220);
+  /* Sunset Orange */
   color: #ffffff;
   border-radius: 0 0 50px 50px;
 }
@@ -123,57 +131,72 @@ body.dark-mode {
 }
 
 body.dark-mode .why-choose-us {
-  background-color: transparent; /* Dark background */
-  color: #e0e0e0; /* Light text */
+  background-color: transparent;
+  /* Dark background */
+  color: #e0e0e0;
+  /* Light text */
 }
 
 body.dark-mode .features {
-  background-image: url('../../../public/assets/choseUs-dark.png'); /* Adjust image for dark mode */
+  background-image: url('../../../public/assets/choseUs-dark.png');
+  /* Adjust image for dark mode */
   background-size: cover;
   background-position: center;
 }
 
 body.dark-mode .feature {
-  background-color: transparent; /* Darker background */
-  color: #e0e0e0; /* Light text */
+  background-color: transparent;
+  /* Darker background */
+  color: #e0e0e0;
+  /* Light text */
 }
 
 body.dark-mode .feature-main .feature-title {
-  color: #e0e0e0; /* Light text for titles */
+  color: #e0e0e0;
+  /* Light text for titles */
 }
 
 body.dark-mode .feature-main .feature-subtitle {
-  color: #90a4ae; /* Lighter slate gray */
+  color: #90a4ae;
+  /* Lighter slate gray */
 }
 
 body.dark-mode .feature-main .feature-button {
-  background-color: rgb(196, 0, 220); /* Light Teal for buttons */
-  color: aliceblue; /* Text color */
+  background-color: rgb(196, 0, 220);
+  /* Light Teal for buttons */
+  color: aliceblue;
+  /* Text color */
 }
 
 body.dark-mode .feature-main .feature-button:hover {
-  background-color: #ff00c8; /* Teal for hover effect */
+  background-color: #ff00c8;
+  /* Teal for hover effect */
 }
 
 body.dark-mode .feature-card-description {
-  color: #d3d3d3; /* Light gray text */
+  color: #d3d3d3;
+  /* Light gray text */
 }
 
 body.dark-mode .feature-card-title,
 body.dark-mode .feature-card-description {
-  color: #e0e0e0; /* Light text */
+  color: #e0e0e0;
+  /* Light text */
 }
 
 body.dark-mode .feature-highlight {
-  background-color: rgb(196, 0, 220); /* Light Teal for highlighted cards */
+  background-color: rgb(196, 0, 220);
+  /* Light Teal for highlighted cards */
 }
 
 body.dark-mode .feature-image {
-  max-width: 80px; /* Smaller images for dark mode */
+  max-width: 80px;
+  /* Smaller images for dark mode */
 }
 
 body.dark-mode .feature-card {
-  background-color: transparent; /* Darker card background */
+  background-color: transparent;
+  /* Darker card background */
 }
 
 body.dark-mode .feature-card:hover {
@@ -223,14 +246,16 @@ body.dark-mode .feature-main .feature-subtitle {
 
   .feature-main .feature-title {
     font-size: 1.8rem;
-    text-align: start; /* Align title to start */
+    text-align: start;
+    /* Align title to start */
     width: 100%;
   }
 
   .feature-main .feature-subtitle {
     font-size: 1rem;
     color: aliceblue;
-    text-align: start; /* Align subtitle to start */
+    text-align: start;
+    /* Align subtitle to start */
     margin-right: 0;
     width: 100%;
   }
@@ -256,4 +281,170 @@ body.dark-mode .feature-main .feature-subtitle {
   .feature-image {
     max-width: 80px;
   }
+}
+
+html[dir='rtl'] .why-choose-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+html[dir='rtl'] .features {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 1220px;
+  background-image: url('../../../public/assets/Us.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  padding: 0 50px 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+html[dir='rtl'] .feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 50px 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+html[dir='rtl'] .feature-main {
+  background-color: transparent;
+  color: black;
+  text-align: right;
+  margin-top: 30px;
+}
+
+html[dir='rtl'] .feature-main .feature-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 10px 0;
+  text-align: right;
+  color: black;
+}
+
+html[dir='rtl'] .feature-main .feature-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  color: rgb(196, 0, 220);
+  text-align: right;
+  font-weight: bold;
+}
+
+html[dir='rtl'] .feature-main .feature-button {
+  color: white;
+  background-color: black;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 70px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+html[dir='rtl'] .feature-main .feature-button:hover {
+  background-color: rgb(196, 0, 220);
+  transform: scale(1.05);
+}
+
+html[dir='rtl'] .feature-card {
+  background-color: transparent;
+  padding: 20px;
+}
+
+html[dir='rtl'] .feature-card-description {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+  text-align: right;
+  font-weight: 500;
+
+}
+
+html[dir='rtl'] .feature-highlight {
+  background-color: rgb(196, 0, 220);
+  color: #ffffff;
+  border-radius: 0 0 50px 50px;
+}
+
+html[dir='rtl'] .feature-highlight .feature-card-title,
+html[dir='rtl'] .feature-highlight .feature-card-description {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+html[dir='rtl'] .feature-image {
+  max-width: 100px;
+}
+
+/* Dark Mode Styles for RTL */
+
+html[dir='rtl'] body.dark-mode .features {
+  background-image: url('../../../public/assets/choseUs-dark.png');
+  background-size: cover;
+  background-position: center;
+}
+
+html[dir='rtl'] body.dark-mode .feature-main .feature-title {
+  color: #e0e0e0;
+  text-align: start;
+}
+
+html[dir='rtl'] body.dark-mode .feature-main .feature-button {
+  background-color: rgb(196, 0, 220);
+  color: aliceblue;
+  width: 150px;
+}
+
+html[dir='rtl'] body.dark-mode .feature-main .feature-button:hover {
+  background-color: #ff00c8;
+}
+
+html[dir='rtl'] body.dark-mode .feature-card-description {
+  color: #d3d3d3;
+}
+
+html[dir='rtl'] body.dark-mode .feature-card-title,
+html[dir='rtl'] body.dark-mode .feature-card-description {
+  color: #e0e0e0;
+  text-align: center;
+  font-weight: bold;
+}
+
+html[dir='rtl'] body.dark-mode .feature-highlight {
+  background-color: rgb(196, 0, 220);
+}
+
+html[dir='rtl'] body.dark-mode .feature-image {
+  max-width: 80px;
+}
+
+
+html[dir='rtl'] body.dark-mode .feature-card-title {
+  color: aliceblue;
+  text-align: start;
+}
+
+html[dir='rtl'] body.dark-mode .feature-main .feature-subtitle {
+  color: aliceblue;
+  text-align: start;
 }

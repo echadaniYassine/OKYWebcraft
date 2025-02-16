@@ -28,3 +28,67 @@ body.dark-mode {
   height: 24px;
   fill: currentColor;
 }
+
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  font-size: 50px;
+  color: rgb(196, 0, 220);
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.whatsapp-icon:hover {
+  color: #1ebe57;
+  transform: scale(1.1);
+}
+
+/* Tooltip Message */
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 70px;
+  /* Adjust position above the icon */
+  right: 0;
+  background-color: #25d366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(5px);
+}
+
+/* Show tooltip on hover */
+.whatsapp-container:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+body.dark-mode .whatsapp-icon {
+  color: #50fa7b;
+}
+
+body.dark-mode .whatsapp-container:hover .whatsapp-tooltip {
+  background-color: #4CAF50;
+}
+
+/* Fix for Mobile Screens */
+@media (max-width: 768px) {
+  .whatsapp-container {
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-icon {
+    font-size: 40px;
+    
+  }
+}

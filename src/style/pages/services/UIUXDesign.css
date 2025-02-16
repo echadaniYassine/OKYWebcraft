@@ -266,12 +266,11 @@ body.dark-mode .cta-button:hover {
   /* Adjusting the Design Tools Grid */
   .technologies-grid {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
-    /* 2 columns for better spacing */
     gap: 15px;
   }
 
   body.dark-mode .technologies-grid {
-    background-color: #121212;
+    background-color: transparent;
   }
 
   .technology-card {
@@ -308,7 +307,7 @@ body.dark-mode .cta-button:hover {
   }
 
   body.dark-mode .benefits-container {
-    background-color: #121212;
+    background-color: transparent;
   }
 
   .benefit-card {

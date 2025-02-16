@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import PageTitle from "./components/PageTitle"; // Import PageTitle
+import PageTitle from "./components/PageTitle";
 import Home from "./pages/home/home";
 import Header from './components/Header';
 import About_US from "./pages/FastLinks/About_US";
@@ -19,13 +19,30 @@ import CloudServices from "./pages/services/CloudServices ";
 import DigitalAdvertising from "./pages/services/DigitalAdvertising";
 import UIUXDesign from "./pages/services/UIUXDesign";
 import { useTranslation } from 'react-i18next';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const App = () => {
   const { t, i18n } = useTranslation();
 
+  // Load saved language on mount
+  useEffect(() => {
+    const savedLang = localStorage.getItem("lang") || "en";
+    
+    if (i18n.language !== savedLang) {
+      i18n.changeLanguage(savedLang);
+    }
+
+    // Apply text direction based on language
+    document.documentElement.setAttribute("dir", savedLang === "ar" ? "rtl" : "ltr");
+  }, [i18n]);
+
   // Change language function
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+
+    // Apply text direction for RTL languages
+    document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
   };
 
   return (
@@ -49,6 +66,12 @@ const App = () => {
         <Route path="/services-ui-ux-design" element={<><PageTitle title={t('page-titles.services-ui-ux-design')} /><UIUXDesign /></>} />
       </Routes>
       <Footer />
+      <div className="whatsapp-container">
+        <a href="https://wa.me/+212717923103" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="whatsapp-icon" />
+          <span className="whatsapp-tooltip">Chat with us!</span>
+        </a>
+      </div>
     </Router>
   );
 };

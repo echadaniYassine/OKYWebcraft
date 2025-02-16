@@ -11,7 +11,7 @@
 
 /* Navbar styles */
 .graphic-design-navbar {
-  background: linear-gradient(90deg, rgb(196, 0, 220), #1A237E); /* Vibrant Teal and Dark Blue */
+  background: linear-gradient(90deg, rgb(196, 0, 220), #1A237E); 
   color: white;
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -22,7 +22,7 @@
 }
 
 .graphic-design-navbar:hover {
-  background: linear-gradient(90deg, rgb(196, 0, 220), #162F69); /* Slightly darker on hover */
+  background: linear-gradient(90deg, rgb(196, 0, 220), #162F69); 
 }
 
 .graphic-design-navbar-brand {
@@ -41,7 +41,7 @@
   margin-bottom: 5rem;
   text-align: start;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  color: #1A237E; /* Dark Blue */
+  color: #1A237E;
   border-bottom: #1A237E solid 1px;
 }
 
@@ -59,13 +59,13 @@ body.dark-mode .graphic-design-container {
 }
 
 body.dark-mode .graphic-design-navbar {
-  background: linear-gradient(90deg, rgb(196, 0, 220), #0D47A1); /* Vibrant Teal to Dark Blue */
+  background: linear-gradient(90deg, rgb(196, 0, 220), #0D47A1); 
   color: white;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 body.dark-mode .graphic-design-navbar:hover {
-  background: linear-gradient(90deg, rgb(196, 0, 220), #162F69); /* Slightly darker on hover */
+  background: linear-gradient(90deg, rgb(196, 0, 220), #162F69); 
 }
 
 body.dark-mode .graphic-design-navbar-brand {
