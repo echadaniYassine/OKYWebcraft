@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   const toggleNav = (event) => {
-    event.stopPropagation(); // Prevent closing immediately after opening
+    event.stopPropagation(); // Pprevent closing immediately after opening
     setIsNavOpen((prev) => !prev);
   };
 
