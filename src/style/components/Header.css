@@ -386,11 +386,38 @@ body.dark-mode .language-btn:hover {
   html[dir='rtl'] .language-dropdown {
     min-width: 100px;
     padding: 6px;
+    margin: 0 180px;
+    background-color: black;
+    
   }
 
   html[dir='rtl'] .language-dropdown button {
     font-size: 13px;
-    padding: 5px 8px;
+    padding: 5px 4px;
+    text-align: center;
+    color: aliceblue;
+    
+  }
+  html[dir='rtl'] body.dark-mode .language-dropdown {
+    min-width: 100px;
+    padding: 6px;
+    margin: 0 180px;
+    background-color: white;
+    
+  }
+
+  html[dir='rtl'] body.dark-mode .language-dropdown button {
+    font-size: 13px;
+    padding: 5px 4px;
+    text-align: center;
+    color: black;
+    
+  }
+  html[dir='rtl'] body.dark-mode.language-dropdown button:hover {
+    color: aliceblue;
+  }
+  html[dir='rtl'] .language-dropdown button:hover {
+    color: aliceblue;
   }
 
 }

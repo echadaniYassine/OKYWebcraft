@@ -11,6 +11,14 @@ body {
   color: var(--text-light);
   transition: background-color 0.3s, color 0.3s;
 }
+/* In your global CSS file */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 body.dark-mode {
   background-color: var(--background-dark);

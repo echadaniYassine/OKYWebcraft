@@ -281,6 +281,11 @@ body.dark-mode .feature-main .feature-subtitle {
   .feature-image {
     max-width: 80px;
   }
+
+  html[dir='rtl'] .feature-subtitle {
+    text-align: center;
+    color: green;
+  }
 }
 
 html[dir='rtl'] .why-choose-us {
@@ -333,7 +338,7 @@ html[dir='rtl'] .feature-main .feature-title {
   color: black;
 }
 
-html[dir='rtl'] .feature-main .feature-subtitle {
+html[dir='rtl'] .feature-subtitle {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
