@@ -225,8 +225,12 @@ body.dark-mode .about-img {
   .about-btn {
     padding: 8px 20px;
     font-size: 0.9rem;
-    font-weight: normal;
-    margin: 10px 90px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 140px;
+    background-color: rgb(196, 0, 220);
   }
 
   .about-image {

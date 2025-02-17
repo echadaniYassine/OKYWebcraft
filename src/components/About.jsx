@@ -53,7 +53,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Link to={"/about-us"}>
+          <Link to={"/about-us"} style={{ textDecoration: "none" }}>
             <button className="about-btn">{t("about.more_about_us")}</button>
           </Link>
         </div>
