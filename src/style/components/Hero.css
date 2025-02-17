@@ -40,10 +40,13 @@
   font-size: 2.5rem;
   font-weight: 600;
   color: black;
-  /* Dark Blue */
   margin-bottom: 0;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-block;
+  width: 0;
+  border-right: 3px solid #2d00f8;
+  animation: typing 3s steps(20) 1s forwards infinite;
 }
 
 .hero-paragraph {
@@ -143,15 +146,6 @@
   }
 }
 
-.typing-animation {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  border-right: 3px solid #2d00f8;
-  /* Dark Blue */
-  animation: typing 3s steps(20) 1s forwards infinite;
-}
 
 /* Dark Mode Styles */
 body.dark-mode {
@@ -213,6 +207,9 @@ html[dir='rtl'] .hero-title {
 
 html[dir='rtl'] .hero-subtitle {
   text-align: start;
+  animation: none !important;
+  width: auto !important;
+  border-right: none !important;
 }
 
 html[dir='rtl'] .hero-paragraph {
@@ -254,7 +251,7 @@ html[dir='rtl'] .hero-paragraph {
     font-size: 0.9rem;
     max-width: 95%;
     color: #2C3E50;
-    
+
   }
 
   .hero-btn {
@@ -296,15 +293,20 @@ html[dir='rtl'] .hero-paragraph {
   }
 
   /* RTL Styles */
- 
+
 
   html[dir='rtl'] body.dark-mode .hero-stat-paragraph {
     text-align: center;
     color: aliceblue;
   }
+
   html[dir='rtl'] .typing-animation {
     animation: typing 3s steps(20) 1s forwards infinite;
   }
 
-  
+  html[dir='rtl'] .hero-subtitle {
+    
+  }
+
+
 }

@@ -12,7 +12,7 @@ const Hero = () => {
           {/* Left: Text Content */}
           <div className="hero-text fade-in-right">
             <h1 className="hero-title">{t('hero.hero_title')}</h1>
-            <h3 className="hero-subtitle typing-animation">{t('hero.hero_subtitle')}</h3>
+            <h3 className="hero-subtitle">{t('hero.hero_subtitle')}</h3>
             <p className="hero-paragraph">{t('hero.hero_paragraph')}</p>
             <a href="#services" className="btn hero-btn">{t('hero.explore_services')}</a>
           </div>
