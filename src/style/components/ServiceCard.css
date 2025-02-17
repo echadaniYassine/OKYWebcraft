@@ -2,7 +2,8 @@
 .services {
   padding: 60px 50px;
   text-align: center;
-  background-color: #fff; /* Light Gray */
+  background-color: #fff;
+  /* Light Gray */
   border-radius: 10px;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   opacity: 0;
@@ -14,21 +15,26 @@
   content: '';
   position: absolute;
   top: 2%;
-  left: 10%; /* Adjust to center the border or set to desired percentage */
-  width: 80%; /* Border width as a percentage of the container's width */
+  left: 10%;
+  /* Adjust to center the border or set to desired percentage */
+  width: 80%;
+  /* Border width as a percentage of the container's width */
   height: 1px;
-  background-color: rgb(196, 0, 220); /* Border color */
+  background-color: rgb(196, 0, 220);
+  /* Border color */
 }
 
 .services.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
 
 }
+
 .services-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -156,6 +162,7 @@
   margin-top: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
   position: relative;
+
   /* Ensure the text has correct positioning */
 }
 
@@ -207,25 +214,32 @@ body.dark-mode {
 }
 
 body.dark-mode .services {
-  background-color: transparent; /* Dark background */
-  color: #e0e0e0; /* Light text */
+  background-color: transparent;
+  /* Dark background */
+  color: #e0e0e0;
+  /* Light text */
 }
 
 body.dark-mode .services::before {
-  background-color: #e0e0e0; /* Lighter border */
+  background-color: #e0e0e0;
+  /* Lighter border */
 }
 
 body.dark-mode .services-title {
-  color: rgb(196, 0, 220); /* Keep the title color */
+  color: rgb(196, 0, 220);
+  /* Keep the title color */
 }
 
 body.dark-mode .services-description {
-  color: #d3d3d3; /* Light gray for description */
+  color: #d3d3d3;
+  /* Light gray for description */
 }
 
 body.dark-mode .service-card {
-  background-color: #3a3a3a; /* Darker background for cards */
-  color: #e0e0e0; /* Light text */
+  background-color: #3a3a3a;
+  /* Darker background for cards */
+  color: #e0e0e0;
+  /* Light text */
 }
 
 body.dark-mode .service-card:hover {
@@ -237,29 +251,35 @@ body.dark-mode .service-card::before {
 }
 
 body.dark-mode .service-icon-container {
-  color: #00bcd4; /* Lighter Teal for icons */
+  color: #00bcd4;
+  /* Lighter Teal for icons */
 }
 
 body.dark-mode .service-text h3 {
-  color: #c3c7c9; /* Lighter color for titles */
+  color: #c3c7c9;
+  /* Lighter color for titles */
 }
 
 body.dark-mode .service-text p {
-  color: #b6c1c7; /* Lighter gray for description */
+  color: #b6c1c7;
+  /* Lighter gray for description */
 }
 
 body.dark-mode .explore-more {
-  color: rgb(196, 0, 220); /* Keep primary action color */
+  color: rgb(196, 0, 220);
+  /* Keep primary action color */
 }
 
 body.dark-mode .view-all-btn {
-  background-color: rgb(196, 0, 220); /* Keep the button color */
+  background-color: rgb(196, 0, 220);
+  /* Keep the button color */
   border-bottom: 2px #f5f5f5 solid;
 
 }
 
 body.dark-mode .view-all-btn:hover {
-  background-color: #ff00c8; /* Darker shade for hover */
+  background-color: #ff00c8;
+  /* Darker shade for hover */
 }
 
 
@@ -277,6 +297,7 @@ body.dark-mode .view-all-btn:hover {
     font-size: 3rem;
     margin-bottom: 10px;
   }
+
   .services-title {
     font-size: 1.5rem;
   }
@@ -318,7 +339,8 @@ body.dark-mode .view-all-btn:hover {
 
   .view-all-btn {
     display: inline-block;
-    background: rgb(196, 0, 220); /* Teal */
+    background: rgb(196, 0, 220);
+    /* Teal */
     /* Teal for button background */
     color: white;
     text-decoration: none;
@@ -330,6 +352,7 @@ body.dark-mode .view-all-btn:hover {
     margin: 20px auto;
     width: 200px;
   }
+
   .view-all-btn:hover {
     transform: scale(1.05);
     background: #ff00c8;
@@ -350,33 +373,55 @@ html[dir='rtl'] .service-icon-container {
   margin-left: 20px;
   margin-right: 0;
 }
+
+html[dir='rtl'] body.dark-mode .explore-more {
+  color: aliceblue;
+}
+
+html[dir='rtl'] body.dark-mode .explore-more svg {
+  margin-top: 6px;
+  margin-right: 3px;
+  transition: transform 0.3s ease;
+  color: aliceblue;
+  transform: rotate(180deg);
+}
+
+html[dir='rtl'] .explore-more svg {
+  margin-top: 6px;
+  margin-right: 3px;
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+
 @media (max-width: 768px) {
   html[dir='rtl'] .service-card {
     width: 100%;
-    flex-direction: column-reverse; /* Row-reverse for RTL */
+    flex-direction: column; /* Change from column-reverse to column */
     align-items: center;
-    text-align: end; /* Align text to the end (right) */
+    text-align: end;
     padding: 20px;
   }
 
   html[dir='rtl'] .service-icon-container {
-    text-align: end; /* Align icons to the end (right) */
+    text-align: end;
     font-size: 3rem;
     margin-bottom: 10px;
   }
 
   html[dir='rtl'] .services-title {
     font-size: 1.5rem;
-    text-align: end; /* Align title to the end (right) */
+    text-align: start;
   }
 
   html[dir='rtl'] .service-image {
     max-width: 150px;
-    order: -1;
+    order: 1; /* Ensure image comes first */
   }
 
   html[dir='rtl'] .service-text {
-    text-align: start; /* Align text to the right for RTL */
+    text-align: start;
+    order: 2; /* Ensure text comes after the image */
   }
 
   html[dir='rtl'] .service-text h3 {
@@ -390,17 +435,17 @@ html[dir='rtl'] .service-icon-container {
   }
 
   html[dir='rtl'] .service-card:hover {
-    border-bottom: 5px solid #283738; /* Slate Gray */
-    border-left: none; /* Ensure there's no border on the left for RTL */
+    border-bottom: 5px solid #283738;
+    border-left: none;
   }
 
   html[dir='rtl'] .services-title {
     font-size: 1.65rem;
-    text-align: end; /* Align title to the right */
+    text-align: start;
   }
 
   html[dir='rtl'] .services-description {
-    text-align: end; /* Align description to the right */
+    text-align: start;
     font-size: 1rem;
   }
 
@@ -423,4 +468,3 @@ html[dir='rtl'] .service-icon-container {
     background: #ff00c8;
   }
 }
-

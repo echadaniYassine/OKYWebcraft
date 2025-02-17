@@ -245,7 +245,6 @@ body.dark-mode .ecommerce-services__process-step p {
 @media (max-width: 768px) {
   .ecommerce-services {
     padding: 20px;
-    margin-top: 30px ;
   }
 
   .ecommerce-services__title {

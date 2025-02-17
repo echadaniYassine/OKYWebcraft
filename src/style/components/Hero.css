@@ -313,4 +313,8 @@ html[dir='rtl'] .hero-paragraph {
   html[dir='rtl'] .hero-paragraph {
     text-align: start;
   }
+  html[dir='rtl'] body.dark-mode .hero-stat-paragraph {
+    text-align: center;
+    color: aliceblue;
+  }
 }
