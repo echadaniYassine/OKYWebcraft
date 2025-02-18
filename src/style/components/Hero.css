@@ -206,7 +206,10 @@ html[dir='rtl'] .hero-title {
 }
 
 html[dir='rtl'] .hero-subtitle {
-  text-align: start;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-align: center;
   animation: none !important;
   width: auto !important;
   border-right: none !important;
@@ -261,7 +264,7 @@ html[dir='rtl'] .hero-paragraph {
     align-items: center;
     justify-content: center;
     margin: 40px auto;
-    width: 120px;
+    width: 140px;
     background-color: rgb(196, 0, 220);
   }
 
@@ -292,9 +295,6 @@ html[dir='rtl'] .hero-paragraph {
     /* Teal */
   }
 
-  /* RTL Styles */
-
-
   html[dir='rtl'] body.dark-mode .hero-stat-paragraph {
     text-align: center;
     color: aliceblue;
@@ -304,9 +304,7 @@ html[dir='rtl'] .hero-paragraph {
     animation: typing 3s steps(20) 1s forwards infinite;
   }
 
-  html[dir='rtl'] .hero-subtitle {
-    
-  }
+  html[dir='rtl'] .hero-subtitle {}
 
 
 }

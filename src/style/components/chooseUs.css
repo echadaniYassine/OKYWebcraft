@@ -67,7 +67,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-right: 50px;
-  color: #77a1aa;
+  color: gray;
   /* Slate Gray */
   text-align: start;
   /* Align subtitle to start */
@@ -409,7 +409,7 @@ html[dir='rtl'] body.dark-mode .feature-main .feature-subtitle {
 
   .feature-main .feature-subtitle {
     font-size: 1rem;
-    color: aliceblue;
+    color: rgb(196, 0, 220);
     text-align: center;
     /* Align subtitle to start */
     margin-right: 0;
