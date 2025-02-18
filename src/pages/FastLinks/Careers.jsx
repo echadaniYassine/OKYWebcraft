@@ -91,6 +91,7 @@ const ApplyForm = ({ onClose }) => {
     fullName: '',
     email: '',
     phone: '',
+    cv:""
   });
 
   const handleFileChange = (event) => {

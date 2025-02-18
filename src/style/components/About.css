@@ -112,7 +112,7 @@
 }
 
 .about-btn:hover {
-  background-color: blueviolet; /* Slate Gray */
+  background-color: #ff00c8; /* Slate Gray */
   transform: scale(1.05);
 }
 

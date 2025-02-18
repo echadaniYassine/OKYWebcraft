@@ -98,7 +98,7 @@
 }
 
 .careers__apply-button {
-  background: linear-gradient(90deg, #2f3c3f, #77a1aa);
+  background: linear-gradient(90deg, rgb(196, 0, 220), #2f3c3f);
   color: white;
   padding: 0.8rem 1.5rem;
   font-size: 1.2rem;
@@ -173,7 +173,7 @@
 }
 
 .apply-form button:hover {
-  background: #77a1aa;
+  background: linear-gradient(90deg, #ff00c8, #2f3c3f);
 }
 
 /* Close Button */
@@ -235,7 +235,11 @@ body.dark-mode .careers__job-requirements li {
 }
 
 body.dark-mode .careers__apply-button {
-  background: linear-gradient(90deg, #2f3c3f, #77a1aa);
+  background: linear-gradient(90deg, rgb(196, 0, 220), #2f3c3f);
+}
+
+body.dark-mode .careers__apply-button:hover {
+  background: linear-gradient(135deg, #ff00c8, #2f3c3f);
 }
 
 body.dark-mode .apply-form {
@@ -250,7 +254,7 @@ body.dark-mode .apply-form input {
 }
 
 body.dark-mode .apply-form button {
-  background: linear-gradient(90deg, #2f3c3f, #77a1aa);
+  background: linear-gradient(90deg, #2f3c3f, #ff00c8);
 }
 
 body.dark-mode .apply-form-close {
@@ -366,6 +370,7 @@ body.dark-mode .apply-form-close:hover {
 
   body.dark-mode .apply-form {
     background: #333;
+    margin:15px;
   }
 
   body.dark-mode .apply-form input {
@@ -375,6 +380,10 @@ body.dark-mode .apply-form-close:hover {
   }
 
   body.dark-mode .apply-form button {
-    background: linear-gradient(90deg, #2f3c3f, #77a1aa);
+    width: 270px;
+    background: linear-gradient(90deg, #2f3c3f, #ff00c8);
+  }
+  body.dark-mode .apply-form button:hover {
+    background: linear-gradient(135deg,  #2f3c3f ,#ff00c8);
   }
 }

@@ -161,9 +161,9 @@ body.dark-mode .language-btn:hover {
   border: none;
   color: black;
   font-size: 16px;
-  padding: 8px 12px;
+  padding: 8px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: background 0.2s ease;
   border-radius: 6px;
@@ -275,6 +275,8 @@ body.dark-mode .language-btn:hover {
     position: relative;
     transition: color 0.3s ease, padding-left 0.3s ease;
     font-weight: 500;
+    display: inline-block; /* Ensures width is based on content */
+
   }
 
   .nav-link:hover {
@@ -289,12 +291,12 @@ body.dark-mode .language-btn:hover {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: aliceblue;
+    background-color: #ff00c8;
     transition: width 0.3s ease;
   }
 
   .nav-link:hover::after {
-    width: 60%;
+    width: 100%;
   }
 
   .hamburger,
@@ -359,6 +361,9 @@ body.dark-mode .language-btn:hover {
   .language-dropdown {
     min-width: 100px;
     padding: 6px;
+    position: absolute;
+    top: 35px;
+    left: -10px;
   }
 
   .language-dropdown button {
@@ -386,12 +391,19 @@ body.dark-mode .language-btn:hover {
   html[dir='rtl'] .language-dropdown {
     min-width: 100px;
     padding: 6px;
-    margin: 0 180px;
-    background-color: black;
-    
+    margin: 0 210px;
+    background-color: white;
   }
+  
 
   html[dir='rtl'] .language-dropdown button {
+    font-size: 13px;
+    padding: 5px 4px;
+    text-align: center;
+    color: black;
+  }
+
+  html[dir='rtl'] .language-dropdown button:hover {
     font-size: 13px;
     padding: 5px 4px;
     text-align: center;
@@ -401,23 +413,9 @@ body.dark-mode .language-btn:hover {
   html[dir='rtl'] body.dark-mode .language-dropdown {
     min-width: 100px;
     padding: 6px;
-    margin: 0 180px;
+    margin: 0 210px;
     background-color: white;
     
-  }
-
-  html[dir='rtl'] body.dark-mode .language-dropdown button {
-    font-size: 13px;
-    padding: 5px 4px;
-    text-align: center;
-    color: black;
-    
-  }
-  html[dir='rtl'] body.dark-mode.language-dropdown button:hover {
-    color: aliceblue;
-  }
-  html[dir='rtl'] .language-dropdown button:hover {
-    color: aliceblue;
   }
 
 }
