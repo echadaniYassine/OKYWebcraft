@@ -4,7 +4,7 @@ import ProjectCard from "../../components/ProjectCard"; // Common ProjectCard co
 import "../../style/pages/RealisationStyle/CategoryWeb.css";
 
 const projects = [
-  { id: 1, subcategory: "application", titleKey: "project_title_1", image: "assets/HERO.png", demoLink: "/project/1" },
+  { id: 1, subcategory: "application", titleKey: "project_title_1", image: "assets/HERO1.png", demoLink: "/project/1" },
   { id: 2, subcategory: "application", titleKey: "project_title_2", image: "assets/app2.png", demoLink: "https://trendify-frontend-nine.vercel.app/" },
   { id: 3, subcategory: "landing", titleKey: "project_title_3", image: "assets/landing1.png", demoLink: "https://asian-taste-one.vercel.app/" },
   { id: 4, subcategory: "landing", titleKey: "project_title_4", image: "assets/smartPath.png", demoLink: "https://smartpath2.netlify.app/" }
