@@ -386,5 +386,40 @@
                 }
             }
         }
+    },
+    "about_us": {
+        "introduction": "Introduction",
+        "title": "À propos de nous",
+        "description": "Nous sommes une équipe de passionnés dédiée à fournir des services de haute qualité dans le développement web et mobile.",
+        "highlights": [
+            {
+                "title": "Solutions innovantes",
+                "description": "Nous offrons des solutions web et mobiles de pointe pour aider les entreprises à prospérer."
+            },
+            {
+                "title": "Centricité client",
+                "description": "Les besoins et la satisfaction de nos clients sont notre priorité absolue."
+            },
+            {
+                "title": "Équipe expérimentée",
+                "description": "Notre équipe se compose de développeurs et de concepteurs expérimentés."
+            }
+        ],
+        "missionTitle": "Notre mission",
+        "missionDescription": "Nous visons à fournir des solutions de haute qualité et faciles à utiliser pour tous nos clients.",
+        "missionPoints": [
+            "Innover à chaque projet",
+            "Mettre l'accent sur la qualité et la performance",
+            "Offrir un service client exceptionnel"
+        ],
+        "visionTitle": "Notre vision",
+        "visionDescription": "Nous envisageons un avenir où la technologie permet aux entreprises d'atteindre leur plein potentiel.",
+        "visionPoint1": "Croissance grâce à l'innovation",
+        "visionDetail1": "Nous visons à innover continuellement pour rester en tête dans l'industrie.",
+        "visionPoint2": "Collaboration et partenariats",
+        "visionDetail2": "Nous croyons en la création de relations solides avec nos partenaires et clients.",
+        "visionPoint3": "Expansion mondiale",
+        "visionDetail3": "Notre vision inclut l'expansion de nos services à un public mondial.",
+        "galleryTitle": "Galerie"
     }
 }

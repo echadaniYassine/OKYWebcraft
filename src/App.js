@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageTitle from "./components/PageTitle";
 import Home from "./pages/home/home";
@@ -27,7 +27,7 @@ const App = () => {
   // Load saved language on mount
   useEffect(() => {
     const savedLang = localStorage.getItem("lang") || "en";
-    
+
     if (i18n.language !== savedLang) {
       i18n.changeLanguage(savedLang);
     }
@@ -44,28 +44,53 @@ const App = () => {
     // Apply text direction for RTL languages
     document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
   };
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // Detect screen width changes
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Router>
-      <Header handleLanguageChange={handleLanguageChange} />
-      <Routes>
-        <Route path="/" element={<><PageTitle title={t('page-titles.home')} /><Home /></>} />
-        <Route path="/about-us" element={<><PageTitle title={t('page-titles.about-us')} /><About_US /></>} />
-        <Route path="/Benefits" element={<><PageTitle title={t('page-titles.benefits')} /><Benefits /></>} />
-        <Route path="/category-web" element={<><PageTitle title={t('page-titles.category-web')} /><CategoryWeb /></>} />
-        <Route path="/category-graphic-design" element={<><PageTitle title={t('page-titles.category-graphic-design')} /><CategoryGraphicDesign /></>} />
-        <Route path="/category-app-mobile" element={<><PageTitle title={t('page-titles.category-app-mobile')} /><CategoryAppMobill /></>} />
-        <Route path="/Careers" element={<><PageTitle title={t('page-titles.careers')} /><Careers /></>} />
-        <Route path="/terms-of-service" element={<><PageTitle title={t('page-titles.terms-of-service')} /><TermsOfService /></>} />
-        <Route path="/privacy-policy" element={<><PageTitle title={t('page-titles.privacy-policy')} /><PrivacyPolicy /></>} />
-        <Route path="/services-ecommerce" element={<><PageTitle title={t('page-titles.services-ecommerce')} /><EcommerceServices /></>} />
-        <Route path="/services-web-&-mobile-development" element={<><PageTitle title={t('page-titles.services-web-mobile-development')} /><WebMobileDevelopment /></>} />
-        <Route path="/services-social-media-management" element={<><PageTitle title={t('page-titles.services-social-media-management')} /><SocialMediaManagement /></>} />
-        <Route path="/services-cloud-hosting" element={<><PageTitle title={t('page-titles.services-cloud-hosting')} /><CloudServices /></>} />
-        <Route path="/services-digital-advertising" element={<><PageTitle title={t('page-titles.services-digital-advertising')} /><DigitalAdvertising /></>} />
-        <Route path="/services-ui-ux-design" element={<><PageTitle title={t('page-titles.services-ui-ux-design')} /><UIUXDesign /></>} />
-      </Routes>
-      <Footer />
+      {/* Maintenance Message for Tablet View */}
+      {screenWidth >= 768 && screenWidth <= 1024 && (
+        <section className="maintenance-message">
+          <div className="maintenance-container">
+            <h1>🚧 Oops! We're improving your experience! 🚧</h1>
+            <p>We’re working on making the site even better and fully optimized for tablet devices. Please check back soon!</p>
+            <p>Thanks for your patience! 😄</p>
+          </div>
+        </section>
+      )}
+      <div className="display-Routes">
+
+        <Header handleLanguageChange={handleLanguageChange} />
+
+        <Routes>
+          <Route path="/" element={<><PageTitle title={t('page-titles.home')} /><Home /></>} />
+          <Route path="/about-us" element={<><PageTitle title={t('page-titles.about-us')} /><About_US /></>} />
+          <Route path="/Benefits" element={<><PageTitle title={t('page-titles.benefits')} /><Benefits /></>} />
+          <Route path="/category-web" element={<><PageTitle title={t('page-titles.category-web')} /><CategoryWeb /></>} />
+          <Route path="/category-graphic-design" element={<><PageTitle title={t('page-titles.category-graphic-design')} /><CategoryGraphicDesign /></>} />
+          <Route path="/category-app-mobile" element={<><PageTitle title={t('page-titles.category-app-mobile')} /><CategoryAppMobill /></>} />
+          <Route path="/Careers" element={<><PageTitle title={t('page-titles.careers')} /><Careers /></>} />
+          <Route path="/terms-of-service" element={<><PageTitle title={t('page-titles.terms-of-service')} /><TermsOfService /></>} />
+          <Route path="/privacy-policy" element={<><PageTitle title={t('page-titles.privacy-policy')} /><PrivacyPolicy /></>} />
+          <Route path="/services-ecommerce" element={<><PageTitle title={t('page-titles.services-ecommerce')} /><EcommerceServices /></>} />
+          <Route path="/services-web-&-mobile-development" element={<><PageTitle title={t('page-titles.services-web-mobile-development')} /><WebMobileDevelopment /></>} />
+          <Route path="/services-social-media-management" element={<><PageTitle title={t('page-titles.services-social-media-management')} /><SocialMediaManagement /></>} />
+          <Route path="/services-cloud-hosting" element={<><PageTitle title={t('page-titles.services-cloud-hosting')} /><CloudServices /></>} />
+          <Route path="/services-digital-advertising" element={<><PageTitle title={t('page-titles.services-digital-advertising')} /><DigitalAdvertising /></>} />
+          <Route path="/services-ui-ux-design" element={<><PageTitle title={t('page-titles.services-ui-ux-design')} /><UIUXDesign /></>} />
+        </Routes>
+        <Footer />
+      </div>
+
       <div className="whatsapp-container">
         <a href="https://wa.me/+212717923103" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className="whatsapp-icon" />

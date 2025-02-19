@@ -100,3 +100,52 @@ body.dark-mode .whatsapp-container:hover .whatsapp-tooltip {
     
   }
 }
+/* Maintenance Message Style for Tablets */
+.maintenance-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.maintenance-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.maintenance-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.maintenance-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .maintenance-message{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .maintenance-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .maintenance-container p {
+    font-size: 1rem;
+  }
+  .display-Routes{
+    display: none;
+  }
+
+}

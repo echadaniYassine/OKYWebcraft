@@ -7,6 +7,7 @@ const Benefits = () => {
     const { t } = useTranslation();  // Get translation function
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const observer = new IntersectionObserver(
             (entries) => {
                 const entry = entries[0];

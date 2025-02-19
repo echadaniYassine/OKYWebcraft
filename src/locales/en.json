@@ -382,5 +382,40 @@
                 "description": "Our services are optimized for affordability and high ROI."
             }
         }
+    },
+    "about_us": {
+        "introduction": "Introduction",
+        "title": "About Us",
+        "description": "We are a team of passionate individuals dedicated to providing high-quality services in the web and mobile development industry.",
+        "highlights": [
+            {
+                "title": "Innovative Solutions",
+                "description": "We offer cutting-edge web and mobile solutions to help businesses thrive."
+            },
+            {
+                "title": "Customer-Centric",
+                "description": "Our clients' needs and satisfaction are our top priority."
+            },
+            {
+                "title": "Experienced Team",
+                "description": "Our team consists of experienced developers and designers."
+            }
+        ],
+        "missionTitle": "Our Mission",
+        "missionDescription": "We aim to deliver high-quality and user-friendly solutions for all our clients.",
+        "missionPoints": [
+            "Innovate with every project",
+            "Focus on quality and performance",
+            "Provide exceptional customer service"
+        ],
+        "visionTitle": "Our Vision",
+        "visionDescription": "We envision a future where technology empowers businesses to reach their full potential.",
+        "visionPoint1": "Growth through innovation",
+        "visionDetail1": "We aim to continually innovate to stay ahead in the industry.",
+        "visionPoint2": "Collaboration and partnerships",
+        "visionDetail2": "We believe in building strong relationships with our partners and clients.",
+        "visionPoint3": "Global expansion",
+        "visionDetail3": "Our vision includes expanding our services to a global audience.",
+        "galleryTitle": "Gallery"
     }
 }

@@ -1,0 +1,88 @@
+ .about_us_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-mode .about_us_section {
+    background-color: #121212;
+  }
+  
+  /* Container Styles */
+  .about_us_container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-mode .about_us_container {
+    background-color: #333333;
+  }
+  
+  /* Maintenance Message */
+  .maintenance_message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .maintenance_heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  body.dark-mode .maintenance_heading {
+    color: #ffffff;
+  }
+  
+  .maintenance_text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 0;
+    font-weight: 400;
+  }
+  
+  body.dark-mode .maintenance_text {
+    color: #dddddd;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .about_us_container {
+      padding: 15px;
+      max-width: 80%;
+    }
+  
+    .maintenance_heading {
+      font-size: 1.6rem;
+    }
+  
+    .maintenance_text {
+      font-size: 1rem;
+    }
+  }
+  
+  /* LTR for Arabic */
+  body[dir="ltr"] .maintenance_message {
+    text-align: left;
+  }
+  
+  body[dir="ltr"] .maintenance_heading {
+    text-align: left;
+  }
+  
+  body[dir="ltr"] .maintenance_text {
+    text-align: left;
+  }
+  

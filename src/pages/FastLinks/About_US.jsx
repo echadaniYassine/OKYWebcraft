@@ -1,74 +1,45 @@
-import React, { useEffect, useState } from "react";
-import "../../style/components/About.css"; // Import CSS
+import React from "react";
+// import { useTranslation } from "react-i18next";
+import "../../style/pages/FastLinksStyle/About_US.css";
 
-const About_US = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const AboutUs = () => {
+  // const { t } = useTranslation();
+  // const [isSectionVisible, setIsSectionVisible] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.5 }
-    );
+  // useEffect(() => {
+  //   const section = document.getElementById("about_us-section");
+  //   if (!section) return;
 
-    const section = document.getElementById("about");
-    observer.observe(section);
+  //   const observer = new IntersectionObserver(
+  //     (entries, observer) => {
+  //       if (entries[0].isIntersecting) {
+  //         setIsSectionVisible(true);
+  //         observer.unobserve(entries[0].target);
+  //       }
+  //     },
+  //     { threshold: 0.5 }
+  //   );
 
-    return () => observer.disconnect();
-  }, []);
-   useEffect(() => {
-      // Scroll to top when the component is loaded
-      window.scrollTo(0, 0);
-    }, []);
+  //   observer.observe(section);
+  //   return () => observer.disconnect();
+  // }, []);
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
-    <section id="about" className={`about ${isVisible ? "visible" : ""}`}>
-      <div className="containerAbout">
-        <div className="about-text">
-          <h3 className="about-intro">INTRODUCTION ABOUT US</h3>
-          <h1 className="about-title">Optimize Social Efforts For Greater Impact.</h1>
-          <p className="about-description">
-            Omnis quis sunt quasi aliquet senectus tenetur dolor! Omnis! Corrupti,
-            est arcu, felis, molestiae impedit vel felis eget.
-          </p>
-          <div className="about-highlights">
-            <div className="highlight-card">
-              <span className="checkmark">✔</span>
-              <div>
-                <h4 className="highlight-title">Target Oriented Work</h4>
-                <p className="highlight-description">
-                  Laboriosam tempus eu imperdiet pedes.
-                </p>
-              </div>
-            </div>
-            <div className="highlight-card">
-              <span className="checkmark">✔</span>
-              <div>
-                <h4 className="highlight-title">Project Success Guarantee</h4>
-                <p className="highlight-description">
-                  Laboriosam tempus eu imperdiet pedes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Right: Image Content */}
-        <div className="about-image">
-          <img
-            src="assets/about.png"
-            alt="About Us"
-            className="about-img"
-          />
+    <section id="about_us_section" className="about_us_section">
+      <div className="about_us_container">
+        {/* Maintenance Message */}
+        <div className="maintenance_message">
+          <h1 className="maintenance_heading">🚧 We'll be back soon! 🚧</h1>
+          <p className="maintenance_text">Our site is currently undergoing maintenance. Please check back later!</p>
         </div>
       </div>
     </section>
+
   );
 };
 
-export default About_US;
+export default AboutUs;
