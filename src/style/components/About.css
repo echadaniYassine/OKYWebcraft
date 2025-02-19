@@ -256,11 +256,6 @@ body.dark-mode .about-img {
   }
 }
 
-html[dir='rtl'] .containerAbout {
-  flex-direction: reverse;
-  /* Flipping the layout */
-}
-
 html[dir='rtl'] .about-text {
   text-align: right;
   /* Align text to the right */
@@ -277,8 +272,8 @@ html[dir='rtl'] .about-description {
 }
 
 html[dir='rtl'] .highlight-card {
-  flex-direction: row-reverse;
-  /* Flip the flex direction for RTL */
+  border-right: none;
+  border-left: rgb(196, 0, 220) 3px solid;
 }
 
 html[dir='rtl'] .highlight-title {
