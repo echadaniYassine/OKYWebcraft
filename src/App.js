@@ -4,7 +4,7 @@ import PageTitle from "./components/PageTitle";
 import Home from "./pages/home/home";
 import Header from './components/Header';
 import About_US from "./pages/FastLinks/About_US";
-import Benefits from "./pages/Benifits";
+import Benefits from "./pages/next/Benifits";
 import CategoryWeb from "./pages/realisation/WebCategory";
 import CategoryGraphicDesign from "./pages/realisation/CategoryGraphicDesign";
 import CategoryAppMobill from "./pages/realisation/CategoryAppMobill";

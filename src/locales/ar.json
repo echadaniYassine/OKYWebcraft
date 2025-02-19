@@ -107,215 +107,251 @@
         },
         "copyright": "© 2025 OKY WebCraft. جميع الحقوق محفوظة."
     },
-    
-        "page-titles": {
-            "home": "الرئيسية",
-            "about-us": "من نحن",
-            "benefits": "الفوائد",
-            "category-web": "فئة الويب",
-            "category-graphic-design": "فئة التصميم الجرافيكي",
-            "category-app-mobile": "فئة تطبيقات الهاتف المحمول",
-            "careers": "الوظائف",
-            "terms-of-service": "شروط الخدمة",
-            "privacy-policy": "سياسة الخصوصية",
-            "services-ecommerce": "خدمات التجارة الإلكترونية",
-            "services-web-mobile-development": "تطوير الويب والتطبيقات",
-            "services-social-media-management": "إدارة وسائل التواصل الاجتماعي",
-            "services-cloud-hosting": "خدمات الاستضافة السحابية",
-            "services-digital-advertising": "خدمات الإعلانات الرقمية",
-            "services-ui-ux-design": "خدمات تصميم واجهات وتجربة المستخدم"
+    "page-titles": {
+        "home": "الرئيسية",
+        "about-us": "من نحن",
+        "benefits": "الفوائد",
+        "category-web": "فئة الويب",
+        "category-graphic-design": "فئة التصميم الجرافيكي",
+        "category-app-mobile": "فئة تطبيقات الهاتف المحمول",
+        "careers": "الوظائف",
+        "terms-of-service": "شروط الخدمة",
+        "privacy-policy": "سياسة الخصوصية",
+        "services-ecommerce": "خدمات التجارة الإلكترونية",
+        "services-web-mobile-development": "تطوير الويب والتطبيقات",
+        "services-social-media-management": "إدارة وسائل التواصل الاجتماعي",
+        "services-cloud-hosting": "خدمات الاستضافة السحابية",
+        "services-digital-advertising": "خدمات الإعلانات الرقمية",
+        "services-ui-ux-design": "خدمات تصميم واجهات وتجربة المستخدم"
+    },
+    "careers": {
+        "title": "تعرف على فريقنا",
+        "subtitle": "في OKY WebCraft، نحن فريق شغوف من المطورين والمصممين والمبتكرين، لكل منا مهاراته الفريدة التي تساهم في نجاحنا الجماعي.",
+        "applyNow": "قدّم الآن",
+        "role": "الدور الوظيفي",
+        "location": "الموقع",
+        "fileError": "يُسمح فقط بملفات PDF و DOCX.",
+        "fileSizeError": "يجب أن يكون حجم الملف على الأقل 10 ميغابايت.",
+        "uploadFile": "يرجى تحميل ملف صالح.",
+        "applyFormTitle": "قدّم الآن",
+        "fullName": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
+        "submitApplication": "إرسال الطلب",
+        "close": "إغلاق",
+        "applicationSuccess": "تم إرسال الطلب بنجاح!",
+        "description": "ياسين مطور ذو خبرة يعمل على تقنيات الواجهة الأمامية والخلفية. لديه شغف بالكود النظيف والأنظمة الفعالة."
+    },
+    "privacy_policy": {
+        "privacy_policy_title": "سياسة الخصوصية",
+        "intro_title": "مقدمة",
+        "intro_text": "مرحبًا بك في OKY WebCraft! نحن نقدر خصوصيتك ونلتزم بحماية معلوماتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها ومشاركتها عند استخدام خدماتنا.",
+        "information_title": "المعلومات التي نجمعها",
+        "information_text": "قد نقوم بجمع الأنواع التالية من المعلومات:",
+        "information_list": [
+            "المعلومات الشخصية (مثل الاسم، عنوان البريد الإلكتروني، رقم الهاتف)",
+            "بيانات الاستخدام (مثل الصفحات التي تزورها، الوقت المستغرق في الموقع)",
+            "معلومات الجهاز (مثل نوع المتصفح، عنوان IP)"
+        ],
+        "use_title": "كيف نستخدم معلوماتك",
+        "use_text": "يتم استخدام المعلومات التي نجمعها من أجل:",
+        "use_list": [
+            "تقديم وتحسين خدماتنا",
+            "التواصل معك",
+            "ضمان الأمان ومنع الاحتيال"
+        ],
+        "sharing_title": "مشاركة معلوماتك",
+        "sharing_text": "نحن لا نبيع معلوماتك الشخصية. قد نشارك معلوماتك مع جهات خارجية فقط في الحالات التالية:",
+        "sharing_list": [
+            "بموافقتك",
+            "للامتثال للالتزامات القانونية",
+            "لحماية حقوقنا وسلامتنا"
+        ],
+        "rights_title": "حقوقك",
+        "rights_text": "لديك الحق في الوصول إلى معلوماتك الشخصية أو تحديثها أو حذفها. إذا كان لديك أي أسئلة أو مخاوف، يرجى الاتصال بنا عبر البريد الإلكتروني أو معلومات الاتصال أدناه.",
+        "changes_title": "التغييرات على هذه السياسة",
+        "changes_text": "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. يرجى مراجعتها بشكل دوري للاطلاع على التحديثات.",
+        "footer_text": "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا عبر البريد الإلكتروني أدناه ↓"
+    },
+    "terms_of_service": {
+        "terms_of_service_title": "شروط الخدمة",
+        "last_updated": "آخر تحديث: 23 يناير 2025",
+        "intro_title": "1. المقدمة",
+        "intro_text": "مرحبًا بك في OKY WebCraft. باستخدام خدماتنا، فإنك توافق على الشروط والأحكام التالية.",
+        "use_title": "2. استخدام الخدمة",
+        "use_text": "أنت توافق على استخدام خدماتنا لأغراض قانونية فقط. لا يجوز لك استخدام خدماتنا بأي طريقة تنتهك أي قوانين أو لوائح سارية.",
+        "account_title": "3. مسؤولية الحساب",
+        "account_text": "أنت مسؤول عن الحفاظ على سرية معلومات حسابك وعن جميع الأنشطة التي تتم تحت حسابك.",
+        "content_title": "4. ملكية المحتوى",
+        "content_text": "جميع المحتويات التي تقدمها تبقى ملكًا لك. ومع ذلك، من خلال استخدام خدماتنا، فإنك تمنحنا ترخيصًا لاستخدام المحتوى الخاص بك وعرضه وتوزيعه داخل المنصة.",
+        "termination_title": "5. الإنهاء",
+        "termination_text": "قد نقوم بتعليق أو إنهاء وصولك إلى الخدمة في أي وقت إذا انتهكت هذه الشروط أو قمت بسلوك غير لائق.",
+        "limitation_title": "6. تحديد المسؤولية",
+        "limitation_text": "نحن غير مسؤولين عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام خدماتنا.",
+        "privacy_title": "7. سياسة الخصوصية",
+        "privacy_text": "استخدامك للخدمة يخضع أيضًا لسياسة الخصوصية الخاصة بنا.",
+        "changes_title": "8. التغييرات على الشروط",
+        "changes_text": "قد نقوم بتحديث هذه الشروط من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تاريخ تحديث جديد.",
+        "contact_title": "9. تواصل معنا",
+        "contact_text": "إذا كان لديك أي أسئلة حول هذه الشروط، يرجى التواصل معنا عبر البريد الإلكتروني: okywebcraft@gmail.com."
+    },
+    "category_application": {
+        "navbar": "تطبيقات الهاتف المحمول",
+        "applications": "التطبيقات",
+        "project_title_1": "تطبيق الهاتف 1",
+        "project_title_2": "تطبيق الهاتف 2",
+        "project_title_3": "تطبيق الهاتف 3",
+        "demo_link_1": "عرض توضيحي للتطبيق 1",
+        "demo_link_2": "عرض توضيحي للتطبيق 2",
+        "demo_link_3": "عرض توضيحي للتطبيق 3"
+    },
+    "category_graphic_design": {
+        "navbar": "التصميم الجرافيكي"
+    },
+    "category_web": {
+        "navbar": "تطوير الويب",
+        "application": "تطبيقات الويب",
+        "landing": "الصفحات المقصودة",
+        "project_title_1": "وكالة webCraft",
+        "project_title_2": "متجر Trendify",
+        "project_title_3": "عرض Asian",
+        "project_title_4": "SmartPath"
+    },
+    "cloud_services": {
+        "title": "خدمات السحابة والاستضافة",
+        "description": "قم بتحسين بنيتك التحتية مع <strong>وكالة OKY</strong>. نحن نوفر <strong>خدمات استضافة سحابية موثوقة</strong> تضمن <strong>القابلية للتوسع، الأمان، والأداء العالي</strong>.",
+        "scalable_hosting_title": "استضافة قابلة للتوسع",
+        "scalable_hosting_description": "ضمان <strong>التوافر العالي</strong> من خلال حلول سحابية <strong>تتكيف مع الطلب</strong>.",
+        "robust_security_title": "أمان قوي",
+        "robust_security_description": "تدابير أمان متقدمة لحماية البيانات، التشفير، والتخفيف من هجمات DDoS.",
+        "performance_optimization_title": "تحسين الأداء",
+        "performance_optimization_description": "استخدام <strong>شبكات توزيع المحتوى (CDN)، التخزين المؤقت، ومراكز البيانات العالمية</strong> لتحقيق <strong>أداء فائق السرعة</strong>.",
+        "cta_button": "انشر مع OKY"
+    },
+    "digital_advertising": {
+        "title": "الإعلانات الرقمية",
+        "description": "حقق أقصى انتشار مع <strong>وكالة OKY</strong>. نحن نصمم <strong>حملات إعلانية رقمية</strong> فعالة تستهدف جمهورك بدقة، مما يضمن <strong>أقصى عائد استثماري</strong> ونمو الأعمال.",
+        "cta_button": "ابدأ حملتك الآن",
+        "targeted_campaigns_title": "حملات مستهدفة",
+        "targeted_campaigns_description": "نوصل <strong>إعلانات موجهة بدقة</strong> إلى الجمهور المناسب، مما يزيد من التفاعل والتحويلات.",
+        "data_driven_strategies_title": "استراتيجيات قائمة على البيانات",
+        "data_driven_strategies_description": "نستخدم <strong>تحليلات البيانات والذكاء الاصطناعي</strong> لتحسين الحملات وتحقيق نتائج أفضل.",
+        "maximized_roi_title": "تحقيق أقصى عائد استثماري",
+        "maximized_roi_description": "احصل على <strong>أعلى عائد استثماري</strong> من خلال تقليل هدر الإعلانات وزيادة معدل التحويل."
+    },
+    "ecommerce_services": {
+        "title": "خدمات التجارة الإلكترونية",
+        "description": "في <strong>وكالة OKY</strong>، نحن متخصصون في بناء حلول تجارة إلكترونية ديناميكية وآمنة وقابلة للتوسع باستخدام منصات <strong>ووردبريس</strong> و<strong>شوبيفاي</strong>.",
+        "cta_button": "تواصل معنا",
+        "wordpress_ecommerce_title": "حلول ووردبريس للتجارة الإلكترونية",
+        "wordpress_ecommerce_description": "نستخدم ووردبريس مع WooCommerce لإنشاء متاجر إلكترونية متعددة الاستخدامات وسهلة الاستخدام، مما يضمن أداءً عاليًا وقابلية للتوسع.",
+        "shopify_ecommerce_title": "حلول شوبيفاي للتجارة الإلكترونية",
+        "shopify_ecommerce_description": "شوبيفاي هو أحد أفضل منصات التجارة الإلكترونية، ونحن خبراء في إنشاء متاجر إلكترونية سلسة توفر تجربة تسوق متميزة.",
+        "process_title": "كيف تساعدك وكالة OKY على تطوير مشروعك في التجارة الإلكترونية",
+        "process_description": "نحن نركز على إنشاء تجارب تجارة إلكترونية حديثة تجمع بين التطوير الاحترافي وأحدث التقنيات لتحقيق رؤيتك.",
+        "discovery_consultation_title": "1. الاكتشاف والاستشارة",
+        "discovery_consultation_description": "نبدأ بفهم عملك وسوقك المستهدف وأهدافك، ثم نحدد نطاق المشروع ومتطلباتك.",
+        "platform_selection_customization_title": "2. اختيار المنصة والتخصيص",
+        "platform_selection_customization_description": "نوصي بأفضل منصة تناسب احتياجاتك، سواء كانت ووردبريس/WooCommerce أو شوبيفاي، ثم نقوم بتخصيصها وفقًا لعلامتك التجارية ومتطلباتك الوظيفية.",
+        "development_implementation_title": "3. التطوير والتنفيذ",
+        "development_implementation_description": "نقوم بدمج الميزات المطلوبة، وتصميم القوالب المخصصة، وتنفيذ جميع الوظائف المطلوبة، مع ضمان السرعة والأمان.",
+        "testing_launch_title": "4. الاختبار والإطلاق",
+        "testing_launch_description": "قبل الإطلاق، نقوم باختبار شامل لضمان التشغيل السلس عبر الأجهزة والمتصفحات، ثم نطلق متجرك الإلكتروني رسميًا.",
+        "ongoing_support_optimization_title": "5. الدعم المستمر والتحسين",
+        "ongoing_support_optimization_description": "بعد الإطلاق، نقدم دعمًا مستمرًا للحفاظ على أداء متجرك، مع تحسينات دورية وتحسين محركات البحث."
+    },
+    "social_media_management": {
+        "title": "إدارة وسائل التواصل الاجتماعي",
+        "description": "عزز حضور علامتك التجارية عبر الإنترنت مع <strong>وكالة OKY</strong>. نحن ندير <strong>استراتيجيتك ومحتواك وتفاعلاتك</strong> لضمان أقصى وصول وتأثير.",
+        "cta_button": "عزز وسائل التواصل الاجتماعي الخاصة بك",
+        "platforms": {
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter",
+            "linkedin": "Linkedin",
+            "tiktok": "Tiktok"
         },
-        "careers": {
-            "title": "تعرف على فريقنا",
-            "subtitle": "في OKY WebCraft، نحن فريق شغوف من المطورين والمصممين والمبتكرين، لكل منا مهاراته الفريدة التي تساهم في نجاحنا الجماعي.",
-            "applyNow": "قدّم الآن",
-            "role": "الدور الوظيفي",
-            "location": "الموقع",
-            "fileError": "يُسمح فقط بملفات PDF و DOCX.",
-            "fileSizeError": "يجب أن يكون حجم الملف على الأقل 10 ميغابايت.",
-            "uploadFile": "يرجى تحميل ملف صالح.",
-            "applyFormTitle": "قدّم الآن",
-            "fullName": "الاسم الكامل",
-            "email": "البريد الإلكتروني",
-            "phone": "رقم الهاتف",
-            "submitApplication": "إرسال الطلب",
-            "close": "إغلاق",
-            "applicationSuccess": "تم إرسال الطلب بنجاح!",
-            "description": "ياسين مطور ذو خبرة يعمل على تقنيات الواجهة الأمامية والخلفية. لديه شغف بالكود النظيف والأنظمة الفعالة."
-        },
-        "privacy_policy": {
-            "privacy_policy_title": "سياسة الخصوصية",
-            "intro_title": "مقدمة",
-            "intro_text": "مرحبًا بك في OKY WebCraft! نحن نقدر خصوصيتك ونلتزم بحماية معلوماتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها ومشاركتها عند استخدام خدماتنا.",
-            "information_title": "المعلومات التي نجمعها",
-            "information_text": "قد نقوم بجمع الأنواع التالية من المعلومات:",
-            "information_list": [
-                "المعلومات الشخصية (مثل الاسم، عنوان البريد الإلكتروني، رقم الهاتف)",
-                "بيانات الاستخدام (مثل الصفحات التي تزورها، الوقت المستغرق في الموقع)",
-                "معلومات الجهاز (مثل نوع المتصفح، عنوان IP)"
-            ],
-            "use_title": "كيف نستخدم معلوماتك",
-            "use_text": "يتم استخدام المعلومات التي نجمعها من أجل:",
-            "use_list": [
-                "تقديم وتحسين خدماتنا",
-                "التواصل معك",
-                "ضمان الأمان ومنع الاحتيال"
-            ],
-            "sharing_title": "مشاركة معلوماتك",
-            "sharing_text": "نحن لا نبيع معلوماتك الشخصية. قد نشارك معلوماتك مع جهات خارجية فقط في الحالات التالية:",
-            "sharing_list": [
-                "بموافقتك",
-                "للامتثال للالتزامات القانونية",
-                "لحماية حقوقنا وسلامتنا"
-            ],
-            "rights_title": "حقوقك",
-            "rights_text": "لديك الحق في الوصول إلى معلوماتك الشخصية أو تحديثها أو حذفها. إذا كان لديك أي أسئلة أو مخاوف، يرجى الاتصال بنا عبر البريد الإلكتروني أو معلومات الاتصال أدناه.",
-            "changes_title": "التغييرات على هذه السياسة",
-            "changes_text": "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. يرجى مراجعتها بشكل دوري للاطلاع على التحديثات.",
-            "footer_text": "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا عبر البريد الإلكتروني أدناه ↓"
-        },
-        "terms_of_service": {
-            "terms_of_service_title": "شروط الخدمة",
-            "last_updated": "آخر تحديث: 23 يناير 2025",
-            "intro_title": "1. المقدمة",
-            "intro_text": "مرحبًا بك في OKY WebCraft. باستخدام خدماتنا، فإنك توافق على الشروط والأحكام التالية.",
-            "use_title": "2. استخدام الخدمة",
-            "use_text": "أنت توافق على استخدام خدماتنا لأغراض قانونية فقط. لا يجوز لك استخدام خدماتنا بأي طريقة تنتهك أي قوانين أو لوائح سارية.",
-            "account_title": "3. مسؤولية الحساب",
-            "account_text": "أنت مسؤول عن الحفاظ على سرية معلومات حسابك وعن جميع الأنشطة التي تتم تحت حسابك.",
-            "content_title": "4. ملكية المحتوى",
-            "content_text": "جميع المحتويات التي تقدمها تبقى ملكًا لك. ومع ذلك، من خلال استخدام خدماتنا، فإنك تمنحنا ترخيصًا لاستخدام المحتوى الخاص بك وعرضه وتوزيعه داخل المنصة.",
-            "termination_title": "5. الإنهاء",
-            "termination_text": "قد نقوم بتعليق أو إنهاء وصولك إلى الخدمة في أي وقت إذا انتهكت هذه الشروط أو قمت بسلوك غير لائق.",
-            "limitation_title": "6. تحديد المسؤولية",
-            "limitation_text": "نحن غير مسؤولين عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام خدماتنا.",
-            "privacy_title": "7. سياسة الخصوصية",
-            "privacy_text": "استخدامك للخدمة يخضع أيضًا لسياسة الخصوصية الخاصة بنا.",
-            "changes_title": "8. التغييرات على الشروط",
-            "changes_text": "قد نقوم بتحديث هذه الشروط من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تاريخ تحديث جديد.",
-            "contact_title": "9. تواصل معنا",
-            "contact_text": "إذا كان لديك أي أسئلة حول هذه الشروط، يرجى التواصل معنا عبر البريد الإلكتروني: okywebcraft@gmail.com."
-        },
-        
-            "category_application": {
-                "navbar": "تطبيقات الهاتف المحمول",
-                "applications": "التطبيقات",
-                "project_title_1": "تطبيق الهاتف 1",
-                "project_title_2": "تطبيق الهاتف 2",
-                "project_title_3": "تطبيق الهاتف 3",
-                "demo_link_1": "عرض توضيحي للتطبيق 1",
-                "demo_link_2": "عرض توضيحي للتطبيق 2",
-                "demo_link_3": "عرض توضيحي للتطبيق 3"
+        "benefits": {
+            "content_strategy": {
+                "title": "استراتيجية المحتوى",
+                "description": "نقوم بإنشاء <strong>محتوى جذاب</strong> موجه لجمهورك لضمان التناسق والتوافق مع علامتك التجارية."
             },
-            "category_graphic_design": {
-                "navbar": "التصميم الجرافيكي"
+            "analytics_reporting": {
+                "title": "التحليلات والتقارير",
+                "description": "تتبع <strong>أداء وسائل التواصل الاجتماعي</strong> باستخدام تقارير مفصلة لتحسين استراتيجيتك."
             },
-            "category_web": {
-                "navbar": "تطوير الويب",
-                "application": "تطبيقات الويب",
-                "landing": "الصفحات المقصودة",
-                "project_title_1": "وكالة webCraft",
-                "project_title_2": "متجر Trendify",
-                "project_title_3": "عرض Asian",
-                "project_title_4": "SmartPath"
-            },
-            "cloud_services": {
-                "title": "خدمات السحابة والاستضافة",
-                "description": "قم بتحسين بنيتك التحتية مع <strong>وكالة OKY</strong>. نحن نوفر <strong>خدمات استضافة سحابية موثوقة</strong> تضمن <strong>القابلية للتوسع، الأمان، والأداء العالي</strong>.",
-                "scalable_hosting_title": "استضافة قابلة للتوسع",
-                "scalable_hosting_description": "ضمان <strong>التوافر العالي</strong> من خلال حلول سحابية <strong>تتكيف مع الطلب</strong>.",
-                "robust_security_title": "أمان قوي",
-                "robust_security_description": "تدابير أمان متقدمة لحماية البيانات، التشفير، والتخفيف من هجمات DDoS.",
-                "performance_optimization_title": "تحسين الأداء",
-                "performance_optimization_description": "استخدام <strong>شبكات توزيع المحتوى (CDN)، التخزين المؤقت، ومراكز البيانات العالمية</strong> لتحقيق <strong>أداء فائق السرعة</strong>.",
-                "cta_button": "انشر مع OKY"
-            },
-            "digital_advertising": {
-                "title": "الإعلانات الرقمية",
-                "description": "حقق أقصى انتشار مع <strong>وكالة OKY</strong>. نحن نصمم <strong>حملات إعلانية رقمية</strong> فعالة تستهدف جمهورك بدقة، مما يضمن <strong>أقصى عائد استثماري</strong> ونمو الأعمال.",
-                "cta_button": "ابدأ حملتك الآن",
-                "targeted_campaigns_title": "حملات مستهدفة",
-                "targeted_campaigns_description": "نوصل <strong>إعلانات موجهة بدقة</strong> إلى الجمهور المناسب، مما يزيد من التفاعل والتحويلات.",
-                "data_driven_strategies_title": "استراتيجيات قائمة على البيانات",
-                "data_driven_strategies_description": "نستخدم <strong>تحليلات البيانات والذكاء الاصطناعي</strong> لتحسين الحملات وتحقيق نتائج أفضل.",
-                "maximized_roi_title": "تحقيق أقصى عائد استثماري",
-                "maximized_roi_description": "احصل على <strong>أعلى عائد استثماري</strong> من خلال تقليل هدر الإعلانات وزيادة معدل التحويل."
-            },
-            "ecommerce_services": {
-                "title": "خدمات التجارة الإلكترونية",
-                "description": "في <strong>وكالة OKY</strong>، نحن متخصصون في بناء حلول تجارة إلكترونية ديناميكية وآمنة وقابلة للتوسع باستخدام منصات <strong>ووردبريس</strong> و<strong>شوبيفاي</strong>.",
-                "cta_button": "تواصل معنا",
-                "wordpress_ecommerce_title": "حلول ووردبريس للتجارة الإلكترونية",
-                "wordpress_ecommerce_description": "نستخدم ووردبريس مع WooCommerce لإنشاء متاجر إلكترونية متعددة الاستخدامات وسهلة الاستخدام، مما يضمن أداءً عاليًا وقابلية للتوسع.",
-                "shopify_ecommerce_title": "حلول شوبيفاي للتجارة الإلكترونية",
-                "shopify_ecommerce_description": "شوبيفاي هو أحد أفضل منصات التجارة الإلكترونية، ونحن خبراء في إنشاء متاجر إلكترونية سلسة توفر تجربة تسوق متميزة.",
-                "process_title": "كيف تساعدك وكالة OKY على تطوير مشروعك في التجارة الإلكترونية",
-                "process_description": "نحن نركز على إنشاء تجارب تجارة إلكترونية حديثة تجمع بين التطوير الاحترافي وأحدث التقنيات لتحقيق رؤيتك.",
-                "discovery_consultation_title": "1. الاكتشاف والاستشارة",
-                "discovery_consultation_description": "نبدأ بفهم عملك وسوقك المستهدف وأهدافك، ثم نحدد نطاق المشروع ومتطلباتك.",
-                "platform_selection_customization_title": "2. اختيار المنصة والتخصيص",
-                "platform_selection_customization_description": "نوصي بأفضل منصة تناسب احتياجاتك، سواء كانت ووردبريس/WooCommerce أو شوبيفاي، ثم نقوم بتخصيصها وفقًا لعلامتك التجارية ومتطلباتك الوظيفية.",
-                "development_implementation_title": "3. التطوير والتنفيذ",
-                "development_implementation_description": "نقوم بدمج الميزات المطلوبة، وتصميم القوالب المخصصة، وتنفيذ جميع الوظائف المطلوبة، مع ضمان السرعة والأمان.",
-                "testing_launch_title": "4. الاختبار والإطلاق",
-                "testing_launch_description": "قبل الإطلاق، نقوم باختبار شامل لضمان التشغيل السلس عبر الأجهزة والمتصفحات، ثم نطلق متجرك الإلكتروني رسميًا.",
-                "ongoing_support_optimization_title": "5. الدعم المستمر والتحسين",
-                "ongoing_support_optimization_description": "بعد الإطلاق، نقدم دعمًا مستمرًا للحفاظ على أداء متجرك، مع تحسينات دورية وتحسين محركات البحث."
-            },
-            "social_media_management": {
-                "title": "إدارة وسائل التواصل الاجتماعي",
-                "description": "عزز حضور علامتك التجارية عبر الإنترنت مع <strong>وكالة OKY</strong>. نحن ندير <strong>استراتيجيتك ومحتواك وتفاعلاتك</strong> لضمان أقصى وصول وتأثير.",
-                "cta_button": "عزز وسائل التواصل الاجتماعي الخاصة بك",
-                "platforms": {
-                    "facebook": "Facebook",
-                    "instagram": "Instagram",
-                    "twitter": "Twitter",
-                    "linkedin": "Linkedin",
-                    "tiktok": "Tiktok"
-                },
-                "benefits": {
-                    "content_strategy": {
-                        "title": "استراتيجية المحتوى",
-                        "description": "نقوم بإنشاء <strong>محتوى جذاب</strong> موجه لجمهورك لضمان التناسق والتوافق مع علامتك التجارية."
-                    },
-                    "analytics_reporting": {
-                        "title": "التحليلات والتقارير",
-                        "description": "تتبع <strong>أداء وسائل التواصل الاجتماعي</strong> باستخدام تقارير مفصلة لتحسين استراتيجيتك."
-                    },
-                    "community_engagement": {
-                        "title": "التفاعل المجتمعي",
-                        "description": "بناء <strong>علاقات قوية</strong> مع جمهورك من خلال التفاعل النشط والاستجابات الفورية."
-                    }
-                }
-            },
-            "uiux_design": {
-                "title": "Design UI/UX",
-                "description": "أنشئ واجهات مذهلة وسهلة الاستخدام مع <strong>وكالة OKY</strong>. نحن نركز على <strong>تجربة المستخدم، والتنقل السلس، والتصميم العصري</strong> لتعزيز تواجدك الرقمي.",
-                "cta_button": "حسّن تصميم UI/UX الخاص بك",
-                "tools": {
-                    "figma": "Figma",
-                    "adobe_xd": "Adobe_xd",
-                    "sketch": "Sketch",
-                    "illustrator": "Illustrator",
-                    "photoshop": "Photoshop"
-                },
-                "benefits": {
-                    "user_centered_design": {
-                        "title": "تصميم يركز على المستخدم",
-                        "description": "نصمم مع <strong>مراعاة تجربة المستخدم</strong> لضمان سهولة الاستخدام والتفاعل السلس."
-                    },
-                    "prototyping_wireframing": {
-                        "title": "النماذج الأولية وتخطيط الصفحات",
-                        "description": "احصل على <strong>تصور مرئي</strong> لمشروعك قبل بدء التطوير."
-                    },
-                    "usability_testing": {
-                        "title": "اختبار قابلية الاستخدام",
-                        "description": "تحسين تفاعل المستخدمين من خلال <strong>التغذية الراجعة والتطوير التدريجي</strong>."
-                    }
-                }
+            "community_engagement": {
+                "title": "التفاعل المجتمعي",
+                "description": "بناء <strong>علاقات قوية</strong> مع جمهورك من خلال التفاعل النشط والاستجابات الفورية."
             }
-        
-        
-    
-    
+        }
+    },
+    "uiux_design": {
+        "title": "Design UI/UX",
+        "description": "أنشئ واجهات مذهلة وسهلة الاستخدام مع <strong>وكالة OKY</strong>. نحن نركز على <strong>تجربة المستخدم، والتنقل السلس، والتصميم العصري</strong> لتعزيز تواجدك الرقمي.",
+        "cta_button": "حسّن تصميم UI/UX الخاص بك",
+        "tools": {
+            "figma": "Figma",
+            "adobe_xd": "Adobe_xd",
+            "sketch": "Sketch",
+            "illustrator": "Illustrator",
+            "photoshop": "Photoshop"
+        },
+        "benefits": {
+            "user_centered_design": {
+                "title": "تصميم يركز على المستخدم",
+                "description": "نصمم مع <strong>مراعاة تجربة المستخدم</strong> لضمان سهولة الاستخدام والتفاعل السلس."
+            },
+            "prototyping_wireframing": {
+                "title": "النماذج الأولية وتخطيط الصفحات",
+                "description": "احصل على <strong>تصور مرئي</strong> لمشروعك قبل بدء التطوير."
+            },
+            "usability_testing": {
+                "title": "اختبار قابلية الاستخدام",
+                "description": "تحسين تفاعل المستخدمين من خلال <strong>التغذية الراجعة والتطوير التدريجي</strong>."
+            }
+        }
+    },
+    "benefits": {
+        "subtitle": "لماذا تختارنا؟",
+        "title": "أهدافنا وفوائدنا",
+        "cards": {
+            "tailoredSolutions": {
+                "title": "حلول مخصصة",
+                "description": "نقدم استراتيجيات مصممة خصيصًا لتتماشى تمامًا مع أهداف عملك."
+            },
+            "reliableExpertise": {
+                "title": "خبرة موثوقة",
+                "description": "بفضل سنوات من الخبرة، يقدم فريقنا نتائج ثابتة وعالية الجودة."
+            },
+            "innovativeStrategies": {
+                "title": "استراتيجيات مبتكرة",
+                "description": "نحن نحتضن الابتكار لتقديم حلول متطورة تبقيك في صدارة منافسيك."
+            },
+            "customerCentric": {
+                "title": "نهج موجه نحو العميل",
+                "description": "عملاؤنا في قلب كل ما نقوم به، حيث نعمل دائمًا على تلبية احتياجاتهم."
+            },
+            "scalableSolutions": {
+                "title": "حلول قابلة للتوسع",
+                "description": "تم تصميم خدماتنا لتواكب نمو أعمالك وتتكيف مع احتياجاتك المستقبلية."
+            },
+            "dataDrivenInsights": {
+                "title": "رؤى مستندة إلى البيانات",
+                "description": "نستخدم التحليلات المتقدمة لاتخاذ قرارات تجارية مدروسة وأكثر فاعلية."
+            },
+            "support": {
+                "title": "دعم على مدار الساعة",
+                "description": "فريقنا المتخصص متاح دائمًا لدعمك وتقديم المساعدة في أي وقت."
+            },
+            "securityCompliance": {
+                "title": "الأمان والامتثال",
+                "description": "نحرص على توفير أعلى مستويات الأمان وحماية بيانات عملائنا."
+            },
+            "costEffectiveSolutions": {
+                "title": "حلول فعّالة من حيث التكلفة",
+                "description": "نقدم خدمات عالية الجودة بتكلفة معقولة، مما يوفر لك عائد استثمار مرتفع."
+            }
+        }
+    }
 }

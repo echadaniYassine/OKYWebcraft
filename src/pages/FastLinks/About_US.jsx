@@ -29,7 +29,6 @@ const About_US = () => {
   return (
     <section id="about" className={`about ${isVisible ? "visible" : ""}`}>
       <div className="containerAbout">
-        {/* Left: Text Content */}
         <div className="about-text">
           <h3 className="about-intro">INTRODUCTION ABOUT US</h3>
           <h1 className="about-title">Optimize Social Efforts For Greater Impact.</h1>

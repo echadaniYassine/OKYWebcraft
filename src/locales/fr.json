@@ -343,6 +343,48 @@
                 "title": "Systèmes Backend Puissants",
                 "description": "En tirant parti de <strong>Node.js, Express, Laravel et MongoDB</strong>, nous concevons des backends <strong>scalables et sécurisés</strong> pour gérer des opérations complexes."
             }
+        },
+        "benefits": {
+            "subtitle": "Pourquoi nous choisir ?",
+            "title": "Nos Objectifs & Avantages",
+            "cards": {
+                "tailoredSolutions": {
+                    "title": "Solutions Sur Mesure",
+                    "description": "Nous proposons des stratégies personnalisées parfaitement alignées avec vos objectifs commerciaux."
+                },
+                "reliableExpertise": {
+                    "title": "Expertise Fiable",
+                    "description": "Fort d'années d'expérience, notre équipe offre des résultats cohérents et de haute qualité."
+                },
+                "innovativeStrategies": {
+                    "title": "Stratégies Innovantes",
+                    "description": "Nous adoptons l'innovation pour fournir des solutions de pointe qui vous maintiennent en tête."
+                },
+                "customerCentric": {
+                    "title": "Approche Client-Centrée",
+                    "description": "Nos clients sont au cœur de tout ce que nous faisons."
+                },
+                "scalableSolutions": {
+                    "title": "Solutions Scalables",
+                    "description": "Nos services sont conçus pour évoluer avec votre entreprise."
+                },
+                "dataDrivenInsights": {
+                    "title": "Analyses Basées sur les Données",
+                    "description": "Nous utilisons des analyses avancées pour prendre des décisions commerciales plus intelligentes."
+                },
+                "support": {
+                    "title": "Support 24/7",
+                    "description": "Notre équipe dédiée est toujours disponible pour vous assister à tout moment."
+                },
+                "securityCompliance": {
+                    "title": "Sécurité & Conformité",
+                    "description": "Nous garantissons les plus hauts standards de sécurité pour votre entreprise."
+                },
+                "costEffectiveSolutions": {
+                    "title": "Solutions Rentables",
+                    "description": "Nos services sont optimisés pour l'accessibilité et un retour sur investissement élevé."
+                }
+            }
         }
     }
 }

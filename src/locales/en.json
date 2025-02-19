@@ -141,7 +141,6 @@
         "close": "Close",
         "applicationSuccess": "Application sent successfully!",
         "description": "Yassine is an experienced developer who works on both front-end and back-end technologies. He has a passion for clean code and efficient systems."
-
     },
     "privacy_policy": {
         "privacy_policy_title": "Privacy Policy",
@@ -339,6 +338,48 @@
             "powerful_backend_systems": {
                 "title": "Powerful Backend Systems",
                 "description": "Leveraging <strong>Node.js, Express, Laravel, and MongoDB</strong>, we design <strong>scalable & secure backends</strong> to handle complex operations."
+            }
+        }
+    },
+    "benefits": {
+        "subtitle": "Why choose us?",
+        "title": "Our Goals & Benefits",
+        "cards": {
+            "tailoredSolutions": {
+                "title": "Tailored Solutions",
+                "description": "We provide customized strategies that align perfectly with your business objectives."
+            },
+            "reliableExpertise": {
+                "title": "Reliable Expertise",
+                "description": "Backed by years of experience, our team delivers consistent, high-quality results."
+            },
+            "innovativeStrategies": {
+                "title": "Innovative Strategies",
+                "description": "We embrace innovation to provide cutting-edge solutions that keep you ahead."
+            },
+            "customerCentric": {
+                "title": "Customer-Centric Approach",
+                "description": "Our clients are at the heart of everything we do."
+            },
+            "scalableSolutions": {
+                "title": "Scalable Solutions",
+                "description": "Our services are designed to scale with your business."
+            },
+            "dataDrivenInsights": {
+                "title": "Data-Driven Insights",
+                "description": "We use advanced analytics to drive smarter business decisions."
+            },
+            "support": {
+                "title": "24/7 Support",
+                "description": "Our dedicated team is always available to assist you anytime."
+            },
+            "securityCompliance": {
+                "title": "Security & Compliance",
+                "description": "We ensure the highest security standards for your business."
+            },
+            "costEffectiveSolutions": {
+                "title": "Cost-Effective Solutions",
+                "description": "Our services are optimized for affordability and high ROI."
             }
         }
     }
