@@ -28,7 +28,7 @@ const WebMobileDevelopment = () => {
         </motion.h2>
 
         <p className="web-mobile-development-section-description"
-          dangerouslySetInnerHTML={{ __html: t("web_mobile_development.description") }} 
+          dangerouslySetInnerHTML={{ __html: t("web_mobile_development.description") }}
         />
 
         {/* Technologies Used */}
@@ -65,23 +65,25 @@ const WebMobileDevelopment = () => {
               {benefit.icon && <div className="web-mobile-development-benefit-icon">{benefit.icon}</div>}
               <div>
                 <h3 className="web-mobile-development-benefit-title">{benefit.title}</h3>
-                <p 
+                <p
                   className="web-mobile-development-benefit-description"
-                  dangerouslySetInnerHTML={{ __html: benefit.description }} 
+                  dangerouslySetInnerHTML={{ __html: benefit.description }}
                 />
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA Button */}
         <motion.a
-          href="https://wa.me/+212717923103"
+          href="https://wa.me/+212717923103?text=Hello,%20I'm%20interested%20in%20your%20Web%20and%20Mobile%20Development%20services.%20Can%20we%20discuss%20more?"
           whileHover={{ scale: 1.1 }}
           className="web-mobile-development-cta-button"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {t("web_mobile_development.cta_button")}
         </motion.a>
+
       </div>
     </section>
   );

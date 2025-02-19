@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next"; // Import i18n translation hook
 import '../../style/pages/services/Services.css';
 import { FaWordpress, FaShopify } from 'react-icons/fa';  // Import the icons
+import { motion } from "framer-motion";
 
 export default function EcommerceServices() {
   const { t } = useTranslation(); // Initialize translation
@@ -86,12 +87,18 @@ export default function EcommerceServices() {
 
       <div className="ecommerce-services__cta">
         <h3>{t('ecommerce_services.cta_button')}</h3>
-        <a href="https://wa.me/+212717923103"
+        <motion.a
+          href="https://wa.me/+212717923103?text=Hello,%20I'm%20interested%20in%20your%20E-commerce%20services.%20Can%20we%20discuss%20more?"
+          whileHover={{ scale: 1.1 }}
+          className="ecommerce-services__cta-button-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <button className="ecommerce-services__cta-button">
             {t('ecommerce_services.cta_button')}
           </button>
-        </a>
+        </motion.a>
+
       </div>
     </div>
   );

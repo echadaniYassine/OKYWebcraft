@@ -28,9 +28,9 @@ export default function UIUXDesign() {
           {t("uiux_design.title")}
         </motion.h2>
 
-        <p 
+        <p
           className="section-description"
-          dangerouslySetInnerHTML={{ __html: t("uiux_design.description") }} 
+          dangerouslySetInnerHTML={{ __html: t("uiux_design.description") }}
         />
 
         {/* Design Tools */}
@@ -64,23 +64,25 @@ export default function UIUXDesign() {
               {benefit.icon && <div className="benefit-icon">{benefit.icon}</div>}
               <div>
                 <h3 className="benefit-title">{benefit.title}</h3>
-                <p 
+                <p
                   className="benefit-description"
-                  dangerouslySetInnerHTML={{ __html: benefit.description }} 
+                  dangerouslySetInnerHTML={{ __html: benefit.description }}
                 />
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA Button */}
         <motion.a
-          href="https://wa.me/+212717923103"
+          href="https://wa.me/+212717923103?text=Hello,%20I'm%20interested%20in%20your%20UI/UX%20Design%20services.%20Can%20we%20discuss%20more?"
           whileHover={{ scale: 1.1 }}
           className="cta-button"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {t("uiux_design.cta_button")}
         </motion.a>
+
       </div>
     </section>
   );

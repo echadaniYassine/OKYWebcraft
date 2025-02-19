@@ -27,14 +27,14 @@ export default function DigitalAdvertising() {
           {t('digital_advertising.title')}
         </motion.h2>
 
-        <p 
+        <p
           className="section-description"
-          dangerouslySetInnerHTML={{ __html: t('digital_advertising.description') }} 
+          dangerouslySetInnerHTML={{ __html: t('digital_advertising.description') }}
         />
 
         {/* Advertising Platforms */}
         <div className="technologies-grid">
-          {[ 
+          {[
             { name: "Google Ads", icon: <FaGoogle />, class: "tech-google" },
             { name: "Facebook Ads", icon: <FaFacebook />, class: "tech-facebook" },
             { name: "Instagram Ads", icon: <FaInstagram />, class: "tech-instagram" },
@@ -42,7 +42,7 @@ export default function DigitalAdvertising() {
             { name: "YouTube Ads", icon: <FaYoutube />, class: "tech-youtube" },
             { name: "TikTok Ads", icon: <FaTiktok />, class: "tech-tiktok" },
           ].map((platform, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               whileHover={{ scale: 1.1 }}
               className={`technology-card ${platform.class}`}
@@ -59,9 +59,9 @@ export default function DigitalAdvertising() {
             <FaBullseye className="benefit-icon" />
             <div>
               <h3 className="benefit-title">{t('digital_advertising.targeted_campaigns_title')}</h3>
-              <p 
+              <p
                 className="benefit-description"
-                dangerouslySetInnerHTML={{ __html: t('digital_advertising.targeted_campaigns_description') }} 
+                dangerouslySetInnerHTML={{ __html: t('digital_advertising.targeted_campaigns_description') }}
               />
             </div>
           </motion.div>
@@ -70,9 +70,9 @@ export default function DigitalAdvertising() {
             <FaChartLine className="benefit-icon" />
             <div>
               <h3 className="benefit-title">{t('digital_advertising.data_driven_strategies_title')}</h3>
-              <p 
+              <p
                 className="benefit-description"
-                dangerouslySetInnerHTML={{ __html: t('digital_advertising.data_driven_strategies_description') }} 
+                dangerouslySetInnerHTML={{ __html: t('digital_advertising.data_driven_strategies_description') }}
               />
             </div>
           </motion.div>
@@ -81,22 +81,24 @@ export default function DigitalAdvertising() {
             <FaMoneyBillWave className="benefit-icon" />
             <div>
               <h3 className="benefit-title">{t('digital_advertising.maximized_roi_title')}</h3>
-              <p 
+              <p
                 className="benefit-description"
-                dangerouslySetInnerHTML={{ __html: t('digital_advertising.maximized_roi_description') }} 
+                dangerouslySetInnerHTML={{ __html: t('digital_advertising.maximized_roi_description') }}
               />
             </div>
           </motion.div>
         </div>
 
-        {/* CTA Button */}
-        <motion.a 
-          href="https://wa.me/+212717923103"
+        <motion.a
+          href="https://wa.me/+212717923103?text=Hello,%20I'm%20interested%20in%20your%20Digital%20Advertising%20services.%20Can%20we%20discuss%20more?"
           whileHover={{ scale: 1.1 }}
           className="cta-button"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {t('digital_advertising.cta_button')}
         </motion.a>
+
       </div>
     </section>
   );
