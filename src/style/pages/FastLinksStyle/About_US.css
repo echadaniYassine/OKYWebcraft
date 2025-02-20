@@ -245,22 +245,21 @@ body.dark-mode .about-us-icon {
 }
 
 
-
 /* 🌍 RTL Support */
 [dir="rtl"] .about-us-section {
   direction: rtl;
 }
 
 [dir="rtl"] .about-us-content {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .about-us-vision {
   flex-direction: row;
 }
 
-[dir="rtl"] .about-us-goal {
+[dir="rtl"] .about-us-vision {
   flex-direction: row-reverse;
+}
+
+[dir="rtl"] .about-us-goal {
+  flex-direction: row;
 }
 
 /* 📱 Responsive Design */

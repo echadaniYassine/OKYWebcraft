@@ -383,39 +383,34 @@
             }
         }
     },
-    "about_us": {
-        "introduction": "Introduction",
-        "title": "About Us",
-        "description": "We are a team of passionate individuals dedicated to providing high-quality services in the web and mobile development industry.",
-        "highlights": [
-            {
-                "title": "Innovative Solutions",
-                "description": "We offer cutting-edge web and mobile solutions to help businesses thrive."
-            },
-            {
-                "title": "Customer-Centric",
-                "description": "Our clients' needs and satisfaction are our top priority."
-            },
-            {
-                "title": "Experienced Team",
-                "description": "Our team consists of experienced developers and designers."
-            }
-        ],
-        "missionTitle": "Our Mission",
-        "missionDescription": "We aim to deliver high-quality and user-friendly solutions for all our clients.",
-        "missionPoints": [
-            "Innovate with every project",
-            "Focus on quality and performance",
-            "Provide exceptional customer service"
-        ],
-        "visionTitle": "Our Vision",
-        "visionDescription": "We envision a future where technology empowers businesses to reach their full potential.",
-        "visionPoint1": "Growth through innovation",
-        "visionDetail1": "We aim to continually innovate to stay ahead in the industry.",
-        "visionPoint2": "Collaboration and partnerships",
-        "visionDetail2": "We believe in building strong relationships with our partners and clients.",
-        "visionPoint3": "Global expansion",
-        "visionDetail3": "Our vision includes expanding our services to a global audience.",
-        "galleryTitle": "Gallery"
+    "about-us": {
+        "who-we-are": {
+            "title": "Who We Are",
+            "description": "We are a team of passionate developers and designers committed to delivering high-quality web and mobile solutions. Our expertise spans across modern technologies, ensuring innovative and efficient digital products.",
+            "points": [
+                "Experienced in Full Stack Development",
+                "Focused on UX/UI & Performance Optimization",
+                "Creating Scalable and Secure Applications"
+            ]
+        },
+        "our-vision": {
+            "title": "Our Vision",
+            "description": "Our vision is to shape the future of digital experiences by building cutting-edge, user-friendly applications. We aim to enhance business growth through technology, offering seamless digital transformations.",
+            "points": [
+                "Leading with Innovation & AI",
+                "Providing Seamless Digital Transformation",
+                "Empowering Businesses with Technology"
+            ]
+        },
+        "our-goal": {
+            "title": "Our Goal",
+            "description": "Our goal is to empower businesses with state-of-the-art technology solutions that boost efficiency, engagement, and revenue. We prioritize performance, accessibility, and user satisfaction in every project.",
+            "points": [
+                "Building High-Performance Applications",
+                "Enhancing User Engagement & Satisfaction",
+                "Delivering Scalable & Cost-Effective Solutions"
+            ]
+        },
+        "our-work": "Our Work"
     }
 }
