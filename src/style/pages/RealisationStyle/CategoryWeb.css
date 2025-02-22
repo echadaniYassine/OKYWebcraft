@@ -122,3 +122,75 @@ body.dark-mode .project-cards {
     gap: 2rem;
   }
 }
+
+/* Tablet Responsive Fixes */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .category-web {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .navbar {
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .subcategory {
+    margin: 2.5rem 0;
+  }
+
+  .subcategory-title {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #1A237E;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #1A237E;
+  }
+
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .project-card {
+    flex: 1 1 calc(50% - 2rem);
+    /* Makes each card take 50% width minus the gap */
+    box-sizing: border-box;
+    /* Ensure the padding and gap are correctly accounted for */
+  }
+
+
+  /* Dark Mode Styles */
+  body.dark-mode .category-web {
+    background: transparent;
+    color: white;
+  }
+
+  body.dark-mode .navbar {
+    background: linear-gradient(90deg, rgb(196, 0, 220), #0D47A1);
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  }
+
+  body.dark-mode .subcategory {
+    margin: 2.5rem 0;
+    background: #1E1E1E;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+
+  body.dark-mode .subcategory-title {
+    font-size: 1.3rem;
+    color: #BB86FC;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid #BB86FC;
+  }
+
+}

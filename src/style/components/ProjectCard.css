@@ -133,3 +133,28 @@ body.dark-mode .project-card:hover .project-carousel-image {
   transform: scale(1.1);
   filter: brightness(0.8); /* Lighter hover effect for dark mode */
 }
+
+
+@media (max-width: 1024px) {
+  .project-card {
+    width: 45%; /* Reduce width on tablets */
+    padding: 18px 25px;
+  }
+
+  .project-carousel-image {
+    height: 220px; /* Adjust height on tablets */
+  }
+
+  .project-title {
+    font-size: 1.1rem; /* Adjust title size */
+  }
+
+  .project-demo-icon {
+    font-size: 1.5rem; /* Keep demo icon size suitable */
+  }
+
+  /* Adjust the overlay icon positioning */
+  .project-overlay {
+    padding: 10px;
+  }
+}

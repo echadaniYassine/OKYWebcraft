@@ -353,7 +353,7 @@ html[dir='rtl'] body.dark-mode .feature-card-description {
 
 html[dir='rtl'] body.dark-mode .feature-highlight {
   background-color: #ff00c8;
-  border-radius: 50px;
+  border-radius: 0 0 50px 50px;
 }
 
 html[dir='rtl'] body.dark-mode .feature-image {
@@ -470,5 +470,101 @@ html[dir='rtl'] body.dark-mode .feature-main .feature-subtitle {
     color: black;
     margin: 0 auto;
     width: 150px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .why-choose-us {
+    padding: 0 30px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .feature {
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .feature1 {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .feature-main {
+    text-align: center;
+  }
+
+  .feature-main .feature-title {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .feature-main .feature-subtitle {
+    font-size: 1rem;
+    color: rgb(196, 0, 220);
+    text-align: center;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .feature-main .feature-button {
+    margin: 20px auto;
+  }
+
+  .feature-card {
+    text-align: start;
+  }
+
+  .feature-card-title {
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  .feature-card-description {
+    font-size: 0.95rem;
+    text-align: start;
+  }
+
+  .feature-image {
+    max-width: 80px;
+  }
+
+  /* RTL Support */
+  html[dir='rtl'] .feature-main .feature-button {
+    background-color: black;
+    margin: 20px auto;
+  }
+
+  html[dir='rtl'] .feature-main .feature-title {
+    text-align: center;
+  }
+
+  html[dir='rtl'] .feature-subtitle {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  html[dir='rtl'] .feature-card-description {
+    text-align: center;
+  }
+
+  /* Dark Mode */
+  html[dir='rtl'] body.dark-mode .feature-main .feature-title {
+    color: #e0e0e0;
+    text-align: center;
+  }
+
+  html[dir='rtl'] body.dark-mode .feature-main .feature-subtitle {
+    color: #e0e0e0;
+    text-align: center;
   }
 }

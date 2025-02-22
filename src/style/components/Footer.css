@@ -1,5 +1,6 @@
 .footer {
-  background: linear-gradient(to right,  rgb(196, 0, 220), Black); /* Deep Blue to Dark Gray */
+  background: linear-gradient(to right, rgb(196, 0, 220), Black);
+  /* Deep Blue to Dark Gray */
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -16,7 +17,19 @@
   gap: 100px;
 }
 
-.footer__section {
+.footer__section-one {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 30px;
+}
+
+.footer__section-two {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 30px;
+}
+
+.footer__section-three {
   flex: 1;
   min-width: 300px;
   margin-top: 30px;
@@ -50,7 +63,7 @@
   padding: 12px 10px;
   font-size: 1rem;
   border-radius: 5px;
-  background-color: black; 
+  background-color: black;
   color: aliceblue;
   border: none;
   cursor: pointer;
@@ -58,7 +71,8 @@
 }
 
 .footer__short-subscription__button:hover {
-  background-color: #ff00c8; /* Sunset Orange */
+  background-color: #ff00c8;
+  /* Sunset Orange */
 }
 
 .footer__social-links {
@@ -75,12 +89,13 @@
 
 .footer__social-links a {
   font-size: 1.8rem;
-  color: aliceblue; 
+  color: aliceblue;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer__social-links a:hover {
-  color: #ff00c8; /* Sunset Orange */
+  color: #ff00c8;
+  /* Sunset Orange */
   transform: scale(1.2);
 }
 
@@ -88,7 +103,8 @@
 .footer__title_ {
   font-size: 1.6rem;
   margin-bottom: 50px;
-  color: aliceblue; /* Soft Coral for section titles */
+  color: aliceblue;
+  /* Soft Coral for section titles */
   text-align: start;
   margin-left: 50px;
 }
@@ -110,19 +126,20 @@
 
 .footer__links__icon {
   font-size: 1.2rem;
-  color: white; 
+  color: white;
   flex-shrink: 0;
 }
 
 .footer__links__link {
-  color: #E0E0E0; /* Light Gray */
+  color: #E0E0E0;
+  /* Light Gray */
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .footer__links__link:hover {
-  color: aliceblue; 
+  color: aliceblue;
   border-bottom: 1px solid aliceblue;
 }
 
@@ -130,7 +147,8 @@
 .footer__title_3 {
   font-size: 1.6rem;
   margin-bottom: 50px;
-  color: aliceblue; /* Soft Coral for section titles */
+  color: aliceblue;
+  /* Soft Coral for section titles */
   text-align: start;
 }
 
@@ -148,23 +166,25 @@
   align-items: center;
   gap: 20px;
   font-size: 1rem;
-  color: #E0E0E0; /* Light Gray */
+  color: #E0E0E0;
+  /* Light Gray */
 }
 
 .footer__contact-icon {
   font-size: 1.4rem;
-  color: white; 
+  color: white;
   flex-shrink: 0;
 }
 
 .footer__contact-link {
-  color: #E0E0E0; /* Light Gray */
+  color: #E0E0E0;
+  /* Light Gray */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer__contact-link:hover {
-  color: aliceblue; 
+  color: aliceblue;
   border-bottom: 1px solid aliceblue;
 
 }
@@ -175,7 +195,8 @@
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
-  color: #ddd; /* Dark gray text */
+  color: #ddd;
+  /* Dark gray text */
   border-top: 1px solid #ddd;
   border-radius: 100px;
   margin-bottom: -20px;
@@ -193,11 +214,13 @@
 
   .footer__container {
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     align-items: center;
   }
 
-  .footer__section {
+  .footer__section-one,
+  .footer__section-two,
+  .footer__section-three {
     width: 100%;
     text-align: center;
   }
@@ -260,5 +283,30 @@
   .footer__copyright {
     padding: 15px 0;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* First section should take full width in the first row */
+  .footer__section-one {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px; /* Space between the first and second row */
+  }
+
+  /* Second and third sections should be in the second row and placed side by side */
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Adjust gap between the two sections */
+  }
+
+  .footer__section-two,
+  .footer__section-three {
+    order: 2;
+    width: 48%;  /* Adjust width to fit both sections in one row */
+    text-align: center;
+    margin-top: 0;  /* Remove top margin to align with the first row */
   }
 }

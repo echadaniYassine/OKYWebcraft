@@ -295,6 +295,14 @@ body.dark-mode .about-us-icon {
     font-size: 14px;
     text-align: start;
   }
+  body.dark-mode .about-us-heading {
+    font-size: 24px;
+  }
+
+  body.dark-mode .about-us-text {
+    font-size: 14px;
+    text-align: start;
+  }
 
   .about-us-list li {
     text-align: start;
@@ -302,5 +310,40 @@ body.dark-mode .about-us-icon {
 
   .carousel-image {
     width: 150px;
+  }
+}
+
+/* 📱 Tablet Responsive Design */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .about-us-content,
+  .about-us-vision,
+  .about-us-goal {
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .about-us-text-container,
+  .about-us-image-container {
+    max-width: 100%;
+  }
+ 
+
+  .about-us-text {
+    font-size: 14px;
+    text-align: start;
+    line-height: 1.5;
+  }
+
+  .about-us-list li {
+    font-size: 14px;
+  }
+
+  .carousel-image {
+    width: 250px;
+    height: 200px;
+  }
+
+  .about-us-carousel {
+    padding: 20px 0;
   }
 }

@@ -347,23 +347,48 @@ body.dark-mode .cta-button-unique:hover {
     padding: 15px;
     max-width: 100%;
   }
+}
 
-  body.dark-mode .benefit-icon-unique {
-    font-size: 2rem;
+/* Tablet-specific Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cloud-section-unique {
+    padding: 30px 30px;
   }
 
-  body.dark-mode .benefit-title-unique {
-    font-size: 1.1rem;
+ .technologies-grid-unique {
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Two columns for tablet */
+    gap: 20px;
   }
 
-  body.dark-mode .benefit-description-unique {
-    font-size: 0.95rem;
+  .technology-card-unique {
+    padding: 18px; /* Adjusted padding */
+    background-color: #283738;
+    width: 90%; /* Ensure the cards are responsive */
   }
 
-  body.dark-mode .cta-button-unique {
-    width: 100%;
+  .tech-name-unique {
+    color: #e0e0e0;
+  }
+
+  .benefit-card-unique {
+    flex-direction: column; /* Stack icon and text vertically */
     text-align: center;
-    font-size: 1rem;
-    padding: 10px;
+    padding: 18px;
+    width: 90%; /* Ensure responsive behavior */
+    max-width: 600px; /* Limit the width of the benefit cards */
   }
+
+  /* Dark Mode Styles for Tablet */
+  body.dark-mode .cloud-section-unique {
+    padding: 30px 30px;
+  }
+
+  body.dark-mode .benefit-card-unique {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px;
+    width: 90%;
+    max-width: 600px;
+  }
+
 }

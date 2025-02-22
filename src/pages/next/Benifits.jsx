@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';  // Import translation hook
 import '../../style/pages/next/benefits.css';
 
-const Benefits = () => {
+const ProfessionalBenefits = () => {
     const [isVisible, setIsVisible] = useState(false);
     const { t } = useTranslation();  // Get translation function
 
@@ -19,7 +19,7 @@ const Benefits = () => {
             { threshold: 0.5 }
         );
 
-        const section = document.getElementById('benefitsSection');
+        const section = document.getElementById('professionalBenefitsSection');
         if (section) observer.observe(section);
 
         return () => {
@@ -28,16 +28,16 @@ const Benefits = () => {
     }, []);
 
     return (
-        <section id="benefitsSection" className={`benefits-container ${isVisible ? 'visible' : ''}`}>
-            <div className="benefits-wrapper">
-                <div className="benefits-content">
-                    <div className="benefits-main">
-                        <p className="benefits-subtitle">{t('benefits.subtitle')}</p>
-                        <h1 className="benefits-title">{t('benefits.title')}</h1>
+        <section id="professionalBenefitsSection" className={`professional-benefits-container ${isVisible ? 'visible' : ''}`}>
+            <div className="professional-benefits-wrapper">
+                <div className="professional-benefits-content">
+                    <div className="professional-benefits-header">
+                        <p className="professional-benefits-subtitle">{t('benefits.subtitle')}</p>
+                        <h1 className="professional-benefits-title">{t('benefits.title')}</h1>
                     </div>
 
                     {/* Benefits Cards - Dynamically generated */}
-                    <div className="benefits-grid">
+                    <div className="professional-benefits-grid">
                         {[
                             { key: 'tailoredSolutions', image: 'Benefits1.png' },
                             { key: 'reliableExpertise', image: 'Benefits2.png' },
@@ -49,14 +49,14 @@ const Benefits = () => {
                             { key: 'securityCompliance', image: 'Benefits8.png' },
                             { key: 'costEffectiveSolutions', image: 'Benefits9.png' },
                         ].map((benefit, index) => (
-                            <div key={index} className="benefits-card">
+                            <div key={index} className="professional-benefits-card">
                                 <img
                                     src={`assets/${benefit.image}`}
                                     alt={t(`benefits.cards.${benefit.key}.title`)}
-                                    className="benefits-image"
+                                    className="professional-benefits-image"
                                 />
-                                <h3 className="benefits-card-title">{t(`benefits.cards.${benefit.key}.title`)}</h3>
-                                <p className="benefits-card-description">
+                                <h3 className="professional-benefits-card-title">{t(`benefits.cards.${benefit.key}.title`)}</h3>
+                                <p className="professional-benefits-card-description">
                                     {t(`benefits.cards.${benefit.key}.description`)}
                                 </p>
                             </div>
@@ -68,4 +68,4 @@ const Benefits = () => {
     );
 };
 
-export default Benefits;
+export default ProfessionalBenefits; /* Professional Benefits Section */

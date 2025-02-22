@@ -258,17 +258,14 @@ body.dark-mode .about-img {
 
 html[dir='rtl'] .about-text {
   text-align: right;
-  /* Align text to the right */
 }
 
 html[dir='rtl'] .about-title {
   text-align: right;
-  /* Align title to the right */
 }
 
 html[dir='rtl'] .about-description {
   text-align: right;
-  /* Align description to the right */
 }
 
 html[dir='rtl'] .highlight-card {
@@ -278,12 +275,10 @@ html[dir='rtl'] .highlight-card {
 
 html[dir='rtl'] .highlight-title {
   text-align: right;
-  /* Align highlight titles to the right */
 }
 
 html[dir='rtl'] .highlight-description {
   text-align: right;
-  /* Align highlight descriptions to the right */
 }
 
 html[dir='rtl'] .about-btn {
@@ -294,10 +289,77 @@ html[dir='rtl'] .about-btn {
 
 html[dir='rtl'] .about-image {
   text-align: left;
-  /* Align the image to the left */
 }
 
 html[dir='rtl'] .about-img {
   border-radius: 20px 0 20px 20px;
-  /* Adjust image border-radius for RTL */
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .about {
+    padding: 40px;
+  }
+
+  .containerAbout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-intro {
+    font-size: 1.2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .about-highlights {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .highlight-card {
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .highlight-title {
+    font-size: 1.3rem;
+  }
+
+  .highlight-description {
+    font-size: 1rem;
+  }
+
+  .about-btn {
+    padding: 14px 22px;
+    font-size: 1rem;
+    width: 180px;
+    margin: 20px auto;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-img {
+    max-width: 400px;
+  }
+
+  .checkmark {
+  }
 }

@@ -301,3 +301,96 @@ body.dark-mode .ecommerce-services__process-step p {
   }
 }
 
+
+/* Optimized Tablet Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* General Root container adjustments */
+  .ecommerce-services {
+    padding: 30px 40px;
+  }
+
+  /* Header adjustments */
+  .ecommerce-services__title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .ecommerce-services__subtitle {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Content grid adjustments */
+  .ecommerce-services__content {
+    grid-template-columns: 1fr 1fr; /* Keeps a 2-column layout */
+    gap: 30px;
+  }
+
+  /* Platform section adjustments */
+  .ecommerce-services__platform {
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ecommerce-services__platform-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .ecommerce-services__platform-description {
+    font-size: 1.1rem;
+  }
+
+  .ecommerce-services__platform-benefits li {
+    font-size: 1rem;
+  }
+
+  /* Process Section adjustments */
+  .ecommerce-services__process-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .ecommerce-services__process-description {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .ecommerce-services__process-step h3 {
+    font-size: 1.7rem;
+  }
+
+  .ecommerce-services__process-step p {
+    font-size: 1.1rem;
+  }
+
+  /* Call-to-action Section adjustments */
+  .ecommerce-services__cta {
+    background-color: rgb(89, 11, 99);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .ecommerce-services__cta h3 {
+    font-size: 1.8rem;
+  }
+
+  .ecommerce-services__cta p {
+    font-size: 1.1rem;
+  }
+
+  .ecommerce-services__cta-button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+
+  /* Icon adjustments for tablet */
+  .iconStore {
+    font-size: 1.8rem;
+  }
+}

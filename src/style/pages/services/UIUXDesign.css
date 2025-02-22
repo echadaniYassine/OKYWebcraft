@@ -91,8 +91,7 @@ body.dark-mode .technology-card:hover {
   font-size: 3rem;
 }
 
-body.dark-mode .tech-icon {
-}
+body.dark-mode .tech-icon {}
 
 .tech-name {
   margin-top: 10px;
@@ -148,9 +147,9 @@ body.dark-mode .tech-photoshop {
 /* Benefits Section */
 .benefits-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
@@ -238,7 +237,7 @@ body.dark-mode .cta-button:hover {
 
 @media (max-width: 768px) {
   .uiux-section {
-    padding: 20px;
+    padding: 0 20px;
   }
 
   body.dark-mode .uiux-section {
@@ -247,7 +246,7 @@ body.dark-mode .cta-button:hover {
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   body.dark-mode .section-title {
@@ -289,7 +288,7 @@ body.dark-mode .cta-button:hover {
   .tech-name {
     font-size: 0.95rem;
   }
-  
+
   /* Adjusting the Benefits Section */
   .benefits-container {
     flex-direction: column;
@@ -342,9 +341,45 @@ body.dark-mode .cta-button:hover {
     text-align: center;
     font-size: 1rem;
     padding: 10px;
+    margin-bottom: 20px;
   }
 
   body.dark-mode .cta-button {
     background-color: #5e35b1;
   }
+}
+
+/* Tablet Responsive Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .uiux-section {
+    padding: 30px 30px;
+  }
+
+  /* Design Tools Grid */
+  .technologies-grid {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .technology-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .benefit-card {
+    flex-direction: column; /* Stack icon and text vertically */
+    text-align: center;
+    padding: 18px;
+    width: 90%; 
+    max-width: 600px;
+  }
+  body.dark-mode .benefit-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px;
+    width: 90%;
+    max-width: 600px;
+  }
+
 }

@@ -1,0 +1,149 @@
+.loading {
+  display: flex;
+  flex-direction: column; /* Align the logo and text vertically */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Smooth fade out */
+  z-index: 9999;
+  background-color: transparent;
+}
+
+.loading.fade-out {
+  opacity: 0;
+}
+
+/* Center the logo */
+.logo-container-animation {
+  position: relative;
+  width: 150px; /* Increased size for better visibility */
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  margin-bottom: 20px; /* Space between the logo and text */
+}
+
+/* Border around the logo */
+.logo-border {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid rgb(196, 0, 220); /* Vibrant color for border */
+  animation: rotateBorder 4s linear infinite; /* Smooth and slower rotation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(196, 0, 220, 0.6); /* Glow effect for the border */
+}
+
+/* The logo itself */
+.logo-animation {
+  width: 60%; /* Logo takes up 60% of the container */
+  height: auto;
+  background-color: transparent;
+  animation: rotateLogo 3s normal infinite; /* Smooth logo rotation */
+}
+
+/* Text animation under the logo */
+.text-animation h2 {
+  font-size: 2rem; /* Increased font size for emphasis */
+  color: rgb(196, 0, 220); /* Matching text color with the border */
+  font-family: 'Poppins', sans-serif; /* Elegant and modern font */
+  font-weight: 600; /* Bold text for better readability */
+  animation: scaleText 2.5s ease-in-out infinite alternate; /* Smooth text scaling */
+  margin-top: 20px;
+  text-shadow: 0 0 10px rgba(196, 0, 220, 0.6); /* Soft glowing text effect */
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleText {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7; /* Fade out slightly */
+  }
+}
+
+/* Responsive Design for Tablet and Mobile */
+
+@media (max-width: 1024px) {
+  .logo-container-animation {
+    width: 120px; /* Slightly smaller logo for tablets */
+    height: 120px;
+  }
+
+  .logo-animation {
+    width: 55%; /* Logo becomes slightly smaller */
+  }
+
+  .text-animation h2 {
+    font-size: 1.8rem; /* Adjust text size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container-animation {
+    width: 100px; /* Further reduce size for smaller screens */
+    height: 100px;
+  }
+
+  .logo-animation {
+    width: 50%; /* Logo is further reduced */
+  }
+
+  .text-animation h2 {
+    font-size: 1.6rem; /* Adjust text size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container-animation {
+    width: 80px; /* Reduce logo size further for mobile */
+    height: 80px;
+  }
+
+  .logo-animation {
+    width: 50%; /* Maintain small size for the logo */
+  }
+
+  .text-animation h2 {
+    font-size: 1.4rem; /* Slightly smaller text for smaller screens */
+    margin-top: 15px; /* Reduce space between logo and text */
+  }
+}

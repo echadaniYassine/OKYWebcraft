@@ -251,7 +251,7 @@ body.dark-mode .web-mobile-development-cta-button:hover {
 
     /* General Styling */
     .web-mobile-development-section {
-        padding: 40px 20px;
+        padding: 0 20px;
     }
 
     .content-container {
@@ -259,7 +259,7 @@ body.dark-mode .web-mobile-development-cta-button:hover {
     }
 
     .web-mobile-development-section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     body.dark-mode .web-mobile-development-section-title {
@@ -313,4 +313,32 @@ body.dark-mode .web-mobile-development-cta-button:hover {
     body.dark-mode .web-mobile-development-cta-button {
         background-color: #5e35b1;
     }
+}
+
+/* Responsive for Tablet (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .web-mobile-development-section {
+        padding: 30px 30px;
+    }
+
+    /* Technologies Grid */
+    .web-mobile-development-technologies-grid {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .web-mobile-development-technology-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .web-mobile-development-benefit-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+        width: 90%;
+        max-width: 600px;
+    }
+
 }

@@ -1,4 +1,3 @@
-/* App.css */
 :root {
   --background-light: #ffffff;
   --background-dark: #181818;
@@ -9,9 +8,21 @@
 body {
   background-color: var(--background-light);
   color: var(--text-light);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* In your global CSS file */
+
+/* App Container Fade-in Animation */
+.app-container {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.app-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -19,7 +30,7 @@ html, body {
   overflow-x: hidden;
 }
 
-
+/* Dark Mode */
 body.dark-mode {
   background-color: var(--background-dark);
   color: var(--text-dark);
@@ -37,6 +48,7 @@ body.dark-mode {
   fill: currentColor;
 }
 
+/* WhatsApp Floating Button */
 .whatsapp-container {
   position: fixed;
   bottom: 20px;
@@ -46,7 +58,7 @@ body.dark-mode {
 
 .whatsapp-icon {
   font-size: 50px;
-  color: rgb(196, 0, 220);
+  color: #25d366;
   transition: transform 0.3s ease, color 0.3s ease;
   position: relative;
 }
@@ -56,11 +68,10 @@ body.dark-mode {
   transform: scale(1.1);
 }
 
-/* Tooltip Message */
+/* Tooltip */
 .whatsapp-tooltip {
   position: absolute;
   bottom: 70px;
-  /* Adjust position above the icon */
   right: 0;
   background-color: #25d366;
   color: white;
@@ -74,78 +85,20 @@ body.dark-mode {
   transform: translateY(5px);
 }
 
-/* Show tooltip on hover */
 .whatsapp-container:hover .whatsapp-tooltip {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-body.dark-mode .whatsapp-icon {
-  color: #50fa7b;
-}
-
-body.dark-mode .whatsapp-container:hover .whatsapp-tooltip {
-  background-color: #4CAF50;
-}
-
-/* Fix for Mobile Screens */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .whatsapp-container {
     bottom: 15px;
     right: 15px;
   }
+
   .whatsapp-icon {
     font-size: 40px;
-    
   }
-}
-/* Maintenance Message Style for Tablets */
-.maintenance-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f4f4f4;
-}
-
-.maintenance-container {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.maintenance-container h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.maintenance-container p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-top: 0;
-  font-weight: 400;
-}
-
-@media (max-width: 1024px) and (min-width: 768px) {
-  .maintenance-message{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .maintenance-container h1 {
-    font-size: 1.8rem;
-  }
-
-  .maintenance-container p {
-    font-size: 1rem;
-  }
-  .display-Routes{
-    display: none;
-  }
-
 }

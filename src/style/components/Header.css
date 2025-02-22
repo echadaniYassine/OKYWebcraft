@@ -14,37 +14,32 @@
 }
 
 body.dark-mode .header-container {
-  background-color: #181818; /* Dark background for the header */
+  background-color: #181818;
 }
 
-body.dark-mode .nav-link {
-  color: #ffffff; /* White text for dark mode */
-}
-
-body.dark-mode .nav-link:hover {
-  color: #ff00c8; /* Hover color for dark mode */
-}
-
+body.dark-mode .nav-link,
 body.dark-mode .dark-mode-btn,
 body.dark-mode .language-btn {
-  color: #ffffff; /* White text for dark mode buttons */
+  color: #ffffff;
 }
 
+body.dark-mode .nav-link:hover,
 body.dark-mode .dark-mode-btn:hover,
 body.dark-mode .language-btn:hover {
-  color: #ff00c8; /* Hover color for buttons in dark mode */
+  color: #ff00c8;
 }
 
 /* Logo */
 .logo-container {
   display: flex;
   align-items: center;
-  
 }
 
 .imageLogo {
   transition: opacity 0.3s ease;
   width: 120px;
+  transition: transform 0.8s ease;
+
 }
 
 /* Navigation Styles */
@@ -56,7 +51,7 @@ body.dark-mode .language-btn:hover {
 
 .nav-list {
   display: flex;
-  gap: 100px; /* Reduced the gap for responsiveness */
+  gap: 100px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -69,7 +64,7 @@ body.dark-mode .language-btn:hover {
 .nav-link {
   display: flex;
   align-items: center;
-  color: #000; /* Default black text for links */
+  color: #000;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
@@ -82,12 +77,12 @@ body.dark-mode .language-btn:hover {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: rgb(196, 0, 220); /* Primary hover color */
+  background-color: rgb(196, 0, 220);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: rgb(196, 0, 220); /* Hover color */
+  color: rgb(196, 0, 220);
 }
 
 .nav-link:hover::after {
@@ -99,26 +94,21 @@ body.dark-mode .language-btn:hover {
   display: flex;
   align-items: center;
   gap: 20px;
-}
+  list-style-type: none;
 
-.dark-mode-toggle,
-.language-switcher {
-  list-style: none;
-  padding: 0;
-  margin-top: 13px;
 }
 
 /* Dark Mode & Language Toggle Buttons */
 .dark-mode-btn,
 .language-btn {
-  all: unset; /* Removes default button styles */
+  all: unset;
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
   font-size: 18px;
   font-weight: 500;
-  color: #333; /* Default color */
+  color: #333;
   border-radius: 6px;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
@@ -148,14 +138,12 @@ body.dark-mode .language-btn:hover {
   z-index: 999;
 }
 
-/* Show Dropdown */
 .language-dropdown.active {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(5px);
 }
 
-/* Language Option Styles */
 .language-dropdown button {
   background: none;
   border: none;
@@ -174,18 +162,22 @@ body.dark-mode .language-btn:hover {
   background: linear-gradient(135deg, rgb(196, 0, 220), black);
 }
 
+/* Hide elements for mobile */
 .numPhone,
 .imageLogoMobill,
 .header-links {
   display: none;
 }
 
+.imageLogo:hover {
+  transform: scale(1.1);
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-container {
     background-color: transparent;
-    padding: 15px 20px 20px;
+    padding: 15px 20px 30px;
   }
 
   /* Logo */
@@ -196,13 +188,10 @@ body.dark-mode .language-btn:hover {
     position: absolute;
     left: 15px;
     top: 25px;
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
   }
 
-  .imageLogo:hover {
-    transform: scale(1.1);
-  }
-
+ 
   /* Hamburger Icon */
   .hamburger {
     display: block;
@@ -211,22 +200,21 @@ body.dark-mode .language-btn:hover {
     right: 20px;
     top: 12px;
     z-index: 1100;
+    transition: transform 1s cubic-bezier(0.17, 0.67, 0.83, 0.67); /* Smooth cubic transition */
   }
 
   .hamburger .bar {
     width: 30px;
     height: 2px;
     margin: 6px 0;
-    background-color: #7714a5;
-    /* Teal - Primary Color */
-    transition: 0.3s;
+    background-color: #7714a5; /* Teal - Primary Color */
+    transition: transform 2s ease, opacity 3s ease, background-color 3s ease;
     border-radius: 5px;
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: 7px;
+    transform: rotate(45deg) translate(5px, 5px); /* Rotate and translate slightly */
+    background-color: #ff00c8; /* Teal - Primary Color */
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -234,9 +222,8 @@ body.dark-mode .language-btn:hover {
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: rotate(45deg);
-    position: relative;
-    top: -7px;
+    transform: rotate(-45deg) translate(5px, -5px); /* Rotate and translate slightly */
+    background-color: #ff00c8; /* Teal - Primary Color */
   }
 
   /* Mobile Menu */
@@ -245,17 +232,20 @@ body.dark-mode .language-btn:hover {
     top: 0;
     left: -100%;
     height: 100%;
-    width: 200px;
+    width: 220px; /* Slightly wider for a more open look */
     background: linear-gradient(to bottom, #7714a5, black);
-    transition: left 0.3s ease-in-out;
+    transition: left 0.4s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Combined transitions */
     z-index: 1000;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
     padding-top: 50px;
     color: white;
+    opacity: 0; 
   }
 
   .navigation.nav-open {
     left: 0;
+    opacity: 1; /* Fade-in effect */
+    transform: translateX(0) scale(1.05); /* Slide-in and slight zoom effect */
   }
 
   /* Nav List */
@@ -266,22 +256,21 @@ body.dark-mode .language-btn:hover {
     list-style: none;
   }
 
-  /* Nav Link */
   .nav-link {
     font-size: 18px;
     color: aliceblue;
     text-decoration: none;
     padding: 10px 0;
     position: relative;
-    transition: color 0.3s ease, padding-left 0.3s ease;
+    transition: color 0.3s ease, padding-left 0.3s ease, transform 0.3s ease; /* Added transform */
     font-weight: 500;
-    display: inline-block; /* Ensures width is based on content */
-
+    display: inline-block;
   }
 
   .nav-link:hover {
     color: aliceblue;
     padding-left: 10px;
+    transform: translateX(10px); /* Add hover effect to move links */
   }
 
   .nav-link::after {
@@ -299,6 +288,7 @@ body.dark-mode .language-btn:hover {
     width: 100%;
   }
 
+  /* Styling for Hamburger and Menu */
   .hamburger,
   .navigation {
     margin-top: 10px;
@@ -311,38 +301,6 @@ body.dark-mode .language-btn:hover {
     display: block;
     background-color: aliceblue;
     padding: 15px 25px;
-    border-radius: 20px;
-    color: #262e30;
-  }
-
-  .numPhone {
-    font-size: 14px;
-    color: #262e30;
-    font-weight: bold;
-  }
-
-  .header-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    list-style: none;
-    position: relative;
-    top:370px;
-    left: -20px;
-  }
-
-  .header-link {
-    color: white;
-    font-size: 20px;
-    transition: color 0.3s;
-  }
-
-  .social-icons a:hover {
-    color: #008080;
-  }
-
-  .imageLogoMobill {
-    display: none;
   }
 
   .toggle-container {
@@ -354,7 +312,7 @@ body.dark-mode .language-btn:hover {
     padding: 6px 10px;
     font-size: 20px;
     position: relative;
-    top: -8px;
+    top: 5px;
     right: 50px;
   }
 
@@ -370,52 +328,116 @@ body.dark-mode .language-btn:hover {
     font-size: 13px;
     padding: 5px 8px;
   }
-}
-@media (max-width: 768px) {
-  html[dir='rtl'] {
-    direction: rtl;
-  }
-  html[dir='rtl'] .hero-stat-paragraph {
-    font-size: 1rem;
-    color: #2C3E50;
-  }
+
   html[dir='rtl'] .dark-mode-btn,
   html[dir='rtl'] .language-btn {
-    padding: 6px 10px;
-    font-size: 20px;
     position: relative;
-    top: -8px;
+    top: 5px;
     right: -160px;
   }
 
   html[dir='rtl'] .language-dropdown {
-    min-width: 100px;
-    padding: 6px;
     margin: 0 210px;
-    background-color: white;
-  }
-  
-
-  html[dir='rtl'] .language-dropdown button {
-    font-size: 13px;
-    padding: 5px 4px;
-    text-align: center;
-    color: black;
   }
 
   html[dir='rtl'] .language-dropdown button:hover {
-    font-size: 13px;
-    padding: 5px 4px;
-    text-align: center;
     color: aliceblue;
-    
   }
-  html[dir='rtl'] body.dark-mode .language-dropdown {
-    min-width: 100px;
-    padding: 6px;
-    margin: 0 210px;
-    background-color: white;
-    
+}
+
+/* Responsive Styles for Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-container {
+    background-color: transparent;
+    padding: 18px 25px;
   }
 
+  .imageLogo {
+    width: 90px; /* Slightly smaller logo for tablet */
+    transition: transform 0.3s ease;
+  }
+
+  .imageLogo:hover {
+    transform: scale(1.1);
+  }
+
+  /* Navigation */
+  .navigation {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .nav-list {
+    gap: 50px; /* Reduced space between links */
+  }
+
+  .nav-link {
+    font-size: 1.1rem; /* Slightly smaller font size for better readability */
+  }
+
+  .nav-link::after {
+    bottom: -3px; /* Slight adjustment for smaller screen */
+  }
+
+  /* Toggle Container (Dark Mode & Language) */
+  .toggle-container {
+    gap: 10px;
+  }
+
+  /* Dark Mode & Language Toggle Buttons */
+  .dark-mode-btn,
+  .language-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  /* Language Dropdown */
+  .language-dropdown {
+    min-width: 120px; /* Wider dropdown for tablet */
+    padding: 8px;
+  }
+
+  .language-dropdown button {
+    font-size: 14px; /* Adjusted font size */
+    padding: 6px 10px;
+  }
+
+  /* Hide Mobile-Specific Elements on Tablet */
+  .numPhone,
+  .imageLogoMobill {
+    display: none;
+  }
+
+  /* Mobile Menu */
+  .hamburger {
+    display: none; /* Hide hamburger menu on tablets */
+  }
+
+  .navigation {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+    box-shadow: none;
+    height: auto;
+    padding-top: 0;
+  }
+
+  /* Adjust Mobile Menu Open */
+  .navigation.nav-open {
+    left: unset;
+    background: none;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  /* Language Dropdown Position */
+  .language-dropdown {
+    left: 50%;
+    transform: translateX(-50%); /* Center the dropdown */
+  }
 }

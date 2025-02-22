@@ -273,7 +273,7 @@ body.dark-mode .cta-button:hover {
 
 @media (max-width: 768px) {
   .digital-ad-section {
-    padding: 20px;
+    padding: 0 20px;
   }
 
   .section-title {
@@ -339,4 +339,11 @@ body.dark-mode .cta-button:hover {
     padding: 10px;
   }
 
+}
+
+/* Tablet-specific Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .digital-ad-section {
+    padding: 25px;
+  }
 }

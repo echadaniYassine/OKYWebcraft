@@ -73,7 +73,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <div className="footer__section">
+        <div className="footer__section-one">
           <div className="footer__logo">
             <img src="assets/logo-footer.png" alt="OKY Agency Logo" className="footer__logo__image" />
           </div>
@@ -102,7 +102,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer__section">
+        <div className="footer__section-two">
           <h1 className="footer__title_">{t('footer.fast_links')}</h1>
           <ul className="footer__links">
             {footerLinks.map((link, index) => (
@@ -114,7 +114,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer__section">
+        <div className="footer__section-three">
           <h1 className="footer__title_3">{t('footer.where_we_are')}</h1>
           <ul className="footer__contact-list">
             {contactInfo.map((item, index) => (

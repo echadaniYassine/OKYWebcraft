@@ -397,7 +397,8 @@ html[dir='rtl'] .explore-more svg {
 @media (max-width: 768px) {
   html[dir='rtl'] .service-card {
     width: 100%;
-    flex-direction: column; /* Change from column-reverse to column */
+    flex-direction: column;
+    /* Change from column-reverse to column */
     align-items: center;
     text-align: end;
     padding: 20px;
@@ -416,12 +417,14 @@ html[dir='rtl'] .explore-more svg {
 
   html[dir='rtl'] .service-image {
     max-width: 150px;
-    order: 1; /* Ensure image comes first */
+    order: 1;
+    /* Ensure image comes first */
   }
 
   html[dir='rtl'] .service-text {
     text-align: start;
-    order: 2; /* Ensure text comes after the image */
+    order: 2;
+    /* Ensure text comes after the image */
   }
 
   html[dir='rtl'] .service-text h3 {
@@ -451,7 +454,8 @@ html[dir='rtl'] .explore-more svg {
 
   html[dir='rtl'] .view-all-btn {
     display: inline-block;
-    background: rgb(196, 0, 220); /* Teal */
+    background: rgb(196, 0, 220);
+    /* Teal */
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -464,6 +468,93 @@ html[dir='rtl'] .explore-more svg {
   }
 
   html[dir='rtl'] .view-all-btn:hover {
+    transform: scale(1.05);
+    background: #ff00c8;
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .service-card {
+    width: 48%;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .service-icon-container {
+    font-size: 4rem;
+    margin-right: 15px;
+  }
+
+  .service-image {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .service-text {
+    text-align: left;
+  }
+
+  .service-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .service-text p {
+    font-size: 1rem;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services-description {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .view-all-btn {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+    width: auto;
+    margin-top: 20px;
+  }
+
+  .service-card {
+    width: 80%;
+  }
+
+  .service-card:hover {
+    border-bottom: 5px solid #283738;
+    border-right: none;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .services-description {
+    font-size: 1rem;
+  }
+
+  .view-all-btn {
+    display: inline-block;
+    background: rgb(196, 0, 220);
+    /* Teal */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    border-bottom: 4px #283738 solid;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    margin: 20px auto;
+    width: 200px;
+  }
+
+  .view-all-btn:hover {
     transform: scale(1.05);
     background: #ff00c8;
   }
