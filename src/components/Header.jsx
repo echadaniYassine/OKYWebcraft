@@ -119,19 +119,19 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#about" className="nav-link" onClick={() => setIsNavOpen(false)}>
+            <Link to="/#about" className="nav-link" onClick={() => setIsNavOpen(false)}>
               {t('nav.about')}
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#services" className="nav-link" onClick={() => setIsNavOpen(false)}>
+          <Link to="/#services" className="nav-link" onClick={() => setIsNavOpen(false)}>
               {t('nav.services')}
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#portfolio" className="nav-link" onClick={() => setIsNavOpen(false)}>
+            <Link to="/#portfolio" className="nav-link" onClick={() => setIsNavOpen(false)}>
               {t('nav.realization')}
-            </a>
+            </Link>
           </li>
 
           {/* Social Media Links */}

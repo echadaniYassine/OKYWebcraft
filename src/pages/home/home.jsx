@@ -9,12 +9,13 @@ const HomePage = () => {
     return (
         <div className="home-page">
             <Hero />
-            <About />
-            <ChoseUs />
-            <Services />
-            <Portfolio />
+            <About id="about" />
+            <ChoseUs id="chose-us" />
+            <Services id="services" />
+            <Portfolio id="portfolio" />
         </div>
     );
 }
 
 export default HomePage;
+

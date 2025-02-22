@@ -147,3 +147,17 @@
     margin-top: 15px; /* Reduce space between logo and text */
   }
 }
+/* Dark Mode */
+body.dark-mode .loading {
+  background-color: #111; /* Dark background */
+}
+
+body.dark-mode .logo-border {
+  border-color: #ff00c8; /* Adjusted color for dark mode */
+  box-shadow: 0 0 15px rgba(255, 0, 200, 0.6);
+}
+
+body.dark-mode .text-animation h2 {
+  color: #ff00c8;
+  text-shadow: 0 0 10px rgba(255, 0, 200, 0.6);
+}

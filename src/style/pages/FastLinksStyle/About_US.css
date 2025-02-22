@@ -27,17 +27,14 @@
 /* Alternate Layouts */
 .about-us-content {
   flex-direction: row-reverse;
-  /* Text Right, Image Left */
 }
 
 .about-us-vision {
   flex-direction: row;
-  /* Text Right, Image Left */
 }
 
 .about-us-goal {
   flex-direction: row-reverse;
-  /* Text Right, Image Left */
 }
 
 /* Text & Image Styling */
@@ -130,16 +127,28 @@
   border-radius: 8px;
 }
 
-/* 🚀 Infinite Scrolling Carousel */
 
+/* Adjust for RTL direction */
+@keyframes scrollRight {
+  from {
+    transform: translateX(0%);
+  }
 
+  to {
+    transform: translateX(50%);
+  }
+}
+
+/* General carousel styling */
 .about-us-carousel {
   width: 100%;
-  overflow: hidden;
+  max-width: 1300px; /* Restricting the carousel width */
+  overflow: hidden; /* Hide overflowing images */
   position: relative;
   background: #fff;
   padding: 20px 0;
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 /* 🎥 Carousel Track (Duplicate Content for Seamless Effect) */
@@ -147,7 +156,20 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scrollLeft 15s linear infinite;
+  animation: scrollInfinite 30s linear infinite;
+}
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply different animation for RTL */
+[dir="rtl"] .carousel {
+  animation: scrollRight 30s linear infinite;
 }
 
 /* Duplicate Images to Ensure Continuous Loop */
@@ -163,32 +185,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-}
-
-/* 🔄 Infinite Scrolling Effect */
-@keyframes scrollLeft {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* 📱 Responsive Adjustments */
-@media (max-width: 1024px) {
-  .carousel-image {
-    width: 250px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-image {
-    width: 200px;
-    height: 160px;
-  }
 }
 
 
@@ -250,71 +246,11 @@ body.dark-mode .about-us-icon {
   direction: rtl;
 }
 
-[dir="rtl"] .about-us-content {
-  flex-direction: row;
-}
 
-[dir="rtl"] .about-us-vision {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .about-us-goal {
-  flex-direction: row;
-}
-
-/* 📱 Responsive Design */
-
-/* Tablet */
-@media (max-width: 1024px) {
-
-  .about-us-content,
-  .about-us-vision,
-  .about-us-goal {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-us-text-container,
-  .about-us-image-container {
-    max-width: 100%;
-  }
-}
-
-
-/* Mobile */
-@media (max-width: 768px) {
-  .about-us-section {
-    margin-top: -40px;
-  }
-
-  .about-us-heading {
-    font-size: 24px;
-  }
-
-  .about-us-text {
-    font-size: 14px;
-    text-align: start;
-  }
-  body.dark-mode .about-us-heading {
-    font-size: 24px;
-  }
-
-  body.dark-mode .about-us-text {
-    font-size: 14px;
-    text-align: start;
-  }
-
-  .about-us-list li {
-    text-align: start;
-  }
-
-  .carousel-image {
-    width: 150px;
-  }
-}
 
 /* 📱 Tablet Responsive Design */
 @media (max-width: 1024px) and (min-width: 768px) {
+
   .about-us-content,
   .about-us-vision,
   .about-us-goal {
@@ -326,7 +262,7 @@ body.dark-mode .about-us-icon {
   .about-us-image-container {
     max-width: 100%;
   }
- 
+
 
   .about-us-text {
     font-size: 14px;
@@ -345,5 +281,97 @@ body.dark-mode .about-us-icon {
 
   .about-us-carousel {
     padding: 20px 0;
+  }
+}
+/* General Mobile Optimization */
+@media (max-width: 768px) {
+  /* Stack Sections Vertically */
+  .about-us-content,
+  .about-us-vision,
+  .about-us-goal {
+    flex-direction: column !important;
+    text-align: start;
+  }
+
+  /* Adjust Text Container */
+  .about-us-text-container {
+    max-width: 100%;
+  }
+
+  .about-us-heading {
+    font-size: 24px;
+  }
+
+  .about-us-heading-work {
+    font-size: 30px;
+  }
+
+  .about-us-text {
+    font-size: 14px;
+  }
+
+  /* Adjust Images */
+  .about-us-image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-us-image {
+    max-width: 80%;
+  }
+
+  /* Carousel Images */
+  .carousel-image {
+    width: 200px;
+    height: 160px;
+  }
+
+  /* Reduce padding and gaps */
+  .about-us-section {
+    padding: 30px 0;
+  }
+
+  .about-us-container {
+    width: 95%;
+  }
+
+  .carousel {
+    gap: 10px;
+  }
+
+  .about-us-list li {
+    font-size: 14px;
+  }
+}
+
+/* Smaller Mobile Screens */
+@media (max-width: 480px) {
+  .about-us-heading {
+    font-size: 20px;
+  }
+
+  .about-us-heading-work {
+    font-size: 26px;
+  }
+
+  .about-us-text {
+    font-size: 13px;
+  }
+
+  .about-us-image {
+    max-width: 90%;
+  }
+
+  .carousel-image {
+    width: 180px;
+    height: 140px;
+  }
+
+  .about-us-list li {
+    font-size: 13px;
+  }
+
+  .carousel {
+    gap: 5px;
   }
 }

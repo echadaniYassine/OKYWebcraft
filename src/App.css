@@ -28,6 +28,8 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth; /* Smooth scroll when navigating between sections */
+
 }
 
 /* Dark Mode */
@@ -58,7 +60,7 @@ body.dark-mode {
 
 .whatsapp-icon {
   font-size: 50px;
-  color: #25d366;
+  color: rgb(196, 0, 220);
   transition: transform 0.3s ease, color 0.3s ease;
   position: relative;
 }

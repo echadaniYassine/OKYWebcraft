@@ -210,8 +210,7 @@ html[dir='rtl'] .hero-subtitle {
   justify-content: end;
   align-items: end;
   text-align: center;
-  animation: none !important;
-  width: auto !important;
+  width: 91% !important;
   border-right: none !important;
 }
 
