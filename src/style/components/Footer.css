@@ -22,8 +22,8 @@
 /* Create a star shape */
 .star {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background: radial-gradient(circle, #fff, #f0f, #0ff); /* Gradient Effect */
   border-radius: 50%;
   box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; /* Glowing effect */

@@ -13,13 +13,26 @@
 .services::before {
   content: '';
   position: absolute;
-  top: 2%;
-  left: 100%;
-  width: 80%;
-  height: 1.5px;
-  background-color: rgb(196, 0, 220);
-  animation: moveLine 3s linear infinite;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, transparent 30%, rgb(196, 0, 220), transparent 70%);
+  animation: heartbeat 2s linear infinite;
 }
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+  0%   { transform: translateX(-50%) scaleY(1); }
+  10%  { transform: translateX(-50%) scaleY(3); } /* Small peak */
+  20%  { transform: translateX(-50%) scaleY(0.5); } /* Small dip */
+  30%  { transform: translateX(-50%) scaleY(4); } /* Big peak */
+  40%  { transform: translateX(-50%) scaleY(0.3); } /* Sharp drop */
+  50%  { transform: translateX(-50%) scaleY(1); } /* Back to normal */
+  100% { transform: translateX(-50%) scaleY(1); } /* Steady line */
+}
+
 
 @keyframes moveLine {
   0% {

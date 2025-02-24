@@ -18,48 +18,39 @@
 .container-portfolio {
   max-width: 1300px;
   margin: 0 auto;
-  position: relative; /* Needed for absolute positioning of ::before */
+  position: relative;
+  /* Needed for absolute positioning of ::before */
 }
 
 .container-portfolio::before {
   content: '';
   position: absolute;
   top: -30px;
-  left: 100%;
-  width: 100%;
-  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
   background-color: rgb(196, 0, 220);
-  animation: moveLinePortfolio 3s linear infinite;
+  animation: pulseLine 3s ease-in-out infinite;
 }
 
-@keyframes moveLinePortfolio {
+/* New Animation */
+@keyframes pulseLine {
   0% {
-    left: -100%;
-    opacity: 0;
-    transform: scaleX(0.8);
+    width: 0%;
+    opacity: 0.3;
   }
-  20% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
+
   50% {
-    left: 0;
+    width: 80%;
     opacity: 1;
-    transform: scaleX(1.1);
   }
-  80% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
+
   100% {
-    left: 100%;
-    opacity: 0;
-    transform: scaleX(0.8);
+    width: 0%;
+    opacity: 0.3;
   }
 }
-
-
-
 
 /* Title and Description */
 .portfolio-title {
@@ -68,14 +59,11 @@
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: rgb(196, 0, 220);
-  /* Teal for primary title color */
-
 }
 
 .portfolio-description {
   font-size: 1.2rem;
   color: #495057;
-  /* Slate Gray for softer contrast */
   margin-bottom: 40px;
 }
 
@@ -91,7 +79,6 @@
 .portfolio-item {
   padding: 20px;
   background: linear-gradient(to top, rgb(196, 0, 220), white, aliceblue);
-  /* Teal and Light Gray */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -122,14 +109,12 @@
 .portfolio-item-title {
   font-size: 1.5rem;
   color: aliceblue;
-  /* Slate Gray */
   margin: 20px 0 10px;
 }
 
 .portfolio-item-description {
   font-size: 1rem;
   color: white;
-  /* Soft Gray */
   padding: 0 20px;
 }
 
@@ -137,7 +122,6 @@
 .show-more-button {
   padding: 12px 35px;
   background-color: rgb(196, 0, 220);
-  /* Teal */
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
@@ -153,7 +137,6 @@
 
 .show-more-button:hover {
   background: blueviolet;
-  /* Sunset Orange */
 }
 
 .portfolio-item {
@@ -174,7 +157,6 @@
 
 .dark-mode .portfolio-title {
   color: rgb(196, 0, 220);
-  /* Light Teal for dark mode */
   text-shadow: none;
 }
 
@@ -188,7 +170,6 @@
 
 .dark-mode .portfolio-item {
   background: linear-gradient(to top, #333, #444, #555);
-  /* Darker gradient */
 }
 
 .dark-mode .portfolio-item:hover {
@@ -214,7 +195,6 @@
 
 .dark-mode .show-more-button:hover {
   background: #ff00c8;
-  /* Light pink for dark mode */
 }
 
 .dark-mode .portfolio-item-image {
@@ -229,67 +209,42 @@
 
   .portfolio-title {
     font-size: 1.8rem;
-    text-align: center;
-    color: rgb(196, 0, 220);
-    /* Teal for primary title on mobile */
   }
 
   .portfolio-description {
     font-size: 0.95rem;
     padding: 0 10px;
-    text-align: center;
-    color: #495057;
-    /* Slate Gray */
   }
 
   /* Make items stack vertically */
   .portfolio-items {
-    display: flex;
-    flex-direction: column;
     gap: 50px;
   }
 
   .portfolio-item {
     padding: 15px;
     border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
   }
 
   .portfolio-item-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
   }
 
   .portfolio-item-title {
     font-size: 1rem;
     margin: 15px 13px 8px;
     text-align: start;
-    color: aliceblue;
-    /* Slate Gray */
   }
 
   .portfolio-item-description {
     font-size: 0.9rem;
     text-align: start;
-    color: aliceblue;
-    /* Soft Gray */
   }
 
   /* Attractive button for mobile */
   .show-more-button {
-    background: rgb(196, 0, 220);
-    /* Teal */
     display: inline-block;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
     border-bottom: 4px #2f3c3f solid;
     padding: 8px 20px;
     font-size: 0.9rem;
