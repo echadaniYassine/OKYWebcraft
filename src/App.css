@@ -60,13 +60,13 @@ body.dark-mode {
 
 .whatsapp-icon {
   font-size: 50px;
-  color: rgb(196, 0, 220);
+  color: #25d366;
   transition: transform 0.3s ease, color 0.3s ease;
   position: relative;
 }
 
 .whatsapp-icon:hover {
-  color: #1ebe57;
+  color: #0de258;
   transform: scale(1.1);
 }
 

@@ -3,7 +3,6 @@
   padding: 60px 50px;
   text-align: center;
   background-color: #fff;
-  /* Light Gray */
   border-radius: 10px;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   opacity: 0;
@@ -16,12 +15,9 @@
   position: absolute;
   top: 2%;
   left: 10%;
-  /* Adjust to center the border or set to desired percentage */
   width: 80%;
-  /* Border width as a percentage of the container's width */
   height: 1px;
   background-color: rgb(196, 0, 220);
-  /* Border color */
 }
 
 .services.visible {
@@ -60,19 +56,16 @@
 .icon-right {
   flex-direction: row-reverse;
   border-bottom: #283738 solid 3px;
-  /* Slate Gray */
 }
 
 .icon-left {
   flex-direction: row;
   border-bottom: #283738 solid 3px;
 }
-
 .service-card {
   display: flex;
   align-items: center;
   background-image: url(/public/assets/services.png);
-  /* White */
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -103,13 +96,11 @@
 
 .service-card:hover::before {
   transform: scaleX(1);
-  /* Fill from left to right */
 }
 
 .service-icon-container {
   font-size: 5rem;
   color: #008080;
-  /* Teal for icons */
   margin: 0 20px;
   transition: transform 0.3s ease, color 0.3s ease;
   z-index: 1;
@@ -119,8 +110,13 @@
   max-width: 150px;
   height: auto;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease-in-out;
 }
+
+.service-card:hover .service-image {
+  transform: rotate(360deg);
+}
+
 
 .service-text {
   text-align: left;

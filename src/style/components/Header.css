@@ -173,6 +173,7 @@ body.dark-mode .language-btn:hover {
   transform: scale(1.1);
 }
 
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-container {
