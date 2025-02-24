@@ -14,11 +14,28 @@
   content: '';
   position: absolute;
   top: 2%;
-  left: 10%;
+  left: 100%;
   width: 80%;
-  height: 1px;
+  height: 1.5px;
   background-color: rgb(196, 0, 220);
+  animation: moveLine 3s linear infinite;
 }
+
+@keyframes moveLine {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+  50% {
+    left: 10%;
+    opacity: 1;
+  }
+  100% {
+    left: -80%;
+    opacity: 0;
+  }
+}
+
 
 .services.visible {
   opacity: 1;

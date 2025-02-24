@@ -68,4 +68,4 @@ const ProfessionalBenefits = () => {
     );
 };
 
-export default ProfessionalBenefits; /* Professional Benefits Section */
+export default ProfessionalBenefits;

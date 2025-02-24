@@ -5,10 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import { 
-  FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, 
-  FaPhone, FaEnvelope, FaMapMarkerAlt, FaShieldAlt, 
-  FaGavel, FaBriefcase, FaInfoCircle 
+import {
+  FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp,
+  FaPhone, FaEnvelope, FaMapMarkerAlt, FaShieldAlt,
+  FaGavel, FaBriefcase, FaInfoCircle
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -72,6 +72,26 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+      <div class="footer-stars">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+      </div>
       <div className="footer__container">
         <div className="footer__section-one">
           <div className="footer__logo">

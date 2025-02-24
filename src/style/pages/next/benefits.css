@@ -1,13 +1,12 @@
 /* General Styles */
 .professional-benefits-container {
-    padding: 60px 5%;
-    background-color: var(--bg-color);
+    padding: 20px 5%;
     color: var(--text-color);
     transition: background 0.3s, color 0.3s;
 }
 
 .professional-benefits-wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     text-align: center;
 }
