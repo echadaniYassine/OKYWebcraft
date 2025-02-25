@@ -44,7 +44,7 @@ const Services = () => {
     {
       id: 1,
       icon: <FaLaptopCode />,
-      img: "/assets/service_1.png",
+      img: "/assets/services/service_1.png",
       title: t('services.web_mobile_development.title'),
       description: t('services.web_mobile_development.description'),
       link: "/services-web-&-mobile-development",
@@ -52,7 +52,7 @@ const Services = () => {
     {
       id: 2,
       icon: <FaShareAlt />,
-      img: "/assets/service_2.png",
+      img: "/assets/services/service_2.png",
       title: t('services.social_media_management.title'),
       description: t('services.social_media_management.description'),
       link: "/services-social-media-management",
@@ -60,7 +60,7 @@ const Services = () => {
     {
       id: 3,
       icon: <FaShoppingCart />,
-      img: "/assets/service_3.png",
+      img: "/assets/services/service_3.png",
       title: t('services.ecommerce_stores.title'),
       description: t('services.ecommerce_stores.description'),
       link: "/services-ecommerce", 
@@ -68,7 +68,7 @@ const Services = () => {
     {
       id: 4,
       icon: <FaPaintBrush />,
-      img: "/assets/service_4.png",
+      img: "/assets/services/service_4.png",
       title: t('services.ui_ux_design.title'),
       description: t('services.ui_ux_design.description'),
       link: "/services-ui-ux-design",
@@ -76,7 +76,7 @@ const Services = () => {
     {
       id: 5,
       icon: <FaBullhorn />,
-      img: "/assets/service_5.png",
+      img: "/assets/services/service_5.png",
       title: t('services.digital_advertising.title'),
       description: t('services.digital_advertising.description'),
       link: "/services-digital-advertising",
@@ -84,7 +84,7 @@ const Services = () => {
     {
       id: 6,
       icon: <FaCloud />,
-      img: "/assets/service_6.png",
+      img: "/assets/services/service_6.png",
       title: t('services.cloud_services_hosting.title'),
       description: t('services.cloud_services_hosting.description'),
       link: "/services-cloud-hosting",

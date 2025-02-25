@@ -96,7 +96,7 @@ const Header = () => {
       <div className={`logo-container ${isNavOpen ? "hide-logo" : ""}`}>
         <a href="/">
           <img
-            src={darkMode ? "assets/dark-logo.png" : "assets/logo.jpg"}
+            src={darkMode ? "assets/home/dark-logo.png" : "assets/home/logo.jpg"}
             className="imageLogo"
             alt="OKY Logo"
           />

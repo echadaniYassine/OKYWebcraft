@@ -25,7 +25,7 @@ const Loading = ({ onFinish }) => {
     <div className={`loading ${fadeOut ? "fade-out" : ""}`} style={{ opacity: fadeOut ? 0 : 1, transition: "opacity 2s ease-out" }}>
       <div className="logo-container-animation">
         <div className="logo-border">
-          <img src="/assets/loading.png" alt="OKY Logo" className="logo-animation" />
+          <img src="/assets/loading/loading.png" alt="OKY Logo" className="logo-animation" />
         </div>
       </div>
       <div className="text-animation">

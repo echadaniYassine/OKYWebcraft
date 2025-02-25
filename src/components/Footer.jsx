@@ -95,7 +95,7 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__section-one">
           <div className="footer__logo">
-            <img src="assets/logo-footer.png" alt="OKY Agency Logo" className="footer__logo__image" />
+            <img src="assets/home/logo-footer.png" alt="OKY Agency Logo" className="footer__logo__image" />
           </div>
           <form className="footer__short-subscription" onSubmit={handleSubscribe}>
             <input

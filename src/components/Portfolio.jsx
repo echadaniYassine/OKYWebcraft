@@ -13,19 +13,19 @@ const Portfolio = () => {
 
   const projects = [
     {
-      image: 'assets/Realisation1.png',
+      image: 'assets/Realisations/Realisation1.png',
       title: t('portfolio.web_development.title'),
       description: t('portfolio.web_development.description'),
       link: '/category-web',
     },
     {
-      image: 'assets/Realisation2.png',
+      image: 'assets/Realisations/Realisation2.png',
       title: t('portfolio.ui_ux_design.title'),
       description: t('portfolio.ui_ux_design.description'),
       link: '/category-graphic-design',
     },
     {
-      image: 'assets/Realisation3.png',
+      image: 'assets/Realisations/Realisation3.png',
       title: t('portfolio.mobile_app_development.title'),
       description: t('portfolio.mobile_app_development.description'),
       link: '/category-app-mobile',

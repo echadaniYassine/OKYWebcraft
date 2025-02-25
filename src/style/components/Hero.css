@@ -26,7 +26,7 @@
   flex: 1;
   text-align: left;
   margin-right: 20px;
-  background-image: url(/public/assets/herotxt.png);
+  background-image: url(/public/assets/home/herotxt.png);
   animation: slide-from-right 1s ease-out forwards;
 }
 
@@ -260,7 +260,7 @@ body.dark-mode .hero-btn:hover {
 }
 
 body.dark-mode .hero-stats {
-  background-image: url(/public/assets/statesBG.png);
+  background-image: url(/public/assets/home/statesBG.png);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 

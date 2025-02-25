@@ -95,7 +95,7 @@
 .service-card {
   display: flex;
   align-items: center;
-  background-image: url(/public/assets/services.png);
+  background-image: url(/public/assets/services/services.png);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;

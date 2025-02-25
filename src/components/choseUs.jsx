@@ -41,21 +41,21 @@ const ChoseUs = () => {
                         </Link>
                     </div>
                     <div className="feature feature-card">
-                        <img src="assets/benefits1.png" alt="Tailored Solutions" className="feature-image" />
+                        <img src="assets/benefits/benefits1.png" alt="Tailored Solutions" className="feature-image" />
                         <h3 className="feature-card-title">{t('chooseUs.tailored_solutions')}</h3>
                         <p className="feature-card-description">
                             {t('chooseUs.tailored_description')}
                         </p>
                     </div>
                     <div className="feature feature-highlight">
-                        <img src="assets/benefits2.png" alt="Reliable Expertise" className="feature-image" />
+                        <img src="assets/benefits/benefits2.png" alt="Reliable Expertise" className="feature-image" />
                         <h3 className="feature-card-title">{t('chooseUs.reliable_expertise')}</h3>
                         <p className="feature-card-description">
                             {t('chooseUs.reliable_description')}
                         </p>
                     </div>
                     <div className="feature feature-card">
-                        <img src="assets/benefits3.png" alt="Innovative Strategies" className="feature-image" />
+                        <img src="assets/benefits/benefits3.png" alt="Innovative Strategies" className="feature-image" />
                         <h3 className="feature-card-title">{t('chooseUs.innovative_strategies')}</h3>
                         <p className="feature-card-description">
                             {t('chooseUs.innovative_description')}

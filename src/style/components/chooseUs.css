@@ -15,7 +15,7 @@
   gap: 30px;
   width: 100%;
   max-width: 1220px;
-  background-image: url('../../../public/assets/Us.png');
+  background-image: url('../../../public/assets/home/Us.png');
   background-size: cover;
   background-position: center;
   border-radius: 40px;
@@ -138,7 +138,7 @@ body.dark-mode .why-choose-us {
 }
 
 body.dark-mode .features {
-  background-image: url('../../../public/assets/choseUs-dark.png');
+  background-image: url('../../../public/assets/home/choseUs-dark.png');
   /* Adjust image for dark mode */
   background-size: cover;
   background-position: center;
@@ -220,7 +220,7 @@ html[dir='rtl'] .features {
   gap: 30px;
   width: 100%;
   max-width: 1220px;
-  background-image: url('../../../public/assets/Us.png');
+  background-image: url('../../../public/assets/home/Us.png');
   background-size: cover;
   background-position: center;
   border-radius: 40px;
@@ -320,7 +320,7 @@ html[dir='rtl'] .feature-image {
 /* Dark Mode Styles for RTL */
 
 html[dir='rtl'] body.dark-mode .features {
-  background-image: url('../../../public/assets/choseUs-dark.png');
+  background-image: url('../../../public/assets/home/choseUs-dark.png');
   background-size: cover;
   background-position: center;
 }

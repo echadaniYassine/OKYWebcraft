@@ -4,15 +4,15 @@ import "../../style/pages/RealisationStyle/CategoryGraphicDesign.css";
 import { useTranslation } from "react-i18next";
 
 const projects = [
-  { id: 1, category: "logoDesign", title: "Modern 3D Logo", image: "assets/logo1.jpg" },
-  { id: 2, category: "logoDesign", title: "Minimalist Shield Logo", image: "assets/logo2.jpg" },
-  { id: 3, category: "logoDesign", title: "Abstract Square Logo", image: "assets/logo3.jpg" },
-  { id: 4, category: "posterDesign", title: "Cold Coffee Poster", image: "assets/poster1.jpg" },
-  { id: 5, category: "posterDesign", title: "Pasta Promotion Poster", image: "assets/poster2.jpg" },
-  { id: 6, category: "posterDesign", title: "Gourmet Burger Poster", image: "assets/poster3.jpg" },
-  { id: 7, category: "brandIdentity", title: "Corporate Branding Pack", image: "assets/brand1.jpg" },
-  { id: 8, category: "brandIdentity", title: "Luxury Brand Identity", image: "assets/brand2.jpg" },
-  { id: 9, category: "brandIdentity", title: "Tech Startup Branding", image: "assets/brand3.jpg" }
+  { id: 1, category: "logoDesign", title: "Modern 3D Logo", image: "assets/design/logo1.jpg" },
+  { id: 2, category: "logoDesign", title: "Minimalist Shield Logo", image: "assets/design/logo2.jpg" },
+  { id: 3, category: "logoDesign", title: "Abstract Square Logo", image: "assets/design/logo3.jpg" },
+  { id: 4, category: "posterDesign", title: "Cold Coffee Poster", image: "assets/design/poster1.jpg" },
+  { id: 5, category: "posterDesign", title: "Pasta Promotion Poster", image: "assets/design/poster2.jpg" },
+  { id: 6, category: "posterDesign", title: "Gourmet Burger Poster", image: "assets/design/poster3.jpg" },
+  { id: 7, category: "brandIdentity", title: "Corporate Branding Pack", image: "assets/design/brand1.jpg" },
+  { id: 8, category: "brandIdentity", title: "Luxury Brand Identity", image: "assets/design/brand2.jpg" },
+  { id: 9, category: "brandIdentity", title: "Tech Startup Branding", image: "assets/design/brand3.jpg" }
 ];
 
 

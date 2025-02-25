@@ -18,24 +18,24 @@ const Hero = () => {
           </div>
           <div className="hero-image-container">
             <div className="hero-image fade-in-left">
-              <img src="assets/hero5.png" alt="Digital Solutions" />
+              <img src="assets/home/hero5.png" alt="Digital Solutions" />
             </div>
           </div>
         </div>
       </section>
       <div className="hero-stats">
         <div className="hero-stat">
-          <img src='assets/choseUs1.png' className="hero-stat-icon" />
+          <img src='assets/home/choseUs1.png' className="hero-stat-icon" />
           <h1 className="hero-stat-title">34+</h1>
           <p className="hero-stat-paragraph">{t('hero.projects_delivered')}</p>
         </div>
         <div className="hero-stat">
-          <img src='assets/choseUs3.png' className="hero-stat-icon" />
+          <img src='assets/home/choseUs3.png' className="hero-stat-icon" />
           <h1 className="hero-stat-title">99%</h1>
           <p className="hero-stat-paragraph">{t('hero.satisfaction_rate')}</p>
         </div>
         <div className="hero-stat">
-          <img src='assets/chose 2.png' className="hero-stat-icon" />
+          <img src='assets/home/chose 2.png' className="hero-stat-icon" />
           <h1 className="hero-stat-title">6+</h1>
           <p className="hero-stat-paragraph">{t('hero.team_members')}</p>
         </div>
