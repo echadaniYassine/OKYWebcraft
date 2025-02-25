@@ -39,15 +39,15 @@ const ProfessionalBenefits = () => {
                     {/* Benefits Cards - Dynamically generated */}
                     <div className="professional-benefits-grid">
                         {[
-                            { key: 'tailoredSolutions', image: "benefits/Benefits1.png"},
+                            { key: 'tailoredSolutions', image: "benefits/benefits1.png"},
                             { key: 'reliableExpertise', image: "benefits/benefits2.png"},
-                            { key: 'innovativeStrategies', image: "benefits/Benefits3.png"},
-                            { key: 'customerCentric', image: "benefits/Benefits4.png"},
-                            { key: 'scalableSolutions', image: "benefits/Benefits5.png"},
-                            { key: 'dataDrivenInsights', image: "benefits/Benefits6.png"},
-                            { key: 'support', image: "benefits/Benefits7.png"},
-                            { key: 'securityCompliance', image: "benefits/Benefits8.png"},
-                            { key: 'costEffectiveSolutions', image: "benefits/Benefits9.png"},
+                            { key: 'innovativeStrategies', image: "benefits/benefits3.png"},
+                            { key: 'customerCentric', image: "benefits/benefits4.png"},
+                            { key: 'scalableSolutions', image: "benefits/benefits5.png"},
+                            { key: 'dataDrivenInsights', image: "benefits/benefits6.png"},
+                            { key: 'support', image: "benefits/benefits7.png"},
+                            { key: 'securityCompliance', image: "benefits/benefits8.png"},
+                            { key: 'costEffectiveSolutions', image: "benefits/benefits9.png"},
                         ].map((benefit, index) => (
                             <div key={index} className="professional-benefits-card">
                                 <img
