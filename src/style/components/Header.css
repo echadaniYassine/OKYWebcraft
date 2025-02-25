@@ -35,12 +35,21 @@ body.dark-mode .language-btn:hover {
   align-items: center;
 }
 
+@keyframes logoAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
 .imageLogo {
   transition: opacity 0.3s ease;
   width: 120px;
-  transition: transform 0.8s ease;
-
+  animation: logoAnimation 1.6s infinite ease-in-out;
 }
+
 
 /* Navigation Styles */
 .navigation {
@@ -167,10 +176,6 @@ body.dark-mode .language-btn:hover {
 .imageLogoMobill,
 .header-links {
   display: none;
-}
-
-.imageLogo:hover {
-  transform: scale(1.1);
 }
 
 
