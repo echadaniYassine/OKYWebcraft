@@ -24,7 +24,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import About from './components/About';
 import Services from './components/ServiceCard';
 import Portfolio from './components/Portfolio';
-
+import { Analytics } from "@vercel/analytics/react"
 const App = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -110,6 +110,8 @@ const App = () => {
           <Footer />
         </div>
       )}
+      
+      <Analytics />
 
       <div className="whatsapp-container">
         <a href="https://wa.me/+212717923103" target="_blank" rel="noopener noreferrer">
