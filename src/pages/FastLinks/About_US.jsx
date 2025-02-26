@@ -16,7 +16,7 @@ const AboutUs = () => {
         {/* About Us Section */}
         <div className="about-us-content">
           <div className="about-us-image-container">
-            <img src="assets/who-we-are.png" alt="About Us" className="about-us-image" />
+            <img src="assets/about/who-we-are.png" alt="About Us" className="about-us-image" />
           </div>
           <div className="about-us-text-container">
             <h2 className="about-us-heading">
@@ -36,7 +36,7 @@ const AboutUs = () => {
         {/* Our Vision Section */}
         <div className="about-us-vision">
           <div className="about-us-image-container">
-            <img src="assets/our-vision.png" alt="Our Vision" className="about-us-image" />
+            <img src="assets/about/our-vision.png" alt="Our Vision" className="about-us-image" />
           </div>
           <div className="about-us-text-container">
             <h2 className="about-us-heading">
@@ -56,7 +56,7 @@ const AboutUs = () => {
         {/* Our Goal Section */}
         <div className="about-us-goal">
           <div className="about-us-image-container">
-            <img src="assets/our-goal.png" alt="Our Goal" className="about-us-image" />
+            <img src="assets/about/our-goal.png" alt="Our Goal" className="about-us-image" />
           </div>
           <div className="about-us-text-container">
             <h2 className="about-us-heading">
@@ -77,18 +77,18 @@ const AboutUs = () => {
         <div className="about-us-carousel">
           <h2 className="about-us-heading-work">{t("about-us.our-work")}</h2>
           <div className="carousel">
-            <img src="assets/smartPath.png" alt="Project 1" className="carousel-image" />
-            <img src="assets/landing1.png" alt="Project 2" className="carousel-image" />
-            <img src="assets/app2.png" alt="Project 3" className="carousel-image" />
-            <img src="assets/brand1.jpg" alt="Project 4" className="carousel-image" />
-            <img src="assets/brand2.jpg" alt="Project 5" className="carousel-image" />
-            <img src="assets/brand3.jpg" alt="Project 6" className="carousel-image" />
-            <img src="assets/logo1.jpg" alt="Project 7" className="carousel-image" />
-            <img src="assets/logo2.jpg" alt="Project 8" className="carousel-image" />
-            <img src="assets/logo3.jpg" alt="Project 9" className="carousel-image" />
-            <img src="assets/poster1.jpg" alt="Project 10" className="carousel-image" />
-            <img src="assets/poster2.jpg" alt="Project 11" className="carousel-image" />
-            <img src="assets/poster3.jpg" alt="Project 12" className="carousel-image" />
+            <img src="assets/web/smartPath.png" alt="Project 1" className="carousel-image" />
+            <img src="assets/web/landing1.png" alt="Project 2" className="carousel-image" />
+            <img src="assets/web/app2.png" alt="Project 3" className="carousel-image" />
+            <img src="assets/design/brand1.jpg" alt="Project 4" className="carousel-image" />
+            <img src="assets/design/brand2.jpg" alt="Project 5" className="carousel-image" />
+            <img src="assets/design/brand3.jpg" alt="Project 6" className="carousel-image" />
+            <img src="assets/design/logo1.jpg" alt="Project 7" className="carousel-image" />
+            <img src="assets/design/logo2.jpg" alt="Project 8" className="carousel-image" />
+            <img src="assets/design/logo3.jpg" alt="Project 9" className="carousel-image" />
+            <img src="assets/design/poster1.jpg" alt="Project 10" className="carousel-image" />
+            <img src="assets/design/poster2.jpg" alt="Project 11" className="carousel-image" />
+            <img src="assets/design/poster3.jpg" alt="Project 12" className="carousel-image" />
           </div>
         </div>
       </div>
